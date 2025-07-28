@@ -1,0 +1,71 @@
+{% schema %}
+{
+  "name": "Products slider",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collection.settings.collection.label"
+    },
+	{
+      "type": "text",
+      "id": "title",
+      "default": "Featured Products slider",
+      "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.featured-collection.settings.products_to_show.label"
+    },
+    {
+      "type": "range",
+      "id": "navigation_amount",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "Change the number of cards in view"
+    },
+    {
+      "type": "color",
+      "id": "navigation_color",
+      "label": "Arrow color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "navigation_bg_color",
+      "label": "Arrow background",
+      "default": "#242833"
+    },
+    {
+      "type": "checkbox",
+      "id": "viewall",
+      "label": "View All"
+    },
+    {
+      "type": "color",
+      "id": "viewall_color",
+      "label": "View All Text Color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "viewall_bg_color",
+      "label": "View All Background",
+      "default": "#000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products collection slider",
+      "category":"Custom"
+    }
+  ]
+}
+{% endschema %}
