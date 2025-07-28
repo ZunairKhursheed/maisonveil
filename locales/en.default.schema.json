@@ -200,24 +200,7 @@
       }
     },
     "buttons": {
-      "name": "Buttons",
-      "settings": {
-        "header__colors": {
-          "content": "Colors"
-        },
-        "normal_background": {
-          "label": "Normal background"
-        },
-        "normal_text": {
-          "label": "Normal text"
-        },
-        "hover_background": {
-          "label": "Hover background"
-        },
-        "hover_text": {
-          "label": "Hover text"
-        }
-      }
+      "name": "Buttons"
     },
     "variant_pills": {
       "name": "Variant pills",

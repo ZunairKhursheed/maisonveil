@@ -238,34 +238,6 @@
     "settings": [
       {
         "type": "header",
-        "content": "t:settings_schema.buttons.settings.header__colors.content"
-      },
-      {
-        "type": "color",
-        "id": "buttons_normal_background",
-        "label": "t:settings_schema.buttons.settings.normal_background.label",
-        "default": "#121212"
-      },
-      {
-        "type": "color",
-        "id": "buttons_normal_text",
-        "label": "t:settings_schema.buttons.settings.normal_text.label",
-        "default": "#FFFFFF"
-      },
-      {
-        "type": "color",
-        "id": "buttons_hover_background",
-        "label": "t:settings_schema.buttons.settings.hover_background.label",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "buttons_hover_text",
-        "label": "t:settings_schema.buttons.settings.hover_text.label",
-        "default": "#FFFFFF"
-      },
-      {
-        "type": "header",
         "content": "t:settings_schema.global.settings.header__border.content"
       },
       {
