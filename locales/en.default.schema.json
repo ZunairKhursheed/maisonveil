@@ -738,6 +738,21 @@
     "featured-collection": {
       "name": "Featured collection",
       "settings": {
+        "header_browse": {
+          "content": "Browse link"
+        },
+        "show_browse_link": {
+          "label": "Show browse link"
+        },
+        "browse_link_text": {
+          "label": "Browse link text"
+        },
+        "browse_link_url": {
+          "label": "Browse link URL"
+        },
+        "header_title": {
+          "content": "Title"
+        },
         "title": {
           "label": "Heading",
           "default": "Featured collection"
@@ -782,7 +797,13 @@
           },
           "options__3": {
             "label": "Solid button"
+          },
+          "options__4": {
+            "label": "Inverted"
           }
+        },
+        "view_all_text": {
+          "label": "View all button text"
         },
         "enable_desktop_slider": {
           "label": "Enable carousel on desktop"

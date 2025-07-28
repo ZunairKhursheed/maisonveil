@@ -37,6 +37,57 @@
   .collection__browse-link .link {
     font-size: 1.4rem;
     text-transform: lowercase;
+    color: #9c7aa0;
+  }
+
+  .collection .product-card-wrapper .card {
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .collection .product-card-wrapper .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .collection .product-card-wrapper .card__content {
+    padding: 1rem 0 0 0;
+  }
+
+  .collection .product-card-wrapper .card__heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c2c2c;
+  }
+
+  .collection .product-card-wrapper .caption-large {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  .collection .product-card-wrapper .price {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #2c2c2c;
+  }
+
+  .collection .title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c2c2c;
+  }
+
+  @media screen and (min-width: 750px) {
+    .collection .title {
+      font-size: 4rem;
+    }
   }
 
   @media screen and (min-width: 750px) {
