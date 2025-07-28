@@ -19,6 +19,13 @@
             "heading_size": "h0"
           }
         },
+        "text_mBArdK": {
+          "type": "text",
+          "settings": {
+            "text": "Step into a world of curated fragrances and bespoke blends—crafted just for you. Whether you’re discovering a signature scent or creating one from scratch, Maison Veil is where elegance meets individuality.",
+            "text_style": "body"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -33,6 +40,7 @@
       },
       "block_order": [
         "heading",
+        "text_mBArdK",
         "button"
       ],
       "settings": {
