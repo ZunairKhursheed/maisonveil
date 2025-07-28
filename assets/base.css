@@ -1355,6 +1355,21 @@ button.shopify-payment-button__button--unbranded {
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
 }
 
+.button--inverted {
+  --color-button: #ffffff;
+  --color-button-text: #7c244f;
+  color: #7c244f;
+  background-color: #ffffff;
+}
+
+.button--inverted:before {
+  background: #7c244f;
+}
+
+.button--inverted:not([disabled]):hover {
+  color: #ffffff;
+}
+
 .button--small {
   padding: 1.2rem 2.6rem;
 }

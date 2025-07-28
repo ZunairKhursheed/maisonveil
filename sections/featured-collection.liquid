@@ -30,6 +30,15 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .collection__browse-link {
+    margin-bottom: 1rem;
+  }
+
+  .collection__browse-link .link {
+    font-size: 1.4rem;
+    text-transform: lowercase;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -67,6 +76,13 @@
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+      {%- if section.settings.show_browse_link -%}
+        <div class="collection__browse-link{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          <a href="{{ section.settings.browse_link_url | default: '#' }}" class="link underlined-link">
+            {{ section.settings.browse_link_text | default: 'browse' }}
+          </a>
+        </div>
+      {%- endif -%}
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
@@ -180,10 +196,10 @@
       <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <a
           href="{{ section.settings.collection.url }}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% elsif section.settings.view_all_style == 'inverted' %}button button--inverted{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
         >
-          {{ 'sections.featured_collection.view_all' | t }}
+          {{ section.settings.view_all_text | default: 'sections.featured_collection.view_all' | t }}
         </a>
       </div>
     {%- endif -%}
@@ -202,6 +218,31 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.featured-collection.settings.header_browse.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_browse_link",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_browse_link.label"
+    },
+    {
+      "type": "text",
+      "id": "browse_link_text",
+      "default": "browse",
+      "label": "t:sections.featured-collection.settings.browse_link_text.label"
+    },
+    {
+      "type": "url",
+      "id": "browse_link_url",
+      "label": "t:sections.featured-collection.settings.browse_link_url.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.featured-collection.settings.header_title.content"
+    },
     {
       "type": "inline_richtext",
       "id": "title",
@@ -318,9 +359,19 @@
         {
           "value": "solid",
           "label": "t:sections.featured-collection.settings.view_all_style.options__3.label"
+        },
+        {
+          "value": "inverted",
+          "label": "t:sections.featured-collection.settings.view_all_style.options__4.label"
         }
       ],
       "default": "solid"
+    },
+    {
+      "type": "text",
+      "id": "view_all_text",
+      "default": "Shop all fragrances",
+      "label": "t:sections.featured-collection.settings.view_all_text.label"
     },
     {
       "type": "checkbox",

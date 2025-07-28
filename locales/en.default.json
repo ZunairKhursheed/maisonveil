@@ -323,7 +323,32 @@
     },
     "featured_collection": {
       "view_all": "View all",
-      "view_all_label": "View all products in the {{ collection_name }} collection"
+      "view_all_label": "View all products in the {{ collection_name }} collection",
+      "settings": {
+        "header_browse": {
+          "content": "Browse link"
+        },
+        "show_browse_link": {
+          "label": "Show browse link"
+        },
+        "browse_link_text": {
+          "label": "Browse link text"
+        },
+        "browse_link_url": {
+          "label": "Browse link URL"
+        },
+        "header_title": {
+          "content": "Title"
+        },
+        "view_all_text": {
+          "label": "View all button text"
+        },
+        "view_all_style": {
+          "options__4": {
+            "label": "Inverted"
+          }
+        }
+      }
     },
     "collection_list": {
       "view_all": "View all"
