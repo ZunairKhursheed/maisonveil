@@ -1227,11 +1227,11 @@ button.shopify-payment-button__button--unbranded {
   font: inherit;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #7c244f;
+  color: #ffffff;
   transition: box-shadow var(--duration-short) ease, color 0.3s ease;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #7c244f;
+  background-color: #ffffff;
   position: relative;
   z-index: 2;
 }
