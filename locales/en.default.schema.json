@@ -144,6 +144,13 @@
         },
         "shadow": {
           "label": "Shadow"
+        },
+        "header_primary": {
+          "content": "Primary Color"
+        },
+        "primary_color": {
+          "label": "Primary color",
+          "info": "This color is used throughout the theme for primary elements like buttons, links, and accents."
         }
       }
     },
@@ -756,6 +763,9 @@
         "title": {
           "label": "Heading",
           "default": "Featured collection"
+        },
+        "subtitle": {
+          "label": "Subtitle"
         },
         "description": {
           "label": "Description"

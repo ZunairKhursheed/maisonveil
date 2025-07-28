@@ -31,62 +31,94 @@
   }
 
   .collection__browse-link {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
   }
 
   .collection__browse-link .link {
     font-size: 1.4rem;
     text-transform: lowercase;
-    color: #9c7aa0;
+    color: var(--color-primary);
+    font-weight: 400;
+  }
+
+  .collection__subtitle {
+    font-size: 3.2rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-family: serif;
+    text-transform: capitalize;
+  }
+
+  @media screen and (min-width: 750px) {
+    .collection__subtitle {
+      font-size: 4rem;
+    }
   }
 
   .collection .product-card-wrapper .card {
-    background-color: #f8f8f8;
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+    box-shadow: none;
   }
 
   .collection .product-card-wrapper .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: none;
+    box-shadow: none;
   }
 
   .collection .product-card-wrapper .card__content {
-    padding: 1rem 0 0 0;
+    padding: 1.5rem 0 0 0;
+    text-align: left;
   }
 
   .collection .product-card-wrapper .card__heading {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #2c2c2c;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #000000;
+    text-align: left;
   }
 
   .collection .product-card-wrapper .caption-large {
-    font-size: 1.3rem;
-    line-height: 1.4;
-    color: #666;
-    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #666666;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
   }
 
   .collection .product-card-wrapper .price {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #2c2c2c;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 0.5rem;
+  }
+
+  .collection .product-card-wrapper .card__media {
+    margin-bottom: 0;
+  }
+
+  .collection .product-card-wrapper .media {
+    border-radius: 0;
   }
 
   .collection .title {
-    font-size: 3.2rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 1rem;
     color: #2c2c2c;
   }
 
   @media screen and (min-width: 750px) {
     .collection .title {
-      font-size: 4rem;
+      font-size: 2.4rem;
     }
   }
 
@@ -138,6 +170,11 @@
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
+      {%- endif -%}
+      {%- if section.settings.subtitle != blank -%}
+        <div class="collection__subtitle{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.subtitle }}
+        </div>
       {%- endif -%}
       {%- if section.settings.description != blank
         or section.settings.show_description
@@ -299,6 +336,12 @@
       "id": "title",
       "default": "t:sections.featured-collection.settings.title.default",
       "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "default": "Signature Scents",
+      "label": "t:sections.featured-collection.settings.subtitle.label"
     },
     {
       "type": "select",
