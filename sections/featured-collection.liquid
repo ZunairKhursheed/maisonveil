@@ -59,11 +59,11 @@
   }
 
   .collection .product-card-wrapper .card {
-    background-color: #ffffff;
+    background-color: transparent;
     border: none;
     border-radius: 0;
     padding: 0;
-    transition: transform 0.3s ease;
+    transition: none;
     box-shadow: none;
   }
 
@@ -75,33 +75,88 @@
   .collection .product-card-wrapper .card__content {
     padding: 1.5rem 0 0 0;
     text-align: left;
+    display: block;
+  }
+
+  .collection .product-card-wrapper .card__information {
+    display: block;
   }
 
   .collection .product-card-wrapper .card__heading {
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 600;
     margin-bottom: 0.8rem;
     color: #000000;
     text-align: left;
+    display: block;
+  }
+
+  .collection .product-card-wrapper .card__heading a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .collection .product-card-wrapper .card-information {
+    display: block;
   }
 
   .collection .product-card-wrapper .caption-large {
-    font-size: 1.4rem;
-    line-height: 1.5;
+    font-size: 1.3rem;
+    line-height: 1.4;
     color: #666666;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     font-weight: 400;
+    display: block;
   }
 
   .collection .product-card-wrapper .price {
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: #000000;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
+    display: block;
+  }
+
+  .collection .product-card-wrapper .price__regular {
+    color: #000000;
+  }
+
+  .collection .product-card-wrapper .price__sale {
+    color: #000000;
+  }
+
+  .collection .product-card-wrapper .price__badge {
+    color: #000000;
   }
 
   .collection .product-card-wrapper .card__media {
     margin-bottom: 0;
+  }
+
+  .collection .product-card-wrapper .card__badge {
+    display: block;
+  }
+
+  .collection .product-card-wrapper .badge {
+    display: inline-block;
+  }
+
+  .collection .product-card-wrapper .rating {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .collection .product-card-wrapper .rating-text,
+  .collection .product-card-wrapper .rating-count {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .collection .product-card-wrapper .caption-with-letter-spacing {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #666666;
   }
 
   .collection .product-card-wrapper .media {
@@ -126,6 +181,44 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+    .collection .product-card-wrapper .card__heading {
+      font-size: 1.8rem;
+    }
+
+    .collection .product-card-wrapper .caption-large {
+      font-size: 1.4rem;
+    }
+
+    .collection .product-card-wrapper .price {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .collection .product-card-wrapper .card__content {
+      padding: 1rem 0 0 0;
+    }
+
+    .collection .product-card-wrapper .card__heading {
+      font-size: 1.4rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .collection .product-card-wrapper .caption-large {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .collection .product-card-wrapper .price {
+      font-size: 1.4rem;
+      margin-top: 0.6rem;
+    }
+
+    .collection__subtitle {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
     }
   }
 {%- endstyle -%}
@@ -281,11 +374,12 @@
     </slider-component>
 
     {%- if section.settings.show_view_all and more_in_collection -%}
-      <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" style="margin-top: 3rem; text-align: center;">
         <a
           href="{{ section.settings.collection.url }}"
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% elsif section.settings.view_all_style == 'inverted' %}button button--inverted{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
+          style="display: inline-block; padding: 1.2rem 2.4rem; font-size: 1.4rem; font-weight: 500; text-decoration: none; border-radius: 0; transition: all 0.3s ease;"
         >
           {{ section.settings.view_all_text | default: 'sections.featured_collection.view_all' | t }}
         </a>
