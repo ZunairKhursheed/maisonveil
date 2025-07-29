@@ -98,17 +98,6 @@
           "on_secondary_button": "secondary_button_label",
           "secondary_button_border": "secondary_button_label"
         }
-      },
-      {
-        "type": "header",
-        "content": "t:settings_schema.colors.settings.header_primary.content"
-      },
-      {
-        "type": "color",
-        "id": "primary_color",
-        "label": "t:settings_schema.colors.settings.primary_color.label",
-        "default": "#7C244F",
-        "info": "t:settings_schema.colors.settings.primary_color.info"
       }
     ]
   },

@@ -30,195 +30,10 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  .collection__browse-link {
-    margin-bottom: 0.5rem;
-    text-align: left;
-  }
-
-  .collection__browse-link .link {
-    font-size: 1.4rem;
-    text-transform: lowercase;
-    color: var(--color-primary);
-    font-weight: 400;
-  }
-
-  .collection__subtitle {
-    font-size: 3.2rem;
-    font-weight: 400;
-    text-align: left;
-    margin-bottom: 2rem;
-    color: #000000;
-    font-family: serif;
-    text-transform: capitalize;
-  }
-
-  @media screen and (min-width: 750px) {
-    .collection__subtitle {
-      font-size: 4rem;
-    }
-  }
-
-  .collection .product-card-wrapper .card {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    transition: none;
-    box-shadow: none;
-  }
-
-  .collection .product-card-wrapper .card:hover {
-    transform: none;
-    box-shadow: none;
-  }
-
-  .collection .product-card-wrapper .card__content {
-    padding: 1.5rem 0 0 0;
-    text-align: left;
-    display: block;
-  }
-
-  .collection .product-card-wrapper .card__information {
-    display: block;
-  }
-
-  .collection .product-card-wrapper .card__heading {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-    color: #000000;
-    text-align: left;
-    display: block;
-  }
-
-  .collection .product-card-wrapper .card__heading a {
-    color: #000000;
-    text-decoration: none;
-  }
-
-  .collection .product-card-wrapper .card-information {
-    display: block;
-  }
-
-  .collection .product-card-wrapper .caption-large {
-    font-size: 1.3rem;
-    line-height: 1.4;
-    color: #666666;
-    margin-bottom: 1rem;
-    font-weight: 400;
-    display: block;
-  }
-
-  .collection .product-card-wrapper .price {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #000000;
-    margin-top: 0.8rem;
-    display: block;
-  }
-
-  .collection .product-card-wrapper .price__regular {
-    color: #000000;
-  }
-
-  .collection .product-card-wrapper .price__sale {
-    color: #000000;
-  }
-
-  .collection .product-card-wrapper .price__badge {
-    color: #000000;
-  }
-
-  .collection .product-card-wrapper .card__media {
-    margin-bottom: 0;
-  }
-
-  .collection .product-card-wrapper .card__badge {
-    display: block;
-  }
-
-  .collection .product-card-wrapper .badge {
-    display: inline-block;
-  }
-
-  .collection .product-card-wrapper .rating {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-
-  .collection .product-card-wrapper .rating-text,
-  .collection .product-card-wrapper .rating-count {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-
-  .collection .product-card-wrapper .caption-with-letter-spacing {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    color: #666666;
-  }
-
-  .collection .product-card-wrapper .media {
-    border-radius: 0;
-  }
-
-  .collection .title {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: left;
-    margin-bottom: 1rem;
-    color: #2c2c2c;
-  }
-
-  @media screen and (min-width: 750px) {
-    .collection .title {
-      font-size: 2.4rem;
-    }
-  }
-
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-
-    .collection .product-card-wrapper .card__heading {
-      font-size: 1.8rem;
-    }
-
-    .collection .product-card-wrapper .caption-large {
-      font-size: 1.4rem;
-    }
-
-    .collection .product-card-wrapper .price {
-      font-size: 1.6rem;
-    }
-  }
-
-  @media screen and (max-width: 749px) {
-    .collection .product-card-wrapper .card__content {
-      padding: 1rem 0 0 0;
-    }
-
-    .collection .product-card-wrapper .card__heading {
-      font-size: 1.4rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .collection .product-card-wrapper .caption-large {
-      font-size: 1.2rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .collection .product-card-wrapper .price {
-      font-size: 1.4rem;
-      margin-top: 0.6rem;
-    }
-
-    .collection__subtitle {
-      font-size: 2.8rem;
-      margin-bottom: 1.5rem;
     }
   }
 {%- endstyle -%}
@@ -252,22 +67,10 @@
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-      {%- if section.settings.show_browse_link -%}
-        <div class="collection__browse-link{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-          <a href="{{ section.settings.browse_link_url | default: '#' }}" class="link underlined-link">
-            {{ section.settings.browse_link_text | default: 'browse' }}
-          </a>
-        </div>
-      {%- endif -%}
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
-      {%- endif -%}
-      {%- if section.settings.subtitle != blank -%}
-        <div class="collection__subtitle{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-          {{ section.settings.subtitle }}
-        </div>
       {%- endif -%}
       {%- if section.settings.description != blank
         or section.settings.show_description
@@ -374,14 +177,13 @@
     </slider-component>
 
     {%- if section.settings.show_view_all and more_in_collection -%}
-      <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" style="margin-top: 3rem; text-align: center;">
+      <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <a
           href="{{ section.settings.collection.url }}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% elsif section.settings.view_all_style == 'inverted' %}button button--inverted{% else %}button button--secondary{% endif %}"
+          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
-          style="display: inline-block; padding: 1.2rem 2.4rem; font-size: 1.4rem; font-weight: 500; text-decoration: none; border-radius: 0; transition: all 0.3s ease;"
         >
-          {{ section.settings.view_all_text | default: 'sections.featured_collection.view_all' | t }}
+          {{ 'sections.featured_collection.view_all' | t }}
         </a>
       </div>
     {%- endif -%}
@@ -401,41 +203,10 @@
   },
   "settings": [
     {
-      "type": "header",
-      "content": "t:sections.featured-collection.settings.header_browse.content"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_browse_link",
-      "default": false,
-      "label": "t:sections.featured-collection.settings.show_browse_link.label"
-    },
-    {
-      "type": "text",
-      "id": "browse_link_text",
-      "default": "browse",
-      "label": "t:sections.featured-collection.settings.browse_link_text.label"
-    },
-    {
-      "type": "url",
-      "id": "browse_link_url",
-      "label": "t:sections.featured-collection.settings.browse_link_url.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.featured-collection.settings.header_title.content"
-    },
-    {
       "type": "inline_richtext",
       "id": "title",
       "default": "t:sections.featured-collection.settings.title.default",
       "label": "t:sections.featured-collection.settings.title.label"
-    },
-    {
-      "type": "text",
-      "id": "subtitle",
-      "default": "Signature Scents",
-      "label": "t:sections.featured-collection.settings.subtitle.label"
     },
     {
       "type": "select",
@@ -547,19 +318,9 @@
         {
           "value": "solid",
           "label": "t:sections.featured-collection.settings.view_all_style.options__3.label"
-        },
-        {
-          "value": "inverted",
-          "label": "t:sections.featured-collection.settings.view_all_style.options__4.label"
         }
       ],
       "default": "solid"
-    },
-    {
-      "type": "text",
-      "id": "view_all_text",
-      "default": "Shop all fragrances",
-      "label": "t:sections.featured-collection.settings.view_all_text.label"
     },
     {
       "type": "checkbox",
