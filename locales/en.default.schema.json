@@ -735,7 +735,7 @@
         "name": "Blog posts"
       }
     },
-    "featured_collection": {
+    "featured-collection": {
       "name": "Featured collection",
       "settings": {
         "sub_heading": {
