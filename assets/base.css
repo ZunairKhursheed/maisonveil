@@ -3679,15 +3679,6 @@ details-disclosure > details {
   position: relative;
 }
 
-.card__content {
-  position: absolute;
-  opacity: 0;
-}
-
-.card:hover .card__content {
-  opacity: 1;
-}
-
 .price {
   text-align: center;
 }
