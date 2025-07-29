@@ -60,9 +60,10 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
+        "sub_heading": "SUB HEADING",
         "title": "Featured products",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>TEST</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
@@ -70,6 +71,8 @@
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
+        "button_text": "missing translation: \"t:sections.featured_collection.button_text.default\" is not present in any of the [\"en\"] schema locale files",
+        "button_link": "",
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
