@@ -323,7 +323,19 @@
     },
     "featured_collection": {
       "view_all": "View all",
-      "view_all_label": "View all products in the {{ collection_name }} collection"
+      "view_all_label": "View all products in the {{ collection_name }} collection",
+      "sub_heading": {
+        "label": "Sub-heading",
+        "default": "Featured Products"
+      },
+      "button_text": {
+        "label": "Button text",
+        "default": "View all"
+      },
+      "button_link": {
+        "label": "Button link",
+        "info": "Leave empty to use collection URL"
+      }
     },
     "collection_list": {
       "view_all": "View all"

@@ -30,6 +30,15 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .collection__sub-heading {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(var(--color-foreground), 0.75);
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -67,6 +76,11 @@
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+      {%- if section.settings.sub_heading != blank -%}
+        <p class="collection__sub-heading{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.sub_heading }}
+        </p>
+      {%- endif -%}
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
@@ -179,11 +193,11 @@
     {%- if section.settings.show_view_all and more_in_collection -%}
       <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <a
-          href="{{ section.settings.collection.url }}"
+          href="{% if section.settings.button_link != blank %}{{ section.settings.button_link }}{% else %}{{ section.settings.collection.url }}{% endif %}"
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
         >
-          {{ 'sections.featured_collection.view_all' | t }}
+          {{ section.settings.button_text | default: 'sections.featured_collection.view_all' | t }}
         </a>
       </div>
     {%- endif -%}
@@ -202,6 +216,12 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "t:sections.featured_collection.sub_heading.label",
+      "default": "t:sections.featured_collection.sub_heading.default"
+    },
     {
       "type": "inline_richtext",
       "id": "title",
@@ -301,6 +321,18 @@
       "id": "show_view_all",
       "default": true,
       "label": "t:sections.featured-collection.settings.show_view_all.label"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "t:sections.featured_collection.button_text.label",
+      "default": "t:sections.featured_collection.button_text.default"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.featured_collection.button_link.label",
+      "info": "t:sections.featured_collection.button_link.info"
     },
     {
       "type": "select",
