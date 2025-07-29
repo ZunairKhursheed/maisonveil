@@ -39,6 +39,19 @@
     color: rgba(var(--color-foreground), 0.75);
   }
 
+  .collection__view-all .button--inverted {
+    color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  .collection__view-all .button--inverted:before {
+    background: #7c244f;
+  }
+
+  .collection__view-all .button--inverted:not([disabled]):hover {
+    color: #7c244f;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -194,7 +207,7 @@
       <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <a
           href="{% if section.settings.button_link != blank %}{{ section.settings.button_link }}{% else %}{{ section.settings.collection.url }}{% endif %}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button button--inverted{% else %}button button--secondary button--inverted{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
         >
           {{ section.settings.button_text | default: 'sections.featured_collection.view_all' | t }}
