@@ -735,9 +735,13 @@
         "name": "Blog posts"
       }
     },
-    "featured-collection": {
+    "featured_collection": {
       "name": "Featured collection",
       "settings": {
+        "sub_heading": {
+          "label": "Sub-heading",
+          "default": "Featured Products"
+        },
         "title": {
           "label": "Heading",
           "default": "Featured collection"
@@ -771,6 +775,14 @@
         },
         "show_view_all": {
           "label": "Enable \"View all\" if collection has more products than shown"
+        },
+        "button_text": {
+          "label": "Button text",
+          "default": "View all"
+        },
+        "button_link": {
+          "label": "Button link",
+          "info": "Leave empty to use collection URL"
         },
         "view_all_style": {
           "label": "\"View all\" style",
