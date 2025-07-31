@@ -46,6 +46,20 @@
     min-height: auto;
   }
 
+  .section-{{ section.id }}-padding .two-column-grid__item--content {
+    min-height: fit-content;
+  }
+
+  .section-{{ section.id }}-padding .two-column-grid__item--screen {
+    min-height: 50vh;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding .two-column-grid__item--screen {
+      min-height: 100vh;
+    }
+  }
+
   /* Background image positioning */
   .section-{{ section.id }}-padding .two-column-grid__background {
     position: absolute;
@@ -62,10 +76,21 @@
     object-fit: cover;
   }
 
+  /* Overlay styles */
+  .section-{{ section.id }}-padding .two-column-grid__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 1;
+  }
+
   /* Text content positioning */
   .section-{{ section.id }}-padding .two-column-grid__text-content {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     padding: 2rem;
     flex: 1;
@@ -149,6 +174,9 @@
                       | image_url: width: 1500
                       | image_tag: sizes: sizes, widths: widths, class: 'two-column-grid__image'
                     }}
+                    {%- if block.settings.show_overlay -%}
+                      <div class="two-column-grid__overlay" style="opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};"></div>
+                    {%- endif -%}
                   </div>
                 {%- endif -%}
                 
@@ -257,6 +285,10 @@
               "label": "Adapt to content"
             },
             {
+              "value": "content",
+              "label": "Minimum height = content height"
+            },
+            {
               "value": "small",
               "label": "Small"
             },
@@ -267,70 +299,34 @@
             {
               "value": "large",
               "label": "Large"
+            },
+            {
+              "value": "screen",
+              "label": "Screen height"
             }
           ],
           "default": "adapt",
           "label": "Height"
         },
         {
-          "type": "select",
-          "id": "justify_content",
-          "options": [
-            {
-              "value": "flex-start",
-              "label": "Top"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "flex-end",
-              "label": "Bottom"
-            }
-          ],
-          "default": "flex-start",
-          "label": "Vertical alignment"
+          "type": "header",
+          "content": "Background"
         },
         {
-          "type": "select",
-          "id": "align_items",
-          "options": [
-            {
-              "value": "flex-start",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "flex-end",
-              "label": "Right"
-            }
-          ],
-          "default": "flex-start",
-          "label": "Horizontal alignment"
+          "type": "checkbox",
+          "id": "show_overlay",
+          "default": false,
+          "label": "Show overlay"
         },
         {
-          "type": "select",
-          "id": "text_align",
-          "options": [
-            {
-              "value": "left",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "left",
-          "label": "Text alignment"
+          "type": "range",
+          "id": "overlay_opacity",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "Overlay opacity",
+          "default": 50
         },
         {
           "type": "select",
