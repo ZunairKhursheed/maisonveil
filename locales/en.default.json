@@ -265,6 +265,55 @@
     }
   },
   "sections": {
+    "all": {
+      "colors": {
+        "color_scheme_heading": "Color scheme",
+        "color_scheme": {
+          "label": "Color scheme"
+        },
+        "accent_1": {
+          "label": "Accent 1"
+        },
+        "accent_2": {
+          "label": "Accent 2"
+        },
+        "background_1": {
+          "label": "Background 1"
+        },
+        "background_2": {
+          "label": "Background 2"
+        },
+        "inverse": {
+          "label": "Inverse"
+        }
+      },
+      "padding": {
+        "section_padding_heading": "Section padding",
+        "padding_top": "Padding top",
+        "padding_bottom": "Padding bottom"
+      },
+      "heading_size": {
+        "label": "Heading size",
+        "options__1": {
+          "label": "Small"
+        },
+        "options__2": {
+          "label": "Medium"
+        },
+        "options__3": {
+          "label": "Large"
+        }
+      },
+      "text_style": {
+        "label": "Text style",
+        "options__1": {
+          "label": "Body"
+        },
+        "options__2": {
+          "label": "Subtitle"
+        }
+      }
+    },
     "announcements": {
       "previous_announcement": "Previous announcement",
       "next_announcement": "Next announcement",
@@ -375,6 +424,10 @@
     },
     "two_column_grid": {
       "name": "Two column grid",
+      "settings": {
+        "layout": "Layout",
+        "full_width": "Full width"
+      },
       "blocks": {
         "column": {
           "name": "Column",

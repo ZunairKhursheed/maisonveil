@@ -12,11 +12,23 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {%- if section.settings.full_width -%}
+    .section-{{ section.id }}-padding .two-column-grid__container {
+      max-width: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
-  <div class="page-width">
+    {%- if section.settings.full_width -%}
     <div class="two-column-grid{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+  {%- else -%}
+    <div class="page-width">
+      <div class="two-column-grid{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+  {%- endif -%}
       <div class="two-column-grid__container grid grid--1-col grid--2-col-tablet">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -66,6 +78,9 @@
         {%- endfor -%}
       </div>
     </div>
+  {%- if section.settings.full_width == false -%}
+    </div>
+  {%- endif -%}
   </div>
 </div>
 
@@ -78,6 +93,16 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.two-column-grid.settings.layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "t:sections.two-column-grid.settings.full_width"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
