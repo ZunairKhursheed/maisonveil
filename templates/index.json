@@ -96,7 +96,7 @@
           "settings": {
             "background_image": "shopify://shop_images/ChatGPTImageJul22_2025at05_57_24PM.png",
             "height": "large",
-            "justify_content": "flex-start",
+            "justify_content": "center",
             "align_items": "center",
             "text_align": "left",
             "content_position": "top-left",
@@ -137,8 +137,7 @@
       "settings": {
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 40,
-        "section_color_scheme": "background-1"
+        "padding_bottom": 40
       }
     }
   },
