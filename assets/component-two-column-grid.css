@@ -115,10 +115,17 @@
 /* Ensure proper grid layout */
 .two-column-grid__container.grid--2-col-tablet {
   grid-template-columns: 1fr;
+  gap: 0;
 }
 
 @media screen and (min-width: 750px) {
   .two-column-grid__container.grid--2-col-tablet {
     grid-template-columns: 1fr 1fr;
+    gap: 0;
   }
+}
+
+/* Override any conflicting width styles */
+.two-column-grid__item {
+  width: auto !important;
 }
