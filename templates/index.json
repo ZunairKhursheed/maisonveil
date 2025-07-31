@@ -94,18 +94,31 @@
         "column_HCRNRR": {
           "type": "column",
           "settings": {
+            "background_image": "shopify://shop_images/ChatGPTImageJul22_2025at05_57_24PM.png",
+            "height": "large",
+            "justify_content": "flex-start",
+            "align_items": "center",
+            "text_align": "left",
+            "content_position": "top-left",
+            "color_scheme": "scheme-5",
             "heading": "Column heading",
             "heading_size": "h1",
             "text": "<p>Add your text content here</p>",
             "text_style": "body",
             "button_label": "Learn more",
-            "button_link": "",
+            "button_link": "shopify://collections",
             "button_style_secondary": false
           }
         },
         "column_bmBzqe": {
           "type": "column",
           "settings": {
+            "height": "adapt",
+            "justify_content": "flex-start",
+            "align_items": "flex-start",
+            "text_align": "left",
+            "content_position": "center-center",
+            "color_scheme": "",
             "heading": "Column heading",
             "heading_size": "h1",
             "text": "<p>Add your text content here</p>",
