@@ -25,6 +25,7 @@
   .section-{{ section.id }}-padding .two-column-grid__item {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   /* Column height styles */
@@ -84,52 +85,6 @@
   .section-{{ section.id }}-padding .two-column-grid__text-content > * + * {
     margin-top: 1rem;
   }
-
-  /* Content position classes */
-  .section-{{ section.id }}-padding .two-column-grid__content--top-left .two-column-grid__text-content {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__content--top-center .two-column-grid__text-content {
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__content--top-right .two-column-grid__text-content {
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__content--center-left .two-column-grid__text-content {
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__content--center-center .two-column-grid__text-content {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__content--center-right .two-column-grid__text-content {
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__content--bottom-left .two-column-grid__text-content {
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__content--bottom-center .two-column-grid__text-content {
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__content--bottom-right .two-column-grid__text-content {
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
@@ -144,7 +99,7 @@
           {%- case block.type -%}
             {%- when 'column' -%}
               <div class="two-column-grid__item grid__item color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
-                <div class="two-column-grid__content two-column-grid__content--{{ block.settings.height }} two-column-grid__content--{{ block.settings.content_position }}">
+                <div class="two-column-grid__content two-column-grid__content--{{ block.settings.height }}" style="justify-content: {{ block.settings.justify_content }}; align-items: {{ block.settings.align_items }};">
                   {%- if block.settings.background_image != blank -%}
                     <div class="two-column-grid__background">
                       {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
@@ -368,50 +323,6 @@
           ],
           "default": "left",
           "label": "Text alignment"
-        },
-        {
-          "type": "select",
-          "id": "content_position",
-          "options": [
-            {
-              "value": "top-left",
-              "label": "Top left"
-            },
-            {
-              "value": "top-center",
-              "label": "Top center"
-            },
-            {
-              "value": "top-right",
-              "label": "Top right"
-            },
-            {
-              "value": "center-left",
-              "label": "Center left"
-            },
-            {
-              "value": "center-center",
-              "label": "Center"
-            },
-            {
-              "value": "center-right",
-              "label": "Center right"
-            },
-            {
-              "value": "bottom-left",
-              "label": "Bottom left"
-            },
-            {
-              "value": "bottom-center",
-              "label": "Bottom center"
-            },
-            {
-              "value": "bottom-right",
-              "label": "Bottom right"
-            }
-          ],
-          "default": "center-center",
-          "label": "Content position"
         },
         {
           "type": "header",
