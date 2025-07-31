@@ -170,7 +170,9 @@
                       | image_tag: sizes: sizes, widths: widths, class: 'two-column-grid__image'
                     }}
                     {%- if block.settings.show_overlay -%}
-                      <div class="two-column-grid__overlay" style="opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};"></div>
+                      <div class="two-column-grid__overlay" style="opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};">
+                      &nbsp;
+                      </div>
                     {%- endif -%}
                   </div>
                 {%- endif -%}
