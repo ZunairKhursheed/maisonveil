@@ -20,6 +20,29 @@
       padding-right: 0;
     }
   {%- endif -%}
+
+  /* Column height styles */
+  .section-{{ section.id }}-padding .two-column-grid__content--small {
+    min-height: 200px;
+  }
+
+  .section-{{ section.id }}-padding .two-column-grid__content--medium {
+    min-height: 300px;
+  }
+
+  .section-{{ section.id }}-padding .two-column-grid__content--large {
+    min-height: 400px;
+  }
+
+  .section-{{ section.id }}-padding .two-column-grid__content--adapt {
+    min-height: auto;
+  }
+
+  /* Make content flex for alignment */
+  .section-{{ section.id }}-padding .two-column-grid__content {
+    display: flex;
+    flex-direction: column;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
@@ -33,8 +56,8 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'column' -%}
-              <div class="two-column-grid__item grid__item" {{ block.shopify_attributes }}>
-                <div class="two-column-grid__content">
+              <div class="two-column-grid__item grid__item color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
+                <div class="two-column-grid__content two-column-grid__content--{{ block.settings.height }}" style="justify-content: {{ block.settings.justify_content }}; align-items: {{ block.settings.align_items }};">
                   {%- if block.settings.background_image != blank -%}
                     <div class="two-column-grid__background">
                       {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
@@ -50,7 +73,7 @@
                     </div>
                   {%- endif -%}
                   
-                  <div class="two-column-grid__text-content">
+                  <div class="two-column-grid__text-content" style="text-align: {{ block.settings.text_align }};">
                     {%- if block.settings.heading != blank -%}
                       <h2 class="two-column-grid__heading {{ block.settings.heading_size }}">
                         {{ block.settings.heading | escape }}
@@ -170,6 +193,126 @@
           "type": "image_picker",
           "id": "background_image",
           "label": "Background image"
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "height",
+          "options": [
+            {
+              "value": "adapt",
+              "label": "Adapt to content"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "adapt",
+          "label": "Height"
+        },
+        {
+          "type": "select",
+          "id": "justify_content",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "flex-start",
+          "label": "Vertical alignment"
+        },
+        {
+          "type": "select",
+          "id": "align_items",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "flex-start",
+          "label": "Horizontal alignment"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left",
+          "label": "Text alignment"
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "accent-1",
+              "label": "Accent 1"
+            },
+            {
+              "value": "accent-2",
+              "label": "Accent 2"
+            },
+            {
+              "value": "background-1",
+              "label": "Background 1"
+            },
+            {
+              "value": "background-2",
+              "label": "Background 2"
+            },
+            {
+              "value": "inverse",
+              "label": "Inverse"
+            }
+          ],
+          "default": "background-1",
+          "label": "Color scheme"
         },
         {
           "type": "text",
