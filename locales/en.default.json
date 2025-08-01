@@ -116,6 +116,7 @@
   "products": {
     "product": {
       "add_to_cart": "Add to cart",
+      "shop_now": "Shop now",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
@@ -382,6 +383,101 @@
     "featured_collection": {
       "view_all": "View all",
       "view_all_label": "View all products in the {{ collection_name }} collection"
+    },
+    "featured-collection": {
+      "name": "Featured collection"
+    },
+    "featured_collection_with_image": {
+      "name": "Featured collection with image",
+      "settings": {
+        "sub_heading": {
+          "label": "Sub-heading",
+          "default": "Featured Products"
+        },
+        "title": {
+          "label": "Heading",
+          "default": "Featured collection with image"
+        },
+        "description": {
+          "label": "Description"
+        },
+        "show_description": {
+          "label": "Show collection description from the admin"
+        },
+        "description_style": {
+          "label": "Description style",
+          "options__1": {
+            "label": "Body"
+          },
+          "options__2": {
+            "label": "Subtitle"
+          },
+          "options__3": {
+            "label": "Uppercase"
+          }
+        },
+        "featured_product": {
+          "label": "Featured product"
+        },
+        "collection": {
+          "label": "Collection"
+        },
+        "full_width": {
+          "label": "Make section full width"
+        },
+        "show_view_all": {
+          "label": "Enable \"View all\" if collection has more products than shown"
+        },
+        "button_text": {
+          "label": "Button text",
+          "default": "View all"
+        },
+        "button_link": {
+          "label": "Button link",
+          "info": "Leave empty to use collection URL"
+        },
+        "view_all_style": {
+          "label": "\"View all\" style",
+          "options__1": {
+            "label": "Link"
+          },
+          "options__2": {
+            "label": "Outline button"
+          },
+          "options__3": {
+            "label": "Solid button"
+          }
+        },
+        "header": {
+          "content": "Product card"
+        },
+        "image_ratio": {
+          "label": "Image ratio",
+          "options__1": {
+            "label": "Adapt to image"
+          },
+          "options__2": {
+            "label": "Portrait"
+          },
+          "options__3": {
+            "label": "Square"
+          }
+        },
+        "show_secondary_image": {
+          "label": "Show second image on hover"
+        },
+        "show_vendor": {
+          "label": "Show vendor"
+        },
+        "show_rating": {
+          "label": "Show product rating",
+          "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
+        }
+      },
+      "presets": {
+        "name": "Featured collection with image"
+      },
+      "select_product": "Select a product to display"
     },
     "featured-collection": {
       "name": "Featured collection",
