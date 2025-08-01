@@ -104,13 +104,6 @@
     justify-content: var(--justify-content, center);
     align-items: var(--align-items, center);
   }
-
-  /* Content group styling */
-  .section-{{ section.id }}-padding .two-column-grid__content-group {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
@@ -148,32 +141,16 @@
                 {%- endif -%}
                 
                 <div class="two-column-grid__text-content" style="text-align: {{ block.settings.text_align }};">
-                  {%- if block.settings.group_content and (block.settings.heading != blank or block.settings.text != blank) -%}
-                    <div class="two-column-grid__content-group">
-                      {%- if block.settings.heading != blank -%}
-                        <h2 class="two-column-grid__heading {{ block.settings.heading_size }}">
-                          {{ block.settings.heading | escape }}
-                        </h2>
-                      {%- endif -%}
-                      
-                      {%- if block.settings.text != blank -%}
-                        <div class="two-column-grid__text rte {{ block.settings.text_style }}">
-                          {{ block.settings.text }}
-                        </div>
-                      {%- endif -%}
+                  {%- if block.settings.heading != blank -%}
+                    <h2 class="two-column-grid__heading {{ block.settings.heading_size }}">
+                      {{ block.settings.heading | escape }}
+                    </h2>
+                  {%- endif -%}
+                  
+                  {%- if block.settings.text != blank -%}
+                    <div class="two-column-grid__text rte {{ block.settings.text_style }}">
+                      {{ block.settings.text }}
                     </div>
-                  {%- else -%}
-                    {%- if block.settings.heading != blank -%}
-                      <h2 class="two-column-grid__heading {{ block.settings.heading_size }}">
-                        {{ block.settings.heading | escape }}
-                      </h2>
-                    {%- endif -%}
-                    
-                    {%- if block.settings.text != blank -%}
-                      <div class="two-column-grid__text rte {{ block.settings.text_style }}">
-                        {{ block.settings.text }}
-                      </div>
-                    {%- endif -%}
                   {%- endif -%}
                   
                   {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
@@ -380,12 +357,6 @@
           "label": "Text alignment"
         },
         {
-          "type": "checkbox",
-          "id": "group_content",
-          "default": false,
-          "label": "Group heading and description"
-        },
-        {
           "type": "header",
           "content": "Background"
         },
@@ -413,10 +384,6 @@
           "type": "color_scheme",
           "id": "color_scheme",
           "label": "Color scheme"
-        },
-        {
-          "type": "header",
-          "content": "Content"
         },
         {
           "type": "text",
