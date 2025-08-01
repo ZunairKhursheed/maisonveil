@@ -104,13 +104,6 @@
     justify-content: var(--justify-content, center);
     align-items: var(--align-items, center);
   }
-
-  /* Content group styling */
-  .section-{{ section.id }}-padding .two-column-grid__content-group {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
@@ -382,12 +375,6 @@
           "label": "Text alignment"
         },
         {
-          "type": "checkbox",
-          "id": "group_content",
-          "default": false,
-          "label": "Group heading and description"
-        },
-        {
           "type": "header",
           "content": "Background"
         },
@@ -415,10 +402,6 @@
           "type": "color_scheme",
           "id": "color_scheme",
           "label": "Color scheme"
-        },
-        {
-          "type": "header",
-          "content": "Content"
         },
         {
           "type": "text",
