@@ -104,6 +104,13 @@
     justify-content: var(--justify-content, center);
     align-items: var(--align-items, center);
   }
+
+  /* Content group styling */
+  .section-{{ section.id }}-padding .two-column-grid__content-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
@@ -373,6 +380,12 @@
           ],
           "default": "center",
           "label": "Text alignment"
+        },
+        {
+          "type": "checkbox",
+          "id": "group_content",
+          "default": false,
+          "label": "Group heading and description"
         },
         {
           "type": "header",
