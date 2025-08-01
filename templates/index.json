@@ -96,9 +96,13 @@
           "settings": {
             "background_image": "shopify://shop_images/ChatGPTImageJul22_2025at05_57_24PM.png",
             "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center",
+            "text_align": "center",
+            "group_content": false,
             "show_overlay": true,
             "overlay_opacity": 50,
-            "content_position": "top-center",
             "color_scheme": "scheme-5",
             "heading": "Column heading",
             "heading_size": "h1",
@@ -114,9 +118,13 @@
           "settings": {
             "background_image": "shopify://shop_images/maison-veil-background-3.webp",
             "height": "adapt",
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center",
+            "text_align": "center",
+            "group_content": false,
             "show_overlay": true,
             "overlay_opacity": 50,
-            "content_position": "center-center",
             "color_scheme": "",
             "heading": "Column heading",
             "heading_size": "h1",
@@ -136,14 +144,42 @@
       "settings": {
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 40,
-        "section_color_scheme": "background-1"
+        "padding_bottom": 40
+      }
+    },
+    "featured_collection_with_image_XRxmEX": {
+      "type": "featured-collection-with-image",
+      "name": "t:sections.featured_collection_with_image.presets.name",
+      "settings": {
+        "sub_heading": "missing translation: \"t:sections.featured_collection_with_image.settings.sub_heading.default\"",
+        "title": "missing translation: \"t:sections.featured_collection_with_image.settings.title.default\"",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "featured_product": "",
+        "collection": "",
+        "full_width": false,
+        "show_view_all": true,
+        "button_text": "missing translation: \"t:sections.featured_collection_with_image.settings.button_text.default\"",
+        "button_link": "",
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "two_column_grid_7QT3ED"
+    "two_column_grid_7QT3ED",
+    "featured_collection_with_image_XRxmEX"
   ]
 }
