@@ -67,7 +67,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -95,7 +95,7 @@
           "type": "column",
           "settings": {
             "background_image": "shopify://shop_images/ChatGPTImageJul22_2025at05_57_24PM.png",
-            "height": "large",
+            "height": "screen",
             "show_overlay": true,
             "overlay_opacity": 50,
             "content_position": "top-center",
@@ -112,8 +112,9 @@
         "column_bmBzqe": {
           "type": "column",
           "settings": {
+            "background_image": "shopify://shop_images/maison-veil-background-3.webp",
             "height": "adapt",
-            "show_overlay": false,
+            "show_overlay": true,
             "overlay_opacity": 50,
             "content_position": "center-center",
             "color_scheme": "",
