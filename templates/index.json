@@ -71,7 +71,7 @@
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
-        "button_text": "View all",
+        "button_text": "",
         "button_link": "shopify://collections/all",
         "view_all_style": "solid",
         "enable_desktop_slider": false,
@@ -136,7 +136,8 @@
       "settings": {
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 40
+        "padding_bottom": 40,
+        "section_color_scheme": "background-1"
       }
     }
   },
