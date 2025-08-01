@@ -148,20 +148,22 @@
                 {%- endif -%}
                 
                 <div class="two-column-grid__text-content" style="text-align: {{ block.settings.text_align }};">
-                  {%- if block.settings.group_content and (block.settings.heading != blank or block.settings.text != blank) -%}
-                    <div class="two-column-grid__content-group">
-                      {%- if block.settings.heading != blank -%}
-                        <h2 class="two-column-grid__heading {{ block.settings.heading_size }}">
-                          {{ block.settings.heading | escape }}
-                        </h2>
-                      {%- endif -%}
-                      
-                      {%- if block.settings.text != blank -%}
-                        <div class="two-column-grid__text rte {{ block.settings.text_style }}">
-                          {{ block.settings.text }}
-                        </div>
-                      {%- endif -%}
-                    </div>
+                  {%- if block.settings.group_content == 'true' -%}
+                    {%- if block.settings.heading != blank or block.settings.text != blank -%}
+                      <div class="two-column-grid__content-group">
+                        {%- if block.settings.heading != blank -%}
+                          <h2 class="two-column-grid__heading {{ block.settings.heading_size }}">
+                            {{ block.settings.heading | escape }}
+                          </h2>
+                        {%- endif -%}
+                        
+                        {%- if block.settings.text != blank -%}
+                          <div class="two-column-grid__text rte {{ block.settings.text_style }}">
+                            {{ block.settings.text }}
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
                   {%- else -%}
                     {%- if block.settings.heading != blank -%}
                       <h2 class="two-column-grid__heading {{ block.settings.heading_size }}">
@@ -384,15 +386,15 @@
           "id": "group_content",
           "options": [
             {
-              "value": false,
-              "label": "false"
+              "value": "false",
+              "label": "No grouping"
             },
             {
-              "value": true,
-              "label": "true"
+              "value": "true",
+              "label": "Group content"
             }
           ],
-          "default": false,
+          "default": "false",
           "label": "Content Grouping"
         },
         {
