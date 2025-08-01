@@ -1,13 +1,30 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
+  "sections.all.colors.label": "Colors",
+  "sections.all.colors.has_cards_info": "Colors will apply to cards in this section",
+  "sections.all.heading_size.label": "Heading size",
+  "sections.all.heading_size.options__1.label": "Small",
+  "sections.all.heading_size.options__2.label": "Medium",
+  "sections.all.heading_size.options__3.label": "Large",
+  "sections.all.heading_size.options__4.label": "Extra large",
+  "sections.all.heading_size.options__5.label": "Extra extra large",
+  "sections.all.image_shape.label": "Image shape",
+  "sections.all.image_shape.info": "Adds a subtle shape to product images",
+  "sections.all.image_shape.options__1.label": "Default",
+  "sections.all.image_shape.options__2.label": "Arch",
+  "sections.all.image_shape.options__3.label": "Blob",
+  "sections.all.image_shape.options__4.label": "Chevron left",
+  "sections.all.image_shape.options__5.label": "Chevron right",
+  "sections.all.image_shape.options__6.label": "Diamond",
+  "sections.all.image_shape.options__7.label": "Parallelogram",
+  "sections.all.image_shape.options__8.label": "Round",
+  "sections.all.padding.section_padding_heading": "Section padding",
+  "sections.all.padding.padding_top": "Padding top",
+  "sections.all.padding.padding_bottom": "Padding bottom",
+  "sections.main-collection-product-grid.settings.quick_add.label": "Quick add",
+  "sections.main-collection-product-grid.settings.quick_add.info": "Add products to cart without leaving the page",
+  "sections.main-collection-product-grid.settings.quick_add.options.option_1": "None",
+  "sections.main-collection-product-grid.settings.quick_add.options.option_2": "Standard",
+  "sections.main-collection-product-grid.settings.quick_add.options.option_3": "Bulk",
   "general": {
     "password_page": {
       "login_form_heading": "Enter store using password:",
