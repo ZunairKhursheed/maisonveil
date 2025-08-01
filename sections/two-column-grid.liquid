@@ -98,50 +98,11 @@
     margin-top: 1rem;
   }
 
-  /* Content position classes */
-  .section-{{ section.id }}-padding .two-column-grid__item--top-left .two-column-grid__text-content {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__item--top-center .two-column-grid__text-content {
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__item--top-right .two-column-grid__text-content {
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__item--center-left .two-column-grid__text-content {
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__item--center-center .two-column-grid__text-content {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__item--center-right .two-column-grid__text-content {
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__item--bottom-left .two-column-grid__text-content {
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__item--bottom-center .two-column-grid__text-content {
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .section-{{ section.id }}-padding .two-column-grid__item--bottom-right .two-column-grid__text-content {
-    justify-content: flex-end;
-    align-items: flex-end;
+  /* Dynamic flexbox positioning */
+  .section-{{ section.id }}-padding .two-column-grid__text-content {
+    flex-direction: var(--flex-direction, column);
+    justify-content: var(--justify-content, center);
+    align-items: var(--align-items, center);
   }
 {%- endstyle -%}
 
@@ -156,7 +117,9 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'column' -%}
-              <div class="two-column-grid__item grid__item color-{{ block.settings.color_scheme }} two-column-grid__item--{{ block.settings.height }} two-column-grid__item--{{ block.settings.content_position }}" {{ block.shopify_attributes }}>
+              <div class="two-column-grid__item grid__item color-{{ block.settings.color_scheme }} two-column-grid__item--{{ block.settings.height }}" 
+                   style="--flex-direction: {{ block.settings.flex_direction }}; --justify-content: {{ block.settings.justify_content }}; --align-items: {{ block.settings.align_items }};" 
+                   {{ block.shopify_attributes }}>
                 {%- if block.settings.background_image != blank -%}
                   <div class="two-column-grid__background">
                     {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
@@ -252,38 +215,6 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 36
-    },
-    {
-      "type": "header",
-      "content": "Color scheme"
-    },
-    {
-      "type": "select",
-      "id": "section_color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "Accent 1"
-        },
-        {
-          "value": "accent-2",
-          "label": "Accent 2"
-        },
-        {
-          "value": "background-1",
-          "label": "Background 1"
-        },
-        {
-          "value": "background-2",
-          "label": "Background 2"
-        },
-        {
-          "value": "inverse",
-          "label": "Inverse"
-        }
-      ],
-      "default": "background-1",
-      "label": "Color scheme"
     }
   ],
   "blocks": [
@@ -330,6 +261,102 @@
           "label": "Height"
         },
         {
+          "type": "select",
+          "id": "flex_direction",
+          "options": [
+            {
+              "value": "column",
+              "label": "Vertical"
+            },
+            {
+              "value": "row",
+              "label": "Horizontal"
+            }
+          ],
+          "default": "column",
+          "label": "Content direction"
+        },
+        {
+          "type": "select",
+          "id": "justify_content",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Start"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "End"
+            },
+            {
+              "value": "space-between",
+              "label": "Space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Space around"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            }
+          ],
+          "default": "center",
+          "label": "Main axis alignment"
+        },
+        {
+          "type": "select",
+          "id": "align_items",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            },
+            {
+              "value": "stretch",
+              "label": "Stretch"
+            },
+            {
+              "value": "baseline",
+              "label": "Baseline"
+            }
+          ],
+          "default": "center",
+          "label": "Horizontal position"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center",
+          "label": "Text alignment"
+        },
+        {
           "type": "header",
           "content": "Background"
         },
@@ -348,50 +375,6 @@
           "unit": "%",
           "label": "Overlay opacity",
           "default": 50
-        },
-        {
-          "type": "select",
-          "id": "content_position",
-          "options": [
-            {
-              "value": "top-left",
-              "label": "Top left"
-            },
-            {
-              "value": "top-center",
-              "label": "Top center"
-            },
-            {
-              "value": "top-right",
-              "label": "Top right"
-            },
-            {
-              "value": "center-left",
-              "label": "Center left"
-            },
-            {
-              "value": "center-center",
-              "label": "Center"
-            },
-            {
-              "value": "center-right",
-              "label": "Center right"
-            },
-            {
-              "value": "bottom-left",
-              "label": "Bottom left"
-            },
-            {
-              "value": "bottom-center",
-              "label": "Bottom center"
-            },
-            {
-              "value": "bottom-right",
-              "label": "Bottom right"
-            }
-          ],
-          "default": "center-center",
-          "label": "Content position"
         },
         {
           "type": "header",
