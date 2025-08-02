@@ -18,6 +18,10 @@
   }
 }
 
+.footer__content-top.page-width:first-child {
+  grid-column: span 2;
+}
+
 /* Add margin to main content to account for fixed footer */
 main,
 .main-content,
@@ -75,6 +79,10 @@ main,
     display: grid;
     gap: 3rem;
     margin-bottom: 0;
+  }
+
+  .footer-block.grid__item:first-child {
+    grid-column: span 1;
   }
 }
 
