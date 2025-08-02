@@ -159,7 +159,7 @@
         "description_style": "subtitle",
         "featured_product": "gift-card-50",
         "collection": "frontpage",
-        "full_width": true,
+        "full_width": false,
         "show_view_all": false,
         "button_text": "Shop",
         "button_link": "shopify://collections/all",
