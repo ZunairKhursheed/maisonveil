@@ -40,6 +40,13 @@
   }
 }
 
+/* 5-column grid support */
+@media screen and (min-width: 990px) {
+  .grid--5-col-desktop {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
   padding-top: 3rem;
