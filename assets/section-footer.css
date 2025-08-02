@@ -72,8 +72,28 @@ main,
 
 @media screen and (min-width: 750px) {
   .footer__content-top .grid {
-    row-gap: 6rem;
+    display: grid;
+    gap: 3rem;
     margin-bottom: 0;
+  }
+}
+
+/* Grid template columns for different screen sizes */
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .footer__content-top .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1199px) {
+  .footer__content-top .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__content-top .grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
