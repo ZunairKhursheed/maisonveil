@@ -177,12 +177,62 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_banner_dwwdgt": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_cJTFBc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Craft your signature",
+            "heading_size": "h1"
+          }
+        },
+        "text_xGdEKC": {
+          "type": "text",
+          "settings": {
+            "text": "Sit at one of our perfume bar and watch as your custom scent comes to life—drop by drop, note by note. A personal, unforgettable experience you won’t find anywhere else.",
+            "text_style": "body"
+          }
+        },
+        "buttons_AdCNrB": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn more",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cJTFBc",
+        "text_xGdEKC",
+        "buttons_AdCNrB"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/6-1.webp",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "two_column_grid_7QT3ED",
-    "featured_collection_with_image_XRxmEX"
+    "featured_collection_with_image_XRxmEX",
+    "image_banner_dwwdgt"
   ]
 }
