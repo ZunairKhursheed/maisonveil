@@ -1,7 +1,7 @@
 class FixedFooter {
   constructor() {
     this.footer = document.querySelector(".footer");
-    this.body = document.body;
+    this.mainContent = this.findMainContent();
     this.resizeObserver = null;
     this.init();
   }
@@ -9,23 +9,34 @@ class FixedFooter {
   init() {
     if (!this.footer) return;
 
-    this.updateBodyMargin();
+    this.updateMainContentMargin();
     this.setupResizeObserver();
     this.setupWindowResize();
   }
 
-  updateBodyMargin() {
-    if (!this.footer || !this.body) return;
+  findMainContent() {
+    // Try different selectors for main content
+    return (
+      document.querySelector("main") ||
+      document.querySelector(".main-content") ||
+      document.querySelector("#MainContent") ||
+      document.querySelector(".page-width") ||
+      document.body
+    ); // fallback
+  }
+
+  updateMainContentMargin() {
+    if (!this.footer || !this.mainContent) return;
 
     const footerHeight = this.footer.offsetHeight;
-    this.body.style.marginBottom = `${footerHeight}px`;
+    this.mainContent.style.marginBottom = `${footerHeight}px`;
   }
 
   setupResizeObserver() {
     if (!window.ResizeObserver) return;
 
     this.resizeObserver = new ResizeObserver(() => {
-      this.updateBodyMargin();
+      this.updateMainContentMargin();
     });
 
     this.resizeObserver.observe(this.footer);
@@ -33,7 +44,7 @@ class FixedFooter {
 
   setupWindowResize() {
     window.addEventListener("resize", () => {
-      this.updateBodyMargin();
+      this.updateMainContentMargin();
     });
   }
 
@@ -41,7 +52,7 @@ class FixedFooter {
     if (this.resizeObserver) {
       this.resizeObserver.disconnect();
     }
-    window.removeEventListener("resize", this.updateBodyMargin);
+    window.removeEventListener("resize", this.updateMainContentMargin);
   }
 }
 

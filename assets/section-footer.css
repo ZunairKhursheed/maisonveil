@@ -13,8 +13,13 @@
   border-top: none;
 }
 
-/* Add margin to body to account for fixed footer */
-body {
+/* Add margin to main content to account for fixed footer */
+main,
+.main-content,
+#MainContent,
+.page-width {
+  position: relative;
+  z-index: 1;
   margin-bottom: 0;
   padding-bottom: 0;
   transition: margin-bottom 0.3s ease;
