@@ -189,7 +189,16 @@
         <div class="featured-collection-with-image__main-product">
           {%- if section.settings.featured_product != blank -%}
             {%- assign featured_product = section.settings.featured_product -%}
-            {%- if featured_product.featured_media != blank -%}
+            {%- if section.settings.featured_product_image != blank -%}
+              <img
+                src="{{ section.settings.featured_product_image | image_url: width: 800 }}"
+                alt="{{ section.settings.featured_product_image.alt | escape }}"
+                class="featured-collection-with-image__main-product-image"
+                loading="lazy"
+                width="{{ section.settings.featured_product_image.width }}"
+                height="{{ section.settings.featured_product_image.height }}"
+              >
+            {%- elsif featured_product.featured_media != blank -%}
               <img
                 src="{{ featured_product.featured_media | image_url: width: 800 }}"
                 alt="{{ featured_product.featured_media.alt | escape }}"
@@ -391,6 +400,12 @@
       "type": "product",
       "id": "featured_product",
       "label": "Featured product"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_product_image",
+      "label": "Custom featured product image",
+      "info": "Leave empty to use the product's default image"
     },
     {
       "type": "checkbox",
