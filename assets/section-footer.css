@@ -18,7 +18,7 @@
   }
 }
 
-.footer__content-top.page-width:first-child {
+.footer__blocks-wrapper.scroll-trigger.animate--slide-in:first-child {
   grid-column: span 2;
 }
 
@@ -62,7 +62,7 @@ main,
     width: 100%;
   }
 
-  .footer-block.grid__item:first-child {
+  .footer__blocks-wrapper.scroll-trigger.animate--slide-in:first-child {
     grid-column: span 2;
     margin-bottom: 2rem;
   }
@@ -81,7 +81,7 @@ main,
     margin-bottom: 0;
   }
 
-  .footer-block.grid__item:first-child {
+  .footer__blocks-wrapper.scroll-trigger.animate--slide-in:first-child {
     grid-column: span 1;
   }
 }
