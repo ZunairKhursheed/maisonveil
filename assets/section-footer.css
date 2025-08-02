@@ -1,9 +1,23 @@
 .footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--color-background);
+  width: 100%;
 }
 
 .footer:not(.color-scheme-1) {
   border-top: none;
+}
+
+/* Add margin to body to account for fixed footer */
+body {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  transition: margin-bottom 0.3s ease;
 }
 
 .footer__content-top {
