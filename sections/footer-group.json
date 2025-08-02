@@ -37,14 +37,14 @@
           "type": "shop_section",
           "settings": {
             "heading": "shop.",
-            "menu": "main-menu"
+            "menu": "footer-shop"
           }
         },
         "explore_section_V7PziD": {
           "type": "explore_section",
           "settings": {
             "heading": "explore.",
-            "menu": "main-menu"
+            "menu": "explore"
           }
         },
         "follow_section_bHf3X6": {
