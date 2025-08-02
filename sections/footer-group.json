@@ -13,12 +13,57 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "newsletter_signup_7gp6ee": {
+          "type": "newsletter_signup",
+          "settings": {
+            "heading": "good emails.",
+            "description": "<p>Sign up to receive updates from maison veil, promotions, and early access to new products.</p>",
+            "placeholder": "your email address",
+            "button_text": "sign up"
+          }
+        },
+        "help_section_eHi4P8": {
+          "type": "help_section",
+          "settings": {
+            "heading": "help.",
+            "availability_text": "We're available by email and chat Monday-Friday, 10am-5pm EST.",
+            "track_order_link": "",
+            "faq_link": "",
+            "email_link": ""
+          }
+        },
+        "shop_section_ADjgbq": {
+          "type": "shop_section",
+          "settings": {
+            "heading": "shop.",
+            "menu": ""
+          }
+        },
+        "explore_section_V7PziD": {
+          "type": "explore_section",
+          "settings": {
+            "heading": "explore.",
+            "menu": ""
+          }
+        },
+        "follow_section_bHf3X6": {
+          "type": "follow_section",
+          "settings": {
+            "heading": "follow.",
+            "show_social_icons": true
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_signup_7gp6ee",
+        "help_section_eHi4P8",
+        "shop_section_ADjgbq",
+        "explore_section_V7PziD",
+        "follow_section_bHf3X6"
+      ],
       "settings": {
         "color_scheme": "scheme-899854cd-346f-4b19-aff9-8b2691ee80ae",
-        "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": false,
-        "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
