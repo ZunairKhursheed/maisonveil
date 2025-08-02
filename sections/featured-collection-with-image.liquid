@@ -62,6 +62,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 0.8rem;
+    box-shadow: none;
   }
 
   .featured-collection-with-image__main-product-image {
@@ -100,10 +101,12 @@
     border-radius: 0.4rem;
     font-weight: 600;
     transition: all 0.3s ease;
+    border: 2px solid #ffffff;
   }
 
   .featured-collection-with-image__main-product-button:hover {
-    background-color: #f5f5f5;
+    background-color: transparent;
+    color: #ffffff;
     transform: translateY(-2px);
   }
 
@@ -193,15 +196,19 @@
               >
             {%- endif -%}
             <div class="featured-collection-with-image__main-product-content">
-              <h3 class="featured-collection-with-image__main-product-title">
-                {{ featured_product.title }}
-              </h3>
-              <div class="featured-collection-with-image__main-product-price">
-                {% render 'price', product: featured_product %}
-              </div>
+              {%- unless section.settings.hide_featured_title -%}
+                <h3 class="featured-collection-with-image__main-product-title">
+                  {{ featured_product.title }}
+                </h3>
+              {%- endunless -%}
+              {%- unless section.settings.hide_featured_price -%}
+                <div class="featured-collection-with-image__main-product-price">
+                  {% render 'price', product: featured_product %}
+                </div>
+              {%- endunless -%}
               <a
                 href="{{ featured_product.url }}"
-                class="featured-collection-with-image__main-product-button"
+                class="button featured-collection-with-image__main-product-button"
                 aria-label="{{ 'products.product.view_product_details' | t: product_name: featured_product.title | escape }}"
               >
                 {{ 'products.product.shop_now' | t }}
@@ -380,6 +387,18 @@
       "type": "product",
       "id": "featured_product",
       "label": "Featured product"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_featured_title",
+      "label": "Hide featured product title",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_featured_price",
+      "label": "Hide featured product price",
+      "default": false
     },
     {
       "type": "collection",
