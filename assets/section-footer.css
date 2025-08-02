@@ -47,17 +47,20 @@ main,
 
 @media screen and (max-width: 749px) {
   .footer .grid {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 
   .footer-block.grid__item {
     padding: 0;
-    margin: 4rem 0;
+    margin: 0;
     width: 100%;
   }
 
   .footer-block.grid__item:first-child {
-    margin-top: 0;
+    grid-column: span 2;
+    margin-bottom: 2rem;
   }
 
   .footer__content-top {
