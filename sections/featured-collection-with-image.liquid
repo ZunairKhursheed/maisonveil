@@ -298,7 +298,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.featured_collection_with_image.name",
+  "name": "Featured collection with image",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -308,14 +308,14 @@
     {
       "type": "text",
       "id": "sub_heading",
-      "label": "t:sections.featured_collection_with_image.settings.sub_heading.label",
-      "default": "t:sections.featured_collection_with_image.settings.sub_heading.default"
+      "label": "Sub-heading",
+      "default": "Featured Products"
     },
     {
       "type": "inline_richtext",
       "id": "title",
-      "default": "t:sections.featured_collection_with_image.settings.title.default",
-      "label": "t:sections.featured_collection_with_image.settings.title.label"
+      "default": "Featured collection with image",
+      "label": "Heading"
     },
     {
       "type": "select",
@@ -323,55 +323,55 @@
       "options": [
         {
           "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
+          "label": "Small"
         },
         {
           "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
+          "label": "Medium"
         },
         {
           "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
+          "label": "Large"
         },
         {
           "value": "hxl",
-          "label": "t:sections.all.heading_size.options__4.label"
+          "label": "Extra large"
         },
         {
           "value": "hxxl",
-          "label": "t:sections.all.heading_size.options__5.label"
+          "label": "Extra extra large"
         }
       ],
       "default": "h1",
-      "label": "t:sections.all.heading_size.label"
+      "label": "Heading size"
     },
     {
       "type": "richtext",
       "id": "description",
-      "label": "t:sections.featured_collection_with_image.settings.description.label"
+      "label": "Description"
     },
     {
       "type": "checkbox",
       "id": "show_description",
-      "label": "t:sections.featured_collection_with_image.settings.show_description.label",
+      "label": "Show collection description from the admin",
       "default": false
     },
     {
       "type": "select",
       "id": "description_style",
-      "label": "t:sections.featured_collection_with_image.settings.description_style.label",
+      "label": "Description style",
       "options": [
         {
           "value": "body",
-          "label": "t:sections.featured_collection_with_image.settings.description_style.options__1.label"
+          "label": "Body"
         },
         {
           "value": "subtitle",
-          "label": "t:sections.featured_collection_with_image.settings.description_style.options__2.label"
+          "label": "Subtitle"
         },
         {
           "value": "uppercase",
-          "label": "t:sections.featured_collection_with_image.settings.description_style.options__3.label"
+          "label": "Uppercase"
         }
       ],
       "default": "body"
@@ -379,53 +379,53 @@
     {
       "type": "product",
       "id": "featured_product",
-      "label": "t:sections.featured_collection_with_image.settings.featured_product.label"
+      "label": "Featured product"
     },
     {
       "type": "collection",
       "id": "collection",
-      "label": "t:sections.featured_collection_with_image.settings.collection.label"
+      "label": "Collection"
     },
     {
       "type": "checkbox",
       "id": "full_width",
-      "label": "t:sections.featured_collection_with_image.settings.full_width.label",
+      "label": "Make section full width",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "show_view_all",
       "default": true,
-      "label": "t:sections.featured_collection_with_image.settings.show_view_all.label"
+      "label": "Enable 'View all' if collection has more products than shown"
     },
     {
       "type": "text",
       "id": "button_text",
-      "label": "t:sections.featured_collection_with_image.settings.button_text.label",
-      "default": "t:sections.featured_collection_with_image.settings.button_text.default"
+      "label": "Button text",
+      "default": "View all"
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "t:sections.featured_collection_with_image.settings.button_link.label",
-      "info": "t:sections.featured_collection_with_image.settings.button_link.info"
+      "label": "Button link",
+      "info": "Leave empty to use collection URL"
     },
     {
       "type": "select",
       "id": "view_all_style",
-      "label": "t:sections.featured_collection_with_image.settings.view_all_style.label",
+      "label": "'View all' style",
       "options": [
         {
           "value": "link",
-          "label": "t:sections.featured_collection_with_image.settings.view_all_style.options__1.label"
+          "label": "Link"
         },
         {
           "value": "outline",
-          "label": "t:sections.featured_collection_with_image.settings.view_all_style.options__2.label"
+          "label": "Outline button"
         },
         {
           "value": "solid",
-          "label": "t:sections.featured_collection_with_image.settings.view_all_style.options__3.label"
+          "label": "Solid button"
         }
       ],
       "default": "solid"
@@ -433,13 +433,13 @@
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.all.colors.has_cards_info",
+      "label": "Colors",
+      "info": "Colors will apply to cards in this section",
       "default": "scheme-1"
     },
     {
       "type": "header",
-      "content": "t:sections.featured_collection_with_image.settings.header.content"
+      "content": "Product card"
     },
     {
       "type": "select",
@@ -447,19 +447,19 @@
       "options": [
         {
           "value": "adapt",
-          "label": "t:sections.featured_collection_with_image.settings.image_ratio.options__1.label"
+          "label": "Adapt to image"
         },
         {
           "value": "portrait",
-          "label": "t:sections.featured_collection_with_image.settings.image_ratio.options__2.label"
+          "label": "Portrait"
         },
         {
           "value": "square",
-          "label": "t:sections.featured_collection_with_image.settings.image_ratio.options__3.label"
+          "label": "Square"
         }
       ],
       "default": "adapt",
-      "label": "t:sections.featured_collection_with_image.settings.image_ratio.label"
+      "label": "Image ratio"
     },
     {
       "type": "select",
@@ -467,84 +467,84 @@
       "options": [
         {
           "value": "default",
-          "label": "t:sections.all.image_shape.options__1.label"
+          "label": "Default"
         },
         {
           "value": "arch",
-          "label": "t:sections.all.image_shape.options__2.label"
+          "label": "Arch"
         },
         {
           "value": "blob",
-          "label": "t:sections.all.image_shape.options__3.label"
+          "label": "Blob"
         },
         {
           "value": "chevronleft",
-          "label": "t:sections.all.image_shape.options__4.label"
+          "label": "Chevron left"
         },
         {
           "value": "chevronright",
-          "label": "t:sections.all.image_shape.options__5.label"
+          "label": "Chevron right"
         },
         {
           "value": "diamond",
-          "label": "t:sections.all.image_shape.options__6.label"
+          "label": "Diamond"
         },
         {
           "value": "parallelogram",
-          "label": "t:sections.all.image_shape.options__7.label"
+          "label": "Parallelogram"
         },
         {
           "value": "round",
-          "label": "t:sections.all.image_shape.options__8.label"
+          "label": "Round"
         }
       ],
       "default": "default",
-      "label": "t:sections.all.image_shape.label",
-      "info": "t:sections.all.image_shape.info"
+      "label": "Image shape",
+      "info": "Adds a subtle shape to product images"
     },
     {
       "type": "checkbox",
       "id": "show_secondary_image",
       "default": false,
-      "label": "t:sections.featured_collection_with_image.settings.show_secondary_image.label"
+      "label": "Show second image on hover"
     },
     {
       "type": "checkbox",
       "id": "show_vendor",
       "default": false,
-      "label": "t:sections.featured_collection_with_image.settings.show_vendor.label"
+      "label": "Show vendor"
     },
     {
       "type": "checkbox",
       "id": "show_rating",
       "default": false,
-      "label": "t:sections.featured_collection_with_image.settings.show_rating.label",
-      "info": "t:sections.featured_collection_with_image.settings.show_rating.info"
+      "label": "Show product rating",
+      "info": "To display a rating, add a product rating app."
     },
     {
       "type": "select",
       "id": "quick_add",
       "default": "none",
-      "label": "t:sections.main-collection-product-grid.settings.quick_add.label",
-      "info": "t:sections.main-collection-product-grid.settings.quick_add.info",
+      "label": "Quick add",
+      "info": "Add products to cart without leaving the page",
       "options": [
         {
           "value": "none",
-          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_1"
+          "label": "None"
         },
         {
           "value": "standard",
-          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_2"
+          "label": "Standard"
         },
         {
           "value": "bulk",
-          "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
+          "label": "Bulk"
         }
       ]
     },
     {
       "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
+      "content": "Section padding"
     },
     {
       "type": "range",
@@ -553,7 +553,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
+      "label": "Padding top",
       "default": 36
     },
     {
@@ -563,13 +563,13 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
+      "label": "Padding bottom",
       "default": 36
     }
   ],
   "presets": [
     {
-      "name": "t:sections.featured_collection_with_image.presets.name"
+      "name": "Featured collection with image"
     }
   ]
 }
