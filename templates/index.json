@@ -158,6 +158,7 @@
         "show_description": false,
         "description_style": "subtitle",
         "featured_product": "gift-card-50",
+        "featured_product_image": "shopify://shop_images/8.webp",
         "hide_featured_title": true,
         "hide_featured_price": true,
         "collection": "frontpage",
