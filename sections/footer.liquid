@@ -328,15 +328,13 @@
       data-cascade
     {% endif %}
   >
-    <div class="footer__content-bottom-wrapper page-width">
-      <div class="footer__brand">
+    <div class="footer__content-bottom-wrapper page-width" style="justify-content:space-between; align-items:center;">
+     
         <h2 class="footer__brand-name">{{ shop.name }}</h2>
-      </div>
-      <div class="footer__copyright caption">
+      
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}. {{ shop.name }} Site Credits</small
         >
-      </div>
     </div>
   </div>
 </footer>

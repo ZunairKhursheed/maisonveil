@@ -585,7 +585,7 @@ main,
 }
 
 .footer__newsletter-signup .field__input {
-  border: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   border-radius: 0;
   padding: 1rem;
   background: transparent;
@@ -621,7 +621,6 @@ main,
 
 .footer__newsletter-signup .newsletter-form__button {
   background: transparent;
-  border: 1px solid currentColor;
   border-radius: 0;
   padding: 1rem 1.5rem;
   font-size: 1.4rem;
