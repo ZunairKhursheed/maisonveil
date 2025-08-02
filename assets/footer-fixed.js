@@ -3,7 +3,7 @@ class FixedFooter {
     this.footer = document.querySelector(".footer");
     this.mainContent = this.findMainContent();
     this.resizeObserver = null;
-    this.isDesktop = window.innerWidth >= 750;
+    this.isDesktop = window.innerWidth >= 990;
     this.init();
   }
 
@@ -29,12 +29,12 @@ class FixedFooter {
   updateMainContentMargin() {
     if (!this.footer || !this.mainContent) return;
 
-    // Only apply margin on desktop (750px and above)
-    if (window.innerWidth >= 750) {
+    // Only apply margin on desktop (990px and above)
+    if (window.innerWidth >= 990) {
       const footerHeight = this.footer.offsetHeight;
       this.mainContent.style.marginBottom = `${footerHeight}px`;
     } else {
-      // Remove margin on mobile
+      // Remove margin on mobile and tablet
       this.mainContent.style.marginBottom = "0";
     }
   }
@@ -52,7 +52,7 @@ class FixedFooter {
   setupWindowResize() {
     window.addEventListener("resize", () => {
       const wasDesktop = this.isDesktop;
-      this.isDesktop = window.innerWidth >= 750;
+      this.isDesktop = window.innerWidth >= 990;
 
       // Only update if desktop state changed
       if (wasDesktop !== this.isDesktop) {
