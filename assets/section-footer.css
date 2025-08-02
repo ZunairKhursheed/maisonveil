@@ -18,10 +18,6 @@
   }
 }
 
-.footer__blocks-wrapper.scroll-trigger.animate--slide-in:first-child {
-  grid-column: span 2;
-}
-
 /* Add margin to main content to account for fixed footer */
 main,
 .main-content,
@@ -49,6 +45,21 @@ main,
   display: block;
 }
 
+@media screen and (min-width: 750px) {
+  .footer__content-top.page-width {
+    display: grid;
+    gap: 3rem;
+    margin-bottom: 0;
+  }
+
+  .footer__blocks-wrapper.scroll-trigger.animate--slide-in:first-child {
+    grid-column: span 1;
+  }
+}
+
+.footer__blocks-wrapper.scroll-trigger.animate--slide-in:first-child {
+  grid-column: span 2;
+}
 @media screen and (max-width: 749px) {
   .footer__content-top.page-width {
     display: grid;
@@ -71,18 +82,6 @@ main,
     padding-bottom: 3rem;
     padding-left: calc(4rem / var(--font-body-scale));
     padding-right: calc(4rem / var(--font-body-scale));
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .footer__content-top.page-width {
-    display: grid;
-    gap: 3rem;
-    margin-bottom: 0;
-  }
-
-  .footer__blocks-wrapper.scroll-trigger.animate--slide-in:first-child {
-    grid-column: span 1;
   }
 }
 
