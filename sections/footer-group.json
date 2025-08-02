@@ -27,24 +27,24 @@
           "type": "help_section",
           "settings": {
             "heading": "help.",
-            "availability_text": "We're available by email and chat Monday-Friday, 10am-5pm EST.",
-            "track_order_link": "",
-            "faq_link": "",
-            "email_link": ""
+            "availability_text": "We’re available by email and chat Monday–Friday, 10am–5pm EST.",
+            "track_order_link": "shopify://pages/contact",
+            "faq_link": "shopify://pages/contact",
+            "email_link": "shopify://pages/contact"
           }
         },
         "shop_section_ADjgbq": {
           "type": "shop_section",
           "settings": {
             "heading": "shop.",
-            "menu": ""
+            "menu": "main-menu"
           }
         },
         "explore_section_V7PziD": {
           "type": "explore_section",
           "settings": {
             "heading": "explore.",
-            "menu": ""
+            "menu": "main-menu"
           }
         },
         "follow_section_bHf3X6": {
