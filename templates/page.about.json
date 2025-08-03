@@ -133,7 +133,7 @@
             "group_content": true,
             "show_overlay": false,
             "overlay_opacity": 0,
-            "color_scheme": "scheme-5",
+            "color_scheme": "scheme-2",
             "heading": "Curated Fragrance Collections.",
             "heading_size": "h1",
             "text": "<p>Explore our carefully crafted line of original perfumes, made with premium oils and inspired by iconic scents. Whether you’re in search of a new signature or a beloved classic reimagined, our collection invites you to indulge in quality and elegance—without the designer price tag.</p>",
@@ -154,12 +154,71 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "two_column_grid_WVATDU": {
+      "type": "two-column-grid",
+      "blocks": {
+        "column_E4YYfD": {
+          "type": "column",
+          "settings": {
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "space-between",
+            "align_items": "flex-start",
+            "text_align": "left",
+            "group_content": true,
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "heading": "Unforgettable Events.",
+            "heading_size": "h1",
+            "text": "<p>Elevate your next event with a touch of luxury. Our interactive perfume bar experiences bring the art of fragrance creation to your guests, letting them craft their own scents at weddings, birthdays, showers, and more. From custom packages to digital gift cards, Maison Veil transforms celebrations into unforgettable sensory experiences.</p>",
+            "text_style": "body",
+            "button_label": "Invite Maison Veil to your event",
+            "button_link": "shopify://pages/book-a-consultation",
+            "button_style_secondary": false
+          }
+        },
+        "column_rNNyTB": {
+          "type": "column",
+          "settings": {
+            "background_image": "shopify://shop_images/2.webp",
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center",
+            "text_align": "center",
+            "group_content": false,
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "color_scheme": "",
+            "heading": "",
+            "heading_size": "h1",
+            "text": "",
+            "text_style": "body",
+            "button_label": "Learn more",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_E4YYfD",
+        "column_rNNyTB"
+      ],
+      "name": "Two column grid",
+      "settings": {
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "image_banner_dirYRg",
     "rich_text_jeTiJ6",
-    "two_column_grid_c94PnJ"
+    "two_column_grid_c94PnJ",
+    "two_column_grid_WVATDU"
   ]
 }
