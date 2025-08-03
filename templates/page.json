@@ -1,1 +1,84 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":28}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "two_column_grid_CUfwTR": {
+      "type": "two-column-grid",
+      "blocks": {
+        "column_7deNrM": {
+          "type": "column",
+          "settings": {
+            "background_image": "shopify://shop_images/10_971761db-bbaf-4cfe-9860-9a05efdb617a.webp",
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center",
+            "text_align": "center",
+            "group_content": false,
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "color_scheme": "",
+            "heading": "",
+            "heading_size": "h1",
+            "text": "",
+            "text_style": "body",
+            "button_label": "Learn more",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_FKUzPM": {
+          "type": "column",
+          "settings": {
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "space-between",
+            "align_items": "flex-start",
+            "text_align": "left",
+            "group_content": true,
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "heading": "Event Services.",
+            "heading_size": "h1",
+            "text": "<p>Maison Veil Perfume Bar is the perfect addition to any special event. Whether you’re planning a wedding, bridal shower, corporate event, or team building activity, our luxurious perfume bar setup service will leave a lasting impression on your guests. We offer a <a href=\"https://maisonveil.com/shop/\" title=\"https://yomlayl.com/#\"><span style=\"text-decoration:underline\">wide selection of high-quality perfumes and colognes</span></a> that are sure to delight the senses. Our team takes great care in customizing the perfume bar to fit the theme and style of your event, making it truly unique and memorable. From the moment your guests arrive, they will be transported to a world of scents and luxury. Don’t settle for ordinary, make your event extraordinary with Maison Veil Perfume Bar. <a href=\"https://maisonveil.com/contact/\" title=\"https://yomlayl.com/pages/contact-yom-and-layl\"><span style=\"text-decoration:underline\">Book us today</span></a> and let the magic begin!</p>",
+            "text_style": "body",
+            "button_label": "Invite Maison Veil to your event",
+            "button_link": "shopify://pages/book-a-consultation",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_7deNrM",
+        "column_FKUzPM"
+      ],
+      "name": "Two column grid",
+      "settings": {
+        "full_width": true,
+        "reverse_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "two_column_grid_CUfwTR"
+  ]
+}
