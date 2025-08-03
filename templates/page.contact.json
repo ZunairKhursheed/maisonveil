@@ -1,1 +1,78 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":36,"padding_bottom":36}},"form":{"type":"contact-form","settings":{"heading":"","heading_size":"h1","color_scheme":"scheme-1","padding_top":36,"padding_bottom":36}}},"order":["main","form"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_J6ch67": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_WAQFmU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact.",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WAQFmU"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/8.webp",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_PP8Ypz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_NJANph": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"mailto:orders@maisonveil.com\">orders@maisonveil.com</a></p><p>For questions about your order.</p><p><a href=\"mailto:partnerships@maisonveil.com\">partnerships@maisonveil.com</a></p><p>For brands interested in partnerships.</p><p><a href=\"mailto:info@maisonveil.com\">info@maisonveil.com</a></p><p>For events and general inquiries.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_NJANph"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_J6ch67",
+    "rich_text_PP8Ypz"
+  ]
+}
