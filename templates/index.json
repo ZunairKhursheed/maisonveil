@@ -71,7 +71,7 @@
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
-        "button_text": "",
+        "button_text": "Shop all fragrances",
         "button_link": "shopify://collections/all",
         "view_all_style": "solid",
         "enable_desktop_slider": false,
