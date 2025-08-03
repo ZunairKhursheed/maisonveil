@@ -60,8 +60,8 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "sub_heading": "SUB HEADING",
-        "title": "Featured products",
+        "sub_heading": "browse",
+        "title": "Signature Scents",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
