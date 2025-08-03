@@ -210,7 +210,7 @@
               {%- if section.settings.featured_button_text != blank and section.settings.featured_button_link != blank -%}
                 <a
                   href="{{ section.settings.featured_button_link }}"
-                  class="featured-collection-with-image__main-product-button"
+                  class="button"
                   aria-label="{{ section.settings.featured_button_text | escape }}"
                 >
                   {{ section.settings.featured_button_text }}
@@ -294,9 +294,9 @@
         <a
           href="{% if section.settings.button_link != blank %}{{ section.settings.button_link }}{% else %}{{ section.settings.collection.url }}{% endif %}"
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button button--inverted{% else %}button button--secondary button--inverted{% endif %}"
-          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
+          aria-label="{{ 'sections.featured_collection_with_image.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
         >
-          {{ section.settings.button_text | default: 'sections.featured_collection.view_all' | t }}
+          {{ section.settings.button_text | default: 'sections.featured_collection_with_image.view_all' | t }}
         </a>
       </div>
     {%- endif -%}
