@@ -65,10 +65,101 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "rich_text_jeTiJ6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_t8p9r7": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Maison Veil Experience.",
+            "heading_size": "h1"
+          }
+        },
+        "text_8fcwf4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Creating your own signature scent at Maison Veil is more than just customization—it’s an immersive experience. Picture this: your fragrance coming to life right before your eyes, like ordering a handcrafted drink at your favorite bar—except this time, it’s a scent that’s perfectly tailored to your essence. With every drop carefully blended in front of you, you’re not just choosing a perfume—you’re creating a moment.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_t8p9r7",
+        "text_8fcwf4"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-899854cd-346f-4b19-aff9-8b2691ee80ae",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "two_column_grid_c94PnJ": {
+      "type": "two-column-grid",
+      "blocks": {
+        "column_PEixyy": {
+          "type": "column",
+          "settings": {
+            "background_image": "shopify://shop_images/1.webp",
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center",
+            "text_align": "center",
+            "group_content": false,
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "color_scheme": "",
+            "heading": "",
+            "heading_size": "h1",
+            "text": "",
+            "text_style": "body",
+            "button_label": "Learn more",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_HzjPBX": {
+          "type": "column",
+          "settings": {
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "space-between",
+            "align_items": "center",
+            "text_align": "center",
+            "group_content": true,
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "heading": "Curated Fragrance Collections.",
+            "heading_size": "h1",
+            "text": "<p>Explore our carefully crafted line of original perfumes, made with premium oils and inspired by iconic scents. Whether you’re in search of a new signature or a beloved classic reimagined, our collection invites you to indulge in quality and elegance—without the designer price tag.</p>",
+            "text_style": "body",
+            "button_label": "Learn more",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_PEixyy",
+        "column_HzjPBX"
+      ],
+      "name": "Two column grid",
+      "settings": {
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_dirYRg"
+    "image_banner_dirYRg",
+    "rich_text_jeTiJ6",
+    "two_column_grid_c94PnJ"
   ]
 }
