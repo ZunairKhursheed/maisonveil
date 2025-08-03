@@ -531,8 +531,6 @@
       "presets": {
         "name": "Featured collection with image"
       },
-      "view_all": "View all",
-      "view_all_label": "View all products in the {{ collection_name }} collection",
       "select_product": "Select a product to display"
     },
     "featured-collection": {
