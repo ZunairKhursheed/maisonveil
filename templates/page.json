@@ -17,6 +17,30 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_FgRcV6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iC3VFM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Corporate Gifting",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iC3VFM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-899854cd-346f-4b19-aff9-8b2691ee80ae",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "two_column_grid_CUfwTR": {
       "type": "two-column-grid",
       "blocks": {
@@ -79,6 +103,7 @@
   },
   "order": [
     "main",
+    "rich_text_FgRcV6",
     "two_column_grid_CUfwTR"
   ]
 }
