@@ -643,7 +643,9 @@
       },
       "presets": {
         "name": "Featured collection"
-      }
+      },
+      "view_all": "View all",
+      "view_all_label": "View all products in the {{ collection_name }} collection"
     },
     "main-collection-product-grid": {
       "name": "Collection product grid",

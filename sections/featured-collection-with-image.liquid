@@ -86,9 +86,10 @@
     margin: 0 0 1rem 0;
   }
 
-  .featured-collection-with-image__main-product-price {
-    font-size: 1.8rem;
+  .featured-collection-with-image__main-product-subtitle {
+    font-size: 1.6rem;
     margin: 0 0 1.5rem 0;
+    opacity: 0.9;
   }
 
   .featured-collection-with-image__main-product-button {
@@ -184,52 +185,42 @@
 
     <div class="page-width{% if section.settings.full_width %} page-width-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div class="featured-collection-with-image__layout">
-        <!-- Main Product Section -->
+        <!-- Main Image Section -->
         <div class="featured-collection-with-image__main-product">
-          {%- if section.settings.featured_product != blank -%}
-            {%- assign featured_product = section.settings.featured_product -%}
-            {%- if section.settings.featured_product_image != blank -%}
-              <img
-                src="{{ section.settings.featured_product_image | image_url: width: 800 }}"
-                alt="{{ section.settings.featured_product_image.alt | escape }}"
-                class="featured-collection-with-image__main-product-image"
-                loading="lazy"
-                width="{{ section.settings.featured_product_image.width }}"
-                height="{{ section.settings.featured_product_image.height }}"
-              >
-            {%- elsif featured_product.featured_media != blank -%}
-              <img
-                src="{{ featured_product.featured_media | image_url: width: 800 }}"
-                alt="{{ featured_product.featured_media.alt | escape }}"
-                class="featured-collection-with-image__main-product-image"
-                loading="lazy"
-                width="{{ featured_product.featured_media.width }}"
-                height="{{ featured_product.featured_media.height }}"
-              >
-            {%- endif -%}
+          {%- if section.settings.featured_image != blank -%}
+            <img
+              src="{{ section.settings.featured_image | image_url: width: 800 }}"
+              alt="{{ section.settings.featured_image.alt | escape }}"
+              class="featured-collection-with-image__main-product-image"
+              loading="lazy"
+              width="{{ section.settings.featured_image.width }}"
+              height="{{ section.settings.featured_image.height }}"
+            >
             <div class="featured-collection-with-image__main-product-content">
-              {%- unless section.settings.hide_featured_title -%}
+              {%- if section.settings.featured_title != blank -%}
                 <h3 class="featured-collection-with-image__main-product-title">
-                  {{ featured_product.title }}
+                  {{ section.settings.featured_title }}
                 </h3>
-              {%- endunless -%}
-              {%- unless section.settings.hide_featured_price -%}
-                <div class="featured-collection-with-image__main-product-price">
-                  {% render 'price', product: featured_product %}
-                </div>
-              {%- endunless -%}
-              <a
-                href="{{ featured_product.url }}"
-                class="button"
-                aria-label="{{ 'products.product.view_product_details' | t: product_name: featured_product.title | escape }}"
-              >
-                {{ 'products.product.shop_now' | t }}
-              </a>
+              {%- endif -%}
+              {%- if section.settings.featured_subtitle != blank -%}
+                <p class="featured-collection-with-image__main-product-subtitle">
+                  {{ section.settings.featured_subtitle }}
+                </p>
+              {%- endif -%}
+              {%- if section.settings.featured_button_text != blank and section.settings.featured_button_link != blank -%}
+                <a
+                  href="{{ section.settings.featured_button_link }}"
+                  class="featured-collection-with-image__main-product-button"
+                  aria-label="{{ section.settings.featured_button_text | escape }}"
+                >
+                  {{ section.settings.featured_button_text }}
+                </a>
+              {%- endif -%}
             </div>
           {%- else -%}
             <div class="featured-collection-with-image__main-product-placeholder">
               <div style="background-color: #f5f5f5; height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 0.8rem;">
-                <p>{{ 'sections.featured_collection_with_image.select_product' | t }}</p>
+                <p>Select an image to display</p>
               </div>
             </div>
           {%- endif -%}
@@ -396,27 +387,29 @@
       "default": "body"
     },
     {
-      "type": "product",
-      "id": "featured_product",
-      "label": "Featured product"
-    },
-    {
       "type": "image_picker",
-      "id": "featured_product_image",
-      "label": "Custom featured product image",
-      "info": "Leave empty to use the product's default image"
+      "id": "featured_image",
+      "label": "Featured image"
     },
     {
-      "type": "checkbox",
-      "id": "hide_featured_title",
-      "label": "Hide featured product title",
-      "default": false
+      "type": "text",
+      "id": "featured_title",
+      "label": "Featured title"
     },
     {
-      "type": "checkbox",
-      "id": "hide_featured_price",
-      "label": "Hide featured product price",
-      "default": false
+      "type": "text",
+      "id": "featured_subtitle",
+      "label": "Featured subtitle"
+    },
+    {
+      "type": "text",
+      "id": "featured_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "featured_button_link",
+      "label": "Button link"
     },
     {
       "type": "collection",
