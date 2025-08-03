@@ -11,13 +11,44 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_banner_kftGUW": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_mWx7xH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Events.",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mWx7xH"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/maisonveil-background.webp",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_banner_kftGUW"
   ]
 }
