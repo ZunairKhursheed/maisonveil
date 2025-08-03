@@ -216,7 +216,7 @@
     "featured_collection_3TmCcP": {
       "type": "featured-collection",
       "settings": {
-        "sub_heading": "shop all fragrances",
+        "sub_heading": "explore",
         "title": "The Collection",
         "heading_size": "h2",
         "description": "",
@@ -243,6 +243,37 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "rich_text_7TCbxz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_M363V7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Let's Create Something Beautiful",
+            "heading_size": "h1"
+          }
+        },
+        "text_wnAyNU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you’re discovering your new favorite scent or curating a luxurious experience for your guests, Maison Veil is here to make it unforgettable. Visit us in person or book a private event—we can’t wait to scent your world.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_M363V7",
+        "text_wnAyNU"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-899854cd-346f-4b19-aff9-8b2691ee80ae",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -251,6 +282,7 @@
     "rich_text_jeTiJ6",
     "two_column_grid_c94PnJ",
     "two_column_grid_WVATDU",
-    "featured_collection_3TmCcP"
+    "featured_collection_3TmCcP",
+    "rich_text_7TCbxz"
   ]
 }
