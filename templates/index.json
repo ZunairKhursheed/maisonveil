@@ -151,8 +151,8 @@
       "type": "featured-collection-with-image",
       "name": "t:sections.featured_collection_with_image.presets.name",
       "settings": {
-        "sub_heading": "Test",
-        "title": "Heading",
+        "sub_heading": "shop all",
+        "title": "The Collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
