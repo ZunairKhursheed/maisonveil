@@ -41,9 +41,89 @@
         "padding_bottom": 100
       }
     },
+    "two_column_grid_CrxPYh": {
+      "type": "two-column-grid",
+      "blocks": {
+        "column_BpqxzC": {
+          "type": "column",
+          "settings": {
+            "background_image": "shopify://shop_images/9_906fa184-c8da-4e2d-8ca9-0bbd7d7c4913.webp",
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center",
+            "text_align": "center",
+            "group_content": false,
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "color_scheme": "",
+            "heading": "",
+            "heading_size": "h1",
+            "text": "",
+            "text_style": "body",
+            "button_label": "Learn more",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_VXwqjq": {
+          "type": "column",
+          "settings": {
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "space-between",
+            "align_items": "flex-start",
+            "text_align": "left",
+            "group_content": true,
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "heading": "Luxury. Thoughtfulness. Delivered.",
+            "heading_size": "h1",
+            "text": "<p>Make every gift unforgettable with Maison Veil’s signature fragrance gifting experience—where elegance meets intentionality.</p><p>Whether you’re celebrating milestones, showing appreciation, or nurturing client relationships, our custom fragrance gifts go beyond the ordinary. Each scent is crafted with care, beautifully packaged, and designed to leave a lasting impression.</p>",
+            "text_style": "body",
+            "button_label": "Work with Maison Veil",
+            "button_link": "shopify://pages/book-a-consultation",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_BpqxzC",
+        "column_VXwqjq"
+      ],
+      "name": "Two column grid",
+      "settings": {
+        "full_width": true,
+        "reverse_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "two_column_grid_CUfwTR": {
       "type": "two-column-grid",
       "blocks": {
+        "column_FKUzPM": {
+          "type": "column",
+          "settings": {
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "space-between",
+            "align_items": "flex-start",
+            "text_align": "left",
+            "group_content": true,
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "heading": "Custom-Branded Fragrance BottlesCurated Gift BoxesDigital Gift CardsBulk Gifting & Delivery Options",
+            "heading_size": "h1",
+            "text": "<p>Perfect for client appreciation, employee recognition, holiday gifting, product launches, and VIP mailers, Maison Veil ensures a seamless, luxurious gifting experience that reflects your brand and makes a statement.</p>",
+            "text_style": "body",
+            "button_label": "Work with Maison Veil",
+            "button_link": "shopify://pages/book-a-consultation",
+            "button_style_secondary": false
+          }
+        },
         "column_7deNrM": {
           "type": "column",
           "settings": {
@@ -65,32 +145,11 @@
             "button_link": "",
             "button_style_secondary": false
           }
-        },
-        "column_FKUzPM": {
-          "type": "column",
-          "settings": {
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": false,
-            "overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "heading": "Event Services.",
-            "heading_size": "h1",
-            "text": "<p>Maison Veil Perfume Bar is the perfect addition to any special event. Whether you’re planning a wedding, bridal shower, corporate event, or team building activity, our luxurious perfume bar setup service will leave a lasting impression on your guests. We offer a <a href=\"https://maisonveil.com/shop/\" title=\"https://yomlayl.com/#\"><span style=\"text-decoration:underline\">wide selection of high-quality perfumes and colognes</span></a> that are sure to delight the senses. Our team takes great care in customizing the perfume bar to fit the theme and style of your event, making it truly unique and memorable. From the moment your guests arrive, they will be transported to a world of scents and luxury. Don’t settle for ordinary, make your event extraordinary with Maison Veil Perfume Bar. <a href=\"https://maisonveil.com/contact/\" title=\"https://yomlayl.com/pages/contact-yom-and-layl\"><span style=\"text-decoration:underline\">Book us today</span></a> and let the magic begin!</p>",
-            "text_style": "body",
-            "button_label": "Invite Maison Veil to your event",
-            "button_link": "shopify://pages/book-a-consultation",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
-        "column_7deNrM",
-        "column_FKUzPM"
+        "column_FKUzPM",
+        "column_7deNrM"
       ],
       "name": "Two column grid",
       "settings": {
@@ -104,6 +163,7 @@
   "order": [
     "main",
     "rich_text_FgRcV6",
+    "two_column_grid_CrxPYh",
     "two_column_grid_CUfwTR"
   ]
 }
