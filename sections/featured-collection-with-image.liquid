@@ -53,8 +53,8 @@
   }
 
   .featured-collection-with-image__layout {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
 
@@ -127,15 +127,17 @@
     }
 
     .featured-collection-with-image__layout {
-      grid-template-columns: 1fr 1fr;
+      flex-direction: row;
       gap: 3rem;
     }
 
     .featured-collection-with-image__main-product {
+      flex: 1;
       min-height: 500px;
     }
 
     .featured-collection-with-image__products-grid {
+      flex: 1;
       grid-template-columns: 1fr 1fr;
     }
   }
