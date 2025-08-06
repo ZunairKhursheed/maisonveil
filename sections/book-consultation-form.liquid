@@ -24,7 +24,7 @@
 
       <div class="contact-form" style="background-color: #f8f9fa; padding: 3rem; border-radius: 0.8rem; margin-top: 2rem;">
         {% if section.settings.description != blank %}
-          <div class="contact-form__description">
+          <div class="contact-form__description" style="margin-bottom: 2rem; text-align: center;">
             {{ section.settings.description }}
           </div>
         {% endif %}
@@ -56,7 +56,7 @@
 
           <input type="hidden" name="contact[subject]" value="Consultation Request">
           
-          <div class="contact__fields">
+          <div class="contact__fields" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
             <div class="field">
               <input
                 class="field__input"
@@ -91,29 +91,31 @@
               </label>
             </div>
           </div>
-          <div class="field">
-            <input
-              type="tel"
-              id="BookConsultationForm-phone"
-              class="field__input"
-              autocomplete="tel"
-              name="contact[phone]"
-              pattern="[0-9\-]*"
-              value="{% if form.phone %}{{ form.phone }}{% endif %}"
-              placeholder="Enter your phone number"
-            >
-            <label class="field__label" for="BookConsultationForm-phone">Phone Number</label>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+            <div class="field">
+              <input
+                type="tel"
+                id="BookConsultationForm-phone"
+                class="field__input"
+                autocomplete="tel"
+                name="contact[phone]"
+                pattern="[0-9\-]*"
+                value="{% if form.phone %}{{ form.phone }}{% endif %}"
+                placeholder="Enter your phone number"
+              >
+              <label class="field__label" for="BookConsultationForm-phone">Phone Number</label>
+            </div>
+            <div class="field">
+              <select id="BookConsultationForm-service" class="field__input" name="contact[service]">
+                <option value="">Select a service</option>
+                {% for service in section.settings.services %}
+                  <option value="{{ service }}">{{ service }}</option>
+                {% endfor %}
+              </select>
+              <label class="field__label" for="BookConsultationForm-service">Service Type</label>
+            </div>
           </div>
-          <div class="field">
-            <select id="BookConsultationForm-service" class="field__input" name="contact[service]">
-              <option value="">Select a service</option>
-              {% for service in section.settings.services %}
-                <option value="{{ service }}">{{ service }}</option>
-              {% endfor %}
-            </select>
-            <label class="field__label" for="BookConsultationForm-service">Service Type</label>
-          </div>
-          <div class="field">
+          <div class="field" style="margin-bottom: 2rem;">
             <input
               type="date"
               id="BookConsultationForm-preferred-date"
@@ -124,7 +126,7 @@
             >
             <label class="field__label" for="BookConsultationForm-preferred-date">Preferred Date</label>
           </div>
-          <div class="field">
+          <div class="field" style="margin-bottom: 2rem;">
             <textarea
               rows="10"
               id="BookConsultationForm-message"
@@ -137,14 +139,14 @@
             </label>
           </div>
           {% if section.settings.show_privacy_notice %}
-            <div class="field">
+            <div class="field" style="margin-bottom: 2rem;">
               <label class="field__label">
                 <input type="checkbox" required>
                 {{ section.settings.privacy_notice_text | default: 'I agree to the Privacy Policy and consent to my data being used to contact me about this consultation.' }}
               </label>
             </div>
           {% endif %}
-          <div class="contact__button">
+          <div class="contact__button" style="text-align: center;">
             <button type="submit" class="button">
               {{ section.settings.button_text | default: 'Book Consultation' }}
             </button>
