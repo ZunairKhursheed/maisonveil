@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": {
+      "type": "book-consultation-form"
+    }
+  },
+  "order": ["main"]
+}
