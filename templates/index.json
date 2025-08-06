@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Where <em>Scent</em> Meets <em>Story.</em>",
+            "heading": "Where Scent Meets Story.",
             "heading_size": "h0"
           }
         },
@@ -143,6 +143,7 @@
       "name": "t:sections.two-column-grid.presets.name",
       "settings": {
         "full_width": true,
+        "reverse_mobile": false,
         "padding_top": 40,
         "padding_bottom": 40
       }
