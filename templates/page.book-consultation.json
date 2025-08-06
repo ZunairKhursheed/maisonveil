@@ -50,13 +50,8 @@
         "description": "<p>Fill out the form below and we'll get back to you within 24 hours to schedule your consultation.</p>",
         "services": "Personal Styling\nWardrobe Consultation\nColor Analysis\nShopping Service\nSpecial Event Styling",
         "button_text": "Book Consultation",
-        "show_privacy_notice": true,
-        "privacy_notice_text": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to my data being used to contact me about this consultation.</p>",
-        "background_color": "#f8f9fa",
-        "text_color": "#333333",
-        "form_background_color": "#ffffff",
-        "button_color": "#000000",
-        "button_text_color": "#ffffff"
+        "show_privacy_notice": false,
+        "privacy_notice_text": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to my data being used to contact me about this consultation.</p>"
       }
     }
   },
