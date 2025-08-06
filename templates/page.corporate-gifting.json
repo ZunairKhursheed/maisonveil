@@ -40,10 +40,130 @@
         "padding_top": 100,
         "padding_bottom": 100
       }
+    },
+    "two_column_grid_WiVQTw": {
+      "type": "two-column-grid",
+      "blocks": {
+        "column_wBrxpN": {
+          "type": "column",
+          "settings": {
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "space-between",
+            "align_items": "flex-start",
+            "text_align": "left",
+            "group_content": true,
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "heading": "Custom-Branded Fragrance BottlesCurated Gift BoxesDigital Gift CardsBulk Gifting & Delivery Options",
+            "heading_size": "h1",
+            "text": "<p>Perfect for client appreciation, employee recognition, holiday gifting, product launches, and VIP mailers, Maison Veil ensures a seamless, luxurious gifting experience that reflects your brand and makes a statement.</p>",
+            "text_style": "body",
+            "button_label": "Work with Maison Veil",
+            "button_link": "shopify://pages/book-a-consultation",
+            "button_style_secondary": false
+          }
+        },
+        "column_E4xHzW": {
+          "type": "column",
+          "settings": {
+            "background_image": "shopify://shop_images/10_971761db-bbaf-4cfe-9860-9a05efdb617a.webp",
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center",
+            "text_align": "center",
+            "group_content": false,
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "color_scheme": "",
+            "heading": "",
+            "heading_size": "h1",
+            "text": "",
+            "text_style": "body",
+            "button_label": "Learn more",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_wBrxpN",
+        "column_E4xHzW"
+      ],
+      "name": "Two column grid",
+      "settings": {
+        "full_width": true,
+        "reverse_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "two_column_grid_9tyXaK": {
+      "type": "two-column-grid",
+      "blocks": {
+        "column_nqzcNU": {
+          "type": "column",
+          "settings": {
+            "background_image": "shopify://shop_images/9_906fa184-c8da-4e2d-8ca9-0bbd7d7c4913.webp",
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "center",
+            "align_items": "center",
+            "text_align": "center",
+            "group_content": false,
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "color_scheme": "",
+            "heading": "",
+            "heading_size": "h1",
+            "text": "",
+            "text_style": "body",
+            "button_label": "Learn more",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_CjcUGx": {
+          "type": "column",
+          "settings": {
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "space-between",
+            "align_items": "flex-start",
+            "text_align": "left",
+            "group_content": true,
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "heading": "Luxury. Thoughtfulness. Delivered.",
+            "heading_size": "h1",
+            "text": "<p>Make every gift unforgettable with Maison Veil’s signature fragrance gifting experience—where elegance meets intentionality.</p><p>Whether you’re celebrating milestones, showing appreciation, or nurturing client relationships, our custom fragrance gifts go beyond the ordinary. Each scent is crafted with care, beautifully packaged, and designed to leave a lasting impression.</p>",
+            "text_style": "body",
+            "button_label": "Work with Maison Veil",
+            "button_link": "shopify://pages/book-a-consultation",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_nqzcNU",
+        "column_CjcUGx"
+      ],
+      "name": "Two column grid",
+      "settings": {
+        "full_width": true,
+        "reverse_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_qH46VB"
+    "rich_text_qH46VB",
+    "two_column_grid_WiVQTw",
+    "two_column_grid_9tyXaK"
   ]
 }
