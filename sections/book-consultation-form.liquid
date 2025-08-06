@@ -8,6 +8,7 @@
 <section 
   id="BookConsultationForm-{{ section.id }}" 
   class="section section-{{ section.id }}-padding"
+  style="background-color: #ffffff; padding: 5rem 0;"
 >
   <div class="page-width">
     <div class="section-{{ section.id }}-padding">
@@ -21,7 +22,7 @@
         </div>
       {% endif %}
 
-      <div class="contact-form">
+      <div class="contact-form" style="background-color: #f8f9fa; padding: 3rem; border-radius: 0.8rem; margin-top: 2rem;">
         {% if section.settings.description != blank %}
           <div class="contact-form__description">
             {{ section.settings.description }}
