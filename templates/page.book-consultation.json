@@ -23,7 +23,7 @@
         "heading_iC3VFM": {
           "type": "heading",
           "settings": {
-            "heading": "Corporate Gifting",
+            "heading": "Book a Consultation",
             "heading_size": "h1"
           }
         }
@@ -41,129 +41,28 @@
         "padding_bottom": 100
       }
     },
-    "two_column_grid_CrxPYh": {
-      "type": "two-column-grid",
-      "blocks": {
-        "column_BpqxzC": {
-          "type": "column",
-          "settings": {
-            "background_image": "shopify://shop_images/9_906fa184-c8da-4e2d-8ca9-0bbd7d7c4913.webp",
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "center",
-            "align_items": "center",
-            "text_align": "center",
-            "group_content": false,
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "color_scheme": "",
-            "heading": "",
-            "heading_size": "h1",
-            "text": "",
-            "text_style": "body",
-            "button_label": "Learn more",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        },
-        "column_VXwqjq": {
-          "type": "column",
-          "settings": {
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": false,
-            "overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "heading": "Luxury. Thoughtfulness. Delivered.",
-            "heading_size": "h1",
-            "text": "<p>Make every gift unforgettable with Maison Veil’s signature fragrance gifting experience—where elegance meets intentionality.</p><p>Whether you’re celebrating milestones, showing appreciation, or nurturing client relationships, our custom fragrance gifts go beyond the ordinary. Each scent is crafted with care, beautifully packaged, and designed to leave a lasting impression.</p>",
-            "text_style": "body",
-            "button_label": "Work with Maison Veil",
-            "button_link": "shopify://pages/book-a-consultation",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "column_BpqxzC",
-        "column_VXwqjq"
-      ],
-      "name": "Two column grid",
+    "book_consultation_form_exm7yB": {
+      "type": "book-consultation-form",
+      "name": "Book Consultation Form",
       "settings": {
-        "full_width": true,
-        "reverse_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "two_column_grid_CUfwTR": {
-      "type": "two-column-grid",
-      "blocks": {
-        "column_FKUzPM": {
-          "type": "column",
-          "settings": {
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": false,
-            "overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "heading": "Custom-Branded Fragrance BottlesCurated Gift BoxesDigital Gift CardsBulk Gifting & Delivery Options",
-            "heading_size": "h1",
-            "text": "<p>Perfect for client appreciation, employee recognition, holiday gifting, product launches, and VIP mailers, Maison Veil ensures a seamless, luxurious gifting experience that reflects your brand and makes a statement.</p>",
-            "text_style": "body",
-            "button_label": "Work with Maison Veil",
-            "button_link": "shopify://pages/book-a-consultation",
-            "button_style_secondary": false
-          }
-        },
-        "column_7deNrM": {
-          "type": "column",
-          "settings": {
-            "background_image": "shopify://shop_images/10_971761db-bbaf-4cfe-9860-9a05efdb617a.webp",
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "center",
-            "align_items": "center",
-            "text_align": "center",
-            "group_content": false,
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "color_scheme": "",
-            "heading": "",
-            "heading_size": "h1",
-            "text": "",
-            "text_style": "body",
-            "button_label": "Learn more",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "column_FKUzPM",
-        "column_7deNrM"
-      ],
-      "name": "Two column grid",
-      "settings": {
-        "full_width": true,
-        "reverse_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "heading": "",
+        "subheading": "",
+        "description": "<p>Fill out the form below and we'll get back to you within 24 hours to schedule your consultation.</p>",
+        "services": "Personal Styling\nWardrobe Consultation\nColor Analysis\nShopping Service\nSpecial Event Styling",
+        "button_text": "Book Consultation",
+        "show_privacy_notice": true,
+        "privacy_notice_text": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to my data being used to contact me about this consultation.</p>",
+        "background_color": "#f8f9fa",
+        "text_color": "#333333",
+        "form_background_color": "#ffffff",
+        "button_color": "#000000",
+        "button_text_color": "#ffffff"
       }
     }
   },
   "order": [
     "main",
     "rich_text_FgRcV6",
-    "two_column_grid_CrxPYh",
-    "two_column_grid_CUfwTR"
+    "book_consultation_form_exm7yB"
   ]
 }
