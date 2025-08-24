@@ -127,18 +127,6 @@
           
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
             <div class="field">
-              <select id="BookConsultationForm-event-type" class="field__input" name="contact[event_type]" required>
-                <option value="">Select event type</option>
-                <option value="Wedding" {% if form.event_type == 'Wedding' %}selected{% endif %}>Wedding</option>
-                <option value="Birthday" {% if form.event_type == 'Birthday' %}selected{% endif %}>Birthday</option>
-                <option value="Social Event" {% if form.event_type == 'Social Event' %}selected{% endif %}>Social Event</option>
-                <option value="Corporate Event" {% if form.event_type == 'Corporate Event' %}selected{% endif %}>Corporate Event</option>
-              </select>
-              <label class="field__label" for="BookConsultationForm-event-type">
-                Type of Event <span aria-hidden="true">*</span>
-              </label>
-            </div>
-            <div class="field">
               <input
                 type="text"
                 id="BookConsultationForm-event-location"
@@ -152,20 +140,21 @@
                 Location of Event <span aria-hidden="true">*</span>
               </label>
             </div>
-          </div>
-          
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
             <div class="field">
               <select id="BookConsultationForm-service-type" class="field__input" name="contact[service_type]" required>
                 <option value="">Select service type</option>
-                {% for service in section.settings.services %}
-                  <option value="{{ service }}" {% if form.service_type == service %}selected{% endif %}>{{ service }}</option>
-                {% endfor %}
+                <option value="Wedding" {% if form.service_type == 'Wedding' %}selected{% endif %}>Wedding</option>
+                <option value="Birthday" {% if form.service_type == 'Birthday' %}selected{% endif %}>Birthday</option>
+                <option value="Social Event" {% if form.service_type == 'Social Event' %}selected{% endif %}>Social Event</option>
+                <option value="Corporate Event" {% if form.service_type == 'Corporate Event' %}selected{% endif %}>Corporate Event</option>
               </select>
               <label class="field__label" for="BookConsultationForm-service-type">
                 Service Type <span aria-hidden="true">*</span>
               </label>
             </div>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
             <div class="field">
               <select id="BookConsultationForm-bottle-size" class="field__input" name="contact[bottle_size]" required>
                 <option value="">Select bottle size</option>
