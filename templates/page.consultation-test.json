@@ -11,7 +11,15 @@
   "sections": {
     "main": {
       "type": "book-consultation-form",
-      "settings": {}
+      "settings": {
+        "heading": "Book a Consultation",
+        "subheading": "Schedule your personalized consultation with our experts.",
+        "description": "<p>Fill out the form below and we'll get back to you within 24 hours to schedule your consultation.</p>",
+        "services": "Personal Styling\nWardrobe Consultation\nColor Analysis\nShopping Service\nSpecial Event Styling",
+        "button_text": "Book Consultation",
+        "show_privacy_notice": true,
+        "privacy_notice_text": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to my data being used to contact me about this consultation.</p>"
+      }
     }
   },
   "order": [
