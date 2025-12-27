@@ -92,6 +92,22 @@
             </div>
           </div>
           
+          <div class="field" style="margin-bottom: 2rem;">
+            <input
+              type="tel"
+              id="BookConsultationForm-phone"
+              class="field__input"
+              autocomplete="tel"
+              name="contact[phone]"
+              pattern="[0-9\-]*"
+              value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+              placeholder="Enter your phone number"
+            >
+            <label class="field__label" for="BookConsultationForm-phone">
+              Phone Number
+            </label>
+          </div>
+          
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
             <div class="field">
               <input
@@ -158,9 +174,10 @@
             <div class="field">
               <select id="BookConsultationForm-bottle-size" class="field__input" name="contact[bottle_size]" required>
                 <option value="">Select bottle size</option>
-                <option value="10 ml" {% if form.bottle_size == '10 ml' %}selected{% endif %}>10 ml</option>
-                <option value="30 ml" {% if form.bottle_size == '30 ml' %}selected{% endif %}>30 ml</option>
-                <option value="50 ml" {% if form.bottle_size == '50 ml' %}selected{% endif %}>50 ml</option>
+                <option value="10 ml" {% if form.bottle_size == '10 ml' %}selected{% endif %}>10 ml $20</option>
+                <option value="30 ml" {% if form.bottle_size == '30 ml' %}selected{% endif %}>30 ml $35</option>
+                <option value="50 ml" {% if form.bottle_size == '50 ml' %}selected{% endif %}>50 ml $50</option>
+                <option value="100 ml" {% if form.bottle_size == '100 ml' %}selected{% endif %}>100 ml $95</option>
               </select>
               <label class="field__label" for="BookConsultationForm-bottle-size">
                 Bottle Size <span aria-hidden="true">*</span>
