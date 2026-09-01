@@ -191,7 +191,9 @@
       "block_order": [
         "instafeed_app_block_feeds_cMQtfj"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "{padding: 2px; background: #fff;}"
+      ],
       "settings": {
         "include_margins": true
       }
