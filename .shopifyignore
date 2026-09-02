@@ -1,13 +1,15 @@
 # This file contains a list of files that will be excluded from Shopify CLI
 # operations such as push, pull, dev, etc.
-#
-# Examples:
-#
-# Ignore a specific file:
-#   templates/product.json
-#
-# Ignore templates with a wildcard pattern:
-#   templates/*.json
-#
-# Ignore templates and sections with a regular expression:
-#   /(templates|sections)/.*\.json/
+
+.cursor/
+.vscode/
+docs/
+nul
+node_modules/
+.shopify/
+*.zip
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md

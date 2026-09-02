@@ -7,15 +7,20 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-node_modules/
 
-# Shopify CLI files
+# Dependencies / tooling
+node_modules/
 .shopify/
 
-## Release files
+# Editor / AI / local agent
+.cursor/
+.vscode/
+docs/
+nul
+
+# Release / temp scripts
 release
 *.zip
 branch_structure.json
 temp_auto_push.bat
 temp_interactive_push.bat
-.gitignore

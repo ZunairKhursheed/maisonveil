@@ -1227,11 +1227,17 @@ button.shopify-payment-button__button--unbranded {
   font: inherit;
   font-size: 1.5rem;
   text-decoration: none;
-  color: #7c244f;
+  color: rgb(var(--color-button-text));
   transition: box-shadow var(--duration-short) ease, color 0.3s ease;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #7c244f;
+  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0.06) 40%,
+    rgba(0, 0, 0, 0.12) 100%
+  );
   position: relative;
   z-index: 2;
 }
@@ -1304,7 +1310,7 @@ button.shopify-payment-button__button--unbranded {
 .customer button:active,
 .shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button__button--unbranded:active {
-  color: #ffffff;
+  color: rgb(var(--color-button-text));
 }
 
 .button--secondary:after {
