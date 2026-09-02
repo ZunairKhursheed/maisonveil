@@ -85,6 +85,8 @@
   },
   "newsletter": {
     "label": "Email",
+    "name": "Name",
+    "phone": "Phone",
     "success": "Thanks for subscribing",
     "button_label": "Subscribe"
   },

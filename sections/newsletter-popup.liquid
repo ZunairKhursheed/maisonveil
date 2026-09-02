@@ -8,6 +8,7 @@
     assign image_layout = 'none'
   endif
   assign overlay_opacity = section.settings.image_overlay_opacity | divided_by: 100.0
+  assign image_alt = section.settings.image.alt | default: section.settings.heading
 -%}
 
 <newsletter-popup
@@ -16,9 +17,6 @@
   data-section-id="{{ section.id }}"
   data-hide-days="{{ section.settings.hide_days }}"
   data-storage-key="maisonveil-newsletter-popup-{{ section.id }}"
-  {% if form.posted_successfully? %}
-    data-success="true"
-  {% endif %}
 >
   <dialog
     class="newsletter-popup__dialog newsletter-popup__dialog--{{ image_layout }}"
@@ -35,8 +33,7 @@
               widths: '400, 600, 800, 1000, 1200',
               sizes: '(min-width: 750px) 40vw, 100vw',
               class: 'newsletter-popup__image',
-              alt: section.settings.image.alt
-              | default: section.settings.heading
+              alt: image_alt
           }}
         </div>
       {%- endif -%}
@@ -144,7 +141,7 @@
               </div>
 
               <button type="submit" class="newsletter-popup__submit button button--full-width" name="commit">
-                {{ section.settings.button_label | default: 'newsletter.button_label' | t }}
+                {{ section.settings.button_label }}
               </button>
             {%- endif -%}
           {%- endform -%}

@@ -2675,6 +2675,45 @@
         "name": "Email signup"
       }
     },
+    "newsletter_popup": {
+      "name": "Newsletter popup",
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        },
+        "text": {
+          "label": "Text"
+        },
+        "button_label": {
+          "label": "Button label"
+        },
+        "image": {
+          "label": "Image"
+        },
+        "image_layout": {
+          "label": "Image layout",
+          "options__none": {
+            "label": "None"
+          },
+          "options__background": {
+            "label": "Background"
+          },
+          "options__left": {
+            "label": "Left"
+          },
+          "options__right": {
+            "label": "Right"
+          }
+        },
+        "image_overlay_opacity": {
+          "label": "Image overlay opacity"
+        },
+        "hide_days": {
+          "label": "Hide after dismiss",
+          "info": "Days to keep the popup hidden after close or signup"
+        }
+      }
+    },
     "email-signup-banner": {
       "name": "Email signup banner",
       "settings": {

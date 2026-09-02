@@ -53,10 +53,25 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "newsletter_popup": {
+      "type": "newsletter-popup",
+      "settings": {
+        "heading": "Join Maison Veil",
+        "heading_size": "h2",
+        "text": "<p>Private launches. Exclusive invitations. Early access.</p>",
+        "button_label": "Subscribe",
+        "image": "",
+        "image_layout": "left",
+        "image_overlay_opacity": 50,
+        "hide_days": 3,
+        "color_scheme": "scheme-3"
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "newsletter_popup"
   ]
 }
