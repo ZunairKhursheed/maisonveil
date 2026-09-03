@@ -1,0 +1,258 @@
+.maison-engraving {
+  display: block;
+  padding: clamp(4rem, 8vw, 7.5rem) 5vw;
+  color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
+}
+
+.maison-engraving__wrap {
+  width: min(1360px, 92vw);
+  margin: 0 auto;
+}
+
+.maison-engraving__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.maison-engraving__panel {
+  background: rgba(var(--color-background), 0.72);
+  border: 1px solid rgba(var(--color-foreground), 0.12);
+  padding: clamp(1.75rem, 3vw, 2.8rem);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+}
+
+.maison-engraving__kicker {
+  font-size: 11px;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: rgb(var(--color-button));
+  margin-bottom: 16px;
+}
+
+.maison-engraving__title {
+  margin: 0 0 18px;
+  font-size: clamp(2.25rem, 5vw, 4.75rem);
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+.maison-engraving__title em,
+.maison-engraving__title i {
+  font-style: italic;
+  color: rgb(var(--color-button));
+}
+
+.maison-engraving__desc {
+  color: rgba(var(--color-foreground), 0.7);
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.maison-engraving__product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0 20px;
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.maison-engraving__product-name {
+  letter-spacing: 0.05em;
+}
+
+.maison-engraving__product-price {
+  color: rgb(var(--color-button));
+  font-weight: 600;
+}
+
+.maison-engraving__label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgb(var(--color-button));
+  margin-bottom: 10px;
+}
+
+.maison-engraving__input {
+  width: 100%;
+  background: rgba(var(--color-background), 0.6);
+  border: 1px solid rgba(var(--color-foreground), 0.18);
+  color: rgb(var(--color-foreground));
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding: 16px 20px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.maison-engraving__input:focus {
+  border-color: rgb(var(--color-button));
+  box-shadow: 0 0 25px rgba(var(--color-button), 0.15);
+}
+
+.maison-engraving__count {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: rgba(var(--color-foreground), 0.55);
+  text-align: right;
+  margin-top: 6px;
+}
+
+.maison-engraving__fonts {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 24px;
+}
+
+.maison-engraving__font-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid rgba(var(--color-foreground), 0.12);
+  background: transparent;
+  color: rgba(var(--color-foreground), 0.75);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.maison-engraving__font-btn.is-active {
+  border-color: rgb(var(--color-button));
+  background: rgba(var(--color-button), 0.12);
+  color: rgb(var(--color-foreground));
+}
+
+.maison-engraving__submit {
+  width: 100%;
+  min-height: 48px;
+  border: none;
+  background: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+
+.maison-engraving__submit:hover:not([disabled]) {
+  opacity: 0.9;
+}
+
+.maison-engraving__submit[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.maison-engraving__preview {
+  min-height: 520px;
+  background: radial-gradient(circle at 50% 50%, rgba(var(--color-foreground), 0.08) 0%, rgba(var(--color-background), 1) 70%);
+  border: 1px solid rgba(var(--color-foreground), 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.maison-engraving__shield {
+  position: absolute;
+  top: 25px;
+  width: 42px;
+  opacity: 0.3;
+}
+
+.maison-engraving__bottle {
+  width: 190px;
+  height: 330px;
+  background: linear-gradient(130deg, rgba(var(--color-foreground), 0.12) 0%, rgba(var(--color-background), 1) 50%, rgba(var(--color-foreground), 0.08) 100%);
+  border: 2px solid rgb(var(--color-button));
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.45), inset 0 0 35px rgba(var(--color-button), 0.08);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maison-engraving__cap {
+  position: absolute;
+  top: -45px;
+  width: 68px;
+  height: 45px;
+  background: rgba(var(--color-background), 0.95);
+  border: 1.5px solid rgba(var(--color-button), 0.65);
+}
+
+.maison-engraving__label-wrap {
+  width: 140px;
+  padding: 24px 14px;
+  background: rgba(var(--color-background), 0.95);
+  border: 1px solid rgba(var(--color-foreground), 0.12);
+  text-align: center;
+}
+
+.maison-engraving__label-title {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.28em;
+  color: rgb(var(--color-button));
+}
+
+.maison-engraving__label-sub {
+  font-size: 7.5px;
+  letter-spacing: 0.3em;
+  color: rgba(var(--color-foreground), 0.55);
+  display: block;
+  margin: 4px 0 10px;
+}
+
+.maison-engraving__live-text {
+  min-height: 20px;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  color: rgb(var(--color-button));
+  border-top: 1px dashed rgba(var(--color-foreground), 0.12);
+  padding-top: 8px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.maison-engraving__live-text.is-editorial {
+  font-style: italic;
+}
+
+.maison-engraving .mv-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.maison-engraving .mv-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 989px) {
+  .maison-engraving__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .maison-engraving .mv-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

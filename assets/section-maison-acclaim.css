@@ -1,0 +1,88 @@
+.maison-acclaim {
+  display: block;
+  padding: clamp(4rem, 8vw, 7.5rem) 5vw;
+  color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
+  border-top: 1px solid rgba(var(--color-foreground), 0.08);
+  text-align: center;
+}
+
+.maison-acclaim__wrap {
+  width: min(900px, 92vw);
+  margin: 0 auto;
+}
+
+.maison-acclaim__quote-box {
+  padding: 40px 20px;
+}
+
+.maison-acclaim__mark {
+  font-size: 80px;
+  line-height: 0.5;
+  color: rgb(var(--color-button));
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.maison-acclaim__quote {
+  font-style: italic;
+  font-size: clamp(26px, 3.5vw, 42px);
+  line-height: 1.35;
+  color: rgb(var(--color-foreground));
+  margin: 0 0 25px;
+}
+
+.maison-acclaim__author {
+  font-size: 12px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgb(var(--color-button));
+}
+
+.maison-acclaim__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px 60px;
+  margin-top: 50px;
+  opacity: 0.65;
+}
+
+.maison-acclaim__logo {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 16px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(var(--color-foreground), 0.55);
+  cursor: pointer;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+.maison-acclaim__logo:hover,
+.maison-acclaim__logo.is-active {
+  opacity: 1;
+  color: rgb(var(--color-button));
+}
+
+.maison-acclaim .mv-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.maison-acclaim .mv-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .maison-acclaim .mv-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

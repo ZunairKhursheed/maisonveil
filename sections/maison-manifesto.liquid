@@ -1,0 +1,121 @@
+{{ 'section-maison-manifesto.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'maison-manifesto.js' | asset_url }}" defer="defer"></script>
+
+{%- assign pillar_blocks = section.blocks | where: 'type', 'pillar' -%}
+
+<maison-manifesto
+  class="maison-manifesto color-{{ section.settings.color_scheme }} isolate gradient"
+  id="house"
+  data-section-id="{{ section.id }}"
+>
+  <div class="maison-manifesto__wrap">
+    <div class="maison-manifesto__grid">
+      <div class="maison-manifesto__art mv-reveal">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 800
+            | image_tag: class: 'maison-manifesto__image', loading: 'lazy', alt: section.settings.image.alt | default: shop.name
+          }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'maison-manifesto__image' }}
+        {%- endif -%}
+      </div>
+
+      <div class="maison-manifesto__content mv-reveal">
+        {%- if section.settings.kicker != blank -%}
+          <div class="maison-manifesto__kicker">{{ section.settings.kicker | escape }}</div>
+        {%- endif -%}
+        {%- if section.settings.title != blank -%}
+          <h2 class="maison-manifesto__title">{{ section.settings.title }}</h2>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <div class="maison-manifesto__text">{{ section.settings.text }}</div>
+        {%- endif -%}
+
+        {%- if pillar_blocks.size > 0 -%}
+          <div class="maison-manifesto__pillars">
+            {%- for block in pillar_blocks -%}
+              <div class="maison-manifesto__pillar" {{ block.shopify_attributes }}>
+                {%- if block.settings.number != blank -%}
+                  <div class="maison-manifesto__pillar-num">{{ block.settings.number | escape }}</div>
+                {%- endif -%}
+                {%- if block.settings.title != blank -%}
+                  <div class="maison-manifesto__pillar-title">{{ block.settings.title | escape }}</div>
+                {%- endif -%}
+                {%- if block.settings.description != blank -%}
+                  <div class="maison-manifesto__pillar-desc">{{ block.settings.description | escape }}</div>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</maison-manifesto>
+
+{% schema %}
+{
+  "name": "Maison manifesto",
+  "tag": "section",
+  "class": "section-maison-manifesto",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "05 · The Manifesto"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "Luxury is felt, <em>never shouted.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Maison Veil was founded in Paris on a singular conviction: fragrance should not be an assault on the senses, but a private invitation. We compose each extrait with exceptional concentrations of natural absolutes, allowing them to fuse with the wearer's unique skin chemistry.</p><p>Our bottles are architectural vessels forged from heavyweight smoked glass, crowned by obsidian crystal caps designed to sit as tactile sculptures upon your vanity.</p>"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pillar",
+      "name": "Pillar",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Number", "default": "01" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Grasse Harvests" },
+        { "type": "textarea", "id": "description", "label": "Description", "default": "Small-batch extraction of rare botanicals from historical French fields." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Maison manifesto",
+      "blocks": [
+        { "type": "pillar", "settings": { "number": "01", "title": "Grasse Harvests", "description": "Small-batch extraction of rare botanicals from historical French fields." } },
+        { "type": "pillar", "settings": { "number": "02", "title": "Oak Maceration", "description": "Aged 6 months in French Limousin oak barrels to mature molecular depth." } },
+        { "type": "pillar", "settings": { "number": "03", "title": "30% Extrait", "description": "The highest concentration in high perfumery for 24+ hour longevity." } },
+        { "type": "pillar", "settings": { "number": "04", "title": "Bespoke Flacons", "description": "Weighty architectural glass polished and sealed with hand-applied foil." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

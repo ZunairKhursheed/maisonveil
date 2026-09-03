@@ -458,6 +458,178 @@
         "retake_label": "Retake Consultation",
         "color_scheme": "scheme-3"
       }
+    },
+    "maison_engraving": {
+      "type": "maison-engraving",
+      "settings": {
+        "kicker": "04 · Atelier Personalization",
+        "title": "Laser Gold <em>Engraving.</em>",
+        "description": "<p>Every flacon can be individually inscribed with your initials, a significant date, or a personal creed. Inscribed with ultra-precision 24K gold foil in our Paris atelier.</p>",
+        "input_label": "Inscribe Your Monogram / Date (Max 12 Chars)",
+        "default_engraving": "M · VEIL",
+        "max_characters": 12,
+        "font_1_label": "Roman Monumental",
+        "font_2_label": "Editorial Haute",
+        "bottle_label": "VEIL",
+        "bottle_subtitle": "EXTRAIT DE PARFUM",
+        "button_label": "Save Engraving to Vessel",
+        "color_scheme": "scheme-3"
+      }
+    },
+    "maison_manifesto": {
+      "type": "maison-manifesto",
+      "blocks": {
+        "pillar_1": {
+          "type": "pillar",
+          "settings": {
+            "number": "01",
+            "title": "Grasse Harvests",
+            "description": "Small-batch extraction of rare botanicals from historical French fields."
+          }
+        },
+        "pillar_2": {
+          "type": "pillar",
+          "settings": {
+            "number": "02",
+            "title": "Oak Maceration",
+            "description": "Aged 6 months in French Limousin oak barrels to mature molecular depth."
+          }
+        },
+        "pillar_3": {
+          "type": "pillar",
+          "settings": {
+            "number": "03",
+            "title": "30% Extrait",
+            "description": "The highest concentration in high perfumery for 24+ hour longevity."
+          }
+        },
+        "pillar_4": {
+          "type": "pillar",
+          "settings": {
+            "number": "04",
+            "title": "Bespoke Flacons",
+            "description": "Weighty architectural glass polished and sealed with hand-applied foil."
+          }
+        }
+      },
+      "block_order": [
+        "pillar_1",
+        "pillar_2",
+        "pillar_3",
+        "pillar_4"
+      ],
+      "settings": {
+        "kicker": "05 · The Manifesto",
+        "title": "Luxury is felt, <em>never shouted.</em>",
+        "text": "<p>Maison Veil was founded in Paris on a singular conviction: fragrance should not be an assault on the senses, but a private invitation. We compose each extrait with exceptional concentrations of natural absolutes, allowing them to fuse with the wearer's unique skin chemistry.</p><p>Our bottles are architectural vessels forged from heavyweight smoked glass, crowned by obsidian crystal caps designed to sit as tactile sculptures upon your vanity.</p>",
+        "color_scheme": "scheme-3"
+      }
+    },
+    "maison_experience": {
+      "type": "maison-experience",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "kicker": "Private Sittings",
+            "title": "Bespoke Scent Formulation",
+            "text": "An intimate two-day private session with our Master Perfumer in our Paris salon. Formulate a personalized extrait unique to your skin that will never be reproduced.",
+            "link_label": "Reserve Salon Appointment →",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "kicker": "Celebrations",
+            "title": "Bridal & Event Scenting",
+            "text": "Transform your wedding or gala into an unforgettable olfactory memory. Bespoke spatial diffusion and personalized engraved flacons presented to your guests.",
+            "link_label": "Plan Event Experience →",
+            "link": "shopify://pages/events"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "kicker": "Haute Gifting",
+            "title": "Executive & VIP Flacons",
+            "text": "Custom presentation chests lined in black velvet, sealed with personalized gold wax insignias and individually serialized for distinguished patrons.",
+            "link_label": "Explore VIP Gifting →",
+            "link": "shopify://pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ],
+      "settings": {
+        "kicker": "06 · Private Commissions",
+        "title": "More than a <em>Scent.</em>",
+        "description": "<p>Beyond our permanent collection, Maison Veil curates unforgettable private olfactory rituals for momentous celebrations and distinguished collectors.</p>",
+        "color_scheme": "scheme-3"
+      }
+    },
+    "maison_acclaim": {
+      "type": "maison-acclaim",
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "logo_label": "VOGUE",
+            "quote": "Maison Veil has achieved what few modern fragrance houses dare: absolute, unapologetic mystery. A sillage so exquisite it leaves an indelible phantom memory.",
+            "author": "— VOGUE PARIS · HAUTE BEAUTÉ"
+          }
+        },
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "logo_label": "HARPER'S BAZAAR",
+            "quote": "The flacon is a sculpture; the extrait inside is a revelation. Or Éclat redefines golden ambers for the modern connoisseur.",
+            "author": "— HARPER'S BAZAAR · LUXE SENSATIONS"
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "logo_label": "WALLPAPER*",
+            "quote": "An exceptional balance between architectural glass design and Grasse artisanal compounding. A triumph of quiet luxury.",
+            "author": "— WALLPAPER* DESIGN HONOURS"
+          }
+        },
+        "review_4": {
+          "type": "review",
+          "settings": {
+            "logo_label": "GQ FRANCE",
+            "quote": "Wearing Noir Veil feels like stepping through a rain-drenched Parisian courtyard at midnight. Mesmerizing and masculine.",
+            "author": "— GQ FRANCE · LE GUIDE PARFUM"
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3",
+        "review_4"
+      ],
+      "settings": {
+        "logos_label": "Press reviews",
+        "color_scheme": "scheme-3"
+      }
+    },
+    "maison_newsletter": {
+      "type": "maison-newsletter",
+      "settings": {
+        "kicker": "07 · Private Access",
+        "title": "Enter the world <em>behind the veil.</em>",
+        "description": "<p>Exclusive private batch allocations, salon invitations, and early access to limited edition flacons.</p>",
+        "placeholder": "Your private email address",
+        "button_label": "Request Access",
+        "success_title": "WELCOME TO THE MAISON VEIL INNER ATELIER.",
+        "success_text": "<p>Your VIP reservation has been confirmed. Watch your inbox for private allocations.</p>",
+        "color_scheme": "scheme-3"
+      }
     }
   },
   "order": [
@@ -466,6 +638,11 @@
     "maison_compositions",
     "maison_laboratory",
     "maison_consultation",
+    "maison_engraving",
+    "maison_manifesto",
+    "maison_experience",
+    "maison_acclaim",
+    "maison_newsletter",
     "two_column_grid_7QT3ED",
     "featured_collection_with_image_XRxmEX",
     "1788286219678f8746",

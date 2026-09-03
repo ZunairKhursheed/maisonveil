@@ -1,0 +1,129 @@
+{{ 'section-maison-newsletter.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'maison-newsletter.js' | asset_url }}" defer="defer"></script>
+
+<maison-newsletter
+  class="maison-newsletter color-{{ section.settings.color_scheme }} isolate gradient"
+  id="contact"
+  data-section-id="{{ section.id }}"
+>
+  <div class="maison-newsletter__wrap">
+    {%- if section.settings.kicker != blank -%}
+      <div class="maison-newsletter__kicker mv-reveal">{{ section.settings.kicker | escape }}</div>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h2 class="maison-newsletter__title mv-reveal">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    {%- if section.settings.description != blank -%}
+      <div class="maison-newsletter__desc mv-reveal">{{ section.settings.description }}</div>
+    {%- endif -%}
+
+    <div class="maison-newsletter__form-box mv-reveal">
+      {% form 'customer', class: 'maison-newsletter__form-wrap', id: 'MaisonNewsletter-{{ section.id }}' %}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+
+        {%- if form.posted_successfully? -%}
+          <div class="maison-newsletter__confirmation">
+            <strong>{{ section.settings.success_title | escape }}</strong>
+            {%- if section.settings.success_text != blank -%}
+              <div class="maison-newsletter__confirmation-sub">{{ section.settings.success_text }}</div>
+            {%- endif -%}
+          </div>
+        {%- else -%}
+          <div class="maison-newsletter__form">
+            <input
+              type="email"
+              name="contact[email]"
+              class="maison-newsletter__input"
+              value="{{ form.email }}"
+              placeholder="{{ section.settings.placeholder | escape }}"
+              aria-label="{{ section.settings.placeholder | escape }}"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              required
+              {% if form.errors %}
+                aria-invalid="true"
+              {% endif %}
+            >
+            <button type="submit" class="maison-newsletter__submit">
+              {{ section.settings.button_label | escape }}
+            </button>
+          </div>
+
+          {%- if form.errors -%}
+            <div class="maison-newsletter__error">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </div>
+          {%- endif -%}
+        {%- endif -%}
+      {% endform %}
+    </div>
+  </div>
+</maison-newsletter>
+
+{% schema %}
+{
+  "name": "Maison newsletter",
+  "tag": "section",
+  "class": "section-maison-newsletter",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "07 · Private Access"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "Enter the world <em>behind the veil.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Exclusive private batch allocations, salon invitations, and early access to limited edition flacons.</p>"
+    },
+    {
+      "type": "text",
+      "id": "placeholder",
+      "label": "Email placeholder",
+      "default": "Your private email address"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Request Access"
+    },
+    {
+      "type": "text",
+      "id": "success_title",
+      "label": "Success title",
+      "default": "WELCOME TO THE MAISON VEIL INNER ATELIER."
+    },
+    {
+      "type": "richtext",
+      "id": "success_text",
+      "label": "Success message",
+      "default": "<p>Your VIP reservation has been confirmed. Watch your inbox for private allocations.</p>"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Maison newsletter"
+    }
+  ]
+}
+{% endschema %}

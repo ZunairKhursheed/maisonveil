@@ -1,0 +1,130 @@
+{{ 'section-maison-acclaim.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'maison-acclaim.js' | asset_url }}" defer="defer"></script>
+
+{%- assign review_blocks = section.blocks | where: 'type', 'review' -%}
+
+<maison-acclaim
+  class="maison-acclaim color-{{ section.settings.color_scheme }} isolate gradient"
+  data-section-id="{{ section.id }}"
+>
+  <div class="maison-acclaim__wrap">
+    <div class="maison-acclaim__quote-box mv-reveal">
+      <div class="maison-acclaim__mark" aria-hidden="true">“</div>
+      <p class="maison-acclaim__quote" data-acclaim-quote>
+        {%- if review_blocks.size > 0 -%}
+          {{ review_blocks.first.settings.quote | escape }}
+        {%- endif -%}
+      </p>
+      <div class="maison-acclaim__author" data-acclaim-author>
+        {%- if review_blocks.size > 0 -%}
+          {{ review_blocks.first.settings.author | escape }}
+        {%- endif -%}
+      </div>
+
+      {%- if review_blocks.size > 0 -%}
+        <div class="maison-acclaim__logos" role="tablist" aria-label="{{ section.settings.logos_label | default: 'Press reviews' | escape }}">
+          {%- for block in review_blocks -%}
+            <button
+              type="button"
+              class="maison-acclaim__logo{% if forloop.first %} is-active{% endif %}"
+              data-acclaim-logo
+              data-acclaim-index="{{ forloop.index0 }}"
+              role="tab"
+              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.logo_label | default: block.settings.author | escape }}
+            </button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      <script type="application/json" data-acclaim-quotes>
+        [
+          {%- for block in review_blocks -%}
+            {
+              "quote": {{ block.settings.quote | json }},
+              "author": {{ block.settings.author | json }}
+            }{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}
+        ]
+      </script>
+    </div>
+  </div>
+</maison-acclaim>
+
+{% schema %}
+{
+  "name": "Maison acclaim",
+  "tag": "section",
+  "class": "section-maison-acclaim",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "text",
+      "id": "logos_label",
+      "label": "Logos row label",
+      "default": "Press reviews"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "text", "id": "logo_label", "label": "Logo label", "default": "VOGUE" },
+        { "type": "textarea", "id": "quote", "label": "Quote", "default": "Maison Veil has achieved what few modern fragrance houses dare: absolute, unapologetic mystery. A sillage so exquisite it leaves an indelible phantom memory." },
+        { "type": "text", "id": "author", "label": "Author", "default": "— VOGUE PARIS · HAUTE BEAUTÉ" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Maison acclaim",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "logo_label": "VOGUE",
+            "quote": "Maison Veil has achieved what few modern fragrance houses dare: absolute, unapologetic mystery. A sillage so exquisite it leaves an indelible phantom memory.",
+            "author": "— VOGUE PARIS · HAUTE BEAUTÉ"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "logo_label": "HARPER'S BAZAAR",
+            "quote": "The flacon is a sculpture; the extrait inside is a revelation. Or Éclat redefines golden ambers for the modern connoisseur.",
+            "author": "— HARPER'S BAZAAR · LUXE SENSATIONS"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "logo_label": "WALLPAPER*",
+            "quote": "An exceptional balance between architectural glass design and Grasse artisanal compounding. A triumph of quiet luxury.",
+            "author": "— WALLPAPER* DESIGN HONOURS"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "logo_label": "GQ FRANCE",
+            "quote": "Wearing Noir Veil feels like stepping through a rain-drenched Parisian courtyard at midnight. Mesmerizing and masculine.",
+            "author": "— GQ FRANCE · LE GUIDE PARFUM"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
