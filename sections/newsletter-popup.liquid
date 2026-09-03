@@ -69,7 +69,8 @@
             </div>
           {%- endif -%}
 
-          {%- form 'customer', id: 'NewsletterPopupForm-' | append: section.id, class: 'newsletter-popup__form' -%}
+          {%- assign newsletter_popup_form_id = 'NewsletterPopupForm-' | append: section.id -%}
+          {%- form 'customer', id: newsletter_popup_form_id, class: 'newsletter-popup__form' -%}
             <input type="hidden" name="contact[tags]" value="newsletter,newsletter-popup">
 
             {%- if form.errors -%}
