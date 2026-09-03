@@ -237,6 +237,18 @@
   text-align: right;
 }
 
+.maison-laboratory__ing-link {
+  color: #f4efe6;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200, 163, 94, 0.3);
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.maison-laboratory__ing-link:hover {
+  color: #e8d39f;
+  border-color: #e8d39f;
+}
+
 .maison-laboratory .mv-reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -262,6 +274,118 @@
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.maison-laboratory--light {
+  background: #fff;
+  border-top-color: rgba(0, 0, 0, 0.08);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+  color: #1a1a1a;
+}
+
+.maison-laboratory--light .maison-laboratory__title {
+  color: #0a0a0a;
+}
+
+.maison-laboratory--light .maison-laboratory__title em,
+.maison-laboratory--light .maison-laboratory__title i {
+  background: linear-gradient(135deg, #8f7239 0%, #c8a35e 50%, #6b5528 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maison-laboratory--light .maison-laboratory__kicker {
+  color: #8f7239;
+}
+
+.maison-laboratory--light .maison-laboratory__desc {
+  color: #555;
+}
+
+.maison-laboratory--light .maison-laboratory__divider {
+  background: linear-gradient(90deg, transparent, #8f7239, transparent);
+}
+
+.maison-laboratory--light .maison-laboratory__scrubber {
+  background: #faf8f5;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.maison-laboratory--light .maison-laboratory__phase-name {
+  color: #1a1a1a;
+}
+
+.maison-laboratory--light .maison-laboratory__phase-sub {
+  color: #777;
+}
+
+.maison-laboratory--light .maison-laboratory__badge {
+  color: #8f7239;
+  background: rgba(143, 114, 57, 0.08);
+  border-color: rgba(143, 114, 57, 0.2);
+}
+
+.maison-laboratory--light .maison-laboratory__marker {
+  color: #999;
+}
+
+.maison-laboratory--light .maison-laboratory__marker.is-active {
+  color: #8f7239;
+}
+
+.maison-laboratory--light .maison-laboratory__card {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.maison-laboratory--light .maison-laboratory__card.is-active {
+  border-color: #c8a35e;
+  background: #fdfbf7;
+  box-shadow: 0 10px 40px rgba(143, 114, 57, 0.1);
+}
+
+.maison-laboratory--light .maison-laboratory__card.is-active::before {
+  background: linear-gradient(90deg, #c8a35e, #8f7239, #c8a35e);
+}
+
+.maison-laboratory--light .maison-laboratory__card-num {
+  color: #8f7239;
+}
+
+.maison-laboratory--light .maison-laboratory__card-title {
+  color: #1a1a1a;
+}
+
+.maison-laboratory--light .maison-laboratory__card-time {
+  color: #999;
+}
+
+.maison-laboratory--light .maison-laboratory__ingredient {
+  border-top-color: rgba(0, 0, 0, 0.06);
+}
+
+.maison-laboratory--light .maison-laboratory__ing-name {
+  color: #1a1a1a;
+}
+
+.maison-laboratory--light .maison-laboratory__ing-origin {
+  color: #999;
+}
+
+.maison-laboratory--light .maison-laboratory__ing-link {
+  color: #8f7239;
+  border-bottom-color: rgba(143, 114, 57, 0.3);
+}
+
+.maison-laboratory--light .maison-laboratory__ing-link:hover {
+  color: #6b5528;
+  border-color: #6b5528;
+}
+
+.maison-laboratory--light .maison-laboratory__slider {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-reduced-motion: reduce) {

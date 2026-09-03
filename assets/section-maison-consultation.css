@@ -184,6 +184,21 @@
   font-size: 0.95rem;
 }
 
+.maison-consultation__result-cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.maison-consultation__result-card {
+  width: 100%;
+  max-width: 380px;
+}
+
+.maison-consultation__result-card[hidden] {
+  display: none !important;
+}
+
 .maison-consultation__result-actions {
   display: flex;
   flex-wrap: wrap;

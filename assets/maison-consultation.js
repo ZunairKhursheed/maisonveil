@@ -112,6 +112,10 @@ if (!customElements.get('maison-consultation')) {
           claim.href = data.url || '#';
           claim.style.display = data.url ? '' : 'none';
         }
+
+        this.resultEl.querySelectorAll('[data-quiz-card]').forEach((card) => {
+          card.hidden = card.getAttribute('data-quiz-card') !== winner;
+        });
       }
     }
 
@@ -121,6 +125,9 @@ if (!customElements.get('maison-consultation')) {
         el.classList.remove('is-selected');
       });
       this.showStep(1);
+      this.querySelectorAll('[data-quiz-card]').forEach((card) => {
+        card.hidden = true;
+      });
     }
   }
 

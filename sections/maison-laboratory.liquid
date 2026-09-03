@@ -3,7 +3,7 @@
 
 {%- assign phase_blocks = section.blocks | where: 'type', 'phase' -%}
 
-<maison-laboratory class="maison-laboratory" id="laboratory" data-section-id="{{ section.id }}">
+<maison-laboratory class="maison-laboratory{% if section.settings.light_mode %} maison-laboratory--light{% endif %}" id="laboratory" data-section-id="{{ section.id }}">
   <div class="maison-laboratory__wrap">
     <div class="maison-laboratory__head mv-reveal">
       {%- if section.settings.kicker != blank -%}
@@ -82,7 +82,13 @@
                   {%- if row_text != blank -%}
                     {%- assign parts = row_text | split: '|' -%}
                     <div class="maison-laboratory__ingredient">
-                      <span class="maison-laboratory__ing-name">{{ parts[0] | strip | escape }}</span>
+                      {%- assign ing_name = parts[0] | strip -%}
+                      {%- assign ing_link = parts[2] | strip | default: blank -%}
+                      {%- if ing_link != blank -%}
+                        <a class="maison-laboratory__ing-name maison-laboratory__ing-link" href="{{ ing_link }}">{{ ing_name | escape }}</a>
+                      {%- else -%}
+                        <span class="maison-laboratory__ing-name">{{ ing_name | escape }}</span>
+                      {%- endif -%}
                       {%- if parts.size > 1 -%}
                         <span class="maison-laboratory__ing-origin">{{ parts[1] | strip | escape }}</span>
                       {%- endif -%}
@@ -122,6 +128,12 @@
       "id": "description",
       "label": "Description",
       "default": "<p>A true Extrait de Parfum is an organic, shifting symphony. Drag the timeline below to experience how the notes unfold over 24 hours of intimate body contact.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "light_mode",
+      "label": "Light mode (black heading on white background)",
+      "default": true
     }
   ],
   "blocks": [
@@ -139,7 +151,7 @@
           "type": "textarea",
           "id": "ingredients",
           "label": "Ingredients",
-          "info": "One per line: Name|Origin",
+          "info": "One per line: Name|Origin|ProductURL (URL is optional)",
           "default": "Kashmiri Saffron|Pampore, India\nCalabrian Bergamot|Reggio Calabria\nPink Peppercorn|Madagascar"
         }
       ]
