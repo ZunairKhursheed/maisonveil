@@ -1,5 +1,7 @@
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'section-header-maison.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'utility-bar-cart-mirror.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
   assign social_icons = true
@@ -41,6 +43,7 @@
             >
           {%- endif -%}
           <p class="announcement-bar__message h5">
+            <span class="announcement-bar__pulse" aria-hidden="true"></span>
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
@@ -100,6 +103,7 @@
                       >
                     {%- endif -%}
                     <p class="announcement-bar__message h5">
+                      <span class="announcement-bar__pulse" aria-hidden="true"></span>
                       <span>{{ block.settings.text | escape }}</span>
                       {%- if block.settings.link != blank -%}
                         {% render 'icon-arrow' %}
@@ -134,6 +138,8 @@
         </style>
       {%- endif -%}
     {%- endif -%}
+    {%- render 'utility-bar-icons', search_input_id: 'Search-In-Modal-Utility' -%}
+
     <div class="localization-wrapper">
       {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
         <localization-form class="small-hide medium-hide">
