@@ -128,9 +128,12 @@
 
 {% schema %}
 {
-  "name": "t:sections.maison_compositions.name",
+  "name": "Maison compositions",
   "tag": "section",
   "class": "section-maison-compositions",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
   "max_blocks": 8,
   "settings": [
     {
@@ -143,7 +146,7 @@
       "type": "inline_richtext",
       "id": "title",
       "label": "t:sections.maison_compositions.settings.title.label",
-      "default": "The Signature<br><em>Compositions.</em>"
+      "default": "The Signature <em>Compositions.</em>"
     },
     {
       "type": "richtext",
@@ -204,7 +207,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.maison_compositions.name",
+      "name": "Maison compositions",
       "blocks": [
         { "type": "filter", "settings": { "label": "Nocturnal Amber", "tag": "nocturnal" } },
         { "type": "filter", "settings": { "label": "Solar Floral", "tag": "solar" } },
