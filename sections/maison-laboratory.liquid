@@ -3,7 +3,7 @@
 
 {%- assign phase_blocks = section.blocks | where: 'type', 'phase' -%}
 
-<maison-laboratory class="maison-laboratory{% if section.settings.light_mode %} maison-laboratory--light{% endif %}" id="laboratory" data-section-id="{{ section.id }}">
+<maison-laboratory class="maison-laboratory color-{{ section.settings.color_scheme }} isolate gradient{% if section.settings.light_mode %} maison-laboratory--light{% endif %}" id="laboratory" data-section-id="{{ section.id }}">
   <div class="maison-laboratory__wrap">
     <div class="maison-laboratory__head mv-reveal">
       {%- if section.settings.kicker != blank -%}
@@ -134,6 +134,12 @@
       "id": "light_mode",
       "label": "Light mode (black heading on white background)",
       "default": true
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
     }
   ],
   "blocks": [

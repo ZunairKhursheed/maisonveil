@@ -1,12 +1,13 @@
 .maison-consultation {
   --mc-gold: #c9a84c;
   --mc-gold-bright: #e8c96a;
-  --mc-ink: #f4efe6;
-  --mc-muted: #9a9080;
-  --mc-line: rgba(201, 168, 76, 0.28);
-  --mc-panel: rgba(18, 14, 10, 0.72);
+  --mc-ink: rgb(var(--color-foreground));
+  --mc-muted: rgba(var(--color-foreground), 0.65);
+  --mc-line: rgba(var(--color-foreground), 0.18);
+  --mc-panel: rgba(var(--color-background), 0.72);
   padding: clamp(4rem, 8vw, 7rem) 0;
   color: var(--mc-ink);
+  background: rgb(var(--color-background));
 }
 
 .maison-consultation__wrap {
@@ -24,7 +25,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--mc-gold);
+  color: rgb(var(--color-button));
   margin-bottom: 0.85rem;
 }
 
@@ -40,14 +41,14 @@
 .maison-consultation__title em,
 .maison-consultation__title .editorial {
   font-style: italic;
-  color: var(--mc-gold-bright);
+  color: rgb(var(--color-button));
 }
 
 .maison-consultation__divider {
   width: 3rem;
   height: 1px;
   margin: 1.25rem auto 0;
-  background: linear-gradient(90deg, transparent, var(--mc-gold), transparent);
+  background: linear-gradient(90deg, transparent, rgb(var(--color-button)), transparent);
 }
 
 .maison-consultation__desc {
@@ -66,6 +67,7 @@
   border: 1px solid var(--mc-line);
   padding: clamp(1.5rem, 3vw, 2.5rem);
   backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
 .maison-consultation__progress {
@@ -82,7 +84,7 @@
 }
 
 .maison-consultation__progress-step.is-done {
-  background: var(--mc-gold);
+  background: rgb(var(--color-button));
 }
 
 .maison-consultation__step.is-hidden {
@@ -112,7 +114,7 @@
 .maison-consultation__option {
   appearance: none;
   border: 1px solid var(--mc-line);
-  background: rgba(8, 6, 4, 0.55);
+  background: rgba(var(--color-background), 0.55);
   color: inherit;
   text-align: left;
   padding: 1.25rem 1rem;
@@ -123,15 +125,15 @@
 
 .maison-consultation__option:hover,
 .maison-consultation__option.is-selected {
-  border-color: var(--mc-gold);
-  background: rgba(201, 168, 76, 0.08);
+  border-color: rgb(var(--color-button));
+  background: rgba(var(--color-button), 0.08);
   transform: translateY(-2px);
 }
 
 .maison-consultation__option-icon {
   display: block;
   font-size: 1.4rem;
-  color: var(--mc-gold);
+  color: rgb(var(--color-button));
   margin-bottom: 0.75rem;
 }
 
@@ -163,7 +165,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--mc-gold);
+  color: rgb(var(--color-button));
   border: 1px solid var(--mc-line);
   padding: 0.4rem 0.85rem;
   margin-bottom: 1rem;
@@ -185,18 +187,19 @@
 }
 
 .maison-consultation__result-cards {
-  display: flex;
-  justify-content: center;
   margin-bottom: 2rem;
 }
 
-.maison-consultation__result-card {
-  width: 100%;
-  max-width: 380px;
+.maison-consultation__result-group[hidden] {
+  display: none !important;
 }
 
-.maison-consultation__result-card[hidden] {
-  display: none !important;
+.maison-consultation__result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+  text-align: left;
 }
 
 .maison-consultation__result-actions {
@@ -217,18 +220,19 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 1px solid var(--mc-gold);
+  border: 1px solid rgb(var(--color-button));
   transition: background 0.25s ease, color 0.25s ease;
 }
 
 .maison-consultation__btn--primary {
-  background: var(--mc-gold);
-  color: #120e0a;
+  background: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
 }
 
 .maison-consultation__btn--primary:hover {
-  background: var(--mc-gold-bright);
-  color: #120e0a;
+  background: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  opacity: 0.9;
 }
 
 .maison-consultation__btn--outline {
@@ -237,7 +241,7 @@
 }
 
 .maison-consultation__btn--outline:hover {
-  background: rgba(201, 168, 76, 0.12);
+  background: rgba(var(--color-button), 0.12);
 }
 
 @media screen and (max-width: 749px) {

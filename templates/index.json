@@ -256,7 +256,9 @@
         "item_5",
         "item_6"
       ],
-      "settings": {}
+      "settings": {
+        "color_scheme": "scheme-3"
+      }
     },
     "maison_compositions": {
       "type": "maison-compositions",
@@ -295,7 +297,8 @@
         "collection": "all",
         "products_to_show": 6,
         "columns_desktop": 3,
-        "filter_all_label": "All Compositions"
+        "filter_all_label": "All Compositions",
+        "color_scheme": "scheme-3"
       }
     },
     "maison_laboratory": {
@@ -346,7 +349,9 @@
       "settings": {
         "kicker": "02 · The Olfactory Architecture",
         "title": "The Evolution on <em>Skin.</em>",
-        "description": "<p>A true Extrait de Parfum is an organic, shifting symphony. Drag the timeline below to experience how the notes unfold over 24 hours of intimate body contact.</p>"
+        "description": "<p>A true Extrait de Parfum is an organic, shifting symphony. Drag the timeline below to experience how the notes unfold over 24 hours of intimate body contact.</p>",
+        "light_mode": true,
+        "color_scheme": "scheme-1"
       }
     },
     "maison_consultation": {
@@ -450,7 +455,8 @@
         "title": "Find Your <em>Veil.</em>",
         "description": "<p>Answer three sensory reflections to discover the flacon that aligns with your nocturnal temperament and desired presence.</p>",
         "claim_label": "Claim Flacon",
-        "retake_label": "Retake Consultation"
+        "retake_label": "Retake Consultation",
+        "color_scheme": "scheme-3"
       }
     }
   },

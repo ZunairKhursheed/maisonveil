@@ -1,10 +1,10 @@
 .maison-laboratory {
   display: block;
   padding: 100px 5vw;
-  background: #080706;
-  border-top: 1px solid rgba(200, 163, 94, 0.14);
-  border-bottom: 1px solid rgba(200, 163, 94, 0.14);
-  color: #f4efe6;
+  background: rgb(var(--color-background));
+  border-top: 1px solid rgba(var(--color-foreground), 0.08);
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  color: rgb(var(--color-foreground));
 }
 
 .maison-laboratory__wrap {

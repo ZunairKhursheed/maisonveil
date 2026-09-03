@@ -108,14 +108,24 @@ if (!customElements.get('maison-consultation')) {
         if (score) score.textContent = data.score || '';
         if (title) title.textContent = data.title || '';
         if (desc) desc.textContent = data.desc || '';
-        if (claim) {
-          claim.href = data.url || '#';
-          claim.style.display = data.url ? '' : 'none';
-        }
 
         this.resultEl.querySelectorAll('[data-quiz-card]').forEach((card) => {
           card.hidden = card.getAttribute('data-quiz-card') !== winner;
         });
+
+        if (claim) {
+          claim.href = data.url || '#';
+          claim.style.display = data.url ? '' : 'none';
+
+          if (data.hasProducts) {
+            const visibleGroup = this.resultEl.querySelector(`[data-quiz-card="${winner}"]:not([hidden])`);
+            const firstProductLink = visibleGroup?.querySelector('.maison-flacon-card__title a, .maison-flacon-card__btn--view');
+            if (firstProductLink?.href) {
+              claim.href = firstProductLink.href;
+              claim.style.display = '';
+            }
+          }
+        }
       }
     }
 

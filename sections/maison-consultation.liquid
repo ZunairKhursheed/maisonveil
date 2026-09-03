@@ -8,7 +8,7 @@
 -%}
 
 <maison-consultation
-  class="maison-consultation"
+  class="maison-consultation color-{{ section.settings.color_scheme }} isolate gradient"
   id="consultation"
   data-section-id="{{ section.id }}"
 >
@@ -96,14 +96,100 @@
 
         <div class="maison-consultation__result-cards">
           {%- for block in result_blocks -%}
-            {%- if block.settings.product != blank -%}
-              <div class="maison-consultation__result-card" data-quiz-card="{{ block.settings.key | handleize | escape }}" hidden>
-                {% render 'maison-flacon-card',
-                  product: block.settings.product,
-                  badge: block.settings.product.type,
-                  family: block.settings.product.vendor,
-                  filter_tag: 'all'
-                %}
+            {%- liquid
+              assign result_key = block.settings.key | handleize
+              assign result_products = block.settings.products
+              assign result_collection = block.settings.collection
+              assign has_products = false
+
+              if result_products != blank and result_products.size > 0
+                assign has_products = true
+              elsif result_collection != blank and result_collection.products_count > 0
+                assign has_products = true
+              elsif block.settings.product != blank
+                assign has_products = true
+              endif
+            -%}
+            {%- if has_products -%}
+              <div
+                class="maison-consultation__result-group"
+                data-quiz-card="{{ result_key | escape }}"
+                hidden
+              >
+                <div class="maison-consultation__result-grid">
+                  {%- if result_products != blank and result_products.size > 0 -%}
+                    {%- for product in result_products -%}
+                      {%- liquid
+                        assign badge = product.type
+                        if product.metafields.custom.badge != blank
+                          assign badge = product.metafields.custom.badge.value
+                        endif
+                        assign family = product.vendor
+                        if product.metafields.custom.scent_family != blank
+                          assign family = product.metafields.custom.scent_family.value
+                        endif
+                        assign mono = blank
+                        if product.metafields.custom.monogram != blank
+                          assign mono = product.metafields.custom.monogram.value
+                        endif
+                      -%}
+                      {% render 'maison-flacon-card',
+                        product: product,
+                        badge: badge,
+                        family: family,
+                        filter_tag: 'all',
+                        monogram: mono
+                      %}
+                    {%- endfor -%}
+                  {%- elsif result_collection != blank -%}
+                    {%- for product in result_collection.products limit: block.settings.products_to_show -%}
+                      {%- liquid
+                        assign badge = product.type
+                        if product.metafields.custom.badge != blank
+                          assign badge = product.metafields.custom.badge.value
+                        endif
+                        assign family = product.vendor
+                        if product.metafields.custom.scent_family != blank
+                          assign family = product.metafields.custom.scent_family.value
+                        endif
+                        assign mono = blank
+                        if product.metafields.custom.monogram != blank
+                          assign mono = product.metafields.custom.monogram.value
+                        endif
+                      -%}
+                      {% render 'maison-flacon-card',
+                        product: product,
+                        badge: badge,
+                        family: family,
+                        filter_tag: 'all',
+                        monogram: mono
+                      %}
+                    {%- endfor -%}
+                  {%- elsif block.settings.product != blank -%}
+                    {%- assign product = block.settings.product -%}
+                    {%- liquid
+                      assign badge = product.type
+                      if product.metafields.custom.badge != blank
+                        assign badge = product.metafields.custom.badge.value
+                      endif
+                      assign family = product.vendor
+                      if product.metafields.custom.scent_family != blank
+                        assign family = product.metafields.custom.scent_family.value
+                      endif
+                      assign mono = blank
+                      if product.metafields.custom.monogram != blank
+                        assign mono = product.metafields.custom.monogram.value
+                      endif
+                    -%}
+                    {% render 'maison-flacon-card',
+                      product: product,
+                      badge: badge,
+                      family: family,
+                      filter_tag: 'all',
+                      monogram: mono
+                    %}
+                  {%- endif -%}
+                </div>
               </div>
             {%- endif -%}
           {%- endfor -%}
@@ -127,7 +213,7 @@
               "score": {{ block.settings.score | json }},
               "desc": {{ block.settings.description | json }},
               "url": {% if block.settings.product != blank %}{{ block.settings.product.url | json }}{% else %}{{ block.settings.link | json }}{% endif %},
-              "hasCard": {% if block.settings.product != blank %}true{% else %}false{% endif %}
+              "hasProducts": {% if block.settings.products != blank and block.settings.products.size > 0 %}true{% elsif block.settings.collection != blank %}true{% elsif block.settings.product != blank %}true{% else %}false{% endif %}
             }{% unless forloop.last %},{% endunless %}
           {%- endfor -%}
         }
@@ -138,7 +224,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.maison_consultation.name",
+  "name": "Maison consultation",
   "tag": "section",
   "class": "section-maison-consultation",
   "max_blocks": 12,
@@ -172,6 +258,12 @@
       "id": "retake_label",
       "label": "Retake button label",
       "default": "Retake Consultation"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
     }
   ],
   "blocks": [
@@ -181,15 +273,15 @@
       "settings": [
         { "type": "text", "id": "question", "label": "Question", "default": "What presence do you wish to project?" },
         { "type": "text", "id": "description", "label": "Description", "default": "Consider how you want your aura to be perceived upon entering a room." },
-        { "type": "text", "id": "option_1_key", "label": "Option 1 key", "default": "noir" },
+        { "type": "text", "id": "option_1_key", "label": "Option 1 key", "default": "noir", "info": "Must match a Result key." },
         { "type": "text", "id": "option_1_icon", "label": "Option 1 icon", "default": "☾" },
         { "type": "text", "id": "option_1_title", "label": "Option 1 title", "default": "Nocturnal Enigma" },
         { "type": "textarea", "id": "option_1_sub", "label": "Option 1 subtitle", "default": "Shadows, candlelight, quiet command and magnetic mystery." },
-        { "type": "text", "id": "option_2_key", "label": "Option 2 key", "default": "or" },
+        { "type": "text", "id": "option_2_key", "label": "Option 2 key", "default": "or", "info": "Must match a Result key." },
         { "type": "text", "id": "option_2_icon", "label": "Option 2 icon", "default": "☼" },
         { "type": "text", "id": "option_2_title", "label": "Option 2 title", "default": "Solar Splendour" },
         { "type": "textarea", "id": "option_2_sub", "label": "Option 2 subtitle", "default": "Warm golden radiance, unmistakable opulence and high presence." },
-        { "type": "text", "id": "option_3_key", "label": "Option 3 key", "default": "ombre" },
+        { "type": "text", "id": "option_3_key", "label": "Option 3 key", "default": "ombre", "info": "Must match a Result key." },
         { "type": "text", "id": "option_3_icon", "label": "Option 3 icon", "default": "✦" },
         { "type": "text", "id": "option_3_title", "label": "Option 3 title", "default": "Intimate Whisper" },
         { "type": "textarea", "id": "option_3_sub", "label": "Option 3 subtitle", "default": "Powdery soft suede, velvet close-contact and understated luxury." }
@@ -199,18 +291,40 @@
       "type": "result",
       "name": "Result",
       "settings": [
-        { "type": "text", "id": "key", "label": "Result key", "default": "noir", "info": "Must match an option key (noir, or, ombre)." },
+        { "type": "text", "id": "key", "label": "Result key", "default": "noir", "info": "Must match option keys (noir, or, ombre)." },
         { "type": "text", "id": "title", "label": "Result title", "default": "Noir Veil — Extrait de Parfum" },
         { "type": "text", "id": "score", "label": "Match score label", "default": "98% Sensory Affinity Match" },
         { "type": "textarea", "id": "description", "label": "Result description", "default": "Your temperament gravitates towards deep nocturnal intimacy and quiet magnetism." },
-        { "type": "product", "id": "product", "label": "Linked product" },
+        {
+          "type": "product_list",
+          "id": "products",
+          "label": "Recommended products",
+          "limit": 6,
+          "info": "Products shown when this result matches quiz answers."
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Recommended collection",
+          "info": "Used if no products are selected above."
+        },
+        {
+          "type": "range",
+          "id": "products_to_show",
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "default": 3,
+          "label": "Products to show from collection"
+        },
+        { "type": "product", "id": "product", "label": "Featured product", "info": "Used for the claim button link when no product list is set." },
         { "type": "url", "id": "link", "label": "Fallback link" }
       ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.maison_consultation.name",
+      "name": "Maison consultation",
       "blocks": [
         {
           "type": "step",

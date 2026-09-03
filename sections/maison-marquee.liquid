@@ -1,7 +1,7 @@
 {{ 'section-maison-marquee.css' | asset_url | stylesheet_tag }}
 
 {%- if section.blocks.size > 0 -%}
-  <div class="maison-marquee" {{ section.shopify_attributes }}>
+  <div class="maison-marquee color-{{ section.settings.color_scheme }} isolate gradient" {{ section.shopify_attributes }}>
     <div class="maison-marquee__track" aria-hidden="true">
       {%- for i in (1..2) -%}
         {%- for block in section.blocks -%}
@@ -26,6 +26,14 @@
   "tag": "section",
   "class": "section-maison-marquee",
   "max_blocks": 12,
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
+    }
+  ],
   "blocks": [
     {
       "type": "item",

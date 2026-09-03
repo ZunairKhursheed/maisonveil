@@ -1,7 +1,8 @@
 .maison-compositions {
   display: block;
   padding: 100px 5vw;
-  color: #f4efe6;
+  color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
 }
 
 .maison-compositions__wrap {
