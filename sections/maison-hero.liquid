@@ -1,7 +1,7 @@
 {{ 'section-maison-hero.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'maison-hero.js' | asset_url }}" defer="defer"></script>
 
-<maison-hero class="maison-hero color-{{ section.settings.color_scheme }}" id="MaisonHero-{{ section.id }}">
+<section class="maison-hero color-{{ section.settings.color_scheme }}" id="MaisonHero-{{ section.id }}">
   <div class="maison-hero__glow" aria-hidden="true"></div>
   <div class="maison-hero__viewport">
     {%- for block in section.blocks -%}
@@ -103,7 +103,7 @@
       </div>
     {%- endif -%}
   </div>
-</maison-hero>
+</section>
 
 {% schema %}
 {
