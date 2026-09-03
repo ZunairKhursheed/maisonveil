@@ -1,0 +1,192 @@
+{{ 'section-maison-laboratory.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'maison-laboratory.js' | asset_url }}" defer="defer"></script>
+
+{%- assign phase_blocks = section.blocks | where: 'type', 'phase' -%}
+
+<maison-laboratory class="maison-laboratory" id="laboratory" data-section-id="{{ section.id }}">
+  <div class="maison-laboratory__wrap">
+    <div class="maison-laboratory__head mv-reveal">
+      {%- if section.settings.kicker != blank -%}
+        <div class="maison-laboratory__kicker">{{ section.settings.kicker | escape }}</div>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h2 class="maison-laboratory__title">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      <div class="maison-laboratory__divider" aria-hidden="true"></div>
+      {%- if section.settings.description != blank -%}
+        <div class="maison-laboratory__desc">{{ section.settings.description }}</div>
+      {%- endif -%}
+    </div>
+
+    {%- if phase_blocks.size > 0 -%}
+      <div class="maison-laboratory__scrubber mv-reveal">
+        <div class="maison-laboratory__controls">
+          <div class="maison-laboratory__live">
+            <h3 class="maison-laboratory__phase-name" data-lab-phase-name>
+              {{ phase_blocks.first.settings.headline | escape }}
+            </h3>
+            <p class="maison-laboratory__phase-sub" data-lab-phase-sub>
+              {{ phase_blocks.first.settings.subheadline | escape }}
+            </p>
+          </div>
+          <div class="maison-laboratory__badge" data-lab-phase-time>
+            {{ phase_blocks.first.settings.time_label | escape }}
+          </div>
+        </div>
+
+        <div class="maison-laboratory__slider-wrap">
+          <input
+            type="range"
+            class="maison-laboratory__slider"
+            min="0"
+            max="{{ phase_blocks.size | minus: 1 }}"
+            step="1"
+            value="0"
+            data-lab-slider
+            aria-label="{{ section.settings.title | default: 'Scent timeline' | escape }}"
+          >
+        </div>
+
+        <div class="maison-laboratory__markers">
+          {%- for block in phase_blocks -%}
+            <button
+              type="button"
+              class="maison-laboratory__marker{% if forloop.first %} is-active{% endif %}"
+              data-lab-marker
+              data-lab-index="{{ forloop.index0 }}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.marker_label | default: block.settings.title | escape }}
+            </button>
+          {%- endfor -%}
+        </div>
+
+        <div class="maison-laboratory__pyramid">
+          {%- for block in phase_blocks -%}
+            <article
+              class="maison-laboratory__card{% if forloop.first %} is-active{% endif %}"
+              data-lab-card
+              data-lab-index="{{ forloop.index0 }}"
+              data-headline="{{ block.settings.headline | escape }}"
+              data-subheadline="{{ block.settings.subheadline | escape }}"
+              data-time="{{ block.settings.time_label | escape }}"
+              {{ block.shopify_attributes }}
+            >
+              <div class="maison-laboratory__card-num">{{ block.settings.phase_label | escape }}</div>
+              <div class="maison-laboratory__card-title">{{ block.settings.title | escape }}</div>
+              <div class="maison-laboratory__card-time">{{ block.settings.time_label | escape }}</div>
+              <div class="maison-laboratory__ingredients">
+                {%- assign rows = block.settings.ingredients | newline_to_br | split: '<br />' -%}
+                {%- for row in rows -%}
+                  {%- assign row_text = row | strip -%}
+                  {%- if row_text != blank -%}
+                    {%- assign parts = row_text | split: '|' -%}
+                    <div class="maison-laboratory__ingredient">
+                      <span class="maison-laboratory__ing-name">{{ parts[0] | strip | escape }}</span>
+                      {%- if parts.size > 1 -%}
+                        <span class="maison-laboratory__ing-origin">{{ parts[1] | strip | escape }}</span>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </article>
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</maison-laboratory>
+
+{% schema %}
+{
+  "name": "t:sections.maison_laboratory.name",
+  "tag": "section",
+  "class": "section-maison-laboratory",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "02 · The Olfactory Architecture"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "The Evolution on <em>Skin.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>A true Extrait de Parfum is an organic, shifting symphony. Drag the timeline below to experience how the notes unfold over 24 hours of intimate body contact.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "phase",
+      "name": "Phase",
+      "settings": [
+        { "type": "text", "id": "phase_label", "label": "Phase label", "default": "Phase I" },
+        { "type": "text", "id": "title", "label": "Card title", "default": "Top Notes" },
+        { "type": "text", "id": "marker_label", "label": "Marker label", "default": "Opening (0–15m)" },
+        { "type": "text", "id": "headline", "label": "Active headline", "default": "Opening: The Radiant Overture" },
+        { "type": "text", "id": "subheadline", "label": "Active subheadline", "default": "Skin temperature activates volatile high-frequency botanicals" },
+        { "type": "text", "id": "time_label", "label": "Time label", "default": "0 — 15 Minutes" },
+        {
+          "type": "textarea",
+          "id": "ingredients",
+          "label": "Ingredients",
+          "info": "One per line: Name|Origin",
+          "default": "Kashmiri Saffron|Pampore, India\nCalabrian Bergamot|Reggio Calabria\nPink Peppercorn|Madagascar"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.maison_laboratory.name",
+      "blocks": [
+        {
+          "type": "phase",
+          "settings": {
+            "phase_label": "Phase I",
+            "title": "Top Notes",
+            "marker_label": "Opening (0–15m)",
+            "headline": "Opening: The Radiant Overture",
+            "subheadline": "Skin temperature activates volatile high-frequency botanicals",
+            "time_label": "0 — 15 Minutes",
+            "ingredients": "Kashmiri Saffron|Pampore, India\nCalabrian Bergamot|Reggio Calabria\nPink Peppercorn|Madagascar"
+          }
+        },
+        {
+          "type": "phase",
+          "settings": {
+            "phase_label": "Phase II",
+            "title": "Heart Notes",
+            "marker_label": "Heart Bloom (15m–4h)",
+            "headline": "Heart: The Velveteen Core",
+            "subheadline": "Rare florals and sacred resins blossom as body temperature peaks",
+            "time_label": "15 Minutes — 4 Hours",
+            "ingredients": "Taif Rose Absolute|Hijaz Mountains\nTuscan Orris Butter|Florence, Italy\nSomalian Frankincense|Puntland, Somalia"
+          }
+        },
+        {
+          "type": "phase",
+          "settings": {
+            "phase_label": "Phase III",
+            "title": "Base & Trail",
+            "marker_label": "Intimate Base (4h–24h)",
+            "headline": "Base: The Lingering Sillage",
+            "subheadline": "Dense ambers, noble woods, and second-skin suede lock into memory",
+            "time_label": "4 — 24+ Hours",
+            "ingredients": "Golden Fossil Amber|Baltic Sea Coast\nMysore Sandalwood|Karnataka, India\nBlack Suede Accord|Grasse Laboratory"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

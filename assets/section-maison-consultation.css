@@ -1,0 +1,232 @@
+.maison-consultation {
+  --mc-gold: #c9a84c;
+  --mc-gold-bright: #e8c96a;
+  --mc-ink: #f4efe6;
+  --mc-muted: #9a9080;
+  --mc-line: rgba(201, 168, 76, 0.28);
+  --mc-panel: rgba(18, 14, 10, 0.72);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  color: var(--mc-ink);
+}
+
+.maison-consultation__wrap {
+  width: min(1100px, calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+.maison-consultation__head {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto 2.5rem;
+}
+
+.maison-consultation__kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mc-gold);
+  margin-bottom: 0.85rem;
+}
+
+.maison-consultation__title {
+  font-family: var(--font-heading-family);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0;
+  color: var(--mc-ink);
+}
+
+.maison-consultation__title em,
+.maison-consultation__title .editorial {
+  font-style: italic;
+  color: var(--mc-gold-bright);
+}
+
+.maison-consultation__divider {
+  width: 3rem;
+  height: 1px;
+  margin: 1.25rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--mc-gold), transparent);
+}
+
+.maison-consultation__desc {
+  margin: 1.25rem auto 0;
+  color: var(--mc-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.maison-consultation__desc p {
+  margin: 0;
+}
+
+.maison-consultation__box {
+  background: var(--mc-panel);
+  border: 1px solid var(--mc-line);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  backdrop-filter: blur(10px);
+}
+
+.maison-consultation__progress {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.maison-consultation__progress-step {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.12);
+  transition: background 0.3s ease;
+}
+
+.maison-consultation__progress-step.is-done {
+  background: var(--mc-gold);
+}
+
+.maison-consultation__step.is-hidden {
+  display: none;
+}
+
+.maison-consultation__step-title {
+  font-family: var(--font-heading-family);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+
+.maison-consultation__step-desc {
+  margin: 0 0 1.5rem;
+  color: var(--mc-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.maison-consultation__options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.maison-consultation__option {
+  appearance: none;
+  border: 1px solid var(--mc-line);
+  background: rgba(8, 6, 4, 0.55);
+  color: inherit;
+  text-align: left;
+  padding: 1.25rem 1rem;
+  cursor: pointer;
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  font: inherit;
+}
+
+.maison-consultation__option:hover,
+.maison-consultation__option.is-selected {
+  border-color: var(--mc-gold);
+  background: rgba(201, 168, 76, 0.08);
+  transform: translateY(-2px);
+}
+
+.maison-consultation__option-icon {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--mc-gold);
+  margin-bottom: 0.75rem;
+}
+
+.maison-consultation__option-title {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.02em;
+}
+
+.maison-consultation__option-sub {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--mc-muted);
+}
+
+.maison-consultation__result[hidden] {
+  display: none !important;
+}
+
+.maison-consultation__result {
+  text-align: center;
+  padding: 1rem 0 0.25rem;
+}
+
+.maison-consultation__pill {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mc-gold);
+  border: 1px solid var(--mc-line);
+  padding: 0.4rem 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.maison-consultation__result-title {
+  font-family: var(--font-heading-family);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 400;
+  margin: 0 0 0.85rem;
+}
+
+.maison-consultation__result-desc {
+  max-width: 36rem;
+  margin: 0 auto 1.75rem;
+  color: var(--mc-muted);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.maison-consultation__result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.maison-consultation__btn {
+  min-height: 2.75rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid var(--mc-gold);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.maison-consultation__btn--primary {
+  background: var(--mc-gold);
+  color: #120e0a;
+}
+
+.maison-consultation__btn--primary:hover {
+  background: var(--mc-gold-bright);
+  color: #120e0a;
+}
+
+.maison-consultation__btn--outline {
+  background: transparent;
+  color: var(--mc-ink);
+}
+
+.maison-consultation__btn--outline:hover {
+  background: rgba(201, 168, 76, 0.12);
+}
+
+@media screen and (max-width: 749px) {
+  .maison-consultation__options {
+    grid-template-columns: 1fr;
+  }
+}

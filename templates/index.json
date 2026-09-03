@@ -297,12 +297,169 @@
         "columns_desktop": 3,
         "filter_all_label": "All Compositions"
       }
+    },
+    "maison_laboratory": {
+      "type": "maison-laboratory",
+      "blocks": {
+        "phase_1": {
+          "type": "phase",
+          "settings": {
+            "phase_label": "Phase I",
+            "title": "Top Notes",
+            "marker_label": "Opening (0–15m)",
+            "headline": "Opening: The Radiant Overture",
+            "subheadline": "Skin temperature activates volatile high-frequency botanicals",
+            "time_label": "0 — 15 Minutes",
+            "ingredients": "Kashmiri Saffron|Pampore, India\nCalabrian Bergamot|Reggio Calabria\nPink Peppercorn|Madagascar"
+          }
+        },
+        "phase_2": {
+          "type": "phase",
+          "settings": {
+            "phase_label": "Phase II",
+            "title": "Heart Notes",
+            "marker_label": "Heart Bloom (15m–4h)",
+            "headline": "Heart: The Velveteen Core",
+            "subheadline": "Rare florals and sacred resins blossom as body temperature peaks",
+            "time_label": "15 Minutes — 4 Hours",
+            "ingredients": "Taif Rose Absolute|Hijaz Mountains\nTuscan Orris Butter|Florence, Italy\nSomalian Frankincense|Puntland, Somalia"
+          }
+        },
+        "phase_3": {
+          "type": "phase",
+          "settings": {
+            "phase_label": "Phase III",
+            "title": "Base & Trail",
+            "marker_label": "Intimate Base (4h–24h)",
+            "headline": "Base: The Lingering Sillage",
+            "subheadline": "Dense ambers, noble woods, and second-skin suede lock into memory",
+            "time_label": "4 — 24+ Hours",
+            "ingredients": "Golden Fossil Amber|Baltic Sea Coast\nMysore Sandalwood|Karnataka, India\nBlack Suede Accord|Grasse Laboratory"
+          }
+        }
+      },
+      "block_order": [
+        "phase_1",
+        "phase_2",
+        "phase_3"
+      ],
+      "settings": {
+        "kicker": "02 · The Olfactory Architecture",
+        "title": "The Evolution on <em>Skin.</em>",
+        "description": "<p>A true Extrait de Parfum is an organic, shifting symphony. Drag the timeline below to experience how the notes unfold over 24 hours of intimate body contact.</p>"
+      }
+    },
+    "maison_consultation": {
+      "type": "maison-consultation",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "question": "What presence do you wish to project?",
+            "description": "Consider how you want your aura to be perceived upon entering a room.",
+            "option_1_key": "noir",
+            "option_1_icon": "☾",
+            "option_1_title": "Nocturnal Enigma",
+            "option_1_sub": "Shadows, candlelight, quiet command and magnetic mystery.",
+            "option_2_key": "or",
+            "option_2_icon": "☼",
+            "option_2_title": "Solar Splendour",
+            "option_2_sub": "Warm golden radiance, unmistakable opulence and high presence.",
+            "option_3_key": "ombre",
+            "option_3_icon": "✦",
+            "option_3_title": "Intimate Whisper",
+            "option_3_sub": "Powdery soft suede, velvet close-contact and understated luxury."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "question": "In which sanctuary do you feel most awakened?",
+            "description": "Choose the sensory space that stirs your imagination.",
+            "option_1_key": "noir",
+            "option_1_icon": "◇",
+            "option_1_title": "Private Vault",
+            "option_1_sub": "Dark cedar, vintage leather tomes, and burning resins.",
+            "option_2_key": "or",
+            "option_2_icon": "✧",
+            "option_2_title": "Dusk Terrace",
+            "option_2_sub": "Sun-warmed terracotta, blooming roses, and spiced evening air.",
+            "option_3_key": "ombre",
+            "option_3_icon": "○",
+            "option_3_title": "Mist Atelier",
+            "option_3_sub": "Cashmere throws, Florentine silk paper, and quiet rain."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "question": "Which tactile texture reflects your skin?",
+            "description": "Fragrance is tactile poetry felt directly through the epidermis.",
+            "option_1_key": "noir",
+            "option_1_icon": "◈",
+            "option_1_title": "Smoked Velvet",
+            "option_1_sub": "Heavy obsidian fabric with deep resinous warmth.",
+            "option_2_key": "or",
+            "option_2_icon": "⚜",
+            "option_2_title": "Liquid Gold Silk",
+            "option_2_sub": "Fluid, shimmering, luminous and richly textured.",
+            "option_3_key": "ombre",
+            "option_3_icon": "❖",
+            "option_3_title": "Brushed Suede",
+            "option_3_sub": "Soft, powdery, delicately sensual against warm skin."
+          }
+        },
+        "result_noir": {
+          "type": "result",
+          "settings": {
+            "key": "noir",
+            "title": "Noir Veil — Extrait de Parfum",
+            "score": "98% Sensory Affinity Match",
+            "description": "Your temperament gravitates towards deep nocturnal intimacy and quiet magnetism. Noir Veil envelops you in charred amber and frankincense."
+          }
+        },
+        "result_or": {
+          "type": "result",
+          "settings": {
+            "key": "or",
+            "title": "Or Éclat — Extrait de Parfum",
+            "score": "96% Sensory Affinity Match",
+            "description": "You resonate with warm solar magnificence and radiant luxury. Or Éclat illuminates your presence with Kashmiri saffron and Taif rose."
+          }
+        },
+        "result_ombre": {
+          "type": "result",
+          "settings": {
+            "key": "ombre",
+            "title": "Ombre Serein — Extrait de Parfum",
+            "score": "99% Sensory Affinity Match",
+            "description": "Your aura is tailored for whispers and understated tactile indulgence. Ombre Serein embraces you with Tuscan orris and white suede."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "result_noir",
+        "result_or",
+        "result_ombre"
+      ],
+      "settings": {
+        "kicker": "03 · Bespoke Consultation",
+        "title": "Find Your <em>Veil.</em>",
+        "description": "<p>Answer three sensory reflections to discover the flacon that aligns with your nocturnal temperament and desired presence.</p>",
+        "claim_label": "Claim Flacon",
+        "retake_label": "Retake Consultation"
+      }
     }
   },
   "order": [
     "maison_hero",
     "maison_marquee",
     "maison_compositions",
+    "maison_laboratory",
+    "maison_consultation",
     "two_column_grid_7QT3ED",
     "featured_collection_with_image_XRxmEX",
     "1788286219678f8746",

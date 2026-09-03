@@ -1,0 +1,285 @@
+{{ 'section-maison-consultation.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'maison-consultation.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign step_blocks = section.blocks | where: 'type', 'step'
+  assign result_blocks = section.blocks | where: 'type', 'result'
+-%}
+
+<maison-consultation
+  class="maison-consultation"
+  id="consultation"
+  data-section-id="{{ section.id }}"
+>
+  <div class="maison-consultation__wrap">
+    <div class="maison-consultation__head mv-reveal">
+      {%- if section.settings.kicker != blank -%}
+        <div class="maison-consultation__kicker">{{ section.settings.kicker | escape }}</div>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h2 class="maison-consultation__title">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      <div class="maison-consultation__divider" aria-hidden="true"></div>
+      {%- if section.settings.description != blank -%}
+        <div class="maison-consultation__desc">{{ section.settings.description }}</div>
+      {%- endif -%}
+    </div>
+
+    <div class="maison-consultation__box mv-reveal">
+      <div class="maison-consultation__progress" aria-hidden="true">
+        {%- for step in step_blocks -%}
+          <div
+            class="maison-consultation__progress-step{% if forloop.first %} is-done{% endif %}"
+            data-quiz-progress="{{ forloop.index }}"
+          ></div>
+        {%- endfor -%}
+      </div>
+
+      {%- for block in step_blocks -%}
+        {%- assign step_index = forloop.index -%}
+        <div
+          class="maison-consultation__step{% unless forloop.first %} is-hidden{% endunless %}"
+          data-quiz-step="{{ step_index }}"
+          {{ block.shopify_attributes }}
+        >
+          <h3 class="maison-consultation__step-title">{{ block.settings.question | escape }}</h3>
+          {%- if block.settings.description != blank -%}
+            <p class="maison-consultation__step-desc">{{ block.settings.description | escape }}</p>
+          {%- endif -%}
+          <div class="maison-consultation__options">
+            {%- for i in (1..3) -%}
+              {%- liquid
+                case i
+                  when 1
+                    assign opt_key = block.settings.option_1_key
+                    assign opt_icon = block.settings.option_1_icon
+                    assign opt_title = block.settings.option_1_title
+                    assign opt_sub = block.settings.option_1_sub
+                  when 2
+                    assign opt_key = block.settings.option_2_key
+                    assign opt_icon = block.settings.option_2_icon
+                    assign opt_title = block.settings.option_2_title
+                    assign opt_sub = block.settings.option_2_sub
+                  when 3
+                    assign opt_key = block.settings.option_3_key
+                    assign opt_icon = block.settings.option_3_icon
+                    assign opt_title = block.settings.option_3_title
+                    assign opt_sub = block.settings.option_3_sub
+                endcase
+              -%}
+              {%- if opt_title != blank -%}
+                <button
+                  type="button"
+                  class="maison-consultation__option"
+                  data-quiz-choice="{{ opt_key | default: 'noir' | handleize | escape }}"
+                  data-quiz-step-index="{{ step_index }}"
+                >
+                  {%- if opt_icon != blank -%}
+                    <span class="maison-consultation__option-icon">{{ opt_icon | escape }}</span>
+                  {%- endif -%}
+                  <span class="maison-consultation__option-title">{{ opt_title | escape }}</span>
+                  {%- if opt_sub != blank -%}
+                    <span class="maison-consultation__option-sub">{{ opt_sub | escape }}</span>
+                  {%- endif -%}
+                </button>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endfor -%}
+
+      <div class="maison-consultation__result" data-quiz-result hidden>
+        <span class="maison-consultation__pill" data-quiz-score></span>
+        <h3 class="maison-consultation__result-title" data-quiz-title></h3>
+        <p class="maison-consultation__result-desc" data-quiz-desc></p>
+        <div class="maison-consultation__result-actions">
+          <a class="button maison-consultation__btn maison-consultation__btn--primary" data-quiz-claim href="#">
+            {{ section.settings.claim_label | default: 'Claim Flacon' | escape }}
+          </a>
+          <button type="button" class="maison-consultation__btn maison-consultation__btn--outline" data-quiz-reset>
+            {{ section.settings.retake_label | default: 'Retake Consultation' | escape }}
+          </button>
+        </div>
+      </div>
+
+      <script type="application/json" data-quiz-results>
+        {
+          {%- for block in result_blocks -%}
+            "{{ block.settings.key | handleize | escape }}": {
+              "title": {{ block.settings.title | json }},
+              "score": {{ block.settings.score | json }},
+              "desc": {{ block.settings.description | json }},
+              "url": {% if block.settings.product != blank %}{{ block.settings.product.url | json }}{% else %}{{ block.settings.link | json }}{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}
+        }
+      </script>
+    </div>
+  </div>
+</maison-consultation>
+
+{% schema %}
+{
+  "name": "t:sections.maison_consultation.name",
+  "tag": "section",
+  "class": "section-maison-consultation",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "03 · Bespoke Consultation"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "Find Your <em>Veil.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Answer three sensory reflections to discover the flacon that aligns with your nocturnal temperament and desired presence.</p>"
+    },
+    {
+      "type": "text",
+      "id": "claim_label",
+      "label": "Claim button label",
+      "default": "Claim Flacon"
+    },
+    {
+      "type": "text",
+      "id": "retake_label",
+      "label": "Retake button label",
+      "default": "Retake Consultation"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Quiz step",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "What presence do you wish to project?" },
+        { "type": "text", "id": "description", "label": "Description", "default": "Consider how you want your aura to be perceived upon entering a room." },
+        { "type": "text", "id": "option_1_key", "label": "Option 1 key", "default": "noir" },
+        { "type": "text", "id": "option_1_icon", "label": "Option 1 icon", "default": "☾" },
+        { "type": "text", "id": "option_1_title", "label": "Option 1 title", "default": "Nocturnal Enigma" },
+        { "type": "textarea", "id": "option_1_sub", "label": "Option 1 subtitle", "default": "Shadows, candlelight, quiet command and magnetic mystery." },
+        { "type": "text", "id": "option_2_key", "label": "Option 2 key", "default": "or" },
+        { "type": "text", "id": "option_2_icon", "label": "Option 2 icon", "default": "☼" },
+        { "type": "text", "id": "option_2_title", "label": "Option 2 title", "default": "Solar Splendour" },
+        { "type": "textarea", "id": "option_2_sub", "label": "Option 2 subtitle", "default": "Warm golden radiance, unmistakable opulence and high presence." },
+        { "type": "text", "id": "option_3_key", "label": "Option 3 key", "default": "ombre" },
+        { "type": "text", "id": "option_3_icon", "label": "Option 3 icon", "default": "✦" },
+        { "type": "text", "id": "option_3_title", "label": "Option 3 title", "default": "Intimate Whisper" },
+        { "type": "textarea", "id": "option_3_sub", "label": "Option 3 subtitle", "default": "Powdery soft suede, velvet close-contact and understated luxury." }
+      ]
+    },
+    {
+      "type": "result",
+      "name": "Result",
+      "settings": [
+        { "type": "text", "id": "key", "label": "Result key", "default": "noir", "info": "Must match an option key (noir, or, ombre)." },
+        { "type": "text", "id": "title", "label": "Result title", "default": "Noir Veil — Extrait de Parfum" },
+        { "type": "text", "id": "score", "label": "Match score label", "default": "98% Sensory Affinity Match" },
+        { "type": "textarea", "id": "description", "label": "Result description", "default": "Your temperament gravitates towards deep nocturnal intimacy and quiet magnetism." },
+        { "type": "product", "id": "product", "label": "Linked product" },
+        { "type": "url", "id": "link", "label": "Fallback link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.maison_consultation.name",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "question": "What presence do you wish to project?",
+            "description": "Consider how you want your aura to be perceived upon entering a room.",
+            "option_1_key": "noir",
+            "option_1_icon": "☾",
+            "option_1_title": "Nocturnal Enigma",
+            "option_1_sub": "Shadows, candlelight, quiet command and magnetic mystery.",
+            "option_2_key": "or",
+            "option_2_icon": "☼",
+            "option_2_title": "Solar Splendour",
+            "option_2_sub": "Warm golden radiance, unmistakable opulence and high presence.",
+            "option_3_key": "ombre",
+            "option_3_icon": "✦",
+            "option_3_title": "Intimate Whisper",
+            "option_3_sub": "Powdery soft suede, velvet close-contact and understated luxury."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "question": "In which sanctuary do you feel most awakened?",
+            "description": "Choose the sensory space that stirs your imagination.",
+            "option_1_key": "noir",
+            "option_1_icon": "◇",
+            "option_1_title": "Private Vault",
+            "option_1_sub": "Dark cedar, vintage leather tomes, and burning resins.",
+            "option_2_key": "or",
+            "option_2_icon": "✧",
+            "option_2_title": "Dusk Terrace",
+            "option_2_sub": "Sun-warmed terracotta, blooming roses, and spiced evening air.",
+            "option_3_key": "ombre",
+            "option_3_icon": "○",
+            "option_3_title": "Mist Atelier",
+            "option_3_sub": "Cashmere throws, Florentine silk paper, and quiet rain."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "question": "Which tactile texture reflects your skin?",
+            "description": "Fragrance is tactile poetry felt directly through the epidermis.",
+            "option_1_key": "noir",
+            "option_1_icon": "◈",
+            "option_1_title": "Smoked Velvet",
+            "option_1_sub": "Heavy obsidian fabric with deep resinous warmth.",
+            "option_2_key": "or",
+            "option_2_icon": "⚜",
+            "option_2_title": "Liquid Gold Silk",
+            "option_2_sub": "Fluid, shimmering, luminous and richly textured.",
+            "option_3_key": "ombre",
+            "option_3_icon": "❖",
+            "option_3_title": "Brushed Suede",
+            "option_3_sub": "Soft, powdery, delicately sensual against warm skin."
+          }
+        },
+        {
+          "type": "result",
+          "settings": {
+            "key": "noir",
+            "title": "Noir Veil — Extrait de Parfum",
+            "score": "98% Sensory Affinity Match",
+            "description": "Your temperament gravitates towards deep nocturnal intimacy and quiet magnetism. Noir Veil envelops you in charred amber and frankincense."
+          }
+        },
+        {
+          "type": "result",
+          "settings": {
+            "key": "or",
+            "title": "Or Éclat — Extrait de Parfum",
+            "score": "96% Sensory Affinity Match",
+            "description": "You resonate with warm solar magnificence and radiant luxury. Or Éclat illuminates your presence with Kashmiri saffron and Taif rose."
+          }
+        },
+        {
+          "type": "result",
+          "settings": {
+            "key": "ombre",
+            "title": "Ombre Serein — Extrait de Parfum",
+            "score": "99% Sensory Affinity Match",
+            "description": "Your aura is tailored for whispers and understated tactile indulgence. Ombre Serein embraces you with Tuscan orris and white suede."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -2565,7 +2565,7 @@
       }
     },
     "maison_compositions": {
-      "name": "Signature Compositions",
+      "name": "Maison compositions",
       "settings": {
         "kicker": { "label": "Kicker" },
         "title": { "label": "Heading" },
@@ -2582,6 +2582,46 @@
             "label": { "label": "Label" },
             "tag": { "label": "Product tag", "info": "Must match a product tag exactly (case-insensitive)." }
           }
+        }
+      }
+    },
+    "maison_laboratory": {
+      "name": "Maison laboratory",
+      "settings": {
+        "kicker": { "label": "Kicker" },
+        "title": { "label": "Heading" },
+        "description": { "label": "Description" }
+      },
+      "blocks": {
+        "phase": {
+          "name": "Phase",
+          "settings": {
+            "phase_label": { "label": "Phase label" },
+            "title": { "label": "Card title" },
+            "marker_label": { "label": "Marker label" },
+            "headline": { "label": "Active headline" },
+            "subheadline": { "label": "Active subheadline" },
+            "time_label": { "label": "Time label" },
+            "ingredients": { "label": "Ingredients", "info": "One per line: Name|Origin" }
+          }
+        }
+      }
+    },
+    "maison_consultation": {
+      "name": "Maison consultation",
+      "settings": {
+        "kicker": { "label": "Kicker" },
+        "title": { "label": "Heading" },
+        "description": { "label": "Description" },
+        "claim_label": { "label": "Claim button label" },
+        "retake_label": { "label": "Retake button label" }
+      },
+      "blocks": {
+        "step": {
+          "name": "Quiz step"
+        },
+        "result": {
+          "name": "Result"
         }
       }
     },
