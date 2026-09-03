@@ -96,10 +96,10 @@
                   autocomplete="name"
                   required
                   value="{% if form.first_name %}{{ form.first_name }}{% elsif customer %}{{ customer.first_name }}{% endif %}"
-                  placeholder="{{ 'newsletter.name' | t }}"
+                  placeholder="{{ 'templates.contact.form.name' | t }}"
                 >
                 <label class="field__label" for="NewsletterPopup-Name-{{ section.id }}">
-                  {{ 'newsletter.name' | t }}
+                  {{ 'templates.contact.form.name' | t }}
                 </label>
               </div>
 
@@ -134,10 +134,10 @@
                   autocomplete="tel"
                   required
                   value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-                  placeholder="{{ 'newsletter.phone' | t }}"
+                  placeholder="{{ 'templates.contact.form.phone' | t }}"
                 >
                 <label class="field__label" for="NewsletterPopup-Phone-{{ section.id }}">
-                  {{ 'newsletter.phone' | t }}
+                  {{ 'templates.contact.form.phone' | t }}
                 </label>
               </div>
 
