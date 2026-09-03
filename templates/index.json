@@ -9,52 +9,44 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "maison_hero": {
+      "type": "maison-hero",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slide_1": {
+          "type": "slide",
           "settings": {
-            "heading": "Where Scent Meets Story.",
-            "heading_size": "h0"
-          }
-        },
-        "text_mBArdK": {
-          "type": "text",
-          "settings": {
-            "text": "Step into a world of curated fragrances and bespoke blends—crafted just for you. Whether you’re discovering a signature scent or creating one from scratch, Maison Veil is where elegance meets individuality.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
+            "kicker": "Maison Veil · Extrait de Parfum 30%",
+            "heading": "Wear the <em>unspoken.</em>",
+            "lead": "<p>Devoted to the tension of light, shadow, and tactile intimacy.</p>",
+            "accords": "Frankincense, Black Amber, Sandalwood",
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label_2": "Learn more",
+            "button_link_2": "shopify://pages/contact",
+            "badge_title": "Origin & Vessel",
+            "badge_value": "Grasse · 100ml"
+          }
+        },
+        "slide_2": {
+          "type": "slide",
+          "settings": {
+            "kicker": "02 · Signature",
+            "heading": "Light, held <em>close.</em>",
+            "lead": "<p>A brighter composition for daylight rituals.</p>",
+            "accords": "Neroli, Soft Musk, Cedar",
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "badge_title": "Origin & Vessel",
+            "badge_value": "Paris · 100ml"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text_mBArdK",
-        "button"
+        "slide_1",
+        "slide_2"
       ],
       "settings": {
-        "image": "shopify://shop_images/maison-veil-background-3.webp",
-        "image_overlay_opacity": 30,
-        "image_height": "large",
-        "desktop_content_position": "bottom-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "color_scheme": "scheme-3"
       }
     },
     "featured_collection": {
@@ -249,7 +241,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "maison_hero",
     "featured_collection",
     "two_column_grid_7QT3ED",
     "featured_collection_with_image_XRxmEX",
