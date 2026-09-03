@@ -1,7 +1,7 @@
 {{ 'section-maison-hero.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'maison-hero.js' | asset_url }}" defer="defer"></script>
 
-<section class="maison-hero color-{{ section.settings.color_scheme }}" id="MaisonHero-{{ section.id }}">
+<maison-hero class="maison-hero color-{{ section.settings.color_scheme }}" id="MaisonHero-{{ section.id }}">
   <div class="maison-hero__glow" aria-hidden="true"></div>
   <div class="maison-hero__viewport">
     {%- for block in section.blocks -%}
@@ -11,7 +11,7 @@
         {{ block.shopify_attributes }}
         aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"
       >
-        <div class="maison-hero__content">
+        <div class="maison-hero__content mv-reveal">
           {%- if block.settings.kicker != blank -%}
             <div class="maison-hero__kicker">{{ block.settings.kicker | escape }}</div>
           {%- endif -%}
@@ -35,7 +35,7 @@
           <div class="maison-hero__actions">
             {%- if block.settings.button_label_1 != blank -%}
               <a
-                class="button"
+                class="maison-hero__btn"
                 href="{{ block.settings.button_link_1 }}"
                 {% if block.settings.button_link_1 == blank %}role="link" aria-disabled="true"{% endif %}
               >
@@ -44,7 +44,7 @@
             {%- endif -%}
             {%- if block.settings.button_label_2 != blank -%}
               <a
-                class="button button--secondary"
+                class="maison-hero__btn"
                 href="{{ block.settings.button_link_2 }}"
                 {% if block.settings.button_link_2 == blank %}role="link" aria-disabled="true"{% endif %}
               >
@@ -54,8 +54,9 @@
           </div>
         </div>
 
-        <div class="maison-hero__stage" data-maison-hero-stage>
+        <div class="maison-hero__stage mv-reveal" data-maison-hero-stage>
           <div class="maison-hero__orbit" aria-hidden="true"></div>
+          <div class="maison-hero__orbit maison-hero__orbit--inner" aria-hidden="true"></div>
           <div class="maison-hero__media" data-maison-hero-tilt>
             {%- if block.settings.image != blank -%}
               {%- assign img_alt = block.settings.image.alt | default: block.settings.heading | escape -%}
@@ -103,7 +104,7 @@
       </div>
     {%- endif -%}
   </div>
-</section>
+</maison-hero>
 
 {% schema %}
 {

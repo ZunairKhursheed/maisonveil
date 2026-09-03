@@ -4,6 +4,9 @@
   const spotlight = document.getElementById('mvCursorSpotlight');
   if (!spotlight || reduce.matches || coarse.matches) return;
 
+  spotlight.style.left = '50%';
+  spotlight.style.top = '40%';
+
   const onMove = (e) => {
     spotlight.style.left = `${e.clientX}px`;
     spotlight.style.top = `${e.clientY}px`;
