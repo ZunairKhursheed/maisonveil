@@ -1,0 +1,50 @@
+{% comment %}
+  Desktop utility-bar icons (search, account, cart).
+  Cart must NOT use id="cart-icon-bubble" — that id stays on the header cart for theme JS.
+  Accepts:
+  - search_input_id: {String} unique id for the search input (required)
+{% endcomment %}
+
+<div class="utility-bar__icons">
+  {% render 'header-search', input_id: search_input_id %}
+
+  {%- if shop.customer_accounts_enabled -%}
+    <a
+      href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+      class="header__icon header__icon--account link focus-inset"
+    >
+      {%- if customer and customer.has_avatar? -%}
+        {{ customer | avatar }}
+      {%- else -%}
+        {% render 'icon-account' %}
+      {%- endif -%}
+      <span class="visually-hidden">
+        {%- if customer -%}
+          {{ 'customer.account_fallback' | t }}
+        {%- else -%}
+          {{ 'customer.log_in' | t }}
+        {%- endif -%}
+      </span>
+    </a>
+  {%- endif -%}
+
+  <a
+    href="{{ routes.cart_url }}"
+    class="header__icon header__icon--cart link focus-inset utility-bar__cart"
+    data-cart-icon-mirror
+  >
+    {%- liquid
+      if cart == empty
+        render 'icon-cart-empty'
+      else
+        render 'icon-cart'
+      endif
+    -%}
+    <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+    <span class="utility-bar__cart-count" data-cart-count-mirror aria-hidden="true">
+      {%- if cart != empty and cart.item_count < 100 -%}
+        <div class="cart-count-bubble"><span>{{ cart.item_count }}</span></div>
+      {%- endif -%}
+    </span>
+  </a>
+</div>
