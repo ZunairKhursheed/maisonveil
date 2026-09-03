@@ -4,25 +4,20 @@ class MaisonHero extends HTMLElement {
     this.dots = Array.from(this.querySelectorAll('[data-maison-hero-dot]'));
     this.index = this.slides.findIndex((slide) => slide.classList.contains('is-active'));
     if (this.index < 0) this.index = 0;
+    this.isAnimating = false;
 
-    this.querySelector('[data-maison-hero-prev]')?.addEventListener('click', () => this.go(this.index - 1));
-    this.querySelector('[data-maison-hero-next]')?.addEventListener('click', () => this.go(this.index + 1));
-    this.dots.forEach((dot, i) => dot.addEventListener('click', () => this.go(i)));
+    this.querySelector('[data-maison-hero-prev]')?.addEventListener('click', () => this.go(this.index - 1, 'prev'));
+    this.querySelector('[data-maison-hero-next]')?.addEventListener('click', () => this.go(this.index + 1, 'next'));
+    this.dots.forEach((dot, i) => dot.addEventListener('click', () => this.go(i, i > this.index ? 'next' : 'prev')));
 
     this.initReveals();
     this.bindTilt();
-    this.go(this.index);
   }
 
   initReveals() {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const reveals = this.querySelectorAll('.mv-reveal');
-    if (reduce) {
-      reveals.forEach((el) => el.classList.add('is-visible'));
-      return;
-    }
-
-    if (!('IntersectionObserver' in window)) {
+    if (reduce || !('IntersectionObserver' in window)) {
       reveals.forEach((el) => el.classList.add('is-visible'));
       return;
     }
@@ -42,25 +37,67 @@ class MaisonHero extends HTMLElement {
     reveals.forEach((el) => observer.observe(el));
   }
 
-  go(next) {
-    if (!this.slides.length) return;
+  go(next, direction = 'next') {
+    if (!this.slides.length || this.isAnimating) return;
     const len = this.slides.length;
-    this.index = ((next % len) + len) % len;
+    const target = ((next % len) + len) % len;
+    if (target === this.index) return;
 
-    this.slides.forEach((slide, i) => {
-      const active = i === this.index;
-      slide.classList.toggle('is-active', active);
-      slide.setAttribute('aria-hidden', active ? 'false' : 'true');
-      if (active) {
-        slide.querySelectorAll('.mv-reveal').forEach((el) => {
-          el.classList.remove('is-visible');
-          requestAnimationFrame(() => el.classList.add('is-visible'));
-        });
-      }
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const current = this.slides[this.index];
+    const incoming = this.slides[target];
+    const fromX = direction === 'prev' ? '-48px' : '48px';
+    const leaveX = direction === 'prev' ? '48px' : '-48px';
+
+    this.isAnimating = true;
+    this.index = target;
+
+    if (reduce) {
+      this.slides.forEach((slide, i) => {
+        const active = i === this.index;
+        slide.classList.toggle('is-active', active);
+        slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+        slide.style.transform = '';
+      });
+      this.dots.forEach((dot, i) => dot.classList.toggle('is-active', i === this.index));
+      this.isAnimating = false;
+      this.bindTilt();
+      return;
+    }
+
+    incoming.style.transition = 'none';
+    incoming.style.transform = `translateX(${fromX})`;
+    incoming.style.opacity = '0';
+    incoming.style.visibility = 'visible';
+    incoming.classList.add('is-active');
+    incoming.setAttribute('aria-hidden', 'false');
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        incoming.style.transition = '';
+        incoming.style.transform = 'translateX(0)';
+        incoming.style.opacity = '1';
+
+        current.classList.add('is-leaving');
+        current.style.transform = `translateX(${leaveX})`;
+        current.style.opacity = '0';
+
+        window.setTimeout(() => {
+          current.classList.remove('is-active', 'is-leaving');
+          current.setAttribute('aria-hidden', 'true');
+          current.style.transform = '';
+          current.style.opacity = '';
+          current.style.visibility = '';
+          incoming.style.transform = '';
+          incoming.style.opacity = '';
+          incoming.style.visibility = '';
+          this.isAnimating = false;
+          this.bindTilt();
+        }, 700);
+      });
     });
 
     this.dots.forEach((dot, i) => dot.classList.toggle('is-active', i === this.index));
-    this.bindTilt();
   }
 
   bindTilt() {

@@ -4,6 +4,7 @@
 <maison-hero class="maison-hero color-{{ section.settings.color_scheme }}" id="MaisonHero-{{ section.id }}">
   <div class="maison-hero__glow" aria-hidden="true"></div>
   <div class="maison-hero__viewport">
+    <div class="maison-hero__slides">
     {%- for block in section.blocks -%}
       <article
         class="maison-hero__slide{% if forloop.first %} is-active{% endif %}"
@@ -35,7 +36,7 @@
           <div class="maison-hero__actions">
             {%- if block.settings.button_label_1 != blank -%}
               <a
-                class="maison-hero__btn"
+                class="button maison-hero__btn"
                 href="{{ block.settings.button_link_1 }}"
                 {% if block.settings.button_link_1 == blank %}role="link" aria-disabled="true"{% endif %}
               >
@@ -44,7 +45,7 @@
             {%- endif -%}
             {%- if block.settings.button_label_2 != blank -%}
               <a
-                class="maison-hero__btn"
+                class="button button--secondary maison-hero__btn"
                 href="{{ block.settings.button_link_2 }}"
                 {% if block.settings.button_link_2 == blank %}role="link" aria-disabled="true"{% endif %}
               >
@@ -86,6 +87,7 @@
         </div>
       </article>
     {%- endfor -%}
+    </div>
 
     {%- if section.blocks.size > 1 -%}
       <div class="maison-hero__controls">

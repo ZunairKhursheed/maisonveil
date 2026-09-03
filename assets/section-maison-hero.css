@@ -28,18 +28,41 @@
   margin: 0 auto;
 }
 
+.maison-hero__slides {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
 .maison-hero__slide {
-  display: none;
+  grid-area: 1 / 1;
+  display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 5vw;
   align-items: center;
   opacity: 0;
-  transform: translateY(18px);
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(48px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0.7s;
+  z-index: 0;
 }
 
 .maison-hero__slide.is-active {
-  display: grid;
-  animation: maison-hero-slide-in 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.maison-hero__slide.is-leaving {
+  opacity: 0;
+  transform: translateX(-48px);
+  z-index: 0;
 }
 
 .maison-hero__kicker {
@@ -113,28 +136,50 @@
   align-items: center;
 }
 
-.maison-hero__btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 16px 32px;
-  background: transparent;
-  color: #f4efe6;
-  font-size: 11px;
-  font-weight: 500;
+.maison-hero__btn.button {
+  overflow: hidden;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #e8d39f !important;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  text-decoration: none;
-  border: 1px solid rgba(200, 163, 94, 0.55);
-  border-radius: 0;
-  transition: color 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+  font-size: 11px;
+  font-weight: 500;
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  padding: 1.4rem 3rem;
 }
 
-.maison-hero__btn:hover {
-  border-color: #e8d39f;
-  color: #f9edd3;
-  background: rgba(200, 163, 94, 0.08);
+.maison-hero__btn.button:after {
+  border-radius: 0 !important;
+  box-shadow:
+    0 0 0 calc(var(--buttons-border-width) + var(--border-offset, 0px))
+      rgba(232, 211, 159, var(--border-opacity, 0.7)),
+    0 0 0 var(--buttons-border-width) transparent !important;
+}
+
+.maison-hero__btn.button:before {
+  border-radius: 0 !important;
+  background: linear-gradient(135deg, #f9edd3 0%, #c8a35e 50%, #8f7239 100%) !important;
+  z-index: -1;
+  transform: translate3d(-120%, 0, 0) skew(30deg);
+}
+
+.maison-hero__btn.button:not([disabled]):hover,
+.maison-hero__btn.button:not([disabled]):active {
+  color: #030303 !important;
+}
+
+.maison-hero__btn.button:not([disabled]):hover:before {
+  transform: translate3d(0, 0, 0) skew(30deg);
+}
+
+.maison-hero__btn.button:not([disabled]):hover:after {
+  --border-offset: 1.3px;
+  box-shadow:
+    0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(232, 211, 159, 0.95),
+    0 0 0 calc(var(--buttons-border-width) + 1px) transparent !important;
 }
 
 .maison-hero__stage {
@@ -266,17 +311,6 @@
   transform: translateY(0);
 }
 
-@keyframes maison-hero-slide-in {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes maison-hero-orbit {
   from {
     transform: rotate(0deg);
@@ -299,9 +333,8 @@
 }
 
 @media screen and (max-width: 989px) {
-  .maison-hero__slide.is-active {
-    display: flex;
-    flex-direction: column;
+  .maison-hero__slide {
+    grid-template-columns: 1fr;
     gap: 32px;
   }
 
@@ -309,17 +342,35 @@
     min-height: 320px;
     order: -1;
   }
+
+  .maison-hero__content {
+    order: 1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .maison-hero__slide.is-active,
+  .maison-hero__slide,
   .maison-hero__orbit,
   .maison-hero__orbit--inner,
   .maison-hero__glow,
   .mv-reveal {
     animation: none !important;
     transition: none !important;
+  }
+
+  .maison-hero__slide {
+    transform: none !important;
+  }
+
+  .maison-hero__slide:not(.is-active) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  .maison-hero__slide.is-active,
+  .mv-reveal {
     opacity: 1 !important;
+    visibility: visible !important;
     transform: none !important;
   }
 

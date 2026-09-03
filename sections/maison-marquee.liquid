@@ -1,0 +1,57 @@
+{{ 'section-maison-marquee.css' | asset_url | stylesheet_tag }}
+
+{%- if section.blocks.size > 0 -%}
+  <div class="maison-marquee" {{ section.shopify_attributes }}>
+    <div class="maison-marquee__track" aria-hidden="true">
+      {%- for i in (1..2) -%}
+        {%- for block in section.blocks -%}
+          <div class="maison-marquee__item" {{ block.shopify_attributes }}>
+            <span class="maison-marquee__star">✦</span>
+            <span>{{ block.settings.text | escape }}</span>
+          </div>
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>
+    <div class="visually-hidden">
+      {%- for block in section.blocks -%}
+        <span>{{ block.settings.text | escape }}</span>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.maison_marquee.name",
+  "tag": "section",
+  "class": "section-maison-marquee",
+  "max_blocks": 12,
+  "blocks": [
+    {
+      "type": "item",
+      "name": "t:sections.maison_marquee.blocks.item.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:sections.maison_marquee.blocks.item.settings.text.label",
+          "default": "Grasse Haute Parfumerie"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.maison_marquee.name",
+      "blocks": [
+        { "type": "item", "settings": { "text": "Grasse Haute Parfumerie" } },
+        { "type": "item", "settings": { "text": "30% Extrait de Parfum Concentration" } },
+        { "type": "item", "settings": { "text": "Hand-Blown Heavy Smoked Crystal" } },
+        { "type": "item", "settings": { "text": "French Limousin Oak Cellar Maceration" } },
+        { "type": "item", "settings": { "text": "Sustainable & Ethically Harvested Botanicals" } },
+        { "type": "item", "settings": { "text": "Cruelty-Free & 100% Vegan Formulations" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

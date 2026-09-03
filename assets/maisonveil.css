@@ -28,24 +28,21 @@ body {
   background-attachment: fixed;
 }
 
+.cursor-spotlight,
 .mv-cursor-spotlight {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(200, 163, 94, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(200, 163, 94, 0.05) 0%, transparent 70%);
   pointer-events: none;
   transform: translate(-50%, -50%);
-  z-index: 40;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  mix-blend-mode: screen;
-}
-
-.mv-cursor-spotlight.is-active {
+  z-index: 50;
   opacity: 1;
+  transition: opacity 0.4s ease;
+  will-change: left, top;
 }
 
 .mv-mist-canvas {
@@ -58,7 +55,8 @@ body {
   opacity: 0.55;
 }
 
-@media (prefers-reduced-motion: reduce), (pointer: coarse) {
+@media (prefers-reduced-motion: reduce) {
+  .cursor-spotlight,
   .mv-cursor-spotlight,
   .mv-mist-canvas {
     display: none !important;

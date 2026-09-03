@@ -1,0 +1,53 @@
+.maison-marquee {
+  background: #090807;
+  border-top: 1px solid rgba(200, 163, 94, 0.14);
+  border-bottom: 1px solid rgba(200, 163, 94, 0.14);
+  padding: 16px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.maison-marquee__track {
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+  width: max-content;
+  animation: maison-marquee-scroll 35s linear infinite;
+}
+
+.maison-marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #d8cfc0;
+}
+
+.maison-marquee__star {
+  color: #c8a35e;
+  font-size: 13px;
+}
+
+@keyframes maison-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .maison-marquee__track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    white-space: normal;
+    width: 100%;
+    gap: 24px;
+    padding: 0 5vw;
+  }
+}

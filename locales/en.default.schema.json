@@ -2553,6 +2553,38 @@
         }
       }
     },
+    "maison_marquee": {
+      "name": "Maison marquee",
+      "blocks": {
+        "item": {
+          "name": "Item",
+          "settings": {
+            "text": { "label": "Text" }
+          }
+        }
+      }
+    },
+    "maison_compositions": {
+      "name": "Signature Compositions",
+      "settings": {
+        "kicker": { "label": "Kicker" },
+        "title": { "label": "Heading" },
+        "description": { "label": "Description" },
+        "collection": { "label": "Collection" },
+        "products_to_show": { "label": "Products to show" },
+        "columns_desktop": { "label": "Desktop columns" },
+        "filter_all_label": { "label": "All filter label" }
+      },
+      "blocks": {
+        "filter": {
+          "name": "Filter",
+          "settings": {
+            "label": { "label": "Label" },
+            "tag": { "label": "Product tag", "info": "Must match a product tag exactly (case-insensitive)." }
+          }
+        }
+      }
+    },
     "multicolumn": {
       "name": "Multicolumn",
       "settings": {

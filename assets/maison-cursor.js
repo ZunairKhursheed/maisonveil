@@ -1,17 +1,25 @@
 (function () {
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const coarse = window.matchMedia('(pointer: coarse)');
-  const spotlight = document.getElementById('mvCursorSpotlight');
-  if (!spotlight || reduce.matches || coarse.matches) return;
+  function initMaisonCursor() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const spotlight =
+      document.getElementById('cursorSpotlight') || document.getElementById('mvCursorSpotlight');
+    if (!spotlight || reduce.matches) return;
 
-  spotlight.style.left = '50%';
-  spotlight.style.top = '40%';
+    spotlight.style.opacity = '1';
 
-  const onMove = (e) => {
-    spotlight.style.left = `${e.clientX}px`;
-    spotlight.style.top = `${e.clientY}px`;
-    spotlight.classList.add('is-active');
-  };
+    window.addEventListener(
+      'pointermove',
+      (e) => {
+        spotlight.style.left = `${e.clientX}px`;
+        spotlight.style.top = `${e.clientY}px`;
+      },
+      { passive: true }
+    );
+  }
 
-  window.addEventListener('pointermove', onMove, { passive: true });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMaisonCursor);
+  } else {
+    initMaisonCursor();
+  }
 })();
