@@ -2532,6 +2532,27 @@
         }
       }
     },
+    "maison_hero": {
+      "name": "Maison hero",
+      "blocks": {
+        "slide": {
+          "name": "Slide",
+          "settings": {
+            "image": { "label": "Product image" },
+            "kicker": { "label": "Kicker" },
+            "heading": { "label": "Heading" },
+            "lead": { "label": "Lead text" },
+            "accords": { "label": "Accords", "info": "Comma-separated tags" },
+            "button_label_1": { "label": "Primary button label" },
+            "button_link_1": { "label": "Primary button link" },
+            "button_label_2": { "label": "Secondary button label" },
+            "button_link_2": { "label": "Secondary button link" },
+            "badge_title": { "label": "Badge title" },
+            "badge_value": { "label": "Badge value" }
+          }
+        }
+      }
+    },
     "multicolumn": {
       "name": "Multicolumn",
       "settings": {

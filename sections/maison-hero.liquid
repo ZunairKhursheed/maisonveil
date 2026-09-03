@@ -1,0 +1,152 @@
+{{ 'section-maison-hero.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'maison-hero.js' | asset_url }}" defer="defer"></script>
+
+<maison-hero class="maison-hero color-{{ section.settings.color_scheme }}" id="MaisonHero-{{ section.id }}">
+  <div class="maison-hero__glow" aria-hidden="true"></div>
+  <div class="maison-hero__viewport">
+    {%- for block in section.blocks -%}
+      <article
+        class="maison-hero__slide{% if forloop.first %} is-active{% endif %}"
+        data-maison-slide
+        {{ block.shopify_attributes }}
+        aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"
+      >
+        <div class="maison-hero__content">
+          {%- if block.settings.kicker != blank -%}
+            <div class="maison-hero__kicker">{{ block.settings.kicker | escape }}</div>
+          {%- endif -%}
+          {%- if block.settings.heading != blank -%}
+            <h2 class="maison-hero__title">{{ block.settings.heading }}</h2>
+          {%- endif -%}
+          {%- if block.settings.lead != blank -%}
+            <div class="maison-hero__lead">{{ block.settings.lead }}</div>
+          {%- endif -%}
+          {%- if block.settings.accords != blank -%}
+            <div class="maison-hero__accords">
+              {%- assign accord_list = block.settings.accords | split: ',' -%}
+              {%- for accord in accord_list -%}
+                {%- assign accord_text = accord | strip -%}
+                {%- if accord_text != blank -%}
+                  <span class="maison-hero__accord">{{ accord_text | escape }}</span>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+          <div class="maison-hero__actions">
+            {%- if block.settings.button_label_1 != blank -%}
+              <a
+                class="button"
+                href="{{ block.settings.button_link_1 }}"
+                {% if block.settings.button_link_1 == blank %}role="link" aria-disabled="true"{% endif %}
+              >
+                {{ block.settings.button_label_1 | escape }}
+              </a>
+            {%- endif -%}
+            {%- if block.settings.button_label_2 != blank -%}
+              <a
+                class="button button--secondary"
+                href="{{ block.settings.button_link_2 }}"
+                {% if block.settings.button_link_2 == blank %}role="link" aria-disabled="true"{% endif %}
+              >
+                {{ block.settings.button_label_2 | escape }}
+              </a>
+            {%- endif -%}
+          </div>
+        </div>
+
+        <div class="maison-hero__stage" data-maison-hero-stage>
+          <div class="maison-hero__orbit" aria-hidden="true"></div>
+          <div class="maison-hero__media" data-maison-hero-tilt>
+            {%- if block.settings.image != blank -%}
+              {%- assign img_alt = block.settings.image.alt | default: block.settings.heading | escape -%}
+              {{
+                block.settings.image
+                | image_url: width: 1200
+                | image_tag:
+                  loading: 'lazy',
+                  widths: '400, 600, 800, 1000, 1200',
+                  sizes: '(min-width: 990px) 40vw, 80vw',
+                  alt: img_alt
+              }}
+            {%- else -%}
+              {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </div>
+          {%- if block.settings.badge_title != blank or block.settings.badge_value != blank -%}
+            <div class="maison-hero__badge">
+              {%- if block.settings.badge_title != blank -%}
+                <div class="maison-hero__badge-title">{{ block.settings.badge_title | escape }}</div>
+              {%- endif -%}
+              {%- if block.settings.badge_value != blank -%}
+                <div class="maison-hero__badge-value">{{ block.settings.badge_value | escape }}</div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      </article>
+    {%- endfor -%}
+
+    {%- if section.blocks.size > 1 -%}
+      <div class="maison-hero__controls">
+        <button type="button" class="maison-hero__nav" data-maison-hero-prev aria-label="{{ 'general.slider.previous_slide' | t }}">‹</button>
+        <div class="maison-hero__dots" role="tablist">
+          {%- for block in section.blocks -%}
+            <button
+              type="button"
+              class="maison-hero__dot{% if forloop.first %} is-active{% endif %}"
+              data-maison-hero-dot
+              aria-label="{{ 'general.slider.of' | t | default: 'Slide' }} {{ forloop.index }}"
+            ></button>
+          {%- endfor -%}
+        </div>
+        <button type="button" class="maison-hero__nav" data-maison-hero-next aria-label="{{ 'general.slider.next_slide' | t }}">›</button>
+      </div>
+    {%- endif -%}
+  </div>
+</maison-hero>
+
+{% schema %}
+{
+  "name": "t:sections.maison_hero.name",
+  "tag": "section",
+  "class": "section-maison-hero",
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "t:sections.maison_hero.blocks.slide.name",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "t:sections.maison_hero.blocks.slide.settings.image.label" },
+        { "type": "text", "id": "kicker", "label": "t:sections.maison_hero.blocks.slide.settings.kicker.label", "default": "Maison Veil · Extrait de Parfum 30%" },
+        { "type": "inline_richtext", "id": "heading", "label": "t:sections.maison_hero.blocks.slide.settings.heading.label", "default": "Wear the <em>unspoken.</em>" },
+        { "type": "richtext", "id": "lead", "label": "t:sections.maison_hero.blocks.slide.settings.lead.label", "default": "<p>Devoted to the tension of light, shadow, and tactile intimacy.</p>" },
+        { "type": "text", "id": "accords", "label": "t:sections.maison_hero.blocks.slide.settings.accords.label", "default": "Frankincense, Black Amber, Sandalwood", "info": "t:sections.maison_hero.blocks.slide.settings.accords.info" },
+        { "type": "text", "id": "button_label_1", "label": "t:sections.maison_hero.blocks.slide.settings.button_label_1.label", "default": "Explore Flacons" },
+        { "type": "url", "id": "button_link_1", "label": "t:sections.maison_hero.blocks.slide.settings.button_link_1.label" },
+        { "type": "text", "id": "button_label_2", "label": "t:sections.maison_hero.blocks.slide.settings.button_label_2.label", "default": "Scent Matcher" },
+        { "type": "url", "id": "button_link_2", "label": "t:sections.maison_hero.blocks.slide.settings.button_link_2.label" },
+        { "type": "text", "id": "badge_title", "label": "t:sections.maison_hero.blocks.slide.settings.badge_title.label", "default": "Origin & Vessel" },
+        { "type": "text", "id": "badge_value", "label": "t:sections.maison_hero.blocks.slide.settings.badge_value.label", "default": "Grasse · 100ml" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.maison_hero.name",
+      "blocks": [
+        { "type": "slide" },
+        { "type": "slide", "settings": { "kicker": "02 · Or Éclat", "heading": "Light, held <em>close.</em>", "accords": "Neroli, Soft Musk, Cedar" } },
+        { "type": "slide", "settings": { "kicker": "03 · Ombre Serein", "heading": "Quiet <em>intensity.</em>", "accords": "Vetiver, Smoke, Iris" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
