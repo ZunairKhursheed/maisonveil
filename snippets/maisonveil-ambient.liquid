@@ -1,5 +1,6 @@
 {%- comment -%}
-  Global ambient texture for Maison Veil immersive styling.
-  Non-interactive; safe across all templates.
+  Global ambient texture + cursor spotlight for Maison Veil.
 {%- endcomment -%}
 <div class="mv-ambient-noise" aria-hidden="true"></div>
+<div class="mv-cursor-spotlight" id="mvCursorSpotlight" aria-hidden="true"></div>
+<script src="{{ 'maison-cursor.js' | asset_url }}" defer="defer"></script>

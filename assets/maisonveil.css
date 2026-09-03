@@ -12,6 +12,43 @@
   --mv-gold-glow: rgba(201, 169, 98, 0.16);
   --mv-section-max: 120rem;
   --mv-section-pad: 5vw;
+  --mv-obsidian: #030303;
+  --mv-ribbon-warm: #17130c;
+  --mv-gold-champagne: #e8d39f;
+  --mv-gold-burnished: #c8a35e;
+}
+
+html {
+  background-color: var(--mv-obsidian);
+}
+
+body.gradient,
+body {
+  background: radial-gradient(circle at 50% 0%, var(--mv-ribbon-warm) 0%, var(--mv-obsidian) 45%) !important;
+  background-attachment: fixed;
+}
+
+.mv-cursor-spotlight {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 163, 94, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.mv-cursor-spotlight.is-active {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce), (pointer: coarse) {
+  .mv-cursor-spotlight {
+    display: none !important;
+  }
 }
 
 .mv-section-wrap {
