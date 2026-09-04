@@ -120,13 +120,6 @@
             "tag": "body-oil"
           }
         },
-        "filter_3": {
-          "type": "filter",
-          "settings": {
-            "label": "Shimmer Oils",
-            "tag": "shimmer"
-          }
-        },
         "filter_4": {
           "type": "filter",
           "settings": {
@@ -138,7 +131,6 @@
       "block_order": [
         "filter_1",
         "filter_2",
-        "filter_3",
         "filter_4"
       ],
       "settings": {
