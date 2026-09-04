@@ -1,28 +1,18 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
       "type": "book-consultation-form",
       "settings": {
-        "heading": "Book a Consultation",
-        "subheading": "Schedule your personalized consultation with our experts.",
-        "description": "<p>Fill out the form below and we'll get back to you within 24 hours to schedule your consultation.</p>",
-        "services": "Personal Styling\nWardrobe Consultation\nColor Analysis\nShopping Service\nSpecial Event Styling",
-        "button_text": "Book Consultation",
+        "kicker": "Perfume bar · Private booking",
+        "heading": "Book a <em>consultation.</em>",
+        "subheading": "Schedule a live blending experience with the maison.",
+        "description": "<p>We reply within 24 hours with availability, guest-bottle options, and how the bar will feel on the day.</p>",
+        "button_text": "Request the perfume bar",
+        "color_scheme": "scheme-3",
         "show_privacy_notice": true,
         "privacy_notice_text": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to my data being used to contact me about this consultation.</p>"
       }
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }

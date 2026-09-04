@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Free delivery on orders above $100",
+            "text": "Complimentary delivery on orders above $100",
             "link": ""
           }
         }
@@ -58,9 +58,9 @@
       "type": "newsletter-popup",
       "disabled": true,
       "settings": {
-        "heading": "Join Maison Veil",
+        "heading": "Enter the world behind the veil",
         "heading_size": "h2",
-        "text": "<p>Private launches. Exclusive invitations. Early access.</p>",
+        "text": "<p>New compositions, perfume-bar dates, and early access to limited oils.</p>",
         "button_label": "Subscribe",
         "image_layout": "left",
         "image_overlay_opacity": 50,

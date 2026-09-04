@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -17,218 +8,150 @@
         "padding_bottom": 28
       }
     },
-    "image_banner_kftGUW": {
-      "type": "image-banner",
+    "maison_hero": {
+      "type": "maison-hero",
       "blocks": {
-        "heading_mWx7xH": {
-          "type": "heading",
+        "slide_1": {
+          "type": "slide",
           "settings": {
-            "heading": "Events.",
-            "heading_size": "h1"
+            "kicker": "Perfume bar · Weddings & events",
+            "heading": "Scent the <em>celebration.</em>",
+            "lead": "<p>Invite Maison Veil’s luxury perfume bar to your wedding, shower, birthday, or brand gathering. Guests blend their own signature scents—an interactive ritual they will talk about long after the last toast.</p>",
+            "accords": "Weddings, Social, Corporate",
+            "button_label_1": "Book a consultation",
+            "button_link_1": "shopify://pages/book-a-consultation",
+            "button_label_2": "Corporate gifting",
+            "button_link_2": "shopify://pages/corporate-gifting",
+            "badge_title": "Live blending",
+            "badge_value": "Custom guest bottles"
           }
         }
       },
-      "block_order": [
-        "heading_mWx7xH"
-      ],
-      "name": "t:sections.image-banner.presets.name",
+      "block_order": ["slide_1"],
       "settings": {
-        "image": "shopify://shop_images/maisonveil-background.webp",
-        "image_overlay_opacity": 20,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-5",
-        "image_behavior": "fixed",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "color_scheme": "scheme-3"
       }
     },
-    "two_column_grid_PNTTDY": {
-      "type": "two-column-grid",
+    "maison_experience": {
+      "type": "maison-experience",
       "blocks": {
-        "column_trkHKh": {
-          "type": "column",
+        "card_1": {
+          "type": "card",
           "settings": {
-            "background_image": "shopify://shop_images/10_971761db-bbaf-4cfe-9860-9a05efdb617a.webp",
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "center",
-            "align_items": "center",
-            "text_align": "center",
-            "group_content": false,
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "color_scheme": "",
-            "heading": "",
-            "heading_size": "h1",
-            "text": "",
-            "text_style": "body",
-            "button_label": "Learn more",
-            "button_link": "",
-            "button_style_secondary": false
+            "kicker": "Weddings",
+            "title": "A love story in sillage",
+            "text": "Give guests a scent to keep: classic and modern accords, bottles sized for favors, and a bar styled to your palette. Capture the day in something they can wear home.",
+            "link_label": "Plan a wedding bar →",
+            "link": "shopify://pages/book-a-consultation"
           }
         },
-        "column_f3wCrE": {
-          "type": "column",
+        "card_2": {
+          "type": "card",
           "settings": {
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": false,
-            "overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "heading": "Event Services.",
-            "heading_size": "h1",
-            "text": "<p>Maison Veil Perfume Bar is the perfect addition to any special event. Whether you’re planning a wedding, bridal shower, corporate event, or team building activity, our luxurious perfume bar setup service will leave a lasting impression on your guests. We offer a <a href=\"https://maisonveil.com/shop/\" title=\"https://yomlayl.com/#\"><span style=\"text-decoration:underline\">wide selection of high-quality perfumes and colognes</span></a> that are sure to delight the senses. Our team takes great care in customizing the perfume bar to fit the theme and style of your event, making it truly unique and memorable. From the moment your guests arrive, they will be transported to a world of scents and luxury. Don’t settle for ordinary, make your event extraordinary with Maison Veil Perfume Bar. <a href=\"https://maisonveil.com/contact/\" title=\"https://yomlayl.com/pages/contact-yom-and-layl\"><span style=\"text-decoration:underline\">Book us today</span></a> and let the magic begin!</p>",
-            "text_style": "body",
-            "button_label": "Invite Maison Veil to your event",
-            "button_link": "shopify://pages/book-a-consultation",
-            "button_style_secondary": false
+            "kicker": "Private celebrations",
+            "title": "Birthdays, showers, nights in",
+            "text": "A luxurious, hands-on station for intimate parties and milestone gatherings. We tailor the bar to your theme so every pour feels like the event itself.",
+            "link_label": "Book a social event →",
+            "link": "shopify://pages/book-a-consultation"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "kicker": "Brand & corporate",
+            "title": "Activations that linger",
+            "text": "Conferences, launches, client appreciation, and team nights—custom-branded bottles and scent stations that make your brand memorable on skin.",
+            "link_label": "Plan a corporate bar →",
+            "link": "shopify://pages/book-a-consultation"
           }
         }
       },
-      "block_order": [
-        "column_trkHKh",
-        "column_f3wCrE"
-      ],
-      "name": "Two column grid",
+      "block_order": ["card_1", "card_2", "card_3"],
       "settings": {
-        "full_width": true,
-        "reverse_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "kicker": "Event services",
+        "title": "Make it <em>memorable.</em>",
+        "description": "<p>From the first guest to the last bottle, Maison Veil designs perfume-bar experiences that feel couture, personal, and impossible to forget. Complimentary delivery on fragrance orders over $100 when you shop the house.</p>",
+        "color_scheme": "scheme-3"
       }
     },
-    "two_column_grid_7RbLxn": {
-      "type": "two-column-grid",
+    "maison_manifesto": {
+      "type": "maison-manifesto",
       "blocks": {
-        "column_6mNqiK": {
-          "type": "column",
+        "pillar_1": {
+          "type": "pillar",
           "settings": {
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": false,
-            "overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "heading": "Weddings.",
-            "heading_size": "h1",
-            "text": "<p>At Maison Veil, we believe that every wedding is a romantic story waiting to be told and we know the art of writing love stories through scents. That’s why we are thrilled to offer our luxury perfume bar for weddings, a perfect addition to any romantic celebration. Imagine, your guests indulging in a variety of exquisite scents, each one evoking a different feeling, a different memory. Our range of<a href=\"https://maisonveil.com/shop/\" title=\"https://yomlayl.com/collections/alis-favorite\">high-quality perfumes</a>, including classic and modern options, will help you capture the essence of your special day. Let us add a touch of romance and elegance to your special day with Maison Veil’s perfume bar.</p>",
-            "text_style": "body",
-            "button_label": "Invite Maison Veil to your event",
-            "button_link": "shopify://pages/book-a-consultation",
-            "button_style_secondary": false
+            "number": "01",
+            "title": "Curated accords",
+            "description": "A wide selection of high-quality oils and finished scents—florals, gourmands, woods, and ambers."
           }
         },
-        "column_YzhwAD": {
-          "type": "column",
+        "pillar_2": {
+          "type": "pillar",
           "settings": {
-            "background_image": "shopify://shop_images/1_b810d70d-b21c-4af9-850d-758f9e41c4ac.webp",
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "center",
-            "align_items": "center",
-            "text_align": "center",
-            "group_content": false,
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "color_scheme": "",
-            "heading": "",
-            "heading_size": "h1",
-            "text": "",
-            "text_style": "body",
-            "button_label": "Learn more",
-            "button_link": "",
-            "button_style_secondary": false
+            "number": "02",
+            "title": "Styled to you",
+            "description": "Bar design, bottle sizes, and scent menus tailored to your wedding, party, or brand story."
+          }
+        },
+        "pillar_3": {
+          "type": "pillar",
+          "settings": {
+            "number": "03",
+            "title": "Guest bottles",
+            "description": "10 ml to 100 ml keepsakes so everyone leaves wearing their own signature veil."
+          }
+        },
+        "pillar_4": {
+          "type": "pillar",
+          "settings": {
+            "number": "04",
+            "title": "White-glove booking",
+            "description": "Share your date, guest count, and venue. We confirm details within 24 hours."
           }
         }
       },
-      "block_order": [
-        "column_6mNqiK",
-        "column_YzhwAD"
-      ],
-      "name": "Two column grid",
+      "block_order": ["pillar_1", "pillar_2", "pillar_3", "pillar_4"],
       "settings": {
-        "full_width": true,
-        "reverse_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image": "shopify://shop_images/10_971761db-bbaf-4cfe-9860-9a05efdb617a.webp",
+        "kicker": "How the bar works",
+        "title": "Luxury, poured <em>in real time.</em>",
+        "text": "<p>Guests arrive to a world of scents—not a product table. Our team customizes the perfume bar to your theme, then guides each person through notes until a signature is born. It is interactive, photogenic, and generous: a favor they actually want to keep.</p>",
+        "color_scheme": "scheme-3"
       }
     },
-    "two_column_grid_pd4dVT": {
-      "type": "two-column-grid",
-      "blocks": {
-        "column_Q83hUC": {
-          "type": "column",
-          "settings": {
-            "background_image": "shopify://shop_images/9_906fa184-c8da-4e2d-8ca9-0bbd7d7c4913.webp",
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "center",
-            "align_items": "center",
-            "text_align": "center",
-            "group_content": false,
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "color_scheme": "",
-            "heading": "",
-            "heading_size": "h1",
-            "text": "",
-            "text_style": "body",
-            "button_label": "Learn more",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        },
-        "column_cKbRrb": {
-          "type": "column",
-          "settings": {
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": false,
-            "overlay_opacity": 0,
-            "color_scheme": "scheme-5",
-            "heading": "Corporate Events.",
-            "heading_size": "h1",
-            "text": "<p>Elevate your next corporate gathering with a unique, interactive experience that leaves a lasting impression. Maison Veil’s luxury perfume bar adds a touch of sophistication and personalization to conferences, brand activations, client appreciation events, team celebrations, and more.</p><p>From tailored scent stations to custom-branded fragrance bottles, we offer a high-end sensory experience that reflects your brand’s essence and creates memorable moments for your guests. Whether you’re looking to impress clients or reward your team, our perfume bar is the perfect blend of luxury and engagement.</p><p>Let Maison Veil help you scent your brand story—in a way that’s innovative, elegant, and unforgettable.</p>",
-            "text_style": "body",
-            "button_label": "Invite Maison Veil to your event",
-            "button_link": "shopify://pages/book-a-consultation",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "column_Q83hUC",
-        "column_cKbRrb"
-      ],
-      "name": "Two column grid",
+    "book_consultation": {
+      "type": "book-consultation-form",
       "settings": {
-        "full_width": true,
-        "reverse_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "kicker": "Perfume bar · Events",
+        "heading": "Hold the <em>date.</em>",
+        "subheading": "Weddings, showers, birthdays, and brand nights.",
+        "description": "<p>Share guest count, venue, and bottle size. We reply within 24 hours with availability and how the live blending bar will feel on the day.</p>",
+        "button_text": "Request the perfume bar",
+        "color_scheme": "scheme-3",
+        "show_privacy_notice": true,
+        "privacy_notice_text": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to being contacted about this perfume-bar consultation.</p>"
+      }
+    },
+    "maison_newsletter": {
+      "type": "maison-newsletter",
+      "settings": {
+        "kicker": "Dates & availability",
+        "title": "Ready to <em>book?</em>",
+        "description": "<p>Peak wedding weekends fill first. Request a consultation, or join the list for seasonal event menus.</p>",
+        "placeholder": "Your email",
+        "button_label": "Join the list",
+        "success_title": "You’re on the list.",
+        "success_text": "<p>We’ll share availability notes and new event offerings.</p>",
+        "color_scheme": "scheme-3"
       }
     }
   },
   "order": [
     "main",
-    "image_banner_kftGUW",
-    "two_column_grid_PNTTDY",
-    "two_column_grid_7RbLxn",
-    "two_column_grid_pd4dVT"
+    "maison_hero",
+    "maison_experience",
+    "maison_manifesto",
+    "book_consultation",
+    "maison_newsletter"
   ]
 }

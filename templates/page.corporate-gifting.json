@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -17,153 +8,150 @@
         "padding_bottom": 28
       }
     },
-    "rich_text_qH46VB": {
-      "type": "rich-text",
+    "maison_hero": {
+      "type": "maison-hero",
       "blocks": {
-        "heading_44jjAb": {
-          "type": "heading",
+        "slide_1": {
+          "type": "slide",
           "settings": {
-            "heading": "Corporate Gifting",
-            "heading_size": "h1"
+            "kicker": "Corporate gifting · Brand scent",
+            "heading": "Gifts that <em>linger.</em>",
+            "lead": "<p>Client appreciation, employee recognition, holidays, launches, and VIP mailers—Maison Veil creates fragrance gifts that feel personal, luxurious, and on-brand.</p>",
+            "accords": "Branded bottles, Gift boxes, Digital cards",
+            "button_label_1": "Book a consultation",
+            "button_link_1": "shopify://pages/book-a-consultation",
+            "button_label_2": "Shop the collection",
+            "button_link_2": "shopify://collections/all",
+            "badge_title": "Bulk & branded",
+            "badge_value": "White-glove delivery"
           }
         }
       },
-      "block_order": [
-        "heading_44jjAb"
-      ],
-      "name": "t:sections.rich-text.presets.name",
+      "block_order": ["slide_1"],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-899854cd-346f-4b19-aff9-8b2691ee80ae",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "color_scheme": "scheme-3"
       }
     },
-    "two_column_grid_WiVQTw": {
-      "type": "two-column-grid",
+    "maison_experience": {
+      "type": "maison-experience",
       "blocks": {
-        "column_wBrxpN": {
-          "type": "column",
+        "card_1": {
+          "type": "card",
           "settings": {
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": false,
-            "overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "heading": "Custom-Branded Fragrance BottlesCurated Gift BoxesDigital Gift CardsBulk Gifting & Delivery Options",
-            "heading_size": "h1",
-            "text": "<p>Perfect for client appreciation, employee recognition, holiday gifting, product launches, and VIP mailers, Maison Veil ensures a seamless, luxurious gifting experience that reflects your brand and makes a statement.</p>",
-            "text_style": "body",
-            "button_label": "Work with Maison Veil",
-            "button_link": "shopify://pages/book-a-consultation",
-            "button_style_secondary": false
+            "kicker": "Custom bottles",
+            "title": "Branded fragrance vessels",
+            "text": "Your logo, your story, their signature scent. Ideal for launches, VIP kits, and client programs that should outlast a thank-you email.",
+            "link_label": "Start a branded order →",
+            "link": "shopify://pages/book-a-consultation"
           }
         },
-        "column_E4xHzW": {
-          "type": "column",
+        "card_2": {
+          "type": "card",
           "settings": {
-            "background_image": "shopify://shop_images/10_971761db-bbaf-4cfe-9860-9a05efdb617a.webp",
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "center",
-            "align_items": "center",
-            "text_align": "center",
-            "group_content": false,
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "color_scheme": "",
-            "heading": "",
-            "heading_size": "h1",
-            "text": "",
-            "text_style": "body",
-            "button_label": "Learn more",
-            "button_link": "",
-            "button_style_secondary": false
+            "kicker": "Curated sets",
+            "title": "Gift boxes & discovery",
+            "text": "Edited compositions and body oils, beautifully packed for holidays, milestones, and welcome suites.",
+            "link_label": "Plan a gift box →",
+            "link": "shopify://pages/book-a-consultation"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "kicker": "Scale",
+            "title": "Digital cards & bulk delivery",
+            "text": "Gift cards for choice, plus bulk gifting with coordinated delivery so every recipient is covered.",
+            "link_label": "Discuss logistics →",
+            "link": "shopify://pages/book-a-consultation"
           }
         }
       },
-      "block_order": [
-        "column_wBrxpN",
-        "column_E4xHzW"
-      ],
-      "name": "Two column grid",
+      "block_order": ["card_1", "card_2", "card_3"],
       "settings": {
-        "full_width": true,
-        "reverse_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "kicker": "The gifting atelier",
+        "title": "Luxury. Thoughtfulness. <em>Delivered.</em>",
+        "description": "<p>Fragrance is the rare corporate gift people actually use. We make it seamless—from scent selection to packaging to arrival.</p>",
+        "color_scheme": "scheme-3"
       }
     },
-    "two_column_grid_9tyXaK": {
-      "type": "two-column-grid",
+    "maison_manifesto": {
+      "type": "maison-manifesto",
       "blocks": {
-        "column_nqzcNU": {
-          "type": "column",
+        "pillar_1": {
+          "type": "pillar",
           "settings": {
-            "background_image": "shopify://shop_images/9_906fa184-c8da-4e2d-8ca9-0bbd7d7c4913.webp",
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "center",
-            "align_items": "center",
-            "text_align": "center",
-            "group_content": false,
-            "show_overlay": false,
-            "overlay_opacity": 50,
-            "color_scheme": "",
-            "heading": "",
-            "heading_size": "h1",
-            "text": "",
-            "text_style": "body",
-            "button_label": "Learn more",
-            "button_link": "",
-            "button_style_secondary": false
+            "number": "01",
+            "title": "On-brand",
+            "description": "Scent menus and vessels that reflect your identity, not a generic catalog drop."
           }
         },
-        "column_CjcUGx": {
-          "type": "column",
+        "pillar_2": {
+          "type": "pillar",
           "settings": {
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": false,
-            "overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "heading": "Luxury. Thoughtfulness. Delivered.",
-            "heading_size": "h1",
-            "text": "<p>Make every gift unforgettable with Maison Veil’s signature fragrance gifting experience—where elegance meets intentionality.</p><p>Whether you’re celebrating milestones, showing appreciation, or nurturing client relationships, our custom fragrance gifts go beyond the ordinary. Each scent is crafted with care, beautifully packaged, and designed to leave a lasting impression.</p>",
-            "text_style": "body",
-            "button_label": "Work with Maison Veil",
-            "button_link": "shopify://pages/book-a-consultation",
-            "button_style_secondary": false
+            "number": "02",
+            "title": "Memorable",
+            "description": "A wearable impression for clients, teams, and press—far beyond a logo tote."
+          }
+        },
+        "pillar_3": {
+          "type": "pillar",
+          "settings": {
+            "number": "03",
+            "title": "Turnkey",
+            "description": "One atelier for composition, packaging, cards, and delivery coordination."
+          }
+        },
+        "pillar_4": {
+          "type": "pillar",
+          "settings": {
+            "number": "04",
+            "title": "Human",
+            "description": "A dedicated consultation so quantities, timing, and unboxing feel considered."
           }
         }
       },
-      "block_order": [
-        "column_nqzcNU",
-        "column_CjcUGx"
-      ],
-      "name": "Two column grid",
+      "block_order": ["pillar_1", "pillar_2", "pillar_3", "pillar_4"],
       "settings": {
-        "full_width": true,
-        "reverse_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image": "shopify://shop_images/9_906fa184-c8da-4e2d-8ca9-0bbd7d7c4913.webp",
+        "kicker": "Why fragrance",
+        "title": "Leave an impression they <em>wear.</em>",
+        "text": "<p>Maison Veil corporate gifting is elegance with intention: original luxury scents, premium oils, and presentation that honors the relationship. Tell us the occasion—we’ll design the veil.</p>",
+        "color_scheme": "scheme-3"
+      }
+    },
+    "book_consultation": {
+      "type": "book-consultation-form",
+      "settings": {
+        "kicker": "Corporate · Brand scent",
+        "heading": "Brief the <em>atelier.</em>",
+        "subheading": "Branded bottles, gift boxes, digital cards, and bulk delivery.",
+        "description": "<p>Tell us the occasion, quantity, and timeline. We’ll confirm a fragrance gift program that feels on-brand and wearable.</p>",
+        "button_text": "Start a gifting brief",
+        "color_scheme": "scheme-3",
+        "show_privacy_notice": true,
+        "privacy_notice_text": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to being contacted about this gifting consultation.</p>"
+      }
+    },
+    "maison_newsletter": {
+      "type": "maison-newsletter",
+      "settings": {
+        "kicker": "For brand teams",
+        "title": "Seasonal gifting <em>notes.</em>",
+        "description": "<p>Holiday timelines, new compositions, and bulk-program ideas.</p>",
+        "placeholder": "Work email",
+        "button_label": "Request notes",
+        "success_title": "You’re on the gifting list.",
+        "success_text": "<p>We’ll send seasonal program notes and launch windows.</p>",
+        "color_scheme": "scheme-3"
       }
     }
   },
   "order": [
     "main",
-    "rich_text_qH46VB",
-    "two_column_grid_WiVQTw",
-    "two_column_grid_9tyXaK"
+    "maison_hero",
+    "maison_experience",
+    "maison_manifesto",
+    "book_consultation",
+    "maison_newsletter"
   ]
 }

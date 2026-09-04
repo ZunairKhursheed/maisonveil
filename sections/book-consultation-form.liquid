@@ -1,62 +1,57 @@
-{% comment %}
-  Book Consultation Form Section
-  Allows customers to book consultations through a contact form
-{% endcomment %}
+{{ 'section-book-consultation.css' | asset_url | stylesheet_tag }}
 
-
-
-<section 
-  id="BookConsultationForm-{{ section.id }}" 
-  class="section section-{{ section.id }}-padding"
-  style="background-color: #ffffff; padding: 5rem 0;"
+<section
+  id="BookConsultationForm-{{ section.id }}"
+  class="maison-book color-{{ section.settings.color_scheme }} isolate gradient"
 >
-  <div class="page-width">
-    <div class="section-{{ section.id }}-padding">
-      
-      {% if section.settings.heading != blank %}
-        <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
-          <h2 class="title">{{ section.settings.heading }}</h2>
-          {% if section.settings.subheading != blank %}
-            <p class="subtitle">{{ section.settings.subheading }}</p>
-          {% endif %}
-        </div>
-      {% endif %}
+  <div class="maison-book__wrap">
+    {%- if section.settings.kicker != blank or section.settings.heading != blank or section.settings.subheading != blank or section.settings.description != blank -%}
+      <div class="maison-book__head">
+        {%- if section.settings.kicker != blank -%}
+          <div class="maison-book__kicker">{{ section.settings.kicker | escape }}</div>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2 class="maison-book__title">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <p class="maison-book__desc">{{ section.settings.subheading | escape }}</p>
+        {%- endif -%}
+        {%- if section.settings.description != blank -%}
+          <div class="maison-book__desc">{{ section.settings.description }}</div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
 
-      <div class="contact-form" style="background-color: #f8f9fa; padding: 3rem; border-radius: 0.8rem; margin-top: 2rem;">
-        {% if section.settings.description != blank %}
-          <div class="contact-form__description" style="margin-bottom: 2rem; text-align: center;">
-            {{ section.settings.description }}
+    <div class="maison-book__panel">
+      {% form 'contact', id: 'BookConsultationForm', class: 'maison-book__form' %}
+        {%- if form.posted_successfully? -%}
+          <div class="maison-book__status" tabindex="-1" autofocus>
+            <h3>Your consultation is reserved.</h3>
+            <p>We’ve received your perfume-bar request and will reply within 24 hours to confirm date, guest count, and blending details.</p>
           </div>
-        {% endif %}
+        {%- endif -%}
 
-        {% form 'contact', id: 'BookConsultationForm', class: 'contact-form' %}
-          {% if form.posted_successfully? %}
-            <div class="form-status form-status--success" tabindex="-1" autofocus>
-              <h3 class="form-status__title">Thank you!</h3>
-              <p>We've received your consultation request and will get back to you within 24 hours.</p>
-            </div>
-          {% endif %}
+        {%- if form.errors -%}
+          <div class="maison-book__status maison-book__status--error">
+            <h3>Please correct the following:</h3>
+            <ul>
+              {%- for field in form.errors -%}
+                <li>
+                  {%- if field == 'form' -%}
+                    {{ form.errors.messages[field] }}
+                  {%- else -%}
+                    {{ form.errors.translated_fields[field] | capitalize }} {{ form.errors.messages[field] }}
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
 
-          {% if form.errors %}
-            <div class="form-status form-status--error">
-              <h3 class="form-status__title">Please correct the following errors:</h3>
-              <ul>
-                {% for field in form.errors %}
-                  <li>
-                    {% if field == 'form' %}
-                      {{ form.errors.messages[field] }}
-                    {% else %}
-                      {{ form.errors.translated_fields[field] | capitalize }} {{ form.errors.messages[field] }}
-                    {% endif %}
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endif %}
+        <input type="hidden" name="contact[subject]" value="Maison Veil Perfume Bar Consultation">
 
-          <input type="hidden" name="contact[subject]" value="Consultation Request">
-          
-          <div class="contact__fields" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div class="maison-book__grid">
+          <div class="maison-book__field">
             <div class="field">
               <input
                 class="field__input"
@@ -66,12 +61,14 @@
                 name="contact[name]"
                 required
                 value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-                placeholder="Enter your full name"
+                placeholder="Full name"
               >
               <label class="field__label" for="BookConsultationForm-name">
-                Full Name <span aria-hidden="true">*</span>
+                Full name <span aria-hidden="true">*</span>
               </label>
             </div>
+          </div>
+          <div class="maison-book__field">
             <div class="field">
               <input
                 autocomplete="email"
@@ -84,31 +81,32 @@
                 autocapitalize="off"
                 value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
                 aria-required="true"
-                placeholder="Enter your email address"
+                placeholder="Email"
               >
               <label class="field__label" for="BookConsultationForm-email">
-                Email Address <span aria-hidden="true">*</span>
+                Email <span aria-hidden="true">*</span>
               </label>
             </div>
           </div>
-          
-          <div class="field" style="margin-bottom: 2rem;">
+        </div>
+
+        <div class="maison-book__field">
+          <div class="field">
             <input
               type="tel"
               id="BookConsultationForm-phone"
               class="field__input"
               autocomplete="tel"
               name="contact[phone]"
-              pattern="[0-9\-]*"
               value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-              placeholder="Enter your phone number"
+              placeholder="Phone"
             >
-            <label class="field__label" for="BookConsultationForm-phone">
-              Phone Number
-            </label>
+            <label class="field__label" for="BookConsultationForm-phone">Phone</label>
           </div>
-          
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        </div>
+
+        <div class="maison-book__grid">
+          <div class="maison-book__field">
             <div class="field">
               <input
                 type="date"
@@ -120,9 +118,11 @@
                 required
               >
               <label class="field__label" for="BookConsultationForm-event-date">
-                Date of Event <span aria-hidden="true">*</span>
+                Event date <span aria-hidden="true">*</span>
               </label>
             </div>
+          </div>
+          <div class="maison-book__field">
             <div class="field">
               <input
                 type="number"
@@ -132,16 +132,18 @@
                 min="1"
                 max="1000"
                 value="{% if form.guest_count %}{{ form.guest_count }}{% endif %}"
-                placeholder="Enter guest count"
+                placeholder="Guest count"
                 required
               >
               <label class="field__label" for="BookConsultationForm-guest-count">
-                Guest Count <span aria-hidden="true">*</span>
+                Guest count <span aria-hidden="true">*</span>
               </label>
             </div>
           </div>
-          
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        </div>
+
+        <div class="maison-book__grid">
+          <div class="maison-book__field">
             <div class="field">
               <input
                 type="text"
@@ -149,111 +151,116 @@
                 class="field__input"
                 name="contact[event_location]"
                 value="{% if form.event_location %}{{ form.event_location }}{% endif %}"
-                placeholder="Enter event location"
+                placeholder="City, venue, or private residence"
                 required
               >
               <label class="field__label" for="BookConsultationForm-event-location">
-                Location of Event <span aria-hidden="true">*</span>
+                Location <span aria-hidden="true">*</span>
               </label>
             </div>
+          </div>
+          <div class="maison-book__field">
             <div class="field">
               <select id="BookConsultationForm-service-type" class="field__input" name="contact[service_type]" required>
-                <option value="">Select service type</option>
-                <option value="Wedding" {% if form.service_type == 'Wedding' %}selected{% endif %}>Wedding</option>
-                <option value="Birthday" {% if form.service_type == 'Birthday' %}selected{% endif %}>Birthday</option>
-                <option value="Social Event" {% if form.service_type == 'Social Event' %}selected{% endif %}>Social Event</option>
-                <option value="Corporate Event" {% if form.service_type == 'Corporate Event' %}selected{% endif %}>Corporate Event</option>
+                <option value="">Select experience</option>
+                <option value="Wedding" {% if form.service_type == 'Wedding' %}selected{% endif %}>Wedding perfume bar</option>
+                <option value="Birthday" {% if form.service_type == 'Birthday' %}selected{% endif %}>Birthday or social</option>
+                <option value="Social Event" {% if form.service_type == 'Social Event' %}selected{% endif %}>Private celebration</option>
+                <option value="Corporate Event" {% if form.service_type == 'Corporate Event' %}selected{% endif %}>Corporate / brand activation</option>
               </select>
               <label class="field__label" for="BookConsultationForm-service-type">
-                Service Type <span aria-hidden="true">*</span>
+                Experience type <span aria-hidden="true">*</span>
               </label>
             </div>
           </div>
-          
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
-            <div class="field">
-              <select id="BookConsultationForm-bottle-size" class="field__input" name="contact[bottle_size]" required>
-                <option value="">Select bottle size</option>
-                <option value="10 ml" {% if form.bottle_size == '10 ml' %}selected{% endif %}>10 ml $20</option>
-                <option value="30 ml" {% if form.bottle_size == '30 ml' %}selected{% endif %}>30 ml $35</option>
-                <option value="50 ml" {% if form.bottle_size == '50 ml' %}selected{% endif %}>50 ml $50</option>
-                <option value="100 ml" {% if form.bottle_size == '100 ml' %}selected{% endif %}>100 ml $95</option>
-              </select>
-              <label class="field__label" for="BookConsultationForm-bottle-size">
-                Bottle Size <span aria-hidden="true">*</span>
-              </label>
-            </div>
+        </div>
+
+        <div class="maison-book__field">
+          <div class="field">
+            <select id="BookConsultationForm-bottle-size" class="field__input" name="contact[bottle_size]" required>
+              <option value="">Select bottle size</option>
+              <option value="10 ml" {% if form.bottle_size == '10 ml' %}selected{% endif %}>10 ml — $20</option>
+              <option value="30 ml" {% if form.bottle_size == '30 ml' %}selected{% endif %}>30 ml — $35</option>
+              <option value="50 ml" {% if form.bottle_size == '50 ml' %}selected{% endif %}>50 ml — $50</option>
+              <option value="100 ml" {% if form.bottle_size == '100 ml' %}selected{% endif %}>100 ml — $95</option>
+            </select>
+            <label class="field__label" for="BookConsultationForm-bottle-size">
+              Guest bottle size <span aria-hidden="true">*</span>
+            </label>
           </div>
-          
-          <div class="field" style="margin-bottom: 2rem;">
+        </div>
+
+        <div class="maison-book__field">
+          <div class="field">
             <textarea
-              rows="10"
+              rows="6"
               id="BookConsultationForm-message"
               class="text-area field__input"
               name="contact[body]"
-              placeholder="Tell us about your style goals, preferences, or any specific questions you have..."
+              placeholder="Theme, color story, scent preferences, branding, or timing notes"
             >{% if form.body %}{{ form.body }}{% endif %}</textarea>
-            <label class="form__label field__label" for="BookConsultationForm-message">
-              Additional Information
-            </label>
+            <label class="form__label field__label" for="BookConsultationForm-message">Additional notes</label>
           </div>
-          
-          {% if section.settings.show_privacy_notice %}
-          
-              <label class="field__label" style="display:flex; gap:10px; position:relative; align-items:center;">
-                <input type="checkbox" required>
-                {{ section.settings.privacy_notice_text | default: 'I agree to the Privacy Policy and consent to my data being used to contact me about this consultation.' }}
-              </label>
-          {% endif %}
-          <div class="contact__button" style="text-align: center;">
-            <button type="submit" class="button">
-              {{ section.settings.button_text | default: 'Book Consultation' }}
-            </button>
-          </div>
-        {% endform %}
-      </div>
+        </div>
+
+        {%- if section.settings.show_privacy_notice -%}
+          <label class="maison-book__privacy">
+            <input type="checkbox" required>
+            <span>{{ section.settings.privacy_notice_text }}</span>
+          </label>
+        {%- endif -%}
+
+        <div class="maison-book__submit">
+          <button type="submit" class="mv-cta">
+            <span>{{ section.settings.button_text | default: 'Request the perfume bar' }}</span>
+          </button>
+        </div>
+      {% endform %}
     </div>
   </div>
 </section>
-
-
 
 {% schema %}
 {
   "name": "Book Consultation Form",
   "tag": "section",
-  "class": "section",
+  "class": "section-book-consultation",
   "settings": [
     {
       "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Perfume bar · Private booking"
+    },
+    {
+      "type": "inline_richtext",
       "id": "heading",
       "label": "Heading",
-      "default": "Book a Consultation"
+      "default": "Book a <em>consultation.</em>"
     },
     {
       "type": "text",
       "id": "subheading",
       "label": "Subheading",
-      "default": "Schedule your personalized consultation with our experts"
+      "default": "Tell us about your wedding, celebration, or brand activation."
     },
     {
       "type": "richtext",
       "id": "description",
       "label": "Description",
-      "default": "<p>Fill out the form below and we'll get back to you within 24 hours to schedule your consultation.</p>"
-    },
-    {
-      "type": "textarea",
-      "id": "services",
-      "label": "Available Services",
-      "info": "Add one service per line",
-      "default": "Personal Styling\nWardrobe Consultation\nColor Analysis\nShopping Service\nSpecial Event Styling"
+      "default": "<p>We reply within 24 hours with availability, guest-bottle options, and how the live blending bar will feel on the day.</p>"
     },
     {
       "type": "text",
       "id": "button_text",
-      "label": "Button Text",
-      "default": "Book Consultation"
+      "label": "Button text",
+      "default": "Request the perfume bar"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
     },
     {
       "type": "header",
@@ -262,16 +269,15 @@
     {
       "type": "checkbox",
       "id": "show_privacy_notice",
-      "label": "Show Privacy Notice",
+      "label": "Show privacy notice",
       "default": true
     },
     {
       "type": "richtext",
       "id": "privacy_notice_text",
-      "label": "Privacy Notice Text",
-      "default": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to my data being used to contact me about this consultation.</p>"
-    },
-
+      "label": "Privacy notice",
+      "default": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to being contacted about this perfume-bar consultation.</p>"
+    }
   ],
   "presets": [
     {
@@ -279,4 +285,4 @@
     }
   ]
 }
-{% endschema %} 
+{% endschema %}

@@ -1,1 +1,39 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{"title":"Collections","sort":"alphabetical","image_ratio":"square","columns_desktop":3,"columns_mobile":"2"}}},"order":["main"]}
+{
+  "sections": {
+    "maison_hero": {
+      "type": "maison-hero",
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "kicker": "The edit · Maison Veil",
+            "heading": "Shop by <em>collection.</em>",
+            "lead": "<p>Fragrances, body oils, gifts, and event-ready sets—each veil edited for how you want to be remembered.</p>",
+            "accords": "Signatures, Oils, Gifting",
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_label_2": "",
+            "button_link_2": "",
+            "badge_title": "Maison Veil",
+            "badge_value": "Luxury fragrance house"
+          }
+        }
+      },
+      "block_order": ["slide_1"],
+      "settings": {
+        "color_scheme": "scheme-3"
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    }
+  },
+  "order": ["maison_hero", "main"]
+}

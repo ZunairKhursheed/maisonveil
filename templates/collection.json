@@ -1,51 +1,27 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "image_with_text_GFFNkx": {
-      "type": "image-with-text",
+    "maison_hero": {
+      "type": "maison-hero",
       "blocks": {
-        "heading_Fzxyjj": {
-          "type": "heading",
+        "slide_1": {
+          "type": "slide",
           "settings": {
-            "heading": "Fragrance, Curated for You.",
-            "heading_size": "h1"
-          }
-        },
-        "text_mxfWR8": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Welcome to our collection—where timeless elegance meets everyday wearability. Each scent is meticulously crafted using premium oils and inspired by iconic fragrances you know and love. Whether you’re exploring something new or returning to a familiar favorite, Maison Veil offers luxurious scents without the luxury markup.</p>",
-            "text_style": "body"
+            "kicker": "Shop · Original compositions",
+            "heading": "Fragrance, curated <em>for you.</em>",
+            "lead": "<p>Luxury scents and body oils composed with premium ingredients and inspired by iconic accords—wearable every day, without the designer markup.</p>",
+            "accords": "Eau de parfum, Body oils, Gift cards",
+            "button_label_1": "Find your veil",
+            "button_link_1": "/",
+            "button_label_2": "Book the bar",
+            "button_link_2": "shopify://pages/book-a-consultation",
+            "badge_title": "Delivery",
+            "badge_value": "Free over $100"
           }
         }
       },
-      "block_order": [
-        "heading_Fzxyjj",
-        "text_mxfWR8"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
+      "block_order": ["slide_1"],
       "settings": {
-        "image": "shopify://shop_images/7-1.webp",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-5",
-        "color_scheme": "scheme-5",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 24,
-        "padding_bottom": 24
+        "color_scheme": "scheme-3"
       }
     },
     "banner": {
@@ -61,8 +37,8 @@
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 16,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-3",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -79,7 +55,7 @@
     }
   },
   "order": [
-    "image_with_text_GFFNkx",
+    "maison_hero",
     "banner",
     "product-grid"
   ]

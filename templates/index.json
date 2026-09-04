@@ -15,31 +15,31 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "kicker": "Maison Veil · Extrait de Parfum 30%",
+            "kicker": "Maison Veil · Fragrance House & Perfume Bar",
             "heading": "Wear the <em>unspoken.</em>",
-            "lead": "<p>Devoted to the tension of light, shadow, and tactile intimacy.</p>",
-            "accords": "Frankincense, Black Amber, Sandalwood",
+            "lead": "<p>Original luxury fragrances and body oils—premium ingredients, iconic inspiration, worn like a secret.</p>",
+            "accords": "Lychee, Vanilla Silk, Cherry Smoke",
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
-            "button_label_2": "Learn more",
-            "button_link_2": "shopify://pages/contact",
-            "badge_title": "Origin & Vessel",
-            "badge_value": "Grasse · 100ml"
+            "button_label_2": "Book the bar",
+            "button_link_2": "shopify://pages/book-a-consultation",
+            "badge_title": "The house",
+            "badge_value": "Perfume bar · Signature scents"
           }
         },
         "slide_2": {
           "type": "slide",
           "settings": {
-            "kicker": "02 · Signature",
-            "heading": "Light, held <em>close.</em>",
-            "lead": "<p>A brighter composition for daylight rituals.</p>",
-            "accords": "Neroli, Soft Musk, Cedar",
+            "kicker": "02 · Live blending",
+            "heading": "Blend it, <em>live.</em>",
+            "lead": "<p>Sit at the perfume bar and watch a signature scent take shape—drop by drop—for weddings, parties, and private sittings.</p>",
+            "accords": "Floral, Gourmand, Woody",
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
-            "button_label_2": "Scent Matcher",
-            "button_link_2": "",
-            "badge_title": "Origin & Vessel",
-            "badge_value": "Paris · 100ml"
+            "button_label_2": "See events",
+            "button_link_2": "shopify://pages/events",
+            "badge_title": "The bar",
+            "badge_value": "Events · Custom bottles"
           }
         }
       },
@@ -57,37 +57,37 @@
         "item_1": {
           "type": "item",
           "settings": {
-            "text": "Grasse Haute Parfumerie"
+            "text": "Original Signature Compositions"
           }
         },
         "item_2": {
           "type": "item",
           "settings": {
-            "text": "30% Extrait de Parfum Concentration"
+            "text": "Premium Fragrance Oils"
           }
         },
         "item_3": {
           "type": "item",
           "settings": {
-            "text": "Hand-Blown Heavy Smoked Crystal"
+            "text": "Live Perfume Bar Blending"
           }
         },
         "item_4": {
           "type": "item",
           "settings": {
-            "text": "French Limousin Oak Cellar Maceration"
+            "text": "Wedding & Celebration Scenting"
           }
         },
         "item_5": {
           "type": "item",
           "settings": {
-            "text": "Sustainable & Ethically Harvested Botanicals"
+            "text": "Body Oils & Shimmer Veils"
           }
         },
         "item_6": {
           "type": "item",
           "settings": {
-            "text": "Cruelty-Free & 100% Vegan Formulations"
+            "text": "Complimentary Delivery Over $100"
           }
         }
       },
@@ -134,9 +134,9 @@
         "filter_3"
       ],
       "settings": {
-        "kicker": "01 · The Master Works",
-        "title": "The Signature <em>Compositions.</em>",
-        "description": "<p>Three nocturnal masterpieces and our coveted discovery wardrobe. Each flacon is hand-filled, polished, and serialized by our master artisans in Paris.</p>",
+        "kicker": "01 · The collection",
+        "title": "Signature <em>compositions.</em>",
+        "description": "<p>Original luxury fragrances and body oils inspired by iconic accords—florals, ambers, woods, and gourmands composed for everyday presence.</p>",
         "collection": "all",
         "products_to_show": 6,
         "columns_desktop": 3,
@@ -180,7 +180,7 @@
             "headline": "Base: The Lingering Sillage",
             "subheadline": "Dense ambers, noble woods, and second-skin suede lock into memory",
             "time_label": "4 — 24+ Hours",
-            "ingredients": "Golden Fossil Amber|Baltic Sea Coast\nMysore Sandalwood|Karnataka, India\nBlack Suede Accord|Grasse Laboratory"
+            "ingredients": "Golden Fossil Amber|Baltic Sea Coast\nMysore Sandalwood|Karnataka, India\nBlack Suede Accord|Maison Veil Atelier"
           }
         }
       },
@@ -190,9 +190,9 @@
         "phase_3"
       ],
       "settings": {
-        "kicker": "02 · The Olfactory Architecture",
+        "kicker": "02 · How a veil unfolds",
         "title": "The Evolution on <em>Skin.</em>",
-        "description": "<p>A true Extrait de Parfum is an organic, shifting symphony. Drag the timeline below to experience how the notes unfold over 24 hours of intimate body contact.</p>",
+        "description": "<p>Every Maison Veil composition is a shifting symphony on skin. Drag the timeline to see how opening, heart, and base notes bloom through the day.</p>",
         "light_mode": true,
         "color_scheme": "scheme-1"
       }
@@ -261,9 +261,9 @@
           "type": "result",
           "settings": {
             "key": "noir",
-            "title": "Noir Veil — Extrait de Parfum",
-            "score": "98% Sensory Affinity Match",
-            "description": "Your temperament gravitates towards deep nocturnal intimacy and quiet magnetism. Noir Veil envelops you in charred amber and frankincense.",
+            "title": "Crimson Smoke",
+            "score": "A nocturnal match",
+            "description": "You lean into shadow and heat. Crimson Smoke opens with cherry liqueur and settles into a dark, memorable trail—your night veil.",
             "products": [],
             "collection": "",
             "products_to_show": 3,
@@ -275,9 +275,9 @@
           "type": "result",
           "settings": {
             "key": "or",
-            "title": "Or Éclat — Extrait de Parfum",
-            "score": "96% Sensory Affinity Match",
-            "description": "You resonate with warm solar magnificence and radiant luxury. Or Éclat illuminates your presence with Kashmiri saffron and Taif rose.",
+            "title": "Aurora Bloom",
+            "score": "A solar match",
+            "description": "You want light that still feels intimate. Aurora Bloom—lychee brightness over a soft, intoxicating heart—is the veil for golden rooms.",
             "products": [],
             "collection": "",
             "products_to_show": 3,
@@ -289,9 +289,9 @@
           "type": "result",
           "settings": {
             "key": "ombre",
-            "title": "Ombre Serein — Extrait de Parfum",
-            "score": "99% Sensory Affinity Match",
-            "description": "Your aura is tailored for whispers and understated tactile indulgence. Ombre Serein embraces you with Tuscan orris and white suede.",
+            "title": "Celestial Mist",
+            "score": "A whisper match",
+            "description": "You prefer presence that stays close. Celestial Mist—aquatic floral, green tea air—is the quiet veil you wear like a secret.",
             "products": [],
             "collection": "",
             "products_to_show": 3,
@@ -312,9 +312,9 @@
         "{background:#0a0a0a; padding-block:80px;}"
       ],
       "settings": {
-        "kicker": "03 · Bespoke Consultation",
+        "kicker": "03 · Scent consultation",
         "title": "Find Your <em>Veil.</em>",
-        "description": "<p>Answer three sensory reflections to discover the flacon that aligns with your nocturnal temperament and desired presence.</p>",
+        "description": "<p>Answer three sensory reflections to find the composition that matches how you want to be remembered in a room.</p>",
         "claim_label": "Claim Flacon",
         "retake_label": "Retake Consultation",
         "color_scheme": "scheme-3"
@@ -323,9 +323,9 @@
     "maison_engraving": {
       "type": "maison-engraving",
       "settings": {
-        "kicker": "04 · Atelier Personalization",
+        "kicker": "04 · Personalization",
         "title": "Laser Gold <em>Engraving.</em>",
-        "description": "<p>Every flacon can be individually inscribed with your initials, a significant date, or a personal creed. Inscribed with ultra-precision 24K gold foil in our Paris atelier.</p>",
+        "description": "<p>Personalize bottles for weddings, gifts, and private labels—initials, a date, or a short creed on the vessel your guests take home.</p>",
         "product": "aurora-bloom-1",
         "input_label": "Inscribe Your Monogram / Date (Max 12 Chars)",
         "default_engraving": "M · VEIL",
@@ -334,7 +334,7 @@
         "font_1_label": "Roman Monumental",
         "font_2_label": "Editorial Haute",
         "bottle_label": "VEIL",
-        "bottle_subtitle": "EXTRAIT DE PARFUM",
+        "bottle_subtitle": "SIGNATURE SCENT",
         "button_label": "Save Engraving to Vessel",
         "color_scheme": "scheme-3"
       }
@@ -346,32 +346,32 @@
           "type": "pillar",
           "settings": {
             "number": "01",
-            "title": "Grasse Harvests",
-            "description": "Small-batch extraction of rare botanicals from historical French fields."
+            "title": "Original oils",
+            "description": "Premium fragrance oils composed into signatures you will not find on a department-store wall."
           }
         },
         "pillar_2": {
           "type": "pillar",
           "settings": {
             "number": "02",
-            "title": "Oak Maceration",
-            "description": "Aged 6 months in French Limousin oak barrels to mature molecular depth."
+            "title": "Live blending",
+            "description": "Watch your scent take shape at the bar—drop by drop, note by note."
           }
         },
         "pillar_3": {
           "type": "pillar",
           "settings": {
             "number": "03",
-            "title": "30% Extrait",
-            "description": "The highest concentration in high perfumery for 24+ hour longevity."
+            "title": "Wearable luxury",
+            "description": "Elevated scents and body oils designed for presence, priced to live with."
           }
         },
         "pillar_4": {
           "type": "pillar",
           "settings": {
             "number": "04",
-            "title": "Bespoke Flacons",
-            "description": "Weighty architectural glass polished and sealed with hand-applied foil."
+            "title": "Events & gifts",
+            "description": "Wedding bars, corporate activations, branded bottles, and considered gifting."
           }
         }
       },
@@ -383,9 +383,9 @@
       ],
       "settings": {
         "image": "shopify://shop_images/C788EB60-5548-4861-B813-979E7D59A200.png",
-        "kicker": "05 · The Manifesto",
+        "kicker": "05 · The manifesto",
         "title": "Luxury is felt, <em>never shouted.</em>",
-        "text": "<p>Maison Veil was founded in Paris on a singular conviction: fragrance should not be an assault on the senses, but a private invitation. We compose each extrait with exceptional concentrations of natural absolutes, allowing them to fuse with the wearer's unique skin chemistry.</p><p>Our bottles are architectural vessels forged from heavyweight smoked glass, crowned by obsidian crystal caps designed to sit as tactile sculptures upon your vanity.</p>",
+        "text": "<p>Maison Veil was founded on a singular conviction: fragrance should be a private invitation, not an assault. We compose original scents with premium oils so they fuse with your chemistry—and we blend them live at the perfume bar so the moment is yours.</p><p>From Aurora Bloom to Crimson Smoke, body oils to guest bottles, the house offers luxury you can wear, gift, and celebrate with—without the designer theater.</p>",
         "color_scheme": "scheme-3"
       }
     },
@@ -395,11 +395,11 @@
         "card_1": {
           "type": "card",
           "settings": {
-            "kicker": "Private Sittings",
-            "title": "Bespoke Scent Formulation",
-            "text": "An intimate two-day private session with our Master Perfumer in our Paris salon. Formulate a personalized extrait unique to your skin that will never be reproduced.",
-            "link_label": "Reserve Salon Appointment →",
-            "link": "shopify://pages/contact"
+            "kicker": "Perfume bar",
+            "title": "Compose your signature",
+            "text": "A guided blending sitting at the perfume bar—compose a signature from premium oils, tailored to your skin and the moment you want to hold.",
+            "link_label": "Book a consultation →",
+            "link": "shopify://pages/book-a-consultation"
           }
         },
         "card_2": {
@@ -407,19 +407,19 @@
           "settings": {
             "kicker": "Celebrations",
             "title": "Bridal & Event Scenting",
-            "text": "Transform your wedding or gala into an unforgettable olfactory memory. Bespoke spatial diffusion and personalized engraved flacons presented to your guests.",
-            "link_label": "Plan Event Experience →",
+            "text": "Invite the perfume bar to your wedding or gala. Guests blend their own scents and leave with bottles that remember the night.",
+            "link_label": "Plan an event →",
             "link": "shopify://pages/events"
           }
         },
         "card_3": {
           "type": "card",
           "settings": {
-            "kicker": "Haute Gifting",
-            "title": "Executive & VIP Flacons",
-            "text": "Custom presentation chests lined in black velvet, sealed with personalized gold wax insignias and individually serialized for distinguished patrons.",
-            "link_label": "Explore VIP Gifting →",
-            "link": "shopify://pages/contact"
+            "kicker": "Gifting",
+            "title": "Corporate & VIP gifts",
+            "text": "Branded bottles, curated boxes, and bulk gifting for clients, teams, and launches—fragrance that outlasts a thank-you note.",
+            "link_label": "Explore corporate gifting →",
+            "link": "shopify://pages/corporate-gifting"
           }
         }
       },
@@ -429,9 +429,9 @@
         "card_3"
       ],
       "settings": {
-        "kicker": "06 · Private Commissions",
+        "kicker": "06 · Beyond the bottle",
         "title": "More than a <em>Scent.</em>",
-        "description": "<p>Beyond our permanent collection, Maison Veil curates unforgettable private olfactory rituals for momentous celebrations and distinguished collectors.</p>",
+        "description": "<p>Beyond the shop, Maison Veil hosts live perfume bars and designs fragrance gifts for celebrations and brands.</p>",
         "color_scheme": "scheme-3"
       }
     },
@@ -441,33 +441,33 @@
         "review_1": {
           "type": "review",
           "settings": {
-            "logo_label": "VOGUE",
-            "quote": "Maison Veil has achieved what few modern fragrance houses dare: absolute, unapologetic mystery. A sillage so exquisite it leaves an indelible phantom memory.",
-            "author": "— VOGUE PARIS · HAUTE BEAUTÉ"
+            "logo_label": "WEDDINGS",
+            "quote": "Our wedding guests still talk about blending their own scents. It felt luxurious without being stiff—exactly what we wanted the night to feel like.",
+            "author": "— Private wedding, perfume bar"
           }
         },
         "review_2": {
           "type": "review",
           "settings": {
-            "logo_label": "HARPER'S BAZAAR",
-            "quote": "The flacon is a sculpture; the extrait inside is a revelation. Or Éclat redefines golden ambers for the modern connoisseur.",
-            "author": "— HARPER'S BAZAAR · LUXE SENSATIONS"
+            "logo_label": "BOUTIQUE",
+            "quote": "I came for a dupe energy and left with a signature. The oils are rich, the blending is theater, and I wear it every day.",
+            "author": "— Boutique guest"
           }
         },
         "review_3": {
           "type": "review",
           "settings": {
-            "logo_label": "WALLPAPER*",
-            "quote": "An exceptional balance between architectural glass design and Grasse artisanal compounding. A triumph of quiet luxury.",
-            "author": "— WALLPAPER* DESIGN HONOURS"
+            "logo_label": "BRANDS",
+            "quote": "We used Maison Veil for a client dinner. Branded bottles, easy logistics, and people actually used the gift.",
+            "author": "— Brand activation host"
           }
         },
         "review_4": {
           "type": "review",
           "settings": {
-            "logo_label": "GQ FRANCE",
-            "quote": "Wearing Noir Veil feels like stepping through a rain-drenched Parisian courtyard at midnight. Mesmerizing and masculine.",
-            "author": "— GQ FRANCE · LE GUIDE PARFUM"
+            "logo_label": "SIGNATURE",
+            "quote": "Crimson Smoke lasted through a full night out. Dark, cherry, unforgettable. This is my veil.",
+            "author": "— Collection client"
           }
         }
       },
@@ -478,7 +478,7 @@
         "review_4"
       ],
       "settings": {
-        "logos_label": "Press reviews",
+        "logos_label": "Guest voices",
         "color_scheme": "scheme-3"
       }
     },
@@ -503,13 +503,13 @@
     "maison_newsletter": {
       "type": "maison-newsletter",
       "settings": {
-        "kicker": "07 · Private Access",
+        "kicker": "07 · Private access",
         "title": "Enter the world <em>behind the veil.</em>",
-        "description": "<p>Exclusive private batch allocations, salon invitations, and early access to limited edition flacons.</p>",
+        "description": "<p>New compositions, perfume-bar dates, and early access to limited oils and gift sets.</p>",
         "placeholder": "Your private email address",
         "button_label": "Request Access",
-        "success_title": "WELCOME TO THE MAISON VEIL INNER ATELIER.",
-        "success_text": "<p>Your VIP reservation has been confirmed. Watch your inbox for private allocations.</p>",
+        "success_title": "Welcome behind the veil.",
+        "success_text": "<p>Watch your inbox for launches, event dates, and private drops.</p>",
         "color_scheme": "scheme-3"
       }
     },

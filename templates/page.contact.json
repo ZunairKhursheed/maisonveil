@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -17,62 +8,101 @@
         "padding_bottom": 36
       }
     },
-    "image_banner_J6ch67": {
-      "type": "image-banner",
+    "maison_hero": {
+      "type": "maison-hero",
       "blocks": {
-        "heading_WAQFmU": {
-          "type": "heading",
+        "slide_1": {
+          "type": "slide",
           "settings": {
-            "heading": "Contact.",
-            "heading_size": "h1"
+            "kicker": "Atelier · Inquiries",
+            "heading": "Write to the <em>maison.</em>",
+            "lead": "<p>Orders, partnerships, perfume-bar bookings, and press—choose the desk that fits. We reply with care.</p>",
+            "accords": "Orders, Partnerships, Events",
+            "button_label_1": "Book a consultation",
+            "button_link_1": "shopify://pages/book-a-consultation",
+            "button_label_2": "Shop fragrances",
+            "button_link_2": "shopify://collections/all",
+            "badge_title": "Response",
+            "badge_value": "Within 24 hours"
           }
         }
       },
-      "block_order": [
-        "heading_WAQFmU"
-      ],
-      "name": "t:sections.image-banner.presets.name",
+      "block_order": ["slide_1"],
       "settings": {
-        "image": "shopify://shop_images/8.webp",
-        "image_overlay_opacity": 20,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-5",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "color_scheme": "scheme-3"
       }
     },
-    "rich_text_PP8Ypz": {
-      "type": "rich-text",
+    "maison_experience": {
+      "type": "maison-experience",
       "blocks": {
-        "text_NJANph": {
-          "type": "text",
+        "card_1": {
+          "type": "card",
           "settings": {
-            "text": "<p><a href=\"mailto:orders@maisonveil.com\">orders@maisonveil.com</a></p><p>For questions about your order.</p><p><a href=\"mailto:partnerships@maisonveil.com\">partnerships@maisonveil.com</a></p><p>For brands interested in partnerships.</p><p><a href=\"mailto:info@maisonveil.com\">info@maisonveil.com</a></p><p>For events and general inquiries.</p>"
+            "kicker": "Orders",
+            "title": "orders@maisonveil.com",
+            "text": "Shipping, tracking, exchanges, and product questions for fragrances, body oils, and gift cards.",
+            "link_label": "Email orders →",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "kicker": "Partnerships",
+            "title": "partnerships@maisonveil.com",
+            "text": "Retail, collaborations, and brands who want to scent a launch or capsule with Maison Veil.",
+            "link_label": "Email partnerships →",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "kicker": "Events & house",
+            "title": "info@maisonveil.com",
+            "text": "Perfume-bar bookings, general inquiries, and anything that doesn’t fit a neat box. For dates and guest counts, use the consultation form.",
+            "link_label": "Book the perfume bar →",
+            "link": "shopify://pages/book-a-consultation"
           }
         }
       },
-      "block_order": [
-        "text_NJANph"
-      ],
-      "name": "t:sections.rich-text.presets.name",
+      "block_order": ["card_1", "card_2", "card_3"],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "kicker": "Desks",
+        "title": "How to <em>reach us.</em>",
+        "description": "<p>Copy the address that matches your request, or reserve the live blending bar in a few details.</p>",
+        "color_scheme": "scheme-3"
+      }
+    },
+    "contact_form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "A note to the <em>house.</em>",
+        "heading_size": "h1",
+        "color_scheme": "scheme-3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "maison_newsletter": {
+      "type": "maison-newsletter",
+      "settings": {
+        "kicker": "Stay close",
+        "title": "News from behind the <em>veil.</em>",
+        "description": "<p>Launches, event availability, and atelier notes—never noise.</p>",
+        "placeholder": "Your email",
+        "button_label": "Subscribe",
+        "success_title": "You’re in.",
+        "success_text": "<p>Expect considered notes, not a daily blast.</p>",
+        "color_scheme": "scheme-3"
       }
     }
   },
   "order": [
     "main",
-    "image_banner_J6ch67",
-    "rich_text_PP8Ypz"
+    "maison_hero",
+    "maison_experience",
+    "contact_form",
+    "maison_newsletter"
   ]
 }

@@ -1,1 +1,59 @@
-{"sections":{"main":{"type":"main-article","blocks":{"featured_image":{"type":"featured_image","settings":{"image_height":"adapt"}},"title":{"type":"title","settings":{"blog_show_date":true,"blog_show_author":false}},"share":{"type":"share","settings":{"share_label":"Share"}},"content":{"type":"content","settings":{}}},"block_order":["featured_image","title","share","content"],"settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "maison_hero": {
+      "type": "maison-hero",
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "kicker": "Journal",
+            "heading": "A story from the <em>maison.</em>",
+            "lead": "<p>Read on, then shop the compositions, book the perfume bar, or scent a celebration.</p>",
+            "accords": "Scent, Ritual, House",
+            "button_label_1": "Shop fragrances",
+            "button_link_1": "shopify://collections/all",
+            "button_label_2": "Book the bar",
+            "button_link_2": "shopify://pages/book-a-consultation",
+            "badge_title": "Maison Veil",
+            "badge_value": "Fragrance house"
+          }
+        }
+      },
+      "block_order": ["slide_1"],
+      "settings": {
+        "color_scheme": "scheme-3"
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": ["featured_image", "title", "share", "content"],
+      "settings": {}
+    }
+  },
+  "order": ["maison_hero", "main"]
+}

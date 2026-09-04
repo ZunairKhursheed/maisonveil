@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -17,47 +8,91 @@
         "padding_bottom": 28
       }
     },
-    "rich_text_FgRcV6": {
-      "type": "rich-text",
+    "maison_hero": {
+      "type": "maison-hero",
       "blocks": {
-        "heading_iC3VFM": {
-          "type": "heading",
+        "slide_1": {
+          "type": "slide",
           "settings": {
-            "heading": "Book a Consultation",
-            "heading_size": "h1"
+            "kicker": "Perfume bar · Consultation",
+            "heading": "Reserve the <em>bar.</em>",
+            "lead": "<p>Share your date, guest count, venue, and bottle size. We’ll confirm availability and design a live blending experience for weddings, private parties, and corporate activations.</p>",
+            "accords": "10–100 ml bottles, Custom menus, On-site blending",
+            "button_label_1": "See event services",
+            "button_link_1": "shopify://pages/events",
+            "button_label_2": "Corporate gifting",
+            "button_link_2": "shopify://pages/corporate-gifting",
+            "badge_title": "Reply time",
+            "badge_value": "Within 24 hours"
           }
         }
       },
-      "block_order": [
-        "heading_iC3VFM"
-      ],
-      "name": "t:sections.rich-text.presets.name",
+      "block_order": ["slide_1"],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-899854cd-346f-4b19-aff9-8b2691ee80ae",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "color_scheme": "scheme-3"
+      }
+    },
+    "maison_experience": {
+      "type": "maison-experience",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "kicker": "01",
+            "title": "Tell us the day",
+            "text": "Date, location, and how many guests will visit the bar. We’ll map timing and bottle inventory.",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "kicker": "02",
+            "title": "Choose the veil",
+            "text": "Service type and guest bottle size—from 10 ml keepsakes to 100 ml signatures—plus any branding notes.",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "kicker": "03",
+            "title": "We confirm",
+            "text": "Within 24 hours you’ll hear back with next steps, scent-menu ideas, and how the bar will feel on site.",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["card_1", "card_2", "card_3"],
+      "settings": {
+        "kicker": "What happens next",
+        "title": "A consultation, not a <em>form dump.</em>",
+        "description": "<p>This request is for perfume-bar bookings and private scenting. For order tracking, write orders@maisonveil.com.</p>",
+        "color_scheme": "scheme-3"
       }
     },
     "book_consultation_form_exm7yB": {
       "type": "book-consultation-form",
       "name": "Book Consultation Form",
       "settings": {
-        "heading": "",
-        "subheading": "",
-        "description": "<p>Fill out the form below and we'll get back to you within 24 hours to schedule your consultation.</p>",
-        "services": "Personal Styling\nWardrobe Consultation\nColor Analysis\nShopping Service\nSpecial Event Styling",
-        "button_text": "Book Consultation",
-        "show_privacy_notice": false,
-        "privacy_notice_text": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to my data being used to contact me about this consultation.</p>"
+        "kicker": "Request details",
+        "heading": "Book a <em>consultation.</em>",
+        "subheading": "We design the bar around your celebration.",
+        "description": "<p>Required fields help us hold the right bottle inventory and team for your date.</p>",
+        "button_text": "Request the perfume bar",
+        "color_scheme": "scheme-3",
+        "show_privacy_notice": true,
+        "privacy_notice_text": "<p>I agree to the <a href=\"/pages/privacy-policy\">Privacy Policy</a> and consent to being contacted about this perfume-bar consultation.</p>"
       }
     }
   },
   "order": [
     "main",
-    "rich_text_FgRcV6",
+    "maison_hero",
+    "maison_experience",
     "book_consultation_form_exm7yB"
   ]
 }

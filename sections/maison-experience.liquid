@@ -37,8 +37,14 @@
                 <p class="maison-experience__card-text">{{ block.settings.text | escape }}</p>
               {%- endif -%}
             </div>
+            {%- liquid
+              assign card_href = block.settings.link
+              if block.settings.title contains '@'
+                assign card_href = 'mailto:' | append: block.settings.title
+              endif
+            -%}
             {%- if block.settings.link_label != blank -%}
-              <a class="maison-experience__link" href="{{ block.settings.link | default: '#' }}">
+              <a class="maison-experience__link" href="{{ card_href | default: '#' }}">
                 {{ block.settings.link_label | escape }}
               </a>
             {%- endif -%}
@@ -75,7 +81,7 @@
       "type": "richtext",
       "id": "description",
       "label": "Description",
-      "default": "<p>Beyond our permanent collection, Maison Veil curates unforgettable private olfactory rituals for momentous celebrations and distinguished collectors.</p>"
+      "default": "<p>Beyond the shop, Maison Veil hosts live perfume bars and designs fragrance gifts for celebrations and brands.</p>"
     },
     {
       "type": "color_scheme",
@@ -89,10 +95,10 @@
       "type": "card",
       "name": "Experience card",
       "settings": [
-        { "type": "text", "id": "kicker", "label": "Kicker", "default": "Private Sittings" },
-        { "type": "text", "id": "title", "label": "Title", "default": "Bespoke Scent Formulation" },
-        { "type": "textarea", "id": "text", "label": "Description", "default": "An intimate two-day private session with our Master Perfumer in our Paris salon." },
-        { "type": "text", "id": "link_label", "label": "Link label", "default": "Reserve Salon Appointment →" },
+        { "type": "text", "id": "kicker", "label": "Kicker", "default": "Private sittings" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Compose your signature" },
+        { "type": "textarea", "id": "text", "label": "Description", "default": "A guided blending sitting at the perfume bar—compose a signature from premium oils." },
+        { "type": "text", "id": "link_label", "label": "Link label", "default": "Book a consultation →" },
         { "type": "url", "id": "link", "label": "Link" }
       ]
     }
@@ -104,10 +110,10 @@
         {
           "type": "card",
           "settings": {
-            "kicker": "Private Sittings",
-            "title": "Bespoke Scent Formulation",
-            "text": "An intimate two-day private session with our Master Perfumer in our Paris salon. Formulate a personalized extrait unique to your skin that will never be reproduced.",
-            "link_label": "Reserve Salon Appointment →"
+            "kicker": "Perfume bar",
+            "title": "Compose your signature",
+            "text": "A guided blending sitting at the perfume bar—compose a signature from premium oils, tailored to your skin and the moment you want to hold.",
+            "link_label": "Book a consultation →"
           }
         },
         {
@@ -115,17 +121,17 @@
           "settings": {
             "kicker": "Celebrations",
             "title": "Bridal & Event Scenting",
-            "text": "Transform your wedding or gala into an unforgettable olfactory memory. Bespoke spatial diffusion and personalized engraved flacons presented to your guests.",
-            "link_label": "Plan Event Experience →"
+            "text": "Invite the perfume bar to your wedding or gala. Guests blend their own scents and leave with bottles that remember the night.",
+            "link_label": "Plan an event →"
           }
         },
         {
           "type": "card",
           "settings": {
-            "kicker": "Haute Gifting",
-            "title": "Executive & VIP Flacons",
-            "text": "Custom presentation chests lined in black velvet, sealed with personalized gold wax insignias and individually serialized for distinguished patrons.",
-            "link_label": "Explore VIP Gifting →"
+            "kicker": "Gifting",
+            "title": "Corporate & VIP gifts",
+            "text": "Branded bottles, curated boxes, and bulk gifting for clients, teams, and launches—fragrance that outlasts a thank-you note.",
+            "link_label": "Explore corporate gifting →"
           }
         }
       ]

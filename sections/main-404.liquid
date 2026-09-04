@@ -1,23 +1,26 @@
-<style type="text/css">
-  .template-404 .title + * {
-    margin-top: 1rem;
-  }
+{{ 'section-book-consultation.css' | asset_url | stylesheet_tag }}
 
-  @media screen and (min-width: 750px) {
-    .template-404 .title + * {
-      margin-top: 2rem;
-    }
-  }
-</style>
-
-<div class="template-404 page-width page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
-  <h1 class="title">
-    {{ 'templates.404.title' | t }}
-  </h1>
-  <a href="{{ routes.all_products_collection_url }}" class="button">
-    {{ 'general.continue_shopping' | t }}
-  </a>
+<div class="maison-book color-scheme-3 isolate gradient">
+  <div class="maison-book__wrap" style="text-align: center;">
+    <div class="maison-book__head">
+      <p class="maison-book__kicker">404</p>
+      <h1 class="maison-book__title">This page slipped <em>behind the veil.</em></h1>
+      <p class="maison-book__desc">The link may have moved. Return to the collection, or book the perfume bar.</p>
+    </div>
+    <div class="maison-book__submit">
+      <a href="{{ routes.all_products_collection_url }}" class="mv-cta">
+        <span>{{ 'general.continue_shopping' | t }}</span>
+      </a>
+      <a href="{{ pages['book-a-consultation'].url | default: '/pages/book-a-consultation' }}" class="mv-cta">
+        <span>Book the perfume bar</span>
+      </a>
+    </div>
+  </div>
 </div>
+
+{% schema %}
+{
+  "name": "404 page",
+  "tag": "section"
+}
+{% endschema %}

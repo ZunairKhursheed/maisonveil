@@ -22,7 +22,7 @@
       </div>
 
       {%- if review_blocks.size > 0 -%}
-        <div class="maison-acclaim__logos" role="tablist" aria-label="{{ section.settings.logos_label | default: 'Press reviews' | escape }}">
+        <div class="maison-acclaim__logos" role="tablist" aria-label="{{ section.settings.logos_label | default: 'Guest voices' | escape }}">
           {%- for block in review_blocks -%}
             <button
               type="button"
@@ -67,7 +67,7 @@
       "type": "text",
       "id": "logos_label",
       "label": "Logos row label",
-      "default": "Press reviews"
+      "default": "Guest voices"
     },
     {
       "type": "color_scheme",
@@ -81,9 +81,9 @@
       "type": "review",
       "name": "Review",
       "settings": [
-        { "type": "text", "id": "logo_label", "label": "Logo label", "default": "VOGUE" },
-        { "type": "textarea", "id": "quote", "label": "Quote", "default": "Maison Veil has achieved what few modern fragrance houses dare: absolute, unapologetic mystery. A sillage so exquisite it leaves an indelible phantom memory." },
-        { "type": "text", "id": "author", "label": "Author", "default": "— VOGUE PARIS · HAUTE BEAUTÉ" }
+        { "type": "text", "id": "logo_label", "label": "Logo label", "default": "WEDDINGS" },
+        { "type": "textarea", "id": "quote", "label": "Quote", "default": "Our wedding guests still talk about blending their own scents. It felt luxurious without being stiff—exactly what we wanted the night to feel like." },
+        { "type": "text", "id": "author", "label": "Author", "default": "— Private wedding, perfume bar" }
       ]
     }
   ],
@@ -94,33 +94,33 @@
         {
           "type": "review",
           "settings": {
-            "logo_label": "VOGUE",
-            "quote": "Maison Veil has achieved what few modern fragrance houses dare: absolute, unapologetic mystery. A sillage so exquisite it leaves an indelible phantom memory.",
-            "author": "— VOGUE PARIS · HAUTE BEAUTÉ"
+            "logo_label": "WEDDINGS",
+            "quote": "Our wedding guests still talk about blending their own scents. It felt luxurious without being stiff—exactly what we wanted the night to feel like.",
+            "author": "— Private wedding, perfume bar"
           }
         },
         {
           "type": "review",
           "settings": {
-            "logo_label": "HARPER'S BAZAAR",
-            "quote": "The flacon is a sculpture; the extrait inside is a revelation. Or Éclat redefines golden ambers for the modern connoisseur.",
-            "author": "— HARPER'S BAZAAR · LUXE SENSATIONS"
+            "logo_label": "BOUTIQUE",
+            "quote": "I came for a dupe energy and left with a signature. The oils are rich, the blending is theater, and I wear it every day.",
+            "author": "— Boutique guest"
           }
         },
         {
           "type": "review",
           "settings": {
-            "logo_label": "WALLPAPER*",
-            "quote": "An exceptional balance between architectural glass design and Grasse artisanal compounding. A triumph of quiet luxury.",
-            "author": "— WALLPAPER* DESIGN HONOURS"
+            "logo_label": "BRANDS",
+            "quote": "We used Maison Veil for a client dinner. Branded bottles, easy logistics, and people actually used the gift.",
+            "author": "— Brand activation host"
           }
         },
         {
           "type": "review",
           "settings": {
-            "logo_label": "GQ FRANCE",
-            "quote": "Wearing Noir Veil feels like stepping through a rain-drenched Parisian courtyard at midnight. Mesmerizing and masculine.",
-            "author": "— GQ FRANCE · LE GUIDE PARFUM"
+            "logo_label": "SIGNATURE",
+            "quote": "Crimson Smoke lasted through a full night out. Dark, cherry, unforgettable. This is my veil.",
+            "author": "— Collection client"
           }
         }
       ]
