@@ -214,15 +214,15 @@
             "question": "How should your scent enter the room?",
             "description": "Choose the presence that matches how you want to be remembered.",
             "option_1_key": "noir",
-            "option_1_icon": "silhouette",
+            "option_1_icon": "none",
             "option_1_title": "After dark",
             "option_1_sub": "Smoke, oud, cherry, and leather—quiet command that lingers.",
             "option_2_key": "or",
-            "option_2_icon": "star",
+            "option_2_icon": "none",
             "option_2_title": "In the light",
             "option_2_sub": "Lychee, mango, peach, and sun-warmed florals with a golden trail.",
             "option_3_key": "ombre",
-            "option_3_icon": "heart",
+            "option_3_icon": "none",
             "option_3_title": "Close to skin",
             "option_3_sub": "Pistachio cream, vanilla, coconut, and musk—people lean in."
           }
@@ -233,15 +233,15 @@
             "question": "Which notes do you reach for first?",
             "description": "These are the accords we actually compose at the house.",
             "option_1_key": "noir",
-            "option_1_icon": "fire",
+            "option_1_icon": "none",
             "option_1_title": "Cherry, oud & incense",
             "option_1_sub": "Crimson Smoke, Eclipse Oud, Oud Incendiare, Reckoning.",
             "option_2_key": "or",
-            "option_2_icon": "plant",
+            "option_2_icon": "none",
             "option_2_title": "Lychee, tropical fruit & bloom",
             "option_2_sub": "Aurora Bloom, Isla Dorée, Rouge Tropique, Kòla Azur.",
             "option_3_key": "ombre",
-            "option_3_icon": "leaf",
+            "option_3_icon": "none",
             "option_3_title": "Pistachio, vanilla & coconut",
             "option_3_sub": "Pistache Nuage, Vanilla Coco Glow, Noir Vanille, Crème Brûlée."
           }
@@ -252,15 +252,15 @@
             "question": "How do you want to wear it?",
             "description": "The house bottles the same moods as perfume, oil, and shimmer.",
             "option_1_key": "noir",
-            "option_1_icon": "perfume",
+            "option_1_icon": "none",
             "option_1_title": "A night perfume",
             "option_1_sub": "A spray that holds through dinner, leather, and late hours.",
             "option_2_key": "or",
-            "option_2_icon": "bottle",
+            "option_2_icon": "none",
             "option_2_title": "A radiant day scent",
             "option_2_sub": "A bright perfume or tropical body oil for sun and celebration.",
             "option_3_key": "ombre",
-            "option_3_icon": "leaf",
+            "option_3_icon": "none",
             "option_3_title": "An oil or gourmand veil",
             "option_3_sub": "Massage-on oils and creamy sprays that stay intimate."
           }
@@ -338,7 +338,7 @@
         "result_ombre"
       ],
       "custom_css": [
-        "{background:#0a0a0a; padding-block:80px;}"
+        "{background: #0a0a0a; padding-block: 80px;}"
       ],
       "settings": {
         "kicker": "03 · Scent consultation",
@@ -351,20 +351,17 @@
     },
     "maison_engraving": {
       "type": "maison-engraving",
+      "disabled": true,
       "settings": {
+        "product": "aurora-bloom-1",
         "kicker": "04 · Personalization",
         "title": "Laser Gold <em>Engraving.</em>",
-        "description": "<p>Personalize bottles for weddings, gifts, and private labels—initials, a date, or a short creed on the vessel your guests take home.</p>",
-        "product": "aurora-bloom-1",
         "input_label": "Inscribe Your Monogram / Date (Max 12 Chars)",
         "default_engraving": "M · VEIL",
         "max_characters": 12,
         "font_group_label": "Engraving style",
         "font_1_label": "Roman Monumental",
         "font_2_label": "Editorial Haute",
-        "bottle_label": "VEIL",
-        "bottle_subtitle": "SIGNATURE SCENT",
-        "button_label": "Save Engraving to Vessel",
         "color_scheme": "scheme-3"
       }
     },
