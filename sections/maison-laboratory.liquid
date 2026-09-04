@@ -82,15 +82,40 @@
                   {%- if row_text != blank -%}
                     {%- assign parts = row_text | split: '|' -%}
                     <div class="maison-laboratory__ingredient">
-                      {%- assign ing_name = parts[0] | strip -%}
-                      {%- assign ing_link = parts[2] | strip | default: blank -%}
+                      {%- liquid
+                        assign ing_name = parts[0] | strip
+                        assign ing_origin = parts[1] | strip
+                        assign link_raw = parts[2] | strip
+                        assign ing_link = blank
+                        assign linked_product = blank
+
+                        if link_raw != blank
+                          if link_raw contains '://' or link_raw contains '/'
+                            assign ing_link = link_raw
+                          else
+                            assign linked_product = all_products[link_raw]
+                            if linked_product != empty
+                              assign ing_link = linked_product.url
+                              if ing_origin == blank
+                                assign ing_origin = linked_product.title
+                              endif
+                            else
+                              assign ing_link = '/products/' | append: link_raw
+                            endif
+                          endif
+                        endif
+                      -%}
                       {%- if ing_link != blank -%}
                         <a class="maison-laboratory__ing-name maison-laboratory__ing-link" href="{{ ing_link }}">{{ ing_name | escape }}</a>
                       {%- else -%}
                         <span class="maison-laboratory__ing-name">{{ ing_name | escape }}</span>
                       {%- endif -%}
-                      {%- if parts.size > 1 -%}
-                        <span class="maison-laboratory__ing-origin">{{ parts[1] | strip | escape }}</span>
+                      {%- if ing_origin != blank -%}
+                        {%- if ing_link != blank -%}
+                          <a class="maison-laboratory__ing-origin maison-laboratory__ing-link" href="{{ ing_link }}">{{ ing_origin | escape }}</a>
+                        {%- else -%}
+                          <span class="maison-laboratory__ing-origin">{{ ing_origin | escape }}</span>
+                        {%- endif -%}
                       {%- endif -%}
                     </div>
                   {%- endif -%}
@@ -157,8 +182,8 @@
           "type": "textarea",
           "id": "ingredients",
           "label": "Ingredients",
-          "info": "One per line: Name|Origin|ProductURL (URL is optional)",
-          "default": "Kashmiri Saffron|Pampore, India\nCalabrian Bergamot|Reggio Calabria\nPink Peppercorn|Madagascar"
+          "info": "One per line: Note|Product name|product-handle-or-URL",
+          "default": "Lychee Sparkle|Aurora Bloom|aurora-bloom-1\nPistachio Cream|Pistache Nuage|pistache-nuage-1\nTropical Mango|Isla Dorée|isla-doree"
         }
       ]
     }
@@ -176,7 +201,7 @@
             "headline": "Opening: The Radiant Overture",
             "subheadline": "Skin temperature activates volatile high-frequency botanicals",
             "time_label": "0 — 15 Minutes",
-            "ingredients": "Kashmiri Saffron|Pampore, India\nCalabrian Bergamot|Reggio Calabria\nPink Peppercorn|Madagascar"
+            "ingredients": "Lychee Sparkle|Aurora Bloom|aurora-bloom-1\nPistachio Cream|Pistache Nuage|pistache-nuage-1\nTropical Mango|Isla Dorée|isla-doree"
           }
         },
         {
@@ -188,7 +213,7 @@
             "headline": "Heart: The Velveteen Core",
             "subheadline": "Rare florals and sacred resins blossom as body temperature peaks",
             "time_label": "15 Minutes — 4 Hours",
-            "ingredients": "Taif Rose Absolute|Hijaz Mountains\nTuscan Orris Butter|Florence, Italy\nSomalian Frankincense|Puntland, Somalia"
+            "ingredients": "White Peony|Aurora Bloom|aurora-bloom-1\nOsmanthus & Rose|Rouge Tropique|rouge-tropique-veil\nHibiscus Nuance|Kòla Azur|kola-azur-eau-de-parfum-fragcon-bestseller"
           }
         },
         {
@@ -200,7 +225,7 @@
             "headline": "Base: The Lingering Sillage",
             "subheadline": "Dense ambers, noble woods, and second-skin suede lock into memory",
             "time_label": "4 — 24+ Hours",
-            "ingredients": "Golden Fossil Amber|Baltic Sea Coast\nMysore Sandalwood|Karnataka, India\nBlack Suede Accord|Maison Veil Atelier"
+            "ingredients": "Vanilla Caramel|Pistache Nuage|pistache-nuage-1\nCherry Incense|Crimson Smoke|crimson-smoke\nOud Woods|Eclipse Oud|eclipse-oud"
           }
         }
       ]

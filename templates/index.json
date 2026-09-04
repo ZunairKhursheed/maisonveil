@@ -156,7 +156,7 @@
             "headline": "Opening: The Radiant Overture",
             "subheadline": "Skin temperature activates volatile high-frequency botanicals",
             "time_label": "0 — 15 Minutes",
-            "ingredients": "Lychee Sparkle|Aurora Bloom\nPistachio Cream|Pistache Nuage\nTropical Mango|Isla Dorée"
+            "ingredients": "Lychee Sparkle|Aurora Bloom|aurora-bloom-1\nPistachio Cream|Pistache Nuage|pistache-nuage-1\nTropical Mango|Isla Dorée|isla-doree"
           }
         },
         "phase_2": {
@@ -168,7 +168,7 @@
             "headline": "Heart: The Velveteen Core",
             "subheadline": "Rare florals and sacred resins blossom as body temperature peaks",
             "time_label": "15 Minutes — 4 Hours",
-            "ingredients": "White Peony|Aurora Bloom\nOsmanthus & Rose|Rouge Tropique\nHibiscus Nuance|Kòla Azur"
+            "ingredients": "White Peony|Aurora Bloom|aurora-bloom-1\nOsmanthus & Rose|Rouge Tropique|rouge-tropique-veil\nHibiscus Nuance|Kòla Azur|kola-azur-eau-de-parfum-fragcon-bestseller"
           }
         },
         "phase_3": {
@@ -180,7 +180,7 @@
             "headline": "Base: The Lingering Sillage",
             "subheadline": "Dense ambers, noble woods, and second-skin suede lock into memory",
             "time_label": "4 — 24+ Hours",
-            "ingredients": "Vanilla Caramel|Pistache Nuage\nCherry Incense|Crimson Smoke\nOud Woods|Eclipse Oud"
+            "ingredients": "Vanilla Caramel|Pistache Nuage|pistache-nuage-1\nCherry Incense|Crimson Smoke|crimson-smoke\nOud Woods|Eclipse Oud|eclipse-oud"
           }
         }
       },
