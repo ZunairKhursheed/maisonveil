@@ -36,6 +36,8 @@
             "accords": "Neroli, Soft Musk, Cedar",
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
+            "button_label_2": "Scent Matcher",
+            "button_link_2": "",
             "badge_title": "Origin & Vessel",
             "badge_value": "Paris · 100ml"
           }
@@ -47,165 +49,6 @@
       ],
       "settings": {
         "color_scheme": "scheme-3"
-      }
-    },
-    "two_column_grid_7QT3ED": {
-      "type": "two-column-grid",
-      "blocks": {
-        "column_HCRNRR": {
-          "type": "column",
-          "settings": {
-            "background_image": "shopify://shop_images/9.webp",
-            "height": "screen",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": false,
-            "overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "heading": "Luxury, Bottled.",
-            "heading_size": "h1",
-            "text": "<p>Discover our collection of original fragrances—made with premium oils and inspired by iconic scents. Elevated scents, accessible price.</p>",
-            "text_style": "body",
-            "button_label": "Shop now",
-            "button_link": "shopify://collections/all",
-            "button_style_secondary": false
-          }
-        },
-        "column_bmBzqe": {
-          "type": "column",
-          "settings": {
-            "background_image": "shopify://shop_images/10.webp",
-            "height": "adapt",
-            "flex_direction": "column",
-            "justify_content": "space-between",
-            "align_items": "flex-start",
-            "text_align": "left",
-            "group_content": true,
-            "show_overlay": true,
-            "overlay_opacity": 20,
-            "color_scheme": "scheme-5",
-            "heading": "Make It Memorable .",
-            "heading_size": "h1",
-            "text": "<p>From weddings to private parties, our perfume bar adds a personalized, luxe touch to any celebration. Let your guests create their own signature scents.</p>",
-            "text_style": "body",
-            "button_label": "Learn more",
-            "button_link": "shopify://pages/events",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "column_HCRNRR",
-        "column_bmBzqe"
-      ],
-      "name": "t:sections.two-column-grid.presets.name",
-      "settings": {
-        "full_width": true,
-        "reverse_mobile": false,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "featured_collection_with_image_XRxmEX": {
-      "type": "featured-collection-with-image",
-      "name": "t:sections.featured_collection_with_image.presets.name",
-      "settings": {
-        "sub_heading": "shop all",
-        "title": "The Collection",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "subtitle",
-        "featured_image": "shopify://shop_images/8.webp",
-        "featured_title": "",
-        "featured_subtitle": "",
-        "featured_button_text": "Shop gift cards",
-        "featured_button_link": "shopify://products/gift-card-20",
-        "collection": "frontpage",
-        "full_width": false,
-        "show_view_all": false,
-        "button_text": "Shop",
-        "button_link": "shopify://collections/all",
-        "view_all_style": "link",
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1788286219678f8746": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_feeds_cMQtfj": {
-          "type": "shopify://apps/instafeed/blocks/app-block-feeds/4169bff3-1d6b-44ad-9377-2ebc3d31f01c",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_feeds_cMQtfj"
-      ],
-      "custom_css": [
-        "{padding: 2px; background: #fff;}"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "image_banner_dwwdgt": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_cJTFBc": {
-          "type": "heading",
-          "settings": {
-            "heading": "Craft your signature",
-            "heading_size": "h1"
-          }
-        },
-        "text_xGdEKC": {
-          "type": "text",
-          "settings": {
-            "text": "Sit at one of our perfume bar and watch as your custom scent comes to life—drop by drop, note by note. A personal, unforgettable experience you won’t find anywhere else.",
-            "text_style": "body"
-          }
-        },
-        "buttons_AdCNrB": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Learn more",
-            "button_link_1": "shopify://pages/contact",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_cJTFBc",
-        "text_xGdEKC",
-        "buttons_AdCNrB"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/6-1.webp",
-        "image_overlay_opacity": 30,
-        "image_height": "medium",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-5",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
       }
     },
     "maison_marquee": {
@@ -420,7 +263,12 @@
             "key": "noir",
             "title": "Noir Veil — Extrait de Parfum",
             "score": "98% Sensory Affinity Match",
-            "description": "Your temperament gravitates towards deep nocturnal intimacy and quiet magnetism. Noir Veil envelops you in charred amber and frankincense."
+            "description": "Your temperament gravitates towards deep nocturnal intimacy and quiet magnetism. Noir Veil envelops you in charred amber and frankincense.",
+            "products": [],
+            "collection": "",
+            "products_to_show": 3,
+            "product": "",
+            "link": ""
           }
         },
         "result_or": {
@@ -429,7 +277,12 @@
             "key": "or",
             "title": "Or Éclat — Extrait de Parfum",
             "score": "96% Sensory Affinity Match",
-            "description": "You resonate with warm solar magnificence and radiant luxury. Or Éclat illuminates your presence with Kashmiri saffron and Taif rose."
+            "description": "You resonate with warm solar magnificence and radiant luxury. Or Éclat illuminates your presence with Kashmiri saffron and Taif rose.",
+            "products": [],
+            "collection": "",
+            "products_to_show": 3,
+            "product": "",
+            "link": ""
           }
         },
         "result_ombre": {
@@ -438,7 +291,12 @@
             "key": "ombre",
             "title": "Ombre Serein — Extrait de Parfum",
             "score": "99% Sensory Affinity Match",
-            "description": "Your aura is tailored for whispers and understated tactile indulgence. Ombre Serein embraces you with Tuscan orris and white suede."
+            "description": "Your aura is tailored for whispers and understated tactile indulgence. Ombre Serein embraces you with Tuscan orris and white suede.",
+            "products": [],
+            "collection": "",
+            "products_to_show": 3,
+            "product": "",
+            "link": ""
           }
         }
       },
@@ -465,9 +323,11 @@
         "kicker": "04 · Atelier Personalization",
         "title": "Laser Gold <em>Engraving.</em>",
         "description": "<p>Every flacon can be individually inscribed with your initials, a significant date, or a personal creed. Inscribed with ultra-precision 24K gold foil in our Paris atelier.</p>",
+        "product": "aurora-bloom-1",
         "input_label": "Inscribe Your Monogram / Date (Max 12 Chars)",
         "default_engraving": "M · VEIL",
         "max_characters": 12,
+        "font_group_label": "Engraving style",
         "font_1_label": "Roman Monumental",
         "font_2_label": "Editorial Haute",
         "bottle_label": "VEIL",
@@ -519,6 +379,7 @@
         "pillar_4"
       ],
       "settings": {
+        "image": "shopify://shop_images/C788EB60-5548-4861-B813-979E7D59A200.png",
         "kicker": "05 · The Manifesto",
         "title": "Luxury is felt, <em>never shouted.</em>",
         "text": "<p>Maison Veil was founded in Paris on a singular conviction: fragrance should not be an assault on the senses, but a private invitation. We compose each extrait with exceptional concentrations of natural absolutes, allowing them to fuse with the wearer's unique skin chemistry.</p><p>Our bottles are architectural vessels forged from heavyweight smoked glass, crowned by obsidian crystal caps designed to sit as tactile sculptures upon your vanity.</p>",
@@ -630,6 +491,168 @@
         "success_text": "<p>Your VIP reservation has been confirmed. Watch your inbox for private allocations.</p>",
         "color_scheme": "scheme-3"
       }
+    },
+    "two_column_grid_7QT3ED": {
+      "type": "two-column-grid",
+      "blocks": {
+        "column_HCRNRR": {
+          "type": "column",
+          "settings": {
+            "background_image": "shopify://shop_images/9.webp",
+            "height": "screen",
+            "flex_direction": "column",
+            "justify_content": "space-between",
+            "align_items": "flex-start",
+            "text_align": "left",
+            "group_content": true,
+            "show_overlay": false,
+            "overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "heading": "Luxury, Bottled.",
+            "heading_size": "h1",
+            "text": "<p>Discover our collection of original fragrances—made with premium oils and inspired by iconic scents. Elevated scents, accessible price.</p>",
+            "text_style": "body",
+            "button_label": "Shop now",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        },
+        "column_bmBzqe": {
+          "type": "column",
+          "settings": {
+            "background_image": "shopify://shop_images/10.webp",
+            "height": "adapt",
+            "flex_direction": "column",
+            "justify_content": "space-between",
+            "align_items": "flex-start",
+            "text_align": "left",
+            "group_content": true,
+            "show_overlay": true,
+            "overlay_opacity": 20,
+            "color_scheme": "scheme-5",
+            "heading": "Make It Memorable .",
+            "heading_size": "h1",
+            "text": "<p>From weddings to private parties, our perfume bar adds a personalized, luxe touch to any celebration. Let your guests create their own signature scents.</p>",
+            "text_style": "body",
+            "button_label": "Learn more",
+            "button_link": "shopify://pages/events",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_HCRNRR",
+        "column_bmBzqe"
+      ],
+      "disabled": true,
+      "name": "t:sections.two-column-grid.presets.name",
+      "settings": {
+        "full_width": true,
+        "reverse_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "featured_collection_with_image_XRxmEX": {
+      "type": "featured-collection-with-image",
+      "disabled": true,
+      "name": "t:sections.featured_collection_with_image.presets.name",
+      "settings": {
+        "sub_heading": "shop all",
+        "title": "The Collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "subtitle",
+        "featured_image": "shopify://shop_images/8.webp",
+        "featured_title": "",
+        "featured_subtitle": "",
+        "featured_button_text": "Shop gift cards",
+        "featured_button_link": "shopify://products/gift-card-20",
+        "collection": "frontpage",
+        "full_width": false,
+        "show_view_all": false,
+        "button_text": "Shop",
+        "button_link": "shopify://collections/all",
+        "view_all_style": "link",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1788286219678f8746": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_feeds_cMQtfj": {
+          "type": "shopify://apps/instafeed/blocks/app-block-feeds/4169bff3-1d6b-44ad-9377-2ebc3d31f01c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_feeds_cMQtfj"
+      ],
+      "custom_css": [
+        "{padding: 2px; background: #0a0a0a;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "image_banner_dwwdgt": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_cJTFBc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Craft your signature",
+            "heading_size": "h1"
+          }
+        },
+        "text_xGdEKC": {
+          "type": "text",
+          "settings": {
+            "text": "Sit at one of our perfume bar and watch as your custom scent comes to life—drop by drop, note by note. A personal, unforgettable experience you won’t find anywhere else.",
+            "text_style": "body"
+          }
+        },
+        "buttons_AdCNrB": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn more",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cJTFBc",
+        "text_xGdEKC",
+        "buttons_AdCNrB"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/6-1.webp",
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
     }
   },
   "order": [
@@ -642,10 +665,10 @@
     "maison_manifesto",
     "maison_experience",
     "maison_acclaim",
+    "1788286219678f8746",
     "maison_newsletter",
     "two_column_grid_7QT3ED",
     "featured_collection_with_image_XRxmEX",
-    "1788286219678f8746",
     "image_banner_dwwdgt"
   ]
 }
