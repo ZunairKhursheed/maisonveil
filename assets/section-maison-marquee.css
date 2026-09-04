@@ -20,15 +20,15 @@
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  font-size: 11px;
-  letter-spacing: 0.32em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-kicker-tracking);
   text-transform: uppercase;
   color: #d8cfc0;
 }
 
 .maison-marquee__star {
   color: #c8a35e;
-  font-size: 13px;
+  font-size: var(--mv-type-body-size);
 }
 
 @keyframes maison-marquee-scroll {

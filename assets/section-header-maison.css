@@ -155,12 +155,19 @@
     position: relative;
   }
 
-  .section-header .header__menu-item:hover {
+  .section-header .header__menu-item:hover,
+  .section-header .header__menu-item[aria-current='page'],
+  .section-header .header__menu-item:has(.header__active-menu-item),
+  .section-header details[open] > .header__menu-item {
     color: var(--mv-gold-champagne);
+    text-decoration: none;
   }
 
-  .section-header .header__menu-item:hover span {
+  .section-header .header__menu-item:hover span,
+  .section-header .header__active-menu-item,
+  .section-header details[open] > .header__menu-item span {
     text-decoration: none;
+    color: inherit;
   }
 
   .section-header .header__inline-menu > .list-menu--inline > li > a.header__menu-item::after,
@@ -176,7 +183,10 @@
   }
 
   .section-header .header__inline-menu > .list-menu--inline > li > a.header__menu-item:hover::after,
-  .section-header .header__inline-menu > .list-menu--inline > li > header-menu > details > summary.header__menu-item:hover::after {
+  .section-header .header__inline-menu > .list-menu--inline > li > a.header__menu-item[aria-current='page']::after,
+  .section-header .header__inline-menu > .list-menu--inline > li > header-menu > details > summary.header__menu-item:hover::after,
+  .section-header .header__inline-menu > .list-menu--inline > li > header-menu > details[open] > summary.header__menu-item::after,
+  .section-header .header__inline-menu > .list-menu--inline > li > header-menu > details > summary.header__menu-item:has(.header__active-menu-item)::after {
     width: 100%;
   }
 

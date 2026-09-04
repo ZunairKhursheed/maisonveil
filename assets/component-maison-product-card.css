@@ -1,0 +1,293 @@
+.product-grid .grid__item,
+.contains-card--product .grid__item {
+  display: flex;
+}
+
+.product-grid .grid__item > .maison-flacon-card,
+.contains-card--product .grid__item > .maison-flacon-card,
+.collage__item .maison-flacon-card {
+  width: 100%;
+}
+
+.dawn-product-slider .carousel-cell {
+  background: transparent;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.dawn-product-slider .carousel-cell a {
+  color: inherit;
+}
+
+.maison-flacon-card {
+  background: #12100d;
+  border: 1px solid rgba(249, 237, 211, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  min-width: 0;
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.maison-flacon-card.is-hidden {
+  display: none;
+}
+
+.maison-flacon-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(200, 163, 94, 0.28);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(200, 163, 94, 0.12);
+}
+
+.maison-flacon-card__visual {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, #201a13 0%, #0d0c0a 65%);
+  overflow: hidden;
+}
+
+.maison-flacon-card__visual::before {
+  content: '';
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 1px solid rgba(200, 163, 94, 0.1);
+  box-shadow: 0 0 60px rgba(200, 163, 94, 0.05);
+  pointer-events: none;
+}
+
+.maison-flacon-card__badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  font-size: var(--mv-type-meta-size);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #e8d39f;
+  background: rgba(9, 8, 7, 0.85);
+  border: 1px solid rgba(200, 163, 94, 0.14);
+  padding: 6px 12px;
+}
+
+.maison-flacon-card__image {
+  position: relative;
+  z-index: 1;
+  width: min(70%, 260px);
+  transition: transform 0.4s ease;
+}
+
+.maison-flacon-card__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.85));
+}
+
+.maison-flacon-card:hover .maison-flacon-card__image,
+.maison-flacon-card:hover .maison-flacon-card__mini {
+  transform: scale(1.05) rotate(1.5deg);
+}
+
+.maison-flacon-card__mini {
+  position: relative;
+  z-index: 1;
+  width: 140px;
+  height: 250px;
+  background: linear-gradient(135deg, #1f1b14 0%, #0a0907 60%, #231d15 100%);
+  border: 1.5px solid rgba(200, 163, 94, 0.28);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.maison-flacon-card:hover .maison-flacon-card__mini {
+  border-color: #e8d39f;
+}
+
+.maison-flacon-card__mini-cap {
+  position: absolute;
+  top: -36px;
+  width: 52px;
+  height: 36px;
+  background: #11100e;
+  border: 1px solid rgba(200, 163, 94, 0.28);
+  border-radius: 2px;
+}
+
+.maison-flacon-card__mini-cap::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 6px;
+  background: var(--mv-gold-gradient);
+}
+
+.maison-flacon-card__mini-label {
+  padding: 16px 12px;
+  background: #080706;
+  border: 1px solid rgba(200, 163, 94, 0.28);
+  text-align: center;
+  width: 80%;
+}
+
+.maison-flacon-card__mini-label strong {
+  display: block;
+  font-size: var(--mv-type-body-size);
+  letter-spacing: 0.24em;
+  color: #f9edd3;
+}
+
+.maison-flacon-card__mini-label small {
+  display: block;
+  font-size: var(--mv-type-meta-size);
+  letter-spacing: 0.3em;
+  color: #9e9587;
+  margin-top: 4px;
+}
+
+.maison-flacon-card__details {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.maison-flacon-card__price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.maison-flacon-card__title {
+  margin: 0;
+  font-size: var(--mv-type-card-title);
+  font-weight: 400;
+  color: #f4efe6;
+  letter-spacing: 0.05em;
+}
+
+.maison-flacon-card__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.maison-flacon-card__price {
+  font-size: var(--mv-type-price);
+  color: #e8d39f;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.maison-flacon-card__price s {
+  margin-right: 6px;
+  color: #9e9587;
+  font-weight: 400;
+}
+
+.maison-flacon-card__family {
+  font-size: var(--mv-type-meta-size);
+  letter-spacing: var(--mv-type-meta-tracking);
+  text-transform: uppercase;
+  color: #c8a35e;
+  margin-bottom: 14px;
+}
+
+.maison-flacon-card__desc {
+  font-size: var(--mv-type-body-size);
+  color: #d8cfc0;
+  line-height: var(--mv-type-body-lh);
+  margin: 0 0 22px;
+}
+
+.maison-flacon-card__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.maison-flacon-card__form {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+}
+
+.maison-flacon-card__form form {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+.maison-flacon-card__btn.mv-cta {
+  flex: 1;
+  min-height: 4.4rem;
+  padding: 1.2rem 0.8rem;
+  width: 100%;
+}
+
+.maison-flacon-card__btn.mv-cta.loading > .loading__spinner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.maison-flacon-card__btn.mv-cta.loading > span {
+  visibility: hidden;
+}
+
+.maison-flacon-card__error {
+  margin-top: 8px;
+  font-size: var(--mv-type-meta-size);
+  color: #e8d39f;
+}
+
+@media screen and (max-width: 989px) {
+  .maison-flacon-card__visual {
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .maison-flacon-card__actions {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .maison-flacon-card,
+  .maison-flacon-card__image,
+  .maison-flacon-card__mini,
+  .mv-cta::before {
+    transition: none;
+  }
+
+  .maison-flacon-card:hover {
+    transform: none;
+  }
+
+  .maison-flacon-card:hover .maison-flacon-card__image,
+  .maison-flacon-card:hover .maison-flacon-card__mini {
+    transform: none;
+  }
+}

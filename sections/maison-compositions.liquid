@@ -93,33 +93,16 @@
             badge: badge,
             family: family,
             filter_tag: product_filters,
-            monogram: mono
+            monogram: mono,
+            skip_styles: true,
+            section_id: section.id
           %}
         {%- else -%}
           <p class="maison-compositions__empty">{{ 'sections.collection_template.empty' | t }}</p>
         {%- endfor -%}
       {%- else -%}
         {%- for i in (1..3) -%}
-          <article class="maison-flacon-card" data-maison-category="all">
-            <div class="maison-flacon-card__visual">
-              <span class="maison-flacon-card__badge">N° 0{{ i }} · Extrait</span>
-              <div class="maison-flacon-card__mini">
-                <div class="maison-flacon-card__mini-cap"></div>
-                <div class="maison-flacon-card__mini-label">
-                  <strong>VEIL</strong>
-                  <small>EXTRAIT</small>
-                </div>
-              </div>
-            </div>
-            <div class="maison-flacon-card__details">
-              <div class="maison-flacon-card__price-row">
-                <h3 class="maison-flacon-card__title">{{ 'onboarding.product_title' | t }}</h3>
-                <span class="maison-flacon-card__price">$245</span>
-              </div>
-              <div class="maison-flacon-card__family">Select a collection</div>
-              <p class="maison-flacon-card__desc">Choose a collection in the theme editor to show your signature compositions.</p>
-            </div>
-          </article>
+          {% render 'card-product', skip_styles: true %}
         {%- endfor -%}
       {%- endif -%}
     </div>

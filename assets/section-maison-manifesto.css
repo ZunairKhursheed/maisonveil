@@ -54,8 +54,8 @@
 }
 
 .maison-manifesto__kicker {
-  font-size: 11px;
-  letter-spacing: 0.38em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-kicker-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-button));
   margin-bottom: 16px;
@@ -63,7 +63,7 @@
 
 .maison-manifesto__title {
   margin: 0 0 24px;
-  font-size: clamp(2.25rem, 5vw, 4.75rem);
+  font-size: var(--mv-type-display);
   line-height: 0.95;
   font-weight: 400;
 }
@@ -76,8 +76,9 @@
 
 .maison-manifesto__text {
   color: rgba(var(--color-foreground), 0.75);
-  font-size: 15px;
+  font-size: var(--mv-type-lead-size);
   line-height: 1.95;
+  font-weight: var(--mv-type-lead-weight);
 }
 
 .maison-manifesto__text p {
@@ -98,21 +99,23 @@
 }
 
 .maison-manifesto__pillar-num {
-  font-size: 12px;
+  font-size: var(--mv-type-kicker-size);
   color: rgb(var(--color-button));
-  letter-spacing: 0.2em;
+  letter-spacing: var(--mv-type-meta-tracking);
+  text-transform: uppercase;
 }
 
 .maison-manifesto__pillar-title {
-  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
   color: rgb(var(--color-foreground));
   margin: 6px 0 4px;
 }
 
 .maison-manifesto__pillar-desc {
-  font-size: 11.5px;
+  font-size: var(--mv-type-body-size);
   color: rgba(var(--color-foreground), 0.6);
-  line-height: 1.6;
+  line-height: var(--mv-type-body-lh);
 }
 
 .maison-manifesto .mv-reveal {

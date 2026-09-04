@@ -69,8 +69,8 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-size: 11px;
-  letter-spacing: 0.38em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-kicker-tracking);
   text-transform: uppercase;
   color: #e8d39f;
   margin-bottom: 20px;
@@ -84,7 +84,7 @@
 }
 
 .maison-hero__title {
-  font-size: clamp(40px, 6vw, 88px);
+  font-size: var(--mv-type-hero);
   line-height: 0.95;
   font-weight: 400;
   margin: 0 0 20px;
@@ -105,9 +105,9 @@
 .maison-hero__lead {
   max-width: 52ch;
   color: #d8cfc0;
-  font-size: 16px;
-  line-height: 1.75;
-  font-weight: 300;
+  font-size: var(--mv-type-lead-size);
+  line-height: var(--mv-type-lead-lh);
+  font-weight: var(--mv-type-lead-weight);
   margin: 0 0 28px;
 }
 
@@ -123,7 +123,7 @@
   border-radius: 0;
   background: rgba(200, 163, 94, 0.09);
   color: #e8d39f;
-  font-size: 11px;
+  font-size: var(--mv-type-kicker-size);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 8px 12px;
@@ -142,10 +142,10 @@
   background-color: transparent !important;
   background-image: none !important;
   color: #e8d39f !important;
-  letter-spacing: 0.24em;
+  letter-spacing: var(--mv-type-cta-tracking);
   text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 500;
+  font-size: var(--mv-type-cta-size);
+  font-weight: var(--mv-type-cta-weight);
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
   padding: 1.4rem 3rem;
   border: 1px solid;
@@ -242,15 +242,15 @@
 }
 
 .maison-hero__badge-title {
-  font-size: 10px;
-  letter-spacing: 0.18em;
+  font-size: var(--mv-type-meta-size);
+  letter-spacing: var(--mv-type-meta-tracking);
   text-transform: uppercase;
   color: #9e9587;
 }
 
 .maison-hero__badge-value {
   margin-top: 4px;
-  font-size: 13px;
+  font-size: var(--mv-type-body-size);
   color: #e8d39f;
 }
 

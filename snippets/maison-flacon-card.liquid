@@ -1,100 +1,23 @@
-{% comment %}
-  Maison flacon-style product card.
-  Accepts:
-  - product: {Object} product
-  - badge: {String} optional badge text
-  - family: {String} optional family / scent family line
-  - filter_tag: {String} data-category for filters
-  - monogram: {String} short label for CSS flacon fallback
-{% endcomment %}
+{% doc %}
+  Alias for the Maison product card. Prefer `card-product` in new code.
 
-{%- liquid
-  assign card_product = product
-  assign badge_label = badge | default: card_product.type | default: 'Extrait'
-  assign family_label = family | default: card_product.vendor
-  assign monogram_text = monogram | default: card_product.title | truncatewords: 1, '' | upcase
-  if monogram_text == blank
-    assign monogram_text = 'VEIL'
-  endif
-  assign category = filter_tag | default: 'all'
-  assign variant = card_product.selected_or_first_available_variant
--%}
+  @param {product} product - Product to render
+  @param {string} [badge] - Optional badge text
+  @param {string} [family] - Optional scent-family line
+  @param {string} [filter_tag] - Filter category for compositions
+  @param {string} [monogram] - Fallback flacon label
+  @param {boolean} [skip_styles] - Skip stylesheet and script tags
+  @param {string} [section_id] - Section id for unique form ids
+  @example
+  {% render 'maison-flacon-card', product: product, filter_tag: 'nocturnal' %}
+{% enddoc %}
 
-<article
-  class="maison-flacon-card"
-  data-maison-category="{{ category | handleize | escape }}"
-  data-product-id="{{ card_product.id }}"
->
-  <div class="maison-flacon-card__visual">
-    {%- if badge_label != blank -%}
-      <span class="maison-flacon-card__badge">{{ badge_label | escape }}</span>
-    {%- endif -%}
-
-    {%- if card_product.featured_media -%}
-      {%- assign img_alt = card_product.featured_media.alt | default: card_product.title | escape -%}
-      <div class="maison-flacon-card__image">
-        {{
-          card_product.featured_media
-          | image_url: width: 800
-          | image_tag:
-            loading: 'lazy',
-            widths: '300, 400, 600, 800',
-            sizes: '(min-width: 990px) 28vw, (min-width: 750px) 45vw, 90vw',
-            alt: img_alt
-        }}
-      </div>
-    {%- else -%}
-      <div class="maison-flacon-card__mini">
-        <div class="maison-flacon-card__mini-cap"></div>
-        <div class="maison-flacon-card__mini-label">
-          <strong>{{ monogram_text | escape }}</strong>
-          <small>EXTRAIT</small>
-        </div>
-      </div>
-    {%- endif -%}
-  </div>
-
-  <div class="maison-flacon-card__details">
-    <div class="maison-flacon-card__price-row">
-      <h3 class="maison-flacon-card__title">
-        <a href="{{ card_product.url }}">{{ card_product.title | escape }}</a>
-      </h3>
-      <span class="maison-flacon-card__price">
-        {{ variant.price | money }}
-      </span>
-    </div>
-
-    {%- if family_label != blank -%}
-      <div class="maison-flacon-card__family">{{ family_label | escape }}</div>
-    {%- endif -%}
-
-    {%- if card_product.description != blank -%}
-      <p class="maison-flacon-card__desc">
-        {{ card_product.description | strip_html | truncate: 140 }}
-      </p>
-    {%- endif -%}
-
-    <div class="maison-flacon-card__actions">
-      <a class="maison-flacon-card__btn maison-flacon-card__btn--view" href="{{ card_product.url }}">
-        {{ 'products.product.view_full_details' | t }}
-      </a>
-      {%- if variant -%}
-        {%- form 'product', card_product, class: 'maison-flacon-card__form' -%}
-          <input type="hidden" name="id" value="{{ variant.id }}">
-          <button
-            type="submit"
-            name="add"
-            class="maison-flacon-card__btn maison-flacon-card__btn--add"
-            {% unless variant.available %}disabled{% endunless %}
-          >
-            {%- if variant.available -%}
-              {{ 'products.product.add_to_cart' | t }}
-            {%- else -%}
-              {{ 'products.product.sold_out' | t }}
-            {%- endif -%}
-          </button>
-        {%- endform -%}
-      {%- endif -%}
-    </div>
-  </div>
-</article>
+{% render 'card-product',
+  card_product: product,
+  badge: badge,
+  family: family,
+  filter_tag: filter_tag,
+  monogram: monogram,
+  skip_styles: skip_styles,
+  section_id: section_id
+%}

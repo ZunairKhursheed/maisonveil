@@ -22,8 +22,8 @@
 }
 
 .maison-consultation__kicker {
-  font-size: 0.7rem;
-  letter-spacing: 0.22em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-kicker-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-button));
   margin-bottom: 0.85rem;
@@ -31,9 +31,9 @@
 
 .maison-consultation__title {
   font-family: var(--font-heading-family);
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: var(--mv-type-display);
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 0.95;
   margin: 0;
   color: var(--mc-ink);
 }
@@ -54,8 +54,9 @@
 .maison-consultation__desc {
   margin: 1.25rem auto 0;
   color: var(--mc-muted);
-  font-size: 0.95rem;
-  line-height: 1.65;
+  font-size: var(--mv-type-lead-size);
+  line-height: var(--mv-type-lead-lh);
+  font-weight: var(--mv-type-lead-weight);
 }
 
 .maison-consultation__desc p {
@@ -93,7 +94,7 @@
 
 .maison-consultation__step-title {
   font-family: var(--font-heading-family);
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: var(--mv-type-subhead);
   font-weight: 400;
   margin: 0 0 0.5rem;
 }
@@ -101,8 +102,8 @@
 .maison-consultation__step-desc {
   margin: 0 0 1.5rem;
   color: var(--mc-muted);
-  font-size: 0.9rem;
-  line-height: 1.55;
+  font-size: var(--mv-type-body-size);
+  line-height: var(--mv-type-body-lh);
 }
 
 .maison-consultation__options {
@@ -132,22 +133,23 @@
 
 .maison-consultation__option-icon {
   display: block;
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   color: rgb(var(--color-button));
   margin-bottom: 0.75rem;
 }
 
 .maison-consultation__option-title {
   display: block;
-  font-size: 1rem;
+  font-size: 1.6rem;
   margin-bottom: 0.4rem;
   letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
 .maison-consultation__option-sub {
   display: block;
-  font-size: 0.8rem;
-  line-height: 1.5;
+  font-size: var(--mv-type-body-size);
+  line-height: var(--mv-type-body-lh);
   color: var(--mc-muted);
 }
 
@@ -162,8 +164,8 @@
 
 .maison-consultation__pill {
   display: inline-block;
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-cta-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-button));
   border: 1px solid var(--mc-line);
@@ -173,7 +175,7 @@
 
 .maison-consultation__result-title {
   font-family: var(--font-heading-family);
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-size: var(--mv-type-card-title);
   font-weight: 400;
   margin: 0 0 0.85rem;
 }
@@ -182,8 +184,9 @@
   max-width: 36rem;
   margin: 0 auto 1.75rem;
   color: var(--mc-muted);
-  line-height: 1.65;
-  font-size: 0.95rem;
+  line-height: var(--mv-type-lead-lh);
+  font-size: var(--mv-type-lead-size);
+  font-weight: var(--mv-type-lead-weight);
 }
 
 .maison-consultation__result-cards {
@@ -212,8 +215,9 @@
 .maison-consultation__btn {
   min-height: 2.75rem;
   padding: 0.7rem 1.4rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  font-size: var(--mv-type-cta-size);
+  font-weight: var(--mv-type-cta-weight);
+  letter-spacing: var(--mv-type-cta-tracking);
   text-transform: uppercase;
   text-decoration: none;
   display: inline-flex;

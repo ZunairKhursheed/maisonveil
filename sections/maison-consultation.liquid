@@ -1,5 +1,4 @@
 {{ 'section-maison-consultation.css' | asset_url | stylesheet_tag }}
-{{ 'section-maison-compositions.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'maison-consultation.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
@@ -186,7 +185,9 @@
                       badge: badge,
                       family: family,
                       filter_tag: 'all',
-                      monogram: mono
+                      monogram: mono,
+                      skip_styles: true,
+                      section_id: section.id
                     %}
                   {%- endif -%}
                 </div>

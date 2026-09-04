@@ -16,6 +16,27 @@
   --mv-ribbon-warm: #17130c;
   --mv-gold-champagne: #e8d39f;
   --mv-gold-burnished: #c8a35e;
+  --mv-gold-gradient: linear-gradient(135deg, #f9edd3 0%, #c8a35e 50%, #8f7239 100%);
+
+  /* Type scale (html rem = 10px via Dawn 62.5%) */
+  --mv-type-kicker-size: 1.1rem;
+  --mv-type-kicker-tracking: 0.38em;
+  --mv-type-hero: clamp(4rem, 6vw, 8.8rem);
+  --mv-type-display: clamp(4rem, 5.5vw, 7.6rem);
+  --mv-type-quote: clamp(2.6rem, 3.5vw, 4.2rem);
+  --mv-type-subhead: clamp(2rem, 2.5vw, 2.4rem);
+  --mv-type-card-title: 2.4rem;
+  --mv-type-lead-size: 1.5rem;
+  --mv-type-lead-lh: 1.75;
+  --mv-type-lead-weight: 300;
+  --mv-type-body-size: 1.3rem;
+  --mv-type-body-lh: 1.7;
+  --mv-type-price: 1.6rem;
+  --mv-type-cta-size: 1.1rem;
+  --mv-type-cta-tracking: 0.22em;
+  --mv-type-cta-weight: 500;
+  --mv-type-meta-size: 1rem;
+  --mv-type-meta-tracking: 0.2em;
 }
 
 html {
@@ -73,9 +94,9 @@ body {
 .mv-eyebrow {
   display: inline-block;
   margin: 0;
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
+  font-size: var(--mv-type-kicker-size);
+  font-weight: 400;
+  letter-spacing: var(--mv-type-kicker-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-foreground));
   opacity: 0.72;
@@ -84,6 +105,53 @@ body {
 .mv-editorial {
   font-style: italic;
   font-weight: 400;
+}
+
+.mv-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  z-index: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  border: 1px solid rgba(232, 211, 159, 0.7);
+  background: transparent;
+  color: var(--mv-gold-champagne);
+  font-size: var(--mv-type-cta-size);
+  font-weight: var(--mv-type-cta-weight);
+  letter-spacing: var(--mv-type-cta-tracking);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  appearance: none;
+}
+
+.mv-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--mv-gold-gradient);
+  transform: translate3d(-120%, 0, 0) skew(30deg);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mv-cta:not([disabled]):hover,
+.mv-cta:not([disabled]):active {
+  color: var(--mv-obsidian);
+}
+
+.mv-cta:not([disabled]):hover::before,
+.mv-cta:not([disabled]):active::before {
+  transform: translate3d(0, 0, 0) skew(30deg);
+}
+
+.mv-cta[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 .mv-hairline {

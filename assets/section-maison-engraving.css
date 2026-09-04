@@ -25,8 +25,8 @@
 }
 
 .maison-engraving__kicker {
-  font-size: 11px;
-  letter-spacing: 0.38em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-kicker-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-button));
   margin-bottom: 16px;
@@ -34,7 +34,7 @@
 
 .maison-engraving__title {
   margin: 0 0 18px;
-  font-size: clamp(2.25rem, 5vw, 4.75rem);
+  font-size: var(--mv-type-display);
   line-height: 0.95;
   font-weight: 400;
 }
@@ -47,8 +47,9 @@
 
 .maison-engraving__desc {
   color: rgba(var(--color-foreground), 0.7);
-  font-size: 15px;
-  line-height: 1.75;
+  font-size: var(--mv-type-lead-size);
+  line-height: var(--mv-type-lead-lh);
+  font-weight: var(--mv-type-lead-weight);
   margin-bottom: 1.5rem;
 }
 
@@ -60,7 +61,7 @@
   padding: 12px 0 20px;
   border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: var(--mv-type-body-size);
 }
 
 .maison-engraving__product-name {
@@ -74,8 +75,8 @@
 
 .maison-engraving__label {
   display: block;
-  font-size: 11px;
-  letter-spacing: 0.25em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-cta-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-button));
   margin-bottom: 10px;
@@ -86,7 +87,7 @@
   background: rgba(var(--color-background), 0.6);
   border: 1px solid rgba(var(--color-foreground), 0.18);
   color: rgb(var(--color-foreground));
-  font-size: 18px;
+  font-size: 1.8rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   padding: 16px 20px;
@@ -100,8 +101,8 @@
 }
 
 .maison-engraving__count {
-  font-size: 10px;
-  letter-spacing: 0.15em;
+  font-size: var(--mv-type-meta-size);
+  letter-spacing: var(--mv-type-meta-tracking);
   color: rgba(var(--color-foreground), 0.55);
   text-align: right;
   margin-top: 6px;
@@ -119,7 +120,7 @@
   border: 1px solid rgba(var(--color-foreground), 0.12);
   background: transparent;
   color: rgba(var(--color-foreground), 0.75);
-  font-size: 11px;
+  font-size: var(--mv-type-kicker-size);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   cursor: pointer;
@@ -138,9 +139,9 @@
   border: none;
   background: rgb(var(--color-button));
   color: rgb(var(--color-button-text));
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.22em;
+  font-size: var(--mv-type-cta-size);
+  font-weight: var(--mv-type-cta-weight);
+  letter-spacing: var(--mv-type-cta-tracking);
   text-transform: uppercase;
   cursor: pointer;
   transition: opacity 0.25s ease;
@@ -204,13 +205,13 @@
 
 .maison-engraving__label-title {
   margin: 0;
-  font-size: 15px;
+  font-size: 1.5rem;
   letter-spacing: 0.28em;
   color: rgb(var(--color-button));
 }
 
 .maison-engraving__label-sub {
-  font-size: 7.5px;
+  font-size: var(--mv-type-meta-size);
   letter-spacing: 0.3em;
   color: rgba(var(--color-foreground), 0.55);
   display: block;
@@ -219,8 +220,8 @@
 
 .maison-engraving__live-text {
   min-height: 20px;
-  font-size: 11px;
-  letter-spacing: 0.32em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-kicker-tracking);
   color: rgb(var(--color-button));
   border-top: 1px dashed rgba(var(--color-foreground), 0.12);
   padding-top: 8px;

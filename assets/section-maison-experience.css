@@ -17,8 +17,8 @@
 }
 
 .maison-experience__kicker {
-  font-size: 11px;
-  letter-spacing: 0.38em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-kicker-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-button));
   margin-bottom: 16px;
@@ -26,7 +26,7 @@
 
 .maison-experience__title {
   margin: 0 0 18px;
-  font-size: clamp(2.25rem, 5vw, 4.75rem);
+  font-size: var(--mv-type-display);
   line-height: 0.95;
   font-weight: 400;
 }
@@ -46,8 +46,9 @@
 
 .maison-experience__desc {
   color: rgba(var(--color-foreground), 0.7);
-  font-size: 15px;
-  line-height: 1.75;
+  font-size: var(--mv-type-lead-size);
+  line-height: var(--mv-type-lead-lh);
+  font-weight: var(--mv-type-lead-weight);
 }
 
 .maison-experience__desc p {
@@ -77,21 +78,21 @@
 }
 
 .maison-experience__card-kicker {
-  font-size: 11px;
-  letter-spacing: 0.22em;
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-cta-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-button));
 }
 
 .maison-experience__card-title {
   margin: 14px 0 16px;
-  font-size: 28px;
+  font-size: var(--mv-type-card-title);
   line-height: 1.1;
   font-weight: 400;
 }
 
 .maison-experience__card-text {
-  font-size: 13.5px;
+  font-size: var(--mv-type-body-size);
   color: rgba(var(--color-foreground), 0.75);
   line-height: 1.8;
   margin-bottom: 24px;
@@ -101,8 +102,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 11px;
-  letter-spacing: 0.22em;
+  font-size: var(--mv-type-cta-size);
+  letter-spacing: var(--mv-type-cta-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-button));
   text-decoration: none;
