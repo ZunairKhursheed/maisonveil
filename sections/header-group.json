@@ -56,7 +56,6 @@
     },
     "newsletter_popup": {
       "type": "newsletter-popup",
-      "disabled": true,
       "settings": {
         "heading": "Enter the world behind the veil",
         "heading_size": "h2",
