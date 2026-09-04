@@ -175,16 +175,8 @@
   flex-grow: 1;
 }
 
-.maison-flacon-card__price-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
-  margin-bottom: 8px;
-}
-
 .maison-flacon-card__title {
-  margin: 0;
+  margin: 0 0 6px;
   font-size: var(--mv-type-card-title);
   font-weight: 400;
   color: #f4efe6;
@@ -197,10 +189,12 @@
 }
 
 .maison-flacon-card__price {
+  display: block;
   font-size: var(--mv-type-price);
   color: #e8d39f;
   font-weight: 600;
   white-space: nowrap;
+  margin-bottom: 8px;
 }
 
 .maison-flacon-card__price s {

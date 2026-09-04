@@ -67,7 +67,7 @@
 
   <article
     class="maison-flacon-card"
-    data-maison-category="{{ category | handleize | escape }}"
+    data-maison-category="{{ category | escape }}"
     data-product-id="{{ card_product.id }}"
   >
     <div class="maison-flacon-card__visual">
@@ -112,21 +112,19 @@
     </div>
 
     <div class="maison-flacon-card__details">
-      <div class="maison-flacon-card__price-row">
-        <h3 class="maison-flacon-card__title">
-          <a
-            href="{{ card_product.url }}"
-            id="CardLink-{{ section_id }}-{{ card_product.id }}"
-          >
-            {{ card_product.title | escape }}
-          </a>
-        </h3>
-        <span class="maison-flacon-card__price">
-          {%- if variant.compare_at_price > variant.price -%}
-            <s>{{ variant.compare_at_price | money }}</s>
-          {%- endif -%}
-          {{ variant.price | money }}
-        </span>
+      <h3 class="maison-flacon-card__title">
+        <a
+          href="{{ card_product.url }}"
+          id="CardLink-{{ section_id }}-{{ card_product.id }}"
+        >
+          {{ card_product.title | escape }}
+        </a>
+      </h3>
+      <div class="maison-flacon-card__price">
+        {%- if variant.compare_at_price > variant.price -%}
+          <s>{{ variant.compare_at_price | money }}</s>
+        {%- endif -%}
+        {{ variant.price | money }}
       </div>
 
       {%- if family_label != blank -%}
@@ -141,7 +139,7 @@
 
       <div class="maison-flacon-card__actions">
         <a class="mv-cta maison-flacon-card__btn" href="{{ card_product.url }}">
-          <span>{{ 'products.product.view_full_details' | t }}</span>
+          <span>{{ 'products.product.view_detail' | t }}</span>
         </a>
         {%- if variant -%}
           <product-form class="maison-flacon-card__form" data-hide-errors="true">
@@ -183,14 +181,12 @@
       </div>
     </div>
     <div class="maison-flacon-card__details">
-      <div class="maison-flacon-card__price-row">
-        <h3 class="maison-flacon-card__title">{{ 'onboarding.product_title' | t }}</h3>
-        <span class="maison-flacon-card__price">$245</span>
-      </div>
+      <h3 class="maison-flacon-card__title">{{ 'onboarding.product_title' | t }}</h3>
+      <div class="maison-flacon-card__price">$245</div>
       <div class="maison-flacon-card__family">Maison Veil</div>
       <p class="maison-flacon-card__desc">{{ 'onboarding.collection_title' | t }}</p>
       <div class="maison-flacon-card__actions">
-        <span class="mv-cta maison-flacon-card__btn"><span>{{ 'products.product.view_full_details' | t }}</span></span>
+        <span class="mv-cta maison-flacon-card__btn"><span>{{ 'products.product.view_detail' | t }}</span></span>
         <span class="mv-cta maison-flacon-card__btn"><span>{{ 'products.product.add_to_cart' | t }}</span></span>
       </div>
     </div>

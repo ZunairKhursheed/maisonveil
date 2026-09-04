@@ -58,30 +58,74 @@
         {%- for product in section.settings.collection.products limit: products_to_show -%}
           {%- liquid
             assign product_filters = ''
-            assign product_type_l = product.type | downcase
+            assign product_type_l = product.type | downcase | strip
             assign product_title_l = product.title | downcase
+            assign product_handle_l = product.handle | downcase
+
+            assign is_gift = false
+            if product_title_l contains 'gift card'
+              assign is_gift = true
+            endif
+
+            assign is_home = false
+            if product_title_l contains 'plug in' or product_title_l contains 'scent tower' or product_handle_l contains 'scent-plug' or product_handle_l contains 'scent-tower'
+              assign is_home = true
+            endif
+
+            assign is_discovery = false
+            if product_title_l contains 'discovery' or product_title_l contains 'collection'
+              assign is_discovery = true
+            endif
+
+            assign is_shimmer = false
+            if product_type_l contains 'shimmer' or product_title_l contains 'shimmer'
+              assign is_shimmer = true
+            endif
+
+            assign is_body_oil = false
+            if is_shimmer == false
+              if product_type_l == 'body oil' or product_type_l contains 'body oil'
+                assign is_body_oil = true
+              endif
+            endif
+
+            assign is_perfume = false
+            if is_gift == false and is_home == false and is_shimmer == false and is_body_oil == false
+              if product_type_l == 'perfume' or product_type_l contains 'parfum'
+                assign is_perfume = true
+              elsif product_type_l == blank and is_discovery == false
+                assign is_perfume = true
+              endif
+            endif
+
             for block in section.blocks
               if block.type == 'filter' and block.settings.tag != blank
                 assign tag_handle = block.settings.tag | handleize
                 assign matched = false
-                assign tag_parts = block.settings.tag | downcase | split: '|'
-                for tag_part in tag_parts
-                  assign tag_match = tag_part | strip
-                  if tag_match != blank
-                  for product_tag in product.tags
-                    assign product_tag_l = product_tag | downcase | strip
-                    if product_tag_l == tag_match or product_tag_l contains tag_match
-                      assign matched = true
-                    endif
-                  endfor
-                  if product_type_l contains tag_match
+
+                for product_tag in product.tags
+                  assign product_tag_l = product_tag | downcase | strip | handleize
+                  if product_tag_l == tag_handle
                     assign matched = true
-                  endif
-                  if product_title_l contains tag_match
-                    assign matched = true
-                  endif
                   endif
                 endfor
+
+                if tag_handle == 'perfume' and is_perfume
+                  assign matched = true
+                elsif tag_handle == 'body-oil' and is_body_oil
+                  assign matched = true
+                elsif tag_handle == 'shimmer' and is_shimmer
+                  assign matched = true
+                elsif tag_handle == 'discovery' or tag_handle == 'discovery-collection'
+                  if is_discovery
+                    assign matched = true
+                  endif
+                elsif tag_handle == 'home' or tag_handle == 'home-scenting'
+                  if is_home
+                    assign matched = true
+                  endif
+                endif
+
                 if matched
                   assign product_filters = product_filters | append: tag_handle | append: ' '
                 endif
@@ -199,14 +243,14 @@
           "type": "text",
           "id": "label",
           "label": "t:sections.maison_compositions.blocks.filter.settings.label.label",
-          "default": "Nocturnal Amber"
+          "default": "Perfume"
         },
         {
           "type": "text",
           "id": "tag",
           "label": "t:sections.maison_compositions.blocks.filter.settings.tag.label",
           "info": "t:sections.maison_compositions.blocks.filter.settings.tag.info",
-          "default": "nocturnal"
+          "default": "perfume"
         }
       ]
     }
@@ -215,9 +259,10 @@
     {
       "name": "Maison compositions",
       "blocks": [
-        { "type": "filter", "settings": { "label": "Nocturnal Amber", "tag": "nocturnal" } },
-        { "type": "filter", "settings": { "label": "Solar Floral", "tag": "solar" } },
-        { "type": "filter", "settings": { "label": "Enigmatic Woody", "tag": "enigmatic" } }
+        { "type": "filter", "settings": { "label": "Perfumes", "tag": "perfume" } },
+        { "type": "filter", "settings": { "label": "Body Oils", "tag": "body-oil" } },
+        { "type": "filter", "settings": { "label": "Shimmer Oils", "tag": "shimmer" } },
+        { "type": "filter", "settings": { "label": "Discovery Sets", "tag": "discovery" } }
       ]
     }
   ]

@@ -117,21 +117,29 @@
           "type": "filter",
           "settings": {
             "label": "Body Oils",
-            "tag": "oil"
+            "tag": "body-oil"
           }
         },
         "filter_3": {
           "type": "filter",
           "settings": {
+            "label": "Shimmer Oils",
+            "tag": "shimmer"
+          }
+        },
+        "filter_4": {
+          "type": "filter",
+          "settings": {
             "label": "Discovery Sets",
-            "tag": "discovery|collection"
+            "tag": "discovery"
           }
         }
       },
       "block_order": [
         "filter_1",
         "filter_2",
-        "filter_3"
+        "filter_3",
+        "filter_4"
       ],
       "settings": {
         "kicker": "01 · The collection",
