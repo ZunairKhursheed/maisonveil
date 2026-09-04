@@ -308,6 +308,9 @@
         "result_or",
         "result_ombre"
       ],
+      "custom_css": [
+        "{background:#0a0a0a; padding-block:80px;}"
+      ],
       "settings": {
         "kicker": "03 · Bespoke Consultation",
         "title": "Find Your <em>Veil.</em>",
@@ -479,6 +482,24 @@
         "color_scheme": "scheme-3"
       }
     },
+    "1788286219678f8746": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_feeds_cMQtfj": {
+          "type": "shopify://apps/instafeed/blocks/app-block-feeds/4169bff3-1d6b-44ad-9377-2ebc3d31f01c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_feeds_cMQtfj"
+      ],
+      "custom_css": [
+        "{padding: 2px; background: #0a0a0a;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "maison_newsletter": {
       "type": "maison-newsletter",
       "settings": {
@@ -584,24 +605,6 @@
         "quick_add": "none",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "1788286219678f8746": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_feeds_cMQtfj": {
-          "type": "shopify://apps/instafeed/blocks/app-block-feeds/4169bff3-1d6b-44ad-9377-2ebc3d31f01c",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_feeds_cMQtfj"
-      ],
-      "custom_css": [
-        "{padding: 2px; background: #0a0a0a;}"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "image_banner_dwwdgt": {
