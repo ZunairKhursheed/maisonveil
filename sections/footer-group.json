@@ -28,9 +28,9 @@
           "settings": {
             "heading": "Help",
             "availability_text": "We’re available by email and chat Monday–Friday, 10am–5pm EST.",
-            "track_order_link": "shopify://pages/contact",
-            "faq_link": "shopify://pages/contact",
-            "email_link": "shopify://pages/contact"
+            "track_order_link": "",
+            "faq_link": "",
+            "email_link": ""
           }
         },
         "shop_section_ADjgbq": {
