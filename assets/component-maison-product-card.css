@@ -1,11 +1,19 @@
 .product-grid .grid__item,
-.contains-card--product .grid__item {
+.contains-card--product .grid__item,
+.contains-card--collection .grid__item,
+.collection-list__item.grid__item,
+.blog__posts .grid__item,
+.blog-articles .grid__item {
   display: flex;
 }
 
 .product-grid .grid__item > .maison-flacon-card,
 .contains-card--product .grid__item > .maison-flacon-card,
-.collage__item .maison-flacon-card {
+.contains-card--collection .grid__item > .maison-flacon-card,
+.collection-list__item > .maison-flacon-card,
+.collage__item .maison-flacon-card,
+.blog__posts .maison-flacon-card,
+.blog-articles .maison-flacon-card {
   width: 100%;
 }
 
@@ -274,10 +282,45 @@
   }
 }
 
+.maison-collection-card__visual {
+  padding: 0;
+}
+
+.maison-collection-card__media {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.maison-collection-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.maison-flacon-card:hover .maison-collection-card__media img {
+  transform: scale(1.05);
+}
+
+.maison-collection-card__visual .maison-flacon-card__badge {
+  z-index: 3;
+}
+
+.blog-articles .article {
+  display: flex;
+}
+
+.cart-drawer__collection .maison-flacon-card__visual {
+  height: 240px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .maison-flacon-card,
   .maison-flacon-card__image,
   .maison-flacon-card__mini,
+  .maison-collection-card__media img,
   .mv-cta::before {
     transition: none;
   }
@@ -287,7 +330,8 @@
   }
 
   .maison-flacon-card:hover .maison-flacon-card__image,
-  .maison-flacon-card:hover .maison-flacon-card__mini {
+  .maison-flacon-card:hover .maison-flacon-card__mini,
+  .maison-flacon-card:hover .maison-collection-card__media img {
     transform: none;
   }
 }
