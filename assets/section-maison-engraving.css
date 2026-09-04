@@ -10,18 +10,9 @@
   margin: 0 auto;
 }
 
-.maison-engraving__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(2rem, 6vw, 5rem);
-  align-items: center;
-}
-
-.maison-engraving__panel {
-  background: rgba(var(--color-background), 0.72);
-  border: 1px solid rgba(var(--color-foreground), 0.12);
-  padding: clamp(1.75rem, 3vw, 2.8rem);
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+.maison-engraving__head {
+  max-width: 72rem;
+  margin-bottom: clamp(2.4rem, 4vw, 4rem);
 }
 
 .maison-engraving__kicker {
@@ -29,11 +20,11 @@
   letter-spacing: var(--mv-type-kicker-tracking);
   text-transform: uppercase;
   color: rgb(var(--color-button));
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .maison-engraving__title {
-  margin: 0 0 18px;
+  margin: 0;
   font-size: var(--mv-type-display);
   line-height: 0.95;
   font-weight: 400;
@@ -45,32 +36,39 @@
   color: rgb(var(--color-button));
 }
 
+.maison-engraving .featured-product {
+  row-gap: clamp(2rem, 5vw, 4rem);
+}
+
+.maison-engraving .product__info-wrapper {
+  padding: 0;
+}
+
+.maison-engraving__panel {
+  background: rgba(var(--color-background), 0.72);
+  border: 1px solid rgba(var(--color-foreground), 0.12);
+  padding: clamp(1.75rem, 3vw, 2.8rem);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+}
+
+.maison-engraving .product__title {
+  margin: 0 0 1.2rem;
+  font-weight: 400;
+}
+
 .maison-engraving__desc {
   color: rgba(var(--color-foreground), 0.7);
-  font-size: var(--mv-type-lead-size);
-  line-height: var(--mv-type-lead-lh);
-  font-weight: var(--mv-type-lead-weight);
-  margin-bottom: 1.5rem;
-}
-
-.maison-engraving__product {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 12px 0 20px;
-  border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
-  margin-bottom: 20px;
   font-size: var(--mv-type-body-size);
+  line-height: var(--mv-type-body-lh);
+  margin: 1.6rem 0 2rem;
 }
 
-.maison-engraving__product-name {
-  letter-spacing: 0.05em;
+.maison-engraving__desc p {
+  margin: 0 0 1em;
 }
 
-.maison-engraving__product-price {
-  color: rgb(var(--color-button));
-  font-weight: 600;
+.maison-engraving__desc p:last-child {
+  margin-bottom: 0;
 }
 
 .maison-engraving__label {
@@ -133,104 +131,63 @@
   color: rgb(var(--color-foreground));
 }
 
-.maison-engraving__submit {
-  width: 100%;
-  min-height: 48px;
-  border: none;
-  background: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
-  font-size: var(--mv-type-cta-size);
-  font-weight: var(--mv-type-cta-weight);
-  letter-spacing: var(--mv-type-cta-tracking);
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: opacity 0.25s ease;
+.maison-engraving__media {
+  min-height: 0;
 }
 
-.maison-engraving__submit:hover:not([disabled]) {
-  opacity: 0.9;
-}
-
-.maison-engraving__submit[disabled] {
-  opacity: 0.45;
-  cursor: not-allowed;
-}
-
-.maison-engraving__preview {
-  min-height: 520px;
-  background: radial-gradient(circle at 50% 50%, rgba(var(--color-foreground), 0.08) 0%, rgba(var(--color-background), 1) 70%);
-  border: 1px solid rgba(var(--color-foreground), 0.12);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.maison-engraving__image-wrap {
   position: relative;
-}
-
-.maison-engraving__shield {
-  position: absolute;
-  top: 25px;
-  width: 42px;
-  opacity: 0.3;
-}
-
-.maison-engraving__bottle {
-  width: 190px;
-  height: 330px;
-  background: linear-gradient(130deg, rgba(var(--color-foreground), 0.12) 0%, rgba(var(--color-background), 1) 50%, rgba(var(--color-foreground), 0.08) 100%);
-  border: 2px solid rgb(var(--color-button));
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.45), inset 0 0 35px rgba(var(--color-button), 0.08);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.maison-engraving__cap {
-  position: absolute;
-  top: -45px;
-  width: 68px;
-  height: 45px;
-  background: rgba(var(--color-background), 0.95);
-  border: 1.5px solid rgba(var(--color-button), 0.65);
-}
-
-.maison-engraving__label-wrap {
-  width: 140px;
-  padding: 24px 14px;
-  background: rgba(var(--color-background), 0.95);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(var(--color-foreground), 0.08) 0%,
+    rgba(var(--color-background), 1) 70%
+  );
   border: 1px solid rgba(var(--color-foreground), 0.12);
-  text-align: center;
 }
 
-.maison-engraving__label-title {
-  margin: 0;
-  font-size: 1.5rem;
-  letter-spacing: 0.28em;
-  color: rgb(var(--color-button));
-}
-
-.maison-engraving__label-sub {
-  font-size: var(--mv-type-meta-size);
-  letter-spacing: 0.3em;
-  color: rgba(var(--color-foreground), 0.55);
+.maison-engraving__image {
   display: block;
-  margin: 4px 0 10px;
+  width: 100%;
+  height: auto;
 }
 
 .maison-engraving__live-text {
-  min-height: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 2.4rem;
+  transform: translateX(-50%);
+  min-width: 40%;
+  text-align: center;
   font-size: var(--mv-type-kicker-size);
   letter-spacing: var(--mv-type-kicker-tracking);
   color: rgb(var(--color-button));
-  border-top: 1px dashed rgba(var(--color-foreground), 0.12);
-  padding-top: 8px;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  padding: 0.8rem 1.6rem;
+  background: rgba(var(--color-background), 0.82);
+  border: 1px dashed rgba(var(--color-button), 0.45);
+  pointer-events: none;
 }
 
 .maison-engraving__live-text.is-editorial {
   font-style: italic;
+}
+
+.maison-engraving .product-form__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.maison-engraving .product-form__submit,
+.maison-engraving .shopify-payment-button__button {
+  min-height: 5.2rem;
+  border-radius: 0;
+  letter-spacing: var(--mv-type-cta-tracking);
+  text-transform: uppercase;
+}
+
+.maison-engraving .product__view-details {
+  margin-top: 1.6rem;
 }
 
 .maison-engraving .mv-reveal {
@@ -244,9 +201,14 @@
   transform: translateY(0);
 }
 
-@media screen and (max-width: 989px) {
-  .maison-engraving__grid {
-    grid-template-columns: 1fr;
+.maison-engraving .featured-product:not(.product--no-media) > .product__info-wrapper,
+.maison-engraving .featured-product.product--right > .product__info-wrapper {
+  padding: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .maison-engraving .featured-product.product--right > .product__info-wrapper {
+    padding: 0 4rem 0 0;
   }
 }
 

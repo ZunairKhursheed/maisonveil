@@ -2,24 +2,26 @@
   Renders product buy-buttons.
   Accepts:
   - product: {Object} product object.
-  - block: {Object} passing the block information.
+  - block: {Object} passing the block information (optional).
   - product_form_id: {String} product form id.
   - section_id: {String} id of section to which this snippet belongs.
   - show_pickup_availability: {Boolean} for the pickup availability. If true the pickup availability is rendered, false - not rendered (optional).
-
-  Usage:
-  {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
+  - enable_dynamic_checkout: {Boolean} show Shop Pay / Buy now when no buy_buttons block is passed (optional).
+  - line_item_property_key: {String} optional cart line-item property name.
+  - line_item_property_value: {String} optional cart line-item property value.
 {% endcomment %}
-<div {{ block.shopify_attributes }}>
+<div {% if block %}{{ block.shopify_attributes }}{% endif %}>
   {%- if product != blank -%}
     {%- liquid
       assign gift_card_recipient_feature_active = false
-      if block.settings.show_gift_card_recipient and product.gift_card?
+      if block and block.settings.show_gift_card_recipient and product.gift_card?
         assign gift_card_recipient_feature_active = true
       endif
 
       assign show_dynamic_checkout = false
-      if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
+      if enable_dynamic_checkout and gift_card_recipient_feature_active == false
+        assign show_dynamic_checkout = true
+      elsif block and block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
         assign show_dynamic_checkout = true
       endif
     -%}
@@ -63,6 +65,15 @@
           {% endif %}
           class="product-variant-id"
         >
+
+        {%- if line_item_property_key != blank -%}
+          <input
+            type="hidden"
+            name="properties[{{ line_item_property_key | escape }}]"
+            value="{{ line_item_property_value | escape }}"
+            data-engraving-property
+          >
+        {%- endif -%}
 
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}

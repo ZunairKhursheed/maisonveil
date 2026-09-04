@@ -1,11 +1,22 @@
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+{{ 'section-featured-product.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-maison-engraving.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'maison-engraving.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
-  assign featured_product = section.settings.product
-  assign variant = featured_product.selected_or_first_available_variant
+  assign product = section.settings.product
+  assign placeholder = false
+  if product == blank
+    assign placeholder = true
+  endif
+  assign variant = product.selected_or_first_available_variant
+  assign product_image = variant.featured_image | default: product.featured_image
+  assign image_alt = product_image.alt | default: product.title
   assign max_chars = section.settings.max_characters | default: 12
   assign default_text = section.settings.default_engraving | default: 'M · VEIL'
+  assign product_form_id = 'product-form-' | append: section.id
 -%}
 
 <maison-engraving
@@ -14,103 +25,170 @@
   data-section-id="{{ section.id }}"
 >
   <div class="maison-engraving__wrap">
-    <div class="maison-engraving__grid">
-      <div class="maison-engraving__panel mv-reveal">
+    {%- if section.settings.kicker != blank or section.settings.title != blank -%}
+      <div class="maison-engraving__head mv-reveal">
         {%- if section.settings.kicker != blank -%}
           <div class="maison-engraving__kicker">{{ section.settings.kicker | escape }}</div>
         {%- endif -%}
         {%- if section.settings.title != blank -%}
           <h2 class="maison-engraving__title">{{ section.settings.title }}</h2>
         {%- endif -%}
-        {%- if section.settings.description != blank -%}
-          <div class="maison-engraving__desc">{{ section.settings.description }}</div>
-        {%- endif -%}
-
-        {%- if featured_product != blank -%}
-          <div class="maison-engraving__product">
-            <span class="maison-engraving__product-name">{{ featured_product.title | escape }}</span>
-            <span class="maison-engraving__product-price">{{ variant.price | money }}</span>
-          </div>
-        {%- endif -%}
-
-        <div class="maison-engraving__input-wrap">
-          <label class="maison-engraving__label" for="EngravingInput-{{ section.id }}">
-            {{ section.settings.input_label | escape }}
-          </label>
-          <input
-            type="text"
-            id="EngravingInput-{{ section.id }}"
-            class="maison-engraving__input"
-            maxlength="{{ max_chars }}"
-            value="{{ default_text | escape }}"
-            data-engraving-input
-            aria-describedby="EngravingCount-{{ section.id }}"
-          >
-          <div class="maison-engraving__count" id="EngravingCount-{{ section.id }}">
-            <span data-engraving-count>{{ default_text.size }}</span> / {{ max_chars }} Characters
-          </div>
-        </div>
-
-        <div class="maison-engraving__fonts" role="group" aria-label="{{ section.settings.font_group_label | escape }}">
-          <button type="button" class="maison-engraving__font-btn is-active" data-engraving-font="monumental">
-            {{ section.settings.font_1_label | escape }}
-          </button>
-          <button type="button" class="maison-engraving__font-btn" data-engraving-font="editorial">
-            {{ section.settings.font_2_label | escape }}
-          </button>
-        </div>
-
-        {%- if featured_product != blank and variant -%}
-          {%- form 'product', featured_product, class: 'maison-engraving__form', id: 'EngravingForm-{{ section.id }}' -%}
-            <input type="hidden" name="id" value="{{ variant.id }}">
-            <input type="hidden" name="properties[Engraving]" value="{{ default_text | escape }}" data-engraving-property>
-            <button
-              type="submit"
-              name="add"
-              class="maison-engraving__submit"
-              {% unless variant.available %}disabled{% endunless %}
-            >
-              {%- if variant.available -%}
-                {{ section.settings.button_label | escape }}
-              {%- else -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- endif -%}
-            </button>
-          {%- endform -%}
-          <script>
-            (() => {
-              const root = document.querySelector('[data-section-id="{{ section.id }}"]');
-              if (!root) return;
-              const input = root.querySelector('[data-engraving-input]');
-              const property = root.querySelector('[data-engraving-property]');
-              if (!input || !property) return;
-              input.addEventListener('input', () => {
-                property.value = input.value.toUpperCase();
-              });
-            })();
-          </script>
-        {%- else -%}
-          <button type="button" class="maison-engraving__submit" disabled>
-            {{ section.settings.button_label | escape }}
-          </button>
-        {%- endif -%}
       </div>
+    {%- endif -%}
 
-      <div class="maison-engraving__preview mv-reveal">
-        {%- if section.settings.monogram != blank -%}
-          {{
-            section.settings.monogram
-            | image_url: width: 120
-            | image_tag: class: 'maison-engraving__shield', loading: 'lazy', alt: section.settings.monogram.alt | default: shop.name
-          }}
-        {%- endif -%}
-        <div class="maison-engraving__bottle">
-          <div class="maison-engraving__cap" aria-hidden="true"></div>
-          <div class="maison-engraving__label-wrap">
-            <h4 class="maison-engraving__label-title">{{ section.settings.bottle_label | default: 'VEIL' | escape }}</h4>
-            <small class="maison-engraving__label-sub">{{ section.settings.bottle_subtitle | default: 'EXTRAIT DE PARFUM' | escape }}</small>
+    <div class="featured-product product product--medium product--right grid grid--1-col grid--2-col-tablet isolate">
+      <div class="grid__item product__media-wrapper maison-engraving__media mv-reveal">
+        {%- unless placeholder or product_image == blank -%}
+          <div class="maison-engraving__image-wrap">
+            {{
+              product_image
+              | image_url: width: 1400
+              | image_tag:
+                class: 'maison-engraving__image',
+                loading: 'lazy',
+                widths: '400, 600, 800, 1000, 1400',
+                alt: image_alt
+            }}
             <div class="maison-engraving__live-text" data-engraving-display>{{ default_text | escape }}</div>
           </div>
+        {%- else -%}
+          <div class="product-media-container global-media-settings gradient" style="--ratio: 1.0; --preview-ratio: 1.0;">
+            {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+        {%- endunless -%}
+      </div>
+
+      <div class="product__info-wrapper grid__item maison-engraving__panel mv-reveal">
+        <div id="ProductInfo-{{ section.id }}" class="product__info-container">
+          {%- unless placeholder -%}
+            {%- if product.vendor != blank -%}
+              <p class="product__text caption-with-letter-spacing">{{ product.vendor | escape }}</p>
+            {%- endif -%}
+            <h3 class="product__title h2">{{ product.title | escape }}</h3>
+            <div id="price-{{ section.id }}" role="status">
+              {% render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' %}
+            </div>
+            {%- if product.description != blank -%}
+              <div class="product__description rte maison-engraving__desc">{{ product.description }}</div>
+            {%- endif -%}
+          {%- else -%}
+            <h3 class="product__title h2">{{ 'onboarding.product_title' | t }}</h3>
+            <div role="status">
+              {% render 'price', placeholder: true, show_badges: true, price_class: 'price--large' %}
+            </div>
+            <div class="product__description rte maison-engraving__desc">
+              <p>Select a product in this section to show its image, details, and checkout buttons.</p>
+            </div>
+          {%- endunless -%}
+
+          <div class="maison-engraving__input-wrap">
+            <label class="maison-engraving__label" for="EngravingInput-{{ section.id }}">
+              {{ section.settings.input_label | escape }}
+            </label>
+            <input
+              type="text"
+              id="EngravingInput-{{ section.id }}"
+              class="maison-engraving__input"
+              maxlength="{{ max_chars }}"
+              value="{{ default_text | escape }}"
+              data-engraving-input
+              aria-describedby="EngravingCount-{{ section.id }}"
+            >
+            <div class="maison-engraving__count" id="EngravingCount-{{ section.id }}">
+              <span data-engraving-count>{{ default_text.size }}</span> / {{ max_chars }} Characters
+            </div>
+          </div>
+
+          {%- if section.settings.font_1_label != blank or section.settings.font_2_label != blank -%}
+            <div class="maison-engraving__fonts" role="group" aria-label="{{ section.settings.font_group_label | escape }}">
+              <button type="button" class="maison-engraving__font-btn is-active" data-engraving-font="monumental">
+                {{ section.settings.font_1_label | escape }}
+              </button>
+              <button type="button" class="maison-engraving__font-btn" data-engraving-font="editorial">
+                {{ section.settings.font_2_label | escape }}
+              </button>
+            </div>
+          {%- endif -%}
+
+          {%- unless placeholder -%}
+            {%- unless product.has_only_default_variant -%}
+              <div class="product-form__input product-form__input--dropdown">
+                <label class="form__label" for="EngravingVariant-{{ section.id }}">
+                  {{ 'products.product.product_variants' | t }}
+                </label>
+                <div class="select">
+                  <select
+                    id="EngravingVariant-{{ section.id }}"
+                    class="select__select"
+                    data-engraving-variant
+                  >
+                    {%- for variant_option in product.variants -%}
+                      <option
+                        value="{{ variant_option.id }}"
+                        {% if variant_option.id == variant.id %}
+                          selected="selected"
+                        {% endif %}
+                        {% unless variant_option.available %}
+                          disabled
+                        {% endunless %}
+                      >
+                        {{ variant_option.title | escape }}
+                        {%- unless variant_option.available %} — {{ 'products.product.sold_out' | t }}{% endunless %}
+                      </option>
+                    {%- endfor -%}
+                  </select>
+                  {% render 'icon-caret' %}
+                </div>
+              </div>
+            {%- endunless -%}
+
+            <div class="product-form__input product-form__quantity">
+              <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
+                {{ 'products.product.quantity.label' | t }}
+              </label>
+              <quantity-input class="quantity">
+                <button class="quantity__button" name="minus" type="button">
+                  <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                  {% render 'icon-minus' %}
+                </button>
+                <input
+                  class="quantity__input"
+                  type="number"
+                  name="quantity"
+                  id="Quantity-{{ section.id }}"
+                  min="1"
+                  value="1"
+                  form="{{ product_form_id }}"
+                >
+                <button class="quantity__button" name="plus" type="button">
+                  <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                  {% render 'icon-plus' %}
+                </button>
+              </quantity-input>
+            </div>
+
+            {% render 'buy-buttons',
+              product: product,
+              product_form_id: product_form_id,
+              section_id: section.id,
+              show_pickup_availability: false,
+              enable_dynamic_checkout: true,
+              line_item_property_key: 'Engraving',
+              line_item_property_value: default_text
+            %}
+
+            <a href="{{ product.url }}" class="link product__view-details animate-arrow">
+              {{ 'products.product.view_full_details' | t }}
+              {% render 'icon-arrow' %}
+            </a>
+          {%- else -%}
+            {% render 'buy-buttons',
+              product: product,
+              product_form_id: product_form_id,
+              section_id: section.id,
+              enable_dynamic_checkout: true
+            %}
+          {%- endunless -%}
         </div>
       </div>
     </div>
@@ -127,10 +205,15 @@
   },
   "settings": [
     {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
       "type": "text",
       "id": "kicker",
       "label": "Kicker",
-      "default": "04 · Atelier Personalization"
+      "default": "04 · Personalization"
     },
     {
       "type": "inline_richtext",
@@ -139,25 +222,9 @@
       "default": "Laser Gold <em>Engraving.</em>"
     },
     {
-      "type": "richtext",
-      "id": "description",
-      "label": "Description",
-      "default": "<p>Personalize bottles for weddings, gifts, and private labels—initials, a date, or a short creed on the vessel your guests take home.</p>"
-    },
-    {
-      "type": "product",
-      "id": "product",
-      "label": "Featured product"
-    },
-    {
-      "type": "image_picker",
-      "id": "monogram",
-      "label": "Monogram image"
-    },
-    {
       "type": "text",
       "id": "input_label",
-      "label": "Input label",
+      "label": "Engraving input label",
       "default": "Inscribe Your Monogram / Date (Max 12 Chars)"
     },
     {
@@ -192,24 +259,6 @@
       "id": "font_2_label",
       "label": "Font 2 label",
       "default": "Editorial Haute"
-    },
-    {
-      "type": "text",
-      "id": "bottle_label",
-      "label": "Bottle label",
-      "default": "VEIL"
-    },
-    {
-      "type": "text",
-      "id": "bottle_subtitle",
-      "label": "Bottle subtitle",
-      "default": "SIGNATURE SCENT"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Button label",
-      "default": "Save Engraving to Vessel"
     },
     {
       "type": "color_scheme",

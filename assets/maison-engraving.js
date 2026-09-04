@@ -8,6 +8,10 @@ if (!customElements.get('maison-engraving')) {
       this.fontButtons = this.querySelectorAll('[data-engraving-font]');
 
       this.input?.addEventListener('input', () => this.updatePreview());
+      this.querySelector('[data-engraving-variant]')?.addEventListener('change', (event) => {
+        const variantInput = this.querySelector('.product-variant-id');
+        if (variantInput) variantInput.value = event.target.value;
+      });
       this.fontButtons.forEach((btn) => {
         btn.addEventListener('click', () => this.setFont(btn));
       });
@@ -21,6 +25,8 @@ if (!customElements.get('maison-engraving')) {
       const val = this.input.value.toUpperCase();
       this.display.textContent = val || 'INSCRIPTION';
       if (this.count) this.count.textContent = val.length;
+      const property = this.querySelector('[data-engraving-property]');
+      if (property) property.value = val;
     }
 
     setFont(btn) {
