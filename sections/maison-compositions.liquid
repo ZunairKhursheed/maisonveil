@@ -58,16 +58,33 @@
         {%- for product in section.settings.collection.products limit: products_to_show -%}
           {%- liquid
             assign product_filters = ''
+            assign product_type_l = product.type | downcase
+            assign product_title_l = product.title | downcase
             for block in section.blocks
               if block.type == 'filter' and block.settings.tag != blank
-                assign tag_match = block.settings.tag | downcase | strip
                 assign tag_handle = block.settings.tag | handleize
-                for product_tag in product.tags
-                  assign product_tag_l = product_tag | downcase | strip
-                  if product_tag_l == tag_match
-                    assign product_filters = product_filters | append: tag_handle | append: ' '
+                assign matched = false
+                assign tag_parts = block.settings.tag | downcase | split: '|'
+                for tag_part in tag_parts
+                  assign tag_match = tag_part | strip
+                  if tag_match != blank
+                  for product_tag in product.tags
+                    assign product_tag_l = product_tag | downcase | strip
+                    if product_tag_l == tag_match or product_tag_l contains tag_match
+                      assign matched = true
+                    endif
+                  endfor
+                  if product_type_l contains tag_match
+                    assign matched = true
+                  endif
+                  if product_title_l contains tag_match
+                    assign matched = true
+                  endif
                   endif
                 endfor
+                if matched
+                  assign product_filters = product_filters | append: tag_handle | append: ' '
+                endif
               endif
             endfor
             assign product_filters = product_filters | strip

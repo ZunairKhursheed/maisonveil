@@ -132,10 +132,16 @@
 }
 
 .maison-consultation__option-icon {
-  display: block;
-  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
   color: rgb(var(--color-button));
   margin-bottom: 0.75rem;
+}
+
+.maison-consultation__option-icon .icon-accordion {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: currentColor;
 }
 
 .maison-consultation__option-title {

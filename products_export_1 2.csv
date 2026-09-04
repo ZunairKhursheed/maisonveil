@@ -1,0 +1,595 @@
+Handle,Title,Body (HTML),Vendor,Product Category,Type,Tags,Published,Option1 Name,Option1 Value,Option1 Linked To,Option2 Name,Option2 Value,Option2 Linked To,Option3 Name,Option3 Value,Option3 Linked To,Variant SKU,Variant Grams,Variant Inventory Tracker,Variant Inventory Qty,Variant Inventory Policy,Variant Fulfillment Service,Variant Price,Variant Compare At Price,Variant Requires Shipping,Variant Taxable,Unit Price Total Measure,Unit Price Total Measure Unit,Unit Price Base Measure,Unit Price Base Measure Unit,Variant Barcodes,Image Src,Image Position,Image Alt Text,Gift Card,SEO Title,SEO Description,Age group (product.metafields.shopify.age-group),Body area (product.metafields.shopify.body-area),Color (product.metafields.shopify.color-pattern),Cosmetic finish (product.metafields.shopify.cosmetic-finish),Cosmetic function (product.metafields.shopify.cosmetic-function),Dispenser type (product.metafields.shopify.dispenser-type),Fragrance (product.metafields.shopify.fragrance),Gift set format (product.metafields.shopify.gift-set-format),Material (product.metafields.shopify.material),Occasion (product.metafields.shopify.occasion),Olfactory family (product.metafields.shopify.olfactory-family),Package type (product.metafields.shopify.package-type),Product form (product.metafields.shopify.product-form),Scent (product.metafields.shopify.scent),Season (product.metafields.shopify.season),Size (product.metafields.shopify.size),Skin care effect (product.metafields.shopify.skin-care-effect),Target gender (product.metafields.shopify.target-gender),Texture (product.metafields.shopify.texture),Variant Image,Variant Weight Unit,Variant Tax Code,Cost per item,Status
+pistache-nuage-1,Pistache Nuage,"<p><strong>Pistache Nuage Luxury Body Oil</strong></p>
+<p><strong>Product Description</strong></p>
+<p><span>Wrap your skin in the delicious softness of </span><span>Pistache Nuage</span><span>—a creamy pistachio gourmand that feels airy, elegant and irresistibly indulgent.</span></p>
+<p><span>Luscious pistachio and juicy pear melt into powdery heliotrope and velvety vanilla caramel. A veil of soft white musk creates a smooth, lingering finish that smells luxurious without becoming overly sweet.</span></p>
+<p><span>The lightweight oil glides effortlessly across the body, leaving skin feeling silky, moisturized and beautifully perfumed.</span></p>
+<p><span><strong>Scent Profile</strong>:</span><span> Creamy Nutty Gourmand</span><span><br> </span></p>
+<p><span><strong>Key Notes</strong>:</span><span> Pistachio · Pear · Heliotrope · Vanilla Caramel · White Musk</span><span><br> <br></span><span><strong>Mood</strong>:</span><span> Creamy · Fluffy · Addictive · Sophisticated</span></p>
+<p><span>Available in:</span></p>
+<ul>
+<li>
+<span>Luxury Body Oil</span><span> — a luminous, non-shimmer finish</span>
+</li>
+<li>
+<span>Shimmer Oil</span><span> — infused with a delicate golden glow</span>
+</li>
+</ul>
+<p><span>Size:</span><span> 3.4 fl oz / 100 ml</span></p>
+<p><span>How to Use:</span><span> Massage onto clean, slightly damp skin. Apply to the shoulders, arms, legs and décolletage for lasting fragrance and a radiant finish.</span></p>
+<hr data-start=""1469"" data-end=""1472"">
+<h3 data-start=""1474"" data-end=""1492""> <strong data-start=""1481"" data-end=""1492"">Details</strong>
+</h3>
+<ul data-start=""1493"" data-end=""1575"">
+<li data-start=""1493"" data-end=""1510"">
+<p data-start=""1495"" data-end=""1510"">Body Oil </p>
+</li>
+<li data-start=""1511"" data-end=""1532"">
+<p data-start=""1513"" data-end=""1532"">Long-lasting wear</p>
+</li>
+<li data-start=""1533"" data-end=""1543"">
+<p data-start=""1535"" data-end=""1543"">Unisex</p>
+</li>
+<li data-start=""1544"" data-end=""1575"">
+<p data-start=""1546"" data-end=""1575"">Hand-blended by Maison Veil</p>
+</li>
+</ul>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Body oil,"",true,Size,2,,,,,,,,,100.0,shopify,98,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/C788EB60-5548-4861-B813-979E7D59A200.png?v=1788491214,1,"",false,Pistache Nuage Body Oil | Maison Veil,"  Indulge in Pistache Nuage, a luxurious 100ml body oil with creamy pistachio, soft vanilla and airy gourmand warmth. Silky, radiant and unforgettable.",,,,,,,,,,special-occasion,,,,vanilla; other,fall; spring; summer; winter,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/C788EB60-5548-4861-B813-979E7D59A200.png?v=1788491214,g,,,active
+pistache-nuage-1,,,,,,,,,30ml,,,,,,,,,100.0,shopify,98,deny,manual,55.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+pistache-nuage-1,,,,,,,,,50ml,,,,,,,,,100.0,shopify,100,deny,manual,75.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+pistache-nuage-1,,,,,,,,,100ml,,,,,,,,,100.0,shopify,99,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+isla-doree,Isla Dorée,"<h2 data-start=""225"" data-end=""247"">Isla <span>DORÉE</span>
+</h2>
+<p><span>ISLA DORÉE</span></p>
+<p><span>MAISON VEIL</span></p>
+<p><span>Isla Dorée Body Oil</span></p>
+<p><span>A radiant blend of juicy mango, passion fruit, creamy coconut and warm vanilla, softened with luminous white musk. It melts into the skin, leaving a golden glow and an irresistible tropical scent.</span></p>
+<p><span>Directions:</span><span> Apply to damp skin after showering. Massage gently until absorbed.</span></p>
+<p><span>Ingredients: Sweet Almond Oil, Jojoba Oil, Fractionated Coconut Oil, Vitamin E, Fragrance.</span></p>
+<p><span>Fragrance Profile</span></p>
+<ul>
+<li>
+<span>Top:</span><span> Juicy mango, passion fruit and sparkling bergamot</span>
+</li>
+<li>
+<span>Heart:</span><span> Creamy coconut with soft tropical warmth</span>
+</li>
+<li>
+<span>Base:</span><span> Golden vanilla, white musk and smooth woods</span>
+</li>
+</ul>
+<p><span>The Vibe</span></p>
+<ul>
+<li><span>Radiant, tropical and luxurious</span></li>
+<li><span>Creamy, sensual and effortlessly addictive</span></li>
+<li><span>Perfect for vacations, daytime glamour and year-round golden skin</span></li>
+</ul>
+<br>
+<hr data-start=""1260"" data-end=""1263"">
+<h3 data-start=""1265"" data-end=""1294""> <strong data-start=""1272"" data-end=""1294"">Why You’ll Love It</strong>
+</h3>
+<ul data-start=""1295"" data-end=""1467"">
+<li data-start=""1295"" data-end=""1326"">
+<p data-start=""1297"" data-end=""1326"">Warm, addictive scent trail</p>
+</li>
+<li data-start=""1327"" data-end=""1370"">
+<p data-start=""1329"" data-end=""1370"">Compliment-drawing without overpowering</p>
+</li>
+<li data-start=""1371"" data-end=""1403"">
+<p data-start=""1373"" data-end=""1403"">Luxurious on skin and fabric</p>
+</li>
+<li data-start=""1404"" data-end=""1467"">
+<p data-start=""1406"" data-end=""1467"">Designed to evolve beautifully throughout the day and night</p>
+</li>
+</ul>
+<hr data-start=""1469"" data-end=""1472"">
+<h3 data-start=""1474"" data-end=""1492""> <strong data-start=""1481"" data-end=""1492"">Details</strong>
+</h3>
+<ul data-start=""1493"" data-end=""1575"">
+<li data-start=""1493"" data-end=""1510"">
+<p data-start=""1495"" data-end=""1510"">Eau de Parfum</p>
+</li>
+<li data-start=""1511"" data-end=""1532"">
+<p data-start=""1513"" data-end=""1532"">Long-lasting wear</p>
+</li>
+<li data-start=""1533"" data-end=""1543"">
+<p data-start=""1535"" data-end=""1543"">Unisex</p>
+</li>
+<li data-start=""1544"" data-end=""1575"">
+<p data-start=""1546"" data-end=""1575"">Hand-blended by Maison Veil</p>
+</li>
+</ul>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Body oil,"",true,Size,2,,,,,,,,,100.0,shopify,98,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/IMG-1858.png?v=1788490459,1,"",false,Isla Dorée Body Oil | Maison Veil,"Isla Dorée Body Oil blends mango, passion fruit, coconut, vanilla and white musk for a luminous tropical glow that leaves skin soft and beautifully scented.",,,,,,,,,,special-occasion,,,,veil-of-fire-fragrance-notes-top-notes-radiant-tropical-fruits-juicy-mango-bright-citrus-spark-heart-notes-lush-rose-soft-white-florals-sun-warmed-sweetness-base-notes-golden-amber-smooth-vanilla-warm-woods,fall; spring; summer; winter,,,,,,g,,,active
+isla-doree,,,,,,,,,30ml,,,,,,,,,100.0,shopify,98,deny,manual,55.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+isla-doree,,,,,,,,,50ml,,,,,,,,,100.0,shopify,100,deny,manual,75.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+isla-doree,,,,,,,,,100ml,,,,,,,,,100.0,shopify,99,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+aurora-bloom-1,Aurora Bloom,"<p><strong>As soft as the first light of dawn, Aurora Bloom is a delicate yet intoxicating blend. Bright lychee and a hint of pink pepper add sparkle to the floral heart of white peony, while warm musk keeps it irresistibly sensual.</strong></p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Size,10ml,,,,,,,,,100.0,shopify,100,deny,manual,35.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Aurora_Bloom.png?v=1788482965,1,"",false,Aurora Bloom  | Maison Veil,"As soft as the first light of dawn, Aurora Bloom is a delicate yet intoxicating blend. Bright lychee and a hint of pink pepper add sparkle to the floral heart of white peony, while warm musk keeps it irresistibly sensual.",,,,,,,,,,special-occasion,,,,floral-1; fruity,fall; spring; summer; winter,,,,,,g,,,active
+aurora-bloom-1,,,,,,,,,30ml,,,,,,,,,100.0,shopify,99,deny,manual,68.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+aurora-bloom-1,,,,,,,,,50ml,,,,,,,,,100.0,shopify,99,deny,manual,104.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+aurora-bloom-1,,,,,,,,,100ml,,,,,,,,,100.0,shopify,100,deny,manual,135.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+reckoning,Reckoning,"<p><span>Reckoning</span><span> is a bold masculine-unisex fragrance built around presence, depth, and quiet power. It opens with a dark, magnetic freshness before settling into a warm, sensual trail of woods, spice, and smooth ambered richness. Sophisticated rather than loud, Reckoning feels commanding, mysterious, and effortlessly expensive.</span></p>
+<p><span>Mood:</span><span> Dark • Magnetic • Powerful • Seductive</span><span><br> <br></span><span>Best for:</span><span> Evening, date night, special occasions, or anyone who wants a scent with serious presence.</span></p>
+<p><span>Some fragrances enter the room. Reckoning takes possession of it.</span></p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Perfume Extracts,Perfume,"Amber Fragrance, Bold Fragrance, Date Night Fragrance, Eau de Parfum, Evening Fragrance, Fall Fragrance, Long Lasting Fragrance, Luxury Perfume, Maison veil, Men’s Fragrance, Niche Fragrance, Oriental Fragrance, Oud, Regal Fragrance, Signature Scent, Spicy Fragrance, Sultan Veil, Unisex Fragrance, Warm Fragrance, Winter Fragrance, Woody Fragrance",true,Size,30ml,,,,,,,,,0.0,shopify,100,deny,manual,68.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Reckoning.png?v=1787235332,1,"",false,,,,,,,,bottle,velours-osmanthus-for-a-more-french-luxury-feel-apricot-osmanthus-petals-soft-tea-and-white-musk-elegant-airy-and-sophisticated,,,,fresh; fruity; woody,,spray,,,,,,,,lb,,,active
+reckoning,,,,,,,,,10ml,,,,,,,,,0.0,shopify,98,deny,manual,20.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+reckoning,,,,,,,,,15ml,,,,,,,,,0.0,shopify,100,deny,manual,25.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+reckoning,,,,,,,,,50ml,,,,,,,,,0.0,shopify,100,deny,manual,104.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+reckoning,,,,,,,,,100ml,,,,,,,,,0.0,shopify,100,deny,manual,135.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+sultanveil,Sultan Veil,"<p><span>Sultan Veil</span><span> is a rich </span><span>Oriental Amber Woody</span><span> fragrance with regal, masculine-leaning energy. It smells polished, commanding and expensive — the kind of scent that enters the room before you do.</span></p>
+<p><span><br> </span><span>Amber • Smooth Spice • Refined Woods • Resinous Warmth • Blue Sapphire Accord • Golden Warmth</span></p>
+<p><span><br> </span><span>A commanding composition of warm amber, polished woods and smooth spice, wrapped in resinous golden depth. Sultan Veil is bold without being harsh — luxurious, magnetic and effortlessly regal, with a lingering trail that feels unmistakably powerful.</span></p>
+<p><span>Vibe:</span><span> Wealthy. Commanding. Unforgettable.</span></p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Perfume Extracts,"","Amber Fragrance, Bold Fragrance, Date Night Fragrance, Eau de Parfum, Evening Fragrance, Fall Fragrance, Long Lasting Fragrance, Luxury Perfume, Maison veil, Men’s Fragrance, Niche Fragrance, Oriental Fragrance, Oud, Regal Fragrance, Signature Scent, Spicy Fragrance, Sultan Veil, Unisex Fragrance, Warm Fragrance, Winter Fragrance, Woody Fragrance",true,Size,30ml,,,,,,,,,0.0,shopify,100,deny,manual,68.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Reckoning.png?v=1787235332,1,"",false,Sultan Veil | Oriental Amber Woody Perfume,"Sultan Veil is a rich Oriental Amber Woody fragrance with regal, masculine energy—warm, commanding, polished and effortlessly luxurious.",,,,,,bottle,velours-osmanthus-for-a-more-french-luxury-feel-apricot-osmanthus-petals-soft-tea-and-white-musk-elegant-airy-and-sophisticated,,,,fresh; woody; aromatic; balsamic; citrus; earthy,,spray,,,,,,,,lb,,,active
+sultanveil,,,,,,,,,10ml,,,,,,,,,0.0,shopify,98,deny,manual,20.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+sultanveil,,,,,,,,,15ml,,,,,,,,,0.0,shopify,0,deny,manual,0.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+sultanveil,,,,,,,,,50ml,,,,,,,,,0.0,shopify,100,deny,manual,104.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+sultanveil,,,,,,,,,100ml,,,,,,,,,0.0,shopify,100,deny,manual,135.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+kola-azur-eau-de-parfum-fragcon-bestseller,Kòla Azur Eau de Parfum  -FragCon Bestseller,"<p><span>Kòla Azur</span></p>
+<p><span>Kòla Azur is a vibrant, modern fragrance built around a proprietary Maison Veil kola-inspired accord.</span></p>
+<p><span>It opens with sparkling citrus and juicy tropical fruit, lifted by a crisp green freshness. The heart reveals airy florals, a subtle hibiscus nuance, and aromatic spice before settling into smooth woods, clean musk, and warm mineral amber.</span></p>
+<p><span>Fresh, magnetic, and effortlessly sophisticated, Kòla Azur is designed for those who want a fragrance that feels distinctive without being overpowering.</span></p>
+<p><span>Fragrance Family:</span><span> Fresh • Fruity • Woody</span></p>
+<p><span>Scent Journey</span><span><br> </span><span>Opening:</span><span> Sparkling Citrus • Tropical Fruit • Green Freshness</span><span><br> </span><span>Heart:</span><span> Airy Florals • Hibiscus Nuance • Aromatic Spice</span><span><br> </span><span>Drydown:</span><span> Smooth Woods • Clean Musk • Warm Amber</span></p>
+<p><span>Mood:</span><span> Vibrant • Refined • Magnetic • Modern</span></p>
+<p><span>Maison Veil Eau de Parfum</span></p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Perfume Extracts,"","Kòla Azur Maison Veil Unisex Fragrance Fresh Fragrance Fruity Fragrance Woody Fragrance Aromatic Fragrance Luxury Perfume Niche Fragrance Citrus Perfume Tropical Fragrance Hibiscus Fragrance Fresh Woody Perfume Eau de Parfum, Maison veil, Oud",true,Size,30ml,,,,,,,,,0.0,shopify,96,deny,manual,68.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Reckoning.png?v=1787235332,1,"",false,,,,,,,,bottle,velours-osmanthus-for-a-more-french-luxury-feel-apricot-osmanthus-petals-soft-tea-and-white-musk-elegant-airy-and-sophisticated,,,,fresh; fruity; woody,,spray,,,,,,,,lb,,,active
+kola-azur-eau-de-parfum-fragcon-bestseller,,,,,,,,,10ml,,,,,,,,,0.0,shopify,96,deny,manual,20.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+kola-azur-eau-de-parfum-fragcon-bestseller,,,,,,,,,15ml,,,,,,,,,0.0,shopify,50,deny,manual,0.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+kola-azur-eau-de-parfum-fragcon-bestseller,,,,,,,,,50ml,,,,,,,,,0.0,shopify,100,deny,manual,104.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+kola-azur-eau-de-parfum-fragcon-bestseller,,,,,,,,,100ml,,,,,,,,,0.0,shopify,100,deny,manual,135.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+pistache-nuage,Pistache Nuage - FragCon 2026 Best Seller,"<p><span>Pistache Nuage</span></p>
+<p><span>FragCon 2026 Best Seller</span></p>
+<p><span>Soft. Creamy. Addictive.</span></p>
+<p><span>Pistache Nuage wraps the skin in an airy veil of pistachio cream, delicate florals, soft vanilla and smooth musk. Sweet without becoming heavy, this is the kind of fragrance that makes people lean closer, ask what you’re wearing — and come back for another spray.</span></p>
+<p><span>At FragCon 2026, Pistache Nuage quickly became one of Maison Veil’s most talked-about fragrances, with guests returning again and again to experience it.</span></p>
+<p><span>Scent Profile</span></p>
+<p><span>Gourmand • Creamy • Musky • Soft Floral</span></p>
+<p><span>Fragrance Notes</span></p>
+<p><span>Top:</span><span> Creamy Pistachio, Soft Pear Nuance</span><span><br> </span><span>Heart:</span><span> Airy White Florals, Powdered Petals</span><span><br> </span><span>Base:</span><span> Vanilla Crème, Caramelized Warmth, White Musk</span></p>
+<p><span>The Experience</span></p>
+<p><span>Imagine a cloud of whipped pistachio cream floating over soft petals, warm vanilla and clean skin musk.</span></p>
+<p><span>Pistache Nuage is decadent, but never overpowering. Feminine, inviting and effortlessly luxurious, it leaves behind a soft gourmand trail that feels both comforting and incredibly polished.</span></p>
+<p><span>You’ll Love Pistache Nuage If You Love</span></p>
+<p><span>Creamy gourmands, pistachio fragrances, soft vanilla, skin musks and fragrances that smell delicious while still feeling refined.</span></p>
+<p><span>Maison Veil Favorite:</span><span> The fragrance guests kept coming back for at FragCon 2026.</span></p>
+<p><span>Wear:</span><span> Day or Night</span><span><br> </span><span>Season:</span><span> Year-Round</span><span><br> </span><span>Vibe:</span><span> Soft Luxury • Addictive • Feminine • Elevated Gourmand</span></p>
+<p><span>Add Pistache Nuage to your fragrance wardrobe and discover the Maison Veil scent that had Houston coming back for another spray.</span></p>
+<p> </p>
+<p><span>Sweet without feeling childish. Creamy without becoming heavy. </span><span>Pistache Nuage wears like a luxurious pistachio cloud against the skin.</span></p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,"","Bestseller, Floral Perfume, Maison veil, Niche Perfume, Unisex Perfume",true,Size,10-ml,product.metafields.shopify.size,,,,,,,,0.0,shopify,95,deny,manual,28.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Pistache_Nuage.png?v=1786928459,1,"",false,,,,,clear,,,bottle,vanilla,,glass,,gourmand; floral,,spray,,,10-ml; 15-ml; 20-ml; 30-ml; 50-ml; 100-ml,,,,,lb,,,active
+pistache-nuage,,,,,,,,,15-ml,,,,,,,,,0.0,shopify,98,deny,manual,38.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+pistache-nuage,,,,,,,,,20-ml,,,,,,,,,0.0,shopify,49,deny,manual,30.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+pistache-nuage,,,,,,,,,30-ml,,,,,,,,,2267.96185,shopify,95,deny,manual,68.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+pistache-nuage,,,,,,,,,50-ml,,,,,,,,,0.0,shopify,100,deny,manual,104.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+pistache-nuage,,,,,,,,,100-ml,,,,,,,,,0.0,shopify,100,deny,manual,135.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+untitled-jul15_19-40-22,Untitled Jul15_19:40:22,,Maison Veil ,,"","",false,Title,Default Title,,,,,,,,,0.0,shopify,0,deny,manual,0.00,,true,true,,,,,"",,,,false,,,,,,,,,,,,,,,,,,,,,,,lb,,,draft
+untitled-jul9_10-53-14,Untitled Jul9_10:53:14,<p>Isla Doree </p>,Maison Veil ,Health & Beauty,"","",false,Title,Default Title,,,,,,,,,0.0,shopify,0,deny,manual,0.00,,true,true,,,,,"",,,,false,,,,,,,,,,,,,,,,,,,,,,,lb,,,draft
+rouge-tropique-veil,Rouge Tropique Veil,"<p><strong>Rouge Tropique Veil </strong></p>
+<p><strong>A radiant escape wrapped in luxury.</strong></p>
+<p> </p>
+<p><strong>Rouge Tropique Veil opens with luscious strawberry and sun-ripened pear, creating an irresistibly juicy first impression. At its heart, delicate osmanthus blooms with soft apricot-like petals, adding a sophisticated floral glow. The fragrance settles into a luminous veil of warm ambered woods and airy musk, leaving behind an addictive trail that feels both elegant and unforgettable.</strong></p>
+<p> </p>
+<p><strong>Bright, feminine, and effortlessly captivating, Rouge Tropique Veil captures the feeling of golden sunlight on warm skin, tropical fruit orchards in bloom, and the confidence of a woman who leaves a lasting impression wherever she goes.</strong></p>
+<p> </p>
+<p><strong>Fragrance Family: Fruity Floral Amber<br> Notes: Strawberry • Pear • Osmanthus • Amber Woods • Soft Musk<br> Mood: Radiant • Feminine • Luxurious • Magnetic<br> Perfect For: Brunch dates, vacations, weddings, special occasions, and everyday elegance</strong></p>
+<p> </p>
+<p><strong>“A tropical glow kissed by luxury and wrapped in a veil of unforgettable beauty.” — Maison Veil®</strong></p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Size,10ml,,,,,,,,,100.0,shopify,100,deny,manual,35.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Aurora_Bloom.png?v=1788482965,1,"",false,Rouge Tropique Veil | Maison Veil,"A radiant blend of juicy strawberry, ripe pear, luminous osmanthus, and warm amber woods. Bright, feminine, luxurious, and unforgettable.",,,,,,,,,,special-occasion,,,,veil-of-fire-fragrance-notes-top-notes-radiant-tropical-fruits-juicy-mango-bright-citrus-spark-heart-notes-lush-rose-soft-white-florals-sun-warmed-sweetness-base-notes-golden-amber-smooth-vanilla-warm-woods; floral,fall; spring; summer; winter,,,,,,g,,,active
+rouge-tropique-veil,,,,,,,,,30ml,,,,,,,,,100.0,shopify,99,deny,manual,68.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+rouge-tropique-veil,,,,,,,,,50ml,,,,,,,,,100.0,shopify,99,deny,manual,104.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+rouge-tropique-veil,,,,,,,,,100ml,,,,,,,,,100.0,shopify,100,deny,manual,135.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+maison-veil-signature-discovery-collection,Maison Veil Signature Discovery Collection,"<p data-pm-slice=""1 1 []""><span>Discover the essence of Maison Veil with our Signature Discovery Collection — a curated set of five 5ml fragrances featuring some of our most loved and requested scents.</span></p>
+<p><span>Designed for fragrance lovers, collectors, gifting, and first-time Maison Veil experiences, this collection invites you into a world of soft luxury, warm elegance, addictive musks, and unforgettable presence.</span></p>
+<p><span>Each set includes:</span></p>
+<p><span>• Noire Saffron Veil</span><br><span>A deep saffron amber with luxurious warmth and mystery.</span></p>
+<p><span>• Rose Suprême Veil</span><br><span>An elegant floral veil wrapped in soft sophistication.</span></p>
+<p><span>• Vanilla Coco Tux</span><br><span>Creamy vanilla, soft coconut, and smooth sensual warmth.</span></p>
+<p><span>• Blush Silk Veil</span><br><span>A feminine signature with airy sweetness and silky musk.</span></p>
+<p><span>• Pacifique Veil</span><br><span>A fresh, clean luxury scent with effortless elegance.</span></p>
+<p data-pm-slice=""1 1 []""><span>DETAILS</span><br><span>• 5 luxury fragrance sprays</span><br><span>• 5ml each</span><br><span>• Perfect for layering, travel, gifting, and discovering your signature scent</span><br><span>• Unisex collection</span><br><span>• Made in Houston, Texas</span></p>
+<p><span>LIMITED QUANTITIES AVAILABLE.</span></p>
+<p> </p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Perfume Sample & Discovery Sets,Perfume,"Discovery Set, Floral Perfume, Fragrance Sampler, Houston Perfume Brand, Luxury Fragrance, Maison Veil, Niche Perfume, Perfume Gift Set, Travel Spray, Unisex Perfume, Vanilla Perfume",true,Title,Default Title,,,,,,,,'1001,0.0,shopify,24,deny,manual,45.00,55.00,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/2ADFB90E-4116-4713-BA75-76C549503858.png?v=1783001488,1,"",false,Maison Veil Signature Discovery Collection | Luxury 5ml Fragrance Set,,adults,,,,,spray,veil-of-fire-fragrance-notes-top-notes-radiant-tropical-fruits-juicy-mango-bright-citrus-spark-heart-notes-lush-rose-soft-white-florals-sun-warmed-sweetness-base-notes-golden-amber-smooth-vanilla-warm-woods; floral; vanilla,gift-box,glass,special-occasion,floral,,spray,,,,,unisex,,,lb,,55.00,active
+maison-veil-signature-discovery-collection,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/78FD66CB-7C1F-4CD2-AFEA-52F5ECE5549D.png?v=1779888270,2,"",,,,,,,,,,,,,,,,,,,,,,,,,,,
+oud-incendiare-veil,Oud Incendiare Veil,"<p><strong>Oud Incendiare Veil </strong></p>
+<p><strong>Smoky. Addictive. Untamed Luxury.</strong></p>
+<p> </p>
+<ul data-start=""1493"" data-end=""1575"">
+<li data-start=""1493"" data-end=""1510"">
+<p><strong>Oud Incendiare Veil is a commanding couture fragrance crafted for the person who enters quietly yet leaves an unforgettable impression. Rich oud woods collide with glowing spice, warm vanilla, dark amber, and seductive smoke to create a scent that feels powerful, expensive, and dangerously addictive.</strong></p>
+<p><strong>The opening ignites with a bold rush of fiery warmth and radiant spice — instantly magnetic, smooth, and attention-grabbing without feeling harsh. As it settles onto the skin, creamy woods and velvety vanilla begin to unfold, wrapping the fragrance in a luxurious heat that feels both sensual and refined.</strong></p>
+<p><strong>At the heart of the fragrance lies a dark elegance: smoky oud, ambered sweetness, and soft resinous depth melting together into a rich, slow-burning aura. The dry-down is smooth, lingering, and deeply intoxicating — the kind of scent trail people remember long after you leave the room.</strong></p>
+<p><strong>Oud Incendiare Veil balances strength with sophistication, making it equally seductive for evening wear, luxury events, intimate dinners, and signature everyday power dressing. It carries the energy of a niche fragrance house — bold, expensive, mysterious, and effortlessly magnetic.</strong></p>
+<p><strong>Vibe</strong></p>
+<ul>
+<li><strong>Velvet smoke curling through a luxury suite</strong></li>
+<li><strong>Midnight in Dubai energy</strong></li>
+<li><strong>Designer black outfit + gold jewelry</strong></li>
+<li><strong>Soft leather seats, candlelight, and expensive silence</strong></li>
+<li><strong>Confident. Seductive. Elite. Addictive.</strong></li>
+</ul>
+<p><strong>Fragrance Aura</strong></p>
+<p><strong>Smoky Woods • Warm Vanilla • Dark Amber • Spiced Oud • Addictive Skin Musk</strong></p>
+<p><strong>Perfect For</strong></p>
+<p><strong>Luxury evenings • Date nights • VIP events • Signature scent lovers • Lovers of bold niche fragrances</strong></p>
+<p><strong>Mood</strong></p>
+<p><strong>Powerful yet smooth. Dark yet inviting. Smoky yet creamy. A fragrance designed to command attention without ever needing to ask for it.</strong></p>
+<p><strong>• Crafted By: Maison Veil — a luxury fragrance house known for modern, addictive compositions designed to elevate everyday moments.</strong></p>
+</li>
+</ul>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Size,10ml,,,,,,,,,100.0,shopify,100,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Muse_Imp_riale_109c447f-9e6c-4cb7-87ac-c1f5397b5f20.png?v=1779799261,1,"",false,Oud incendiare Veil  | Maison Veil,"A bold smoky oud wrapped in glowing spice, dark vanilla, and molten woods. Rich, seductive, and commanding with a luxurious trail that lingers like fire on skin.",,,,,,,,,,special-occasion,,,,veil-of-fire-fragrance-notes-top-notes-radiant-tropical-fruits-juicy-mango-bright-citrus-spark-heart-notes-lush-rose-soft-white-florals-sun-warmed-sweetness-base-notes-golden-amber-smooth-vanilla-warm-woods; floral,fall; spring; summer; winter,,,,,,g,,,active
+oud-incendiare-veil,,,,,,,,,30ml,,,,,,,,,100.0,shopify,97,deny,manual,35.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/6F4AFA17-792C-4916-8D20-65E7DC4E70BF.jpg?v=1779800095,2,"",,,,,,,,,,,,,,,,,,,,,,,,g,,,
+oud-incendiare-veil,,,,,,,,,50ml,,,,,,,,,100.0,shopify,99,deny,manual,50.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/C8FE7F5C-7D91-444D-AA74-3E5F73E20BE6.png?v=1779800095,3,"",,,,,,,,,,,,,,,,,,,,,,,,g,,,
+oud-incendiare-veil,,,,,,,,,100ml,,,,,,,,,100.0,shopify,100,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+gentlemen-s-collection,GENTLEMEN’S COLLECTION,"<p><span>The Gentleman’s Reserve by Maison Veil is a curated Father’s Day discovery experience featuring five luxury extrait fragrances crafted for the modern man. From smoky oud and rich leather to clean cardamom and amber woods, each scent is designed to leave a lasting impression.</span></p>
+<p><span>Includes:</span></p>
+<ul>
+<li><span>5 x 5ml extrait fragrances</span></li>
+<li><span>Luxury gift-ready packaging</span></li>
+<li><span>Limited Father’s Day edition card insert</span></li>
+</ul>
+<p><span>Perfect for gifting, travel, layering, and discovering your signature Maison Veil scent.</span></p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Perfume Sample & Discovery Sets,"","",true,Title,Default Title,,,,,,,,,1360.77711,shopify,47,deny,manual,65.00,75.00,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/PHOTO-2026-05-25-15-14-47.jpg?v=1779740551,1,"",false,Maison Veil Gentleman’s Reserve | Father’s Day Discovery Set,Explore Maison Veil’s Gentleman’s Reserve — a luxury Father’s Day discovery set featuring five extrait fragrances for the modern man.,adults,,,,,,spicy; veil-of-fire-fragrance-notes-top-notes-radiant-tropical-fruits-juicy-mango-bright-citrus-spark-heart-notes-lush-rose-soft-white-florals-sun-warmed-sweetness-base-notes-golden-amber-smooth-vanilla-warm-woods,,glass,special-occasion,,,oil,,summer,,,,,,lb,,65.00,active
+untitled-may13_16-07,Untitled May13_16:07,,Maison Veil ,,"","",false,Title,Default Title,,,,,,,,,0.0,shopify,0,deny,manual,0.00,,true,true,,,,,"",,,,false,,,,,,,,,,,,,,,,,,,,,,,lb,,,draft
+vanilla-coco-glow-shimmer-oil,Vanilla Coco Glow — Shimmer Oil,"<p><span>A golden veil of warmth, glow, and soft luxury.</span></p>
+<p><span>Vanilla Coco Glow is Maison Veil’s luminous body oil designed to leave the skin radiant, silky, and unforgettable. Infused with shimmering golden glow and wrapped in creamy vanilla coconut warmth, this couture body oil melts effortlessly into the skin while leaving behind an addictive scent trail.</span></p>
+<p><span>Think sunlit skin, soft cashmere, warm vacations, and compliments that linger.</span></p>
+<p><span>Perfect for:</span></p>
+<ul>
+<li><span>everyday luxury</span></li>
+<li><span>date nights</span></li>
+<li><span>vacations</span></li>
+<li><span>bridal glow</span></li>
+<li><span>layering with your favorite perfumes</span></li>
+</ul>
+<p><span>Scent Profile:</span><span><br> </span><span>Creamy vanilla • soft coconut • warm tonka • skin musk</span></p>
+<p><span>Finish:</span><span><br> </span><span>Illuminating shimmer glow</span></p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Skin Care > Body Oil,Luxury Shimmer Body Oil,"Coconut vanilla, Glowing skin, Luxury body oil, Maison veil, Perfume body oil, Shimmer oil, Tropical vanilla, Vanilla body oil",true,Title,Default Title,,,,,,,,,0.0,shopify,30,deny,manual,68.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/D2064D10-6AC1-4A9F-A70D-FF34C9EB550C.png?v=1778701581,1,"",false,Vanilla Coco Glow | Luxury Shimmer Body Oil – Maison Veil,,adults,full-body,,shimmer,soothing; glowing-enhancing,,vanilla,,glass,,,bottle,oil,,,,moisturizing,,silky,,lb,,68.00,active
+mother-s-day-discovery-box,Mother’s Day Discovery Box,"<p>Celebrate her with the Maison Veil Mother’s Day Discovery Box — a limited edition luxury fragrance experience featuring 5 signature scents curated to embody softness, elegance, femininity, and timeless beauty.</p>
+<p>Each box includes:<br>• 5 luxury fragrance samples (5 ml each) <br>• Elegant Mother’s Day packaging <br>• Signature Maison Veil insert cards <br>• Ready-to-gift presentation</p>
+<p>Featured scents:<br>• Blush Silk Veil <br>• Fraise Impériale <br>• Pistachio Rose Crème Brûlée <br>• Rosé Éclat Impériale <br>• Vanilla Coco Tux</p>
+<p>Perfect for mothers, wives, sisters, friends, or the woman who deserves something unforgettable.</p>
+<p>Limited quantities available for Mother’s Day.</p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,"","",true,Title,Default Title,,,,,,,,,0.0,shopify,36,deny,manual,45.00,55.00,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/BF0E60B5-60C9-4637-9289-06601C947106.png?v=1778253922,1,"",false,Maison Veil Mother’s Day Discovery Box | Limited Edition,,,,,,,,,,,,,,,,,,,,,,lb,,45.00,active
+muse-imperiale,Muse Impériale,"<p><strong>Muse Impériale<span class=""Apple-converted-space""> </span></strong></p>
+<p data-start=""249"" data-end=""283""><strong data-start=""249"" data-end=""283"">Bold. Luminous. Unforgettable.</strong></p>
+<p><span>Muse Impériale is a modern, feminine fragrance that balances sweetness with a striking edge. It opens with luminous fruity brightness before unfolding into velvety florals that feel soft, radiant, and effortlessly elegant.</span></p>
+<p> </p>
+<p><span>As the scent develops, creamy warmth and subtle woods emerge, creating a smooth, addictive dry-down that lingers beautifully on the skin. The result is a fragrance that feels both delicate and confident — playful yet refined.</span></p>
+<p> </p>
+<p><span>Designed for the woman who commands attention without trying, Muse Impériale is the perfect blend of softness and strength.</span></p>
+<hr data-start=""925"" data-end=""928"">
+<h3 data-start=""930"" data-end=""957""> <strong data-start=""936"" data-end=""957"">Fragrance Profile</strong>
+</h3>
+<ul data-start=""958"" data-end=""1102"">
+<li data-start=""958"" data-end=""992"">
+<p><span>Top Notes:</span><span> luminous fruits, sparkling citrus, pink spice</span></p>
+<p><span>Heart Notes:</span><span> velvety florals, soft petals, creamy blossoms</span></p>
+<p><span>Base Notes:</span><span> warm woods, smooth musk, golden sweetness</span></p>
+</li>
+</ul>
+<hr data-start=""1104"" data-end=""1107"">
+<h3 data-start=""1109"" data-end=""1128"">🖤 <strong data-start=""1116"" data-end=""1128"">The Vibe</strong>
+</h3>
+<h3 data-start=""1109"" data-end=""1128"">Radiant • Feminine • Addictive • Modern Luxury</h3>
+<ul data-start=""1129"" data-end=""1258"">
+<li data-start=""1129"" data-end=""1150"">
+<p> </p>
+<p><span>Perfect for everyday elegance, special occasions, and signature scent moments.</span></p>
+</li>
+</ul>
+<hr data-start=""1260"" data-end=""1263"">
+<h3 data-start=""1265"" data-end=""1294""> <strong data-start=""1272"" data-end=""1294"">Why You’ll Love It</strong>
+</h3>
+<ul data-start=""1295"" data-end=""1467"">
+<li data-start=""1295"" data-end=""1326"">
+<p><span>• Perfect balance of sweet and spicy – a luminous fruity opening softened by velvety florals and finished with warm, addictive depth.</span></p>
+<p> </p>
+<p><span>• Modern feminine luxury – elegant, smooth, and effortlessly captivating without feeling overpowering.</span></p>
+<p> </p>
+<p><span>• Long-lasting and memorable – designed to linger beautifully on the skin and leave a subtle, sophisticated trail.</span></p>
+<p> </p>
+<p><span>• Versatile signature scent – perfect for everyday wear, special occasions, and moments when you want to feel confident and radiant.</span></p>
+<p> </p>
+<p style=""text-align: left;""><span>• Layering friendly – pairs beautifully with Maison Veil body oils for an even richer scent experience.</span></p>
+</li>
+</ul>
+<hr data-start=""1469"" data-end=""1472"">
+<h3 data-start=""1474"" data-end=""1492""> <strong data-start=""1481"" data-end=""1492"">Details</strong>
+</h3>
+<ul data-start=""1493"" data-end=""1575"">
+<li data-start=""1493"" data-end=""1510"">
+<p><strong>• Fragrance Family: Fruity Floral Woods</strong></p>
+<p> </p>
+<p><strong>• Scent Profile: Bright fruits, velvety florals, and warm creamy woods</strong></p>
+<p> </p>
+<p><strong>• Longevity: Long-lasting Eau de Parfum designed to linger beautifully on the skin</strong></p>
+<p> </p>
+<p><strong>• Projection: Soft to moderate — noticeable yet elegant</strong></p>
+<p> </p>
+<p><strong>• Best For: Everyday luxury, special occasions, bridal events, and signature scent lovers</strong></p>
+<p> </p>
+<p><strong>• Season: Perfect year-round, especially beautiful in spring, summer, and early fall</strong></p>
+<p> </p>
+<p><strong>• Layering Tip: Enhance longevity by pairing with Maison Veil body oils for a richer, more immersive scent experience</strong></p>
+<p> </p>
+<p><strong>• Crafted By: Maison Veil — a luxury fragrance house known for modern, addictive compositions designed to elevate everyday moments.</strong></p>
+</li>
+</ul>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Size,10ml,,,,,,,,,100.0,shopify,99,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Aurora_Bloom.png?v=1788482965,1,"",false,Veil of Fire | Maison Veil,"Veil of Fire by Maison Veil is a bold, luminous fragrance blending radiant tropical fruits, soft florals, and warm ambered woods for a confident, unforgettable scent experience. Amber • Vanilla • Warm Woods",,,,,,,,,,special-occasion,,,,veil-of-fire-fragrance-notes-top-notes-radiant-tropical-fruits-juicy-mango-bright-citrus-spark-heart-notes-lush-rose-soft-white-florals-sun-warmed-sweetness-base-notes-golden-amber-smooth-vanilla-warm-woods; floral,fall; spring; summer; winter,,,,,,g,,,active
+muse-imperiale,,,,,,,,,30ml,,,,,,,,,100.0,shopify,99,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+muse-imperiale,,,,,,,,,50ml,,,,,,,,,100.0,shopify,100,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+muse-imperiale,,,,,,,,,100ml,,,,,,,,,100.0,shopify,100,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+coco-vanille-tux-body-oil,Coco Vanille Tux Body Oil,"<h2 data-start=""225"" data-end=""247"">COc Vanille Tux </h2>
+<p><span>MAISON VEIL</span></p>
+<p> </p>
+<p><span>Coco Vanille Tux Body Oil</span></p>
+<p> </p>
+<p><span>A decadent blend of creamy vanilla, coconut silk, and warm tonka with a sophisticated tuxedo finish. Designed to melt into the skin for a luminous glow and irresistible scent.</span></p>
+<p> </p>
+<p><span>Directions: Apply to damp skin after shower.</span></p>
+<p> </p>
+<p><span>Ingredients: Sweet Almond Oil, Jojoba Oil, Fractionated Coconut Oil, Vitamin E, Fragrance.</span></p>
+<hr data-start=""925"" data-end=""928"">
+<h3 data-start=""930"" data-end=""957""> <strong data-start=""936"" data-end=""957"">Fragrance Profile</strong>
+</h3>
+<ul data-start=""958"" data-end=""1102"">
+<li data-start=""958"" data-end=""992"">
+<p data-start=""960"" data-end=""992""><strong data-start=""960"" data-end=""968"">Top:</strong> Radiant fruity warmth</p>
+</li>
+<li data-start=""993"" data-end=""1039"">
+<p data-start=""995"" data-end=""1039""><strong data-start=""995"" data-end=""1005"">Heart:</strong> Soft florals with glowing depth</p>
+</li>
+<li data-start=""1040"" data-end=""1102"">
+<p data-start=""1042"" data-end=""1102""><strong data-start=""1042"" data-end=""1051"">Base:</strong> Ambered woods, smooth, sensual, and long-lasting</p>
+</li>
+</ul>
+<hr data-start=""1104"" data-end=""1107"">
+<h3 data-start=""1109"" data-end=""1128"">🖤 <strong data-start=""1116"" data-end=""1128"">The Vibe</strong>
+</h3>
+<ul data-start=""1129"" data-end=""1258"">
+<li data-start=""1129"" data-end=""1150"">
+<p data-start=""1131"" data-end=""1150"">Fiery yet elegant</p>
+</li>
+<li data-start=""1151"" data-end=""1187"">
+<p data-start=""1153"" data-end=""1187"">Confident, luminous, and sensual</p>
+</li>
+<li data-start=""1188"" data-end=""1258"">
+<p data-start=""1190"" data-end=""1258"">Perfect for evening wear, special occasions, and signature moments</p>
+</li>
+</ul>
+<hr data-start=""1260"" data-end=""1263"">
+<h3 data-start=""1265"" data-end=""1294""> <strong data-start=""1272"" data-end=""1294"">Why You’ll Love It</strong>
+</h3>
+<ul data-start=""1295"" data-end=""1467"">
+<li data-start=""1295"" data-end=""1326"">
+<p data-start=""1297"" data-end=""1326"">Warm, addictive scent trail</p>
+</li>
+<li data-start=""1327"" data-end=""1370"">
+<p data-start=""1329"" data-end=""1370"">Compliment-drawing without overpowering</p>
+</li>
+<li data-start=""1371"" data-end=""1403"">
+<p data-start=""1373"" data-end=""1403"">Luxurious on skin and fabric</p>
+</li>
+<li data-start=""1404"" data-end=""1467"">
+<p data-start=""1406"" data-end=""1467"">Designed to evolve beautifully throughout the day and night</p>
+</li>
+</ul>
+<hr data-start=""1469"" data-end=""1472"">
+<h3 data-start=""1474"" data-end=""1492""> <strong data-start=""1481"" data-end=""1492"">Details</strong>
+</h3>
+<ul data-start=""1493"" data-end=""1575"">
+<li data-start=""1493"" data-end=""1510"">
+<p data-start=""1495"" data-end=""1510"">Eau de Parfum</p>
+</li>
+<li data-start=""1511"" data-end=""1532"">
+<p data-start=""1513"" data-end=""1532"">Long-lasting wear</p>
+</li>
+<li data-start=""1533"" data-end=""1543"">
+<p data-start=""1535"" data-end=""1543"">Unisex</p>
+</li>
+<li data-start=""1544"" data-end=""1575"">
+<p data-start=""1546"" data-end=""1575"">Hand-blended by Maison Veil</p>
+</li>
+</ul>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Body oil,"",true,Size,2,,,,,,,,,100.0,shopify,98,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Isla_Dor_e.png?v=1788490059,1,"",false,Veil of Fire | Maison Veil,"Veil of Fire by Maison Veil is a bold, luminous fragrance blending radiant tropical fruits, soft florals, and warm ambered woods for a confident, unforgettable scent experience. Amber • Vanilla • Warm Woods",,,,,,,,,,special-occasion,,,,veil-of-fire-fragrance-notes-top-notes-radiant-tropical-fruits-juicy-mango-bright-citrus-spark-heart-notes-lush-rose-soft-white-florals-sun-warmed-sweetness-base-notes-golden-amber-smooth-vanilla-warm-woods,fall; spring; summer; winter,,,,,,g,,,active
+coco-vanille-tux-body-oil,,,,,,,,,30ml,,,,,,,,,100.0,shopify,98,deny,manual,55.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+coco-vanille-tux-body-oil,,,,,,,,,50ml,,,,,,,,,100.0,shopify,100,deny,manual,75.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+coco-vanille-tux-body-oil,,,,,,,,,100ml,,,,,,,,,100.0,shopify,99,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+veil-of-fire,Veil Of Fire,"<h2 data-start=""225"" data-end=""247""> <strong data-start=""231"" data-end=""247"">Veil of Fire</strong>
+</h2>
+<p data-start=""249"" data-end=""283""><strong data-start=""249"" data-end=""283"">Bold. Luminous. Unforgettable.</strong></p>
+<p data-start=""285"" data-end=""586"">Veil of Fire is a radiant expression of heat and elegance — a fragrance that ignites the senses from the first moment and lingers like glowing embers on skin. Juicy, sun-warmed fruits melt into a heart of soft florals, wrapped in golden amber and smooth woods that smolder long after the flame is lit.</p>
+<p data-start=""588"" data-end=""800"">This scent is confident and magnetic, balancing brightness with depth. It opens with an intoxicating burst of warmth and sweetness, then settles into a sensual, glowing trail that feels both powerful and refined.</p>
+<p data-start=""802"" data-end=""923"">Veil of Fire is not loud — it’s <strong data-start=""834"" data-end=""848"">commanding</strong>.<br data-start=""849"" data-end=""852"">A scent for those who lead with presence, passion, and quiet intensity.</p>
+<hr data-start=""925"" data-end=""928"">
+<h3 data-start=""930"" data-end=""957""> <strong data-start=""936"" data-end=""957"">Fragrance Profile</strong>
+</h3>
+<ul data-start=""958"" data-end=""1102"">
+<li data-start=""958"" data-end=""992"">
+<p data-start=""960"" data-end=""992""><strong data-start=""960"" data-end=""968"">Top:</strong> Radiant fruity warmth</p>
+</li>
+<li data-start=""993"" data-end=""1039"">
+<p data-start=""995"" data-end=""1039""><strong data-start=""995"" data-end=""1005"">Heart:</strong> Soft florals with glowing depth</p>
+</li>
+<li data-start=""1040"" data-end=""1102"">
+<p data-start=""1042"" data-end=""1102""><strong data-start=""1042"" data-end=""1051"">Base:</strong> Ambered woods, smooth, sensual, and long-lasting</p>
+</li>
+</ul>
+<hr data-start=""1104"" data-end=""1107"">
+<h3 data-start=""1109"" data-end=""1128"">🖤 <strong data-start=""1116"" data-end=""1128"">The Vibe</strong>
+</h3>
+<ul data-start=""1129"" data-end=""1258"">
+<li data-start=""1129"" data-end=""1150"">
+<p data-start=""1131"" data-end=""1150"">Fiery yet elegant</p>
+</li>
+<li data-start=""1151"" data-end=""1187"">
+<p data-start=""1153"" data-end=""1187"">Confident, luminous, and sensual</p>
+</li>
+<li data-start=""1188"" data-end=""1258"">
+<p data-start=""1190"" data-end=""1258"">Perfect for evening wear, special occasions, and signature moments</p>
+</li>
+</ul>
+<hr data-start=""1260"" data-end=""1263"">
+<h3 data-start=""1265"" data-end=""1294""> <strong data-start=""1272"" data-end=""1294"">Why You’ll Love It</strong>
+</h3>
+<ul data-start=""1295"" data-end=""1467"">
+<li data-start=""1295"" data-end=""1326"">
+<p data-start=""1297"" data-end=""1326"">Warm, addictive scent trail</p>
+</li>
+<li data-start=""1327"" data-end=""1370"">
+<p data-start=""1329"" data-end=""1370"">Compliment-drawing without overpowering</p>
+</li>
+<li data-start=""1371"" data-end=""1403"">
+<p data-start=""1373"" data-end=""1403"">Luxurious on skin and fabric</p>
+</li>
+<li data-start=""1404"" data-end=""1467"">
+<p data-start=""1406"" data-end=""1467"">Designed to evolve beautifully throughout the day and night</p>
+</li>
+</ul>
+<hr data-start=""1469"" data-end=""1472"">
+<h3 data-start=""1474"" data-end=""1492""> <strong data-start=""1481"" data-end=""1492"">Details</strong>
+</h3>
+<ul data-start=""1493"" data-end=""1575"">
+<li data-start=""1493"" data-end=""1510"">
+<p data-start=""1495"" data-end=""1510"">Eau de Parfum</p>
+</li>
+<li data-start=""1511"" data-end=""1532"">
+<p data-start=""1513"" data-end=""1532"">Long-lasting wear</p>
+</li>
+<li data-start=""1533"" data-end=""1543"">
+<p data-start=""1535"" data-end=""1543"">Unisex</p>
+</li>
+<li data-start=""1544"" data-end=""1575"">
+<p data-start=""1546"" data-end=""1575"">Hand-blended by Maison Veil</p>
+</li>
+</ul>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Size,10ml,,,,,,,,,100.0,shopify,100,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Aurora_Bloom.png?v=1788482965,1,"",false,Veil of Fire | Maison Veil,"Veil of Fire by Maison Veil is a bold, luminous fragrance blending radiant tropical fruits, soft florals, and warm ambered woods for a confident, unforgettable scent experience. Amber • Vanilla • Warm Woods",,,,,,,,,,special-occasion,,,,veil-of-fire-fragrance-notes-top-notes-radiant-tropical-fruits-juicy-mango-bright-citrus-spark-heart-notes-lush-rose-soft-white-florals-sun-warmed-sweetness-base-notes-golden-amber-smooth-vanilla-warm-woods,fall; spring; summer; winter,,,,,,g,,,active
+veil-of-fire,,,,,,,,,30ml,,,,,,,,,100.0,shopify,98,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+veil-of-fire,,,,,,,,,50ml,,,,,,,,,100.0,shopify,100,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+veil-of-fire,,,,,,,,,100ml,,,,,,,,,100.0,shopify,100,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+pistachio-rose-creme-brulee,Pistachio Rose Crème Brûlée,"<p><span>Pistachio Rose Crème Brûlée is a sensual gourmand-floral indulgence — where creamy pistachio custard melts into caramelized vanilla sugar and silky rose petals.</span></p>
+<p> </p>
+<p><span>The opening glows with toasted pistachio and soft sweetness, unfolding into a velvety heart of romantic rose and creamy florals. As it dries down, warm vanilla brûlée, ambered woods, and soft musk linger on the skin like a decadent dessert kissed by couture elegance.</span></p>
+<p> </p>
+<p><span>Seductive. Addictive. Unforgettable.</span></p>
+<p><span>This is dessert-gourmand luxury for fragrance lovers who crave creamy depth, feminine warmth, and compliment-magnet energy.</span></p>
+<p> </p>
+<p><span>Fragrance Family: Gourmand Floral</span></p>
+<p><span>Mood: Cozy-sexy, romantic, indulgent</span></p>
+<p><span>Best For: Date nights, evenings, cool weather, gourmand lovers</span></p>
+<p><span>Longevity: 8–12 hours</span></p>
+<p><span>Projection: Moderate to strong</span></p>
+<p> </p>
+<p><span>Handcrafted by Maison Veil in Houston, Texas.</span></p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"Floral Oud, shoptok, Signature Scent, Unisex",true,Volume,10ml,,,,,,,,,100.0,,0,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/IMG-4348.png?v=1768906472,1,"",false,Pistachio Rose Crème Brulee | Maison Veil,"Fragrance Profile
+
+Top Notes
+• Sweet pistachio cream
+• Burnt sugar accord
+• Soft almond-like warmth
+
+Heart Notes
+• Velvet rose petals
+• Whipped cream accord
+• Delicate floral nectar
+
+Base Notes
+• Vanilla custard
+• Golden amber
+• Soft musk
+• Caramelized woods
+",,,,,,,,,,,,,,,,,,,,,g,,,active
+pistachio-rose-creme-brulee,,,,,,,,,30ml,,,,,,,,,100.0,,-4,deny,manual,35.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/56088920-774F-4E40-B938-13200FAA06F8.png?v=1768965204,2,"",,,,,,,,,,,,,,,,,,,,,,,,g,,,
+pistachio-rose-creme-brulee,,,,,,,,,50ml,,,,,,,,,100.0,,0,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+pistachio-rose-creme-brulee,,,,,,,,,100ml,,,,,,,,,100.0,,-1,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+maison-veil-scent-plug-in,Maison Veil Scent Plug In,<p>Maison Veil Scent Plug In - covers 1000ft - includes 120 ml oil tank </p>,Maison Veil ,Home & Garden > Decor > Home Fragrances > Air Fresheners,"",shoptok,true,Color,white,product.metafields.shopify.color-pattern,Scent,couture-veil-a-delicate-veil-of-luminous-florals-and-soft-musk-that-effortlessly-elevates-any-room,product.metafields.shopify.scent,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/IMG-7369.png?v=1758311576,1,"",false,,,,,white; black,,,,,,,,,,,couture-veil-a-delicate-veil-of-luminous-florals-and-soft-musk-that-effortlessly-elevates-any-room; solar-eclat-radiant-citrus-and-blooming-florals-create-a-bright-sunlit-atmosphere; eclat-marine-fresh-marine-accords-and-smooth-woods-evoke-the-serenity-of-an-ocean-breeze; nocturne-royale-an-opulent-fusion-of-oud-woods-and-musk-designed-for-timeless-sophistication; velours-osmanthus-for-a-more-french-luxury-feel-apricot-osmanthus-petals-soft-tea-and-white-musk-elegant-airy-and-sophisticated,,,,,,,lb,,30.00,active
+maison-veil-scent-plug-in,,,,,,,,,black,,,couture-veil-a-delicate-veil-of-luminous-florals-and-soft-musk-that-effortlessly-elevates-any-room,,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,30.00,
+maison-veil-scent-plug-in,,,,,,,,,white,,,solar-eclat-radiant-citrus-and-blooming-florals-create-a-bright-sunlit-atmosphere,,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,30.00,
+maison-veil-scent-plug-in,,,,,,,,,white,,,eclat-marine-fresh-marine-accords-and-smooth-woods-evoke-the-serenity-of-an-ocean-breeze,,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,30.00,
+maison-veil-scent-plug-in,,,,,,,,,white,,,nocturne-royale-an-opulent-fusion-of-oud-woods-and-musk-designed-for-timeless-sophistication,,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,30.00,
+maison-veil-scent-plug-in,,,,,,,,,white,,,velours-osmanthus-for-a-more-french-luxury-feel-apricot-osmanthus-petals-soft-tea-and-white-musk-elegant-airy-and-sophisticated,,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,30.00,
+maison-veil-scent-plug-in,,,,,,,,,black,,,solar-eclat-radiant-citrus-and-blooming-florals-create-a-bright-sunlit-atmosphere,,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,30.00,
+maison-veil-scent-plug-in,,,,,,,,,black,,,eclat-marine-fresh-marine-accords-and-smooth-woods-evoke-the-serenity-of-an-ocean-breeze,,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,30.00,
+maison-veil-scent-plug-in,,,,,,,,,black,,,nocturne-royale-an-opulent-fusion-of-oud-woods-and-musk-designed-for-timeless-sophistication,,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,30.00,
+maison-veil-scent-plug-in,,,,,,,,,black,,,velours-osmanthus-for-a-more-french-luxury-feel-apricot-osmanthus-petals-soft-tea-and-white-musk-elegant-airy-and-sophisticated,,,,,,0.0,shopify,20,deny,manual,120.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,30.00,
+maison-veil-scent-tower,Maison Veil Scent Tower,<p>Maison Veil Scent Tower Diffuser includes 120 ml oil tank </p>,Maison Veil ,Home & Garden > Decor > Home Fragrance Accessories > Fragrance Diffusers > Electric Diffusers,"","",true,Maison Veil Scent Tower,White,,Scent,Couture Veil - A delicate veil of luminous florals and soft musk that effortlessly elevates any room.,,,,,,0.0,shopify,29,deny,manual,150.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/089ACC75-2348-4886-9F2F-4CAD5DDBDE8D.jpg?v=1756543506,1,"",false,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,active
+maison-veil-scent-tower,,,,,,,,,Black,,,Couture Veil - A delicate veil of luminous florals and soft musk that effortlessly elevates any room.,,,,,,0.0,shopify,20,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,Gold,,,Couture Veil - A delicate veil of luminous florals and soft musk that effortlessly elevates any room.,,,,,,0.0,shopify,15,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,White,,,"Solar Éclat Radiant citrus and blooming florals create a bright, sunlit atmosphere.",,,,,,0.0,shopify,50,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,Black,,,"Solar Éclat Radiant citrus and blooming florals create a bright, sunlit atmosphere.",,,,,,0.0,shopify,0,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,Gold,,,"Solar Éclat Radiant citrus and blooming florals create a bright, sunlit atmosphere.",,,,,,0.0,shopify,0,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,White,,,Éclat Marine Fresh marine accords and smooth woods evoke the serenity of an ocean breeze.,,,,,,0.0,shopify,50,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,Black,,,Éclat Marine Fresh marine accords and smooth woods evoke the serenity of an ocean breeze.,,,,,,0.0,shopify,0,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,Gold,,,Éclat Marine Fresh marine accords and smooth woods evoke the serenity of an ocean breeze.,,,,,,0.0,shopify,0,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,White,,,"Nocturne Royale An opulent fusion of oud, woods, and musk designed for timeless sophistication.",,,,,,0.0,shopify,50,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,Black,,,"Nocturne Royale An opulent fusion of oud, woods, and musk designed for timeless sophistication.",,,,,,0.0,shopify,0,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,Gold,,,"Nocturne Royale An opulent fusion of oud, woods, and musk designed for timeless sophistication.",,,,,,0.0,shopify,0,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,White,,,Velours Osmanthus for a more French luxury feel),,,,,,0.0,shopify,50,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,Black,,,Velours Osmanthus for a more French luxury feel),,,,,,0.0,shopify,0,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+maison-veil-scent-tower,,,,,,,,,Gold,,,Velours Osmanthus for a more French luxury feel),,,,,,0.0,shopify,0,deny,manual,150.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,50.00,
+untitled-aug30_13-44,Untitled Aug30_13:44,,Maison Veil ,,"","",false,Title,Default Title,,,,,,,,,0.0,shopify,0,deny,manual,0.00,,true,true,,,,,"",,,,false,,,,,,,,,,,,,,,,,,,,,,,lb,,,draft
+hibiscus-halo,Hibiscus Halo,"<p><span>Radiant florals intertwine with soft, juicy fruit and a gentle touch of musk, creating an airy, luminous scent that feels like sunlight on petals. Hibiscus Halo is a whisper of luxury, leaving an elegant trail of softness wherever you go.</span></p>
+<p><span>Vibe: Ethereal and feminine — like sun-drenched petals with a divine glow.</span></p>
+<p><span>Type: Floral-Fruity Musk</span></p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,"",shoptok,true,Volume,10ml,,,,,,,,,0.0,shopify,50,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/4F692553-1BB0-4189-915E-92AA842AF4E8.jpg?v=1754707816,1,"",false,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/4F692553-1BB0-4189-915E-92AA842AF4E8.jpg?v=1754707816,lb,,,active
+hibiscus-halo,,,,,,,,,30ml,,,,,,,,,0.0,shopify,50,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/4F692553-1BB0-4189-915E-92AA842AF4E8.jpg?v=1754707816,lb,,,
+hibiscus-halo,,,,,,,,,50ml,,,,,,,,,0.0,shopify,50,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/4F692553-1BB0-4189-915E-92AA842AF4E8.jpg?v=1754707816,lb,,,
+hibiscus-halo,,,,,,,,,100ml,,,,,,,,,0.0,shopify,50,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/4F692553-1BB0-4189-915E-92AA842AF4E8.jpg?v=1754707816,lb,,,
+velvet-peach-flame,Velvet Peach Flame,"<p><span>Ripe, luscious peach meets the golden glow of sensual amber, resting on a silky, addictive base. Velvet Peach Flame wears like golden hour on your skin — warm, radiant, and impossible to forget.</span></p>
+<p> </p>
+<p><span>Vibe: Sultry, intoxicating, and flirtatious — a velvet peach drenched in golden warmth.</span></p>
+<p><span>Type: Fruity-Amber</span></p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,"","",true,Volume,10ml,,,,,,,,,0.0,shopify,2,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/EC18C303-3946-49B4-B8EA-8BEAE8FAEA58.jpg?v=1754707440,1,"",false,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/EC18C303-3946-49B4-B8EA-8BEAE8FAEA58.jpg?v=1754707440,lb,,,active
+velvet-peach-flame,,,,,,,,,30ml,,,,,,,,,0.0,shopify,1,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/EC18C303-3946-49B4-B8EA-8BEAE8FAEA58.jpg?v=1754707440,lb,,,
+velvet-peach-flame,,,,,,,,,50ml,,,,,,,,,0.0,shopify,1,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/EC18C303-3946-49B4-B8EA-8BEAE8FAEA58.jpg?v=1754707440,lb,,,
+velvet-peach-flame,,,,,,,,,100ml,,,,,,,,,0.0,shopify,2,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/EC18C303-3946-49B4-B8EA-8BEAE8FAEA58.jpg?v=1754707440,lb,,,
+silken-tux,Silken Tux,"<p><span>Silken Tux blends white florals, musk, and a touch of creamy suede to create an elevated scent that’s refined yet undeniably sensual. A signature for modern elegance</span></p>
+<p><span>Type: Powdery Floral-Musk</span></p>
+<p><span>Vibe: Soft power — clean, confident, and effortlessly alluring</span></p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,"","",true,Volume,10ml,,,,,,,,,0.0,shopify,1,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/03532B43-A6E3-46C7-A4A4-645106FBC33E.jpg?v=1754707286,1,"",false,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/03532B43-A6E3-46C7-A4A4-645106FBC33E.jpg?v=1754707286,lb,,,active
+silken-tux,,,,,,,,,30ml,,,,,,,,,0.0,shopify,0,deny,manual,35.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/31933EB3-7BF7-4B23-8320-469CF5DA8825.jpg?v=1754707053,2,"",,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/31933EB3-7BF7-4B23-8320-469CF5DA8825.jpg?v=1754707053,lb,,,
+silken-tux,,,,,,,,,50ml,,,,,,,,,0.0,shopify,2,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/03532B43-A6E3-46C7-A4A4-645106FBC33E.jpg?v=1754707286,lb,,,
+silken-tux,,,,,,,,,100ml,,,,,,,,,0.0,shopify,2,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/03532B43-A6E3-46C7-A4A4-645106FBC33E.jpg?v=1754707286,lb,,,
+grimson-smoke,Crimson Smoke,"<p><span>Grimsson commands attention with its fusion of smoldering woods, rich leather, and an undercurrent of warm spice. It’s a scent that speaks in quiet confidence, leaving an unmistakable imprint of strength and sophistication</span></p>
+<p><span>Type: Woody-Spiced Leather</span></p>
+<p><span>Vibe: Darkly magnetic — power wrapped in rugged elegance</span></p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,"","",true,Volume,10ml,,,,,,,,,0.0,shopify,2,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/779A75D3-7889-4764-979C-26A600F6C0E2.jpg?v=1754706824,1,"",false,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/779A75D3-7889-4764-979C-26A600F6C0E2.jpg?v=1754706824,lb,,,active
+grimson-smoke,,,,,,,,,30ml,,,,,,,,,0.0,shopify,2,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/779A75D3-7889-4764-979C-26A600F6C0E2.jpg?v=1754706824,lb,,,
+grimson-smoke,,,,,,,,,50ml,,,,,,,,,0.0,shopify,2,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/779A75D3-7889-4764-979C-26A600F6C0E2.jpg?v=1754706824,lb,,,
+grimson-smoke,,,,,,,,,100ml,,,,,,,,,0.0,shopify,2,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/779A75D3-7889-4764-979C-26A600F6C0E2.jpg?v=1754706824,lb,,,
+vanilla-coco-tux,Vanilla Coco Tux,"<p>Lush coconut cream and soft vanilla meet refined musk in this wearable gourmand dream. Vanilla Coco Tux is sweet, smooth, and irresistibly stylish.</p>
+<p><strong>Type</strong>: Gourmand Coconut-Musk</p>
+<p><strong>Vibe</strong>: Chic and delicious - tropical indulgence meets warm sophistication.</p>",Maison Veil ,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Volume,10ml,,,,,,,,,0.0,shopify,49,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/6F09B065-7856-4EF0-9453-C8EF195A29D9.jpg?v=1754628101,1,"",false,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/6F09B065-7856-4EF0-9453-C8EF195A29D9.jpg?v=1754628101,lb,,,active
+vanilla-coco-tux,,,,,,,,,30ml,,,,,,,,,0.0,shopify,50,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/6F09B065-7856-4EF0-9453-C8EF195A29D9.jpg?v=1754628101,lb,,,
+vanilla-coco-tux,,,,,,,,,50ml,,,,,,,,,0.0,shopify,50,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/6F09B065-7856-4EF0-9453-C8EF195A29D9.jpg?v=1754628101,lb,,,
+vanilla-coco-tux,,,,,,,,,100ml,,,,,,,,,0.0,shopify,50,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/6F09B065-7856-4EF0-9453-C8EF195A29D9.jpg?v=1754628101,lb,,,
+new-gift-card-20,New Gift Card - $20,"",Maison Veil,Apparel & Accessories > Clothing > Clothing Tops,Perfume,"",true,rate,20,,,,,,,,,100.0,,0,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_ec6eb95d-da16-45a0-9aac-46de138acfd4.png?v=1754084495,1,"",false,New Gift Card - $20 | Maison Veil,,,,,,,,,,,,,,,,,,,,,,g,,,active
+new-gift-card-20,,,,,,,,,50,,,,,,,,,100.0,,0,deny,manual,20.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+new-gift-card-20,,,,,,,,,100,,,,,,,,,100.0,,0,deny,manual,20.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+gift-card-20,Gift Card - $20,"",Maison Veil,Apparel & Accessories > Clothing > Clothing Tops,Perfume,"",true,rate,20,,,,,,,,,100.0,,0,deny,manual,20.00,,true,false,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_30534f8c-50a0-4ce1-b798-6b84d4a00d5a.png?v=1754084378,1,"",false,Gift Card - $20 | Maison Veil,,,,,,,,,,,,,,,,,,,,,,g,,,active
+gift-card-20,,,,,,,,,50,,,,,,,,,100.0,,0,deny,manual,20.00,,true,false,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+gift-card-20,,,,,,,,,100,,,,,,,,,100.0,,0,deny,manual,20.00,,true,false,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+eclipse-oud,Eclipse Oud,"<p>Bold and enigmatic, Eclipse Oud is a deep, smoldering fragrance that commands attention. Spiced cardamom and smoky black tea blend seamlessly into warm rosewood and opulent oud, creating a scent that is both powerful and alluring.</p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"Black Tea, Oud, Rosewood, Spiced Cardamom",true,Volume,10ml,,,,,,,,,100.0,shopify,100,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_2288ed85-d39a-402d-8734-c2ea4855de79.png?v=1754084315,1,"",false,Eclipse Oud | Maison Veil,"Spiced Cardamom, Rosewood, Black Tea, Oud",,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_2288ed85-d39a-402d-8734-c2ea4855de79.png?v=1754084315,g,,,active
+eclipse-oud,,,,,,,,,30ml,,,,,,,,,100.0,shopify,99,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_2288ed85-d39a-402d-8734-c2ea4855de79.png?v=1754084315,g,,,
+eclipse-oud,,,,,,,,,50ml,,,,,,,,,100.0,shopify,98,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_2288ed85-d39a-402d-8734-c2ea4855de79.png?v=1754084315,g,,,
+eclipse-oud,,,,,,,,,100ml,,,,,,,,,100.0,shopify,100,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_2288ed85-d39a-402d-8734-c2ea4855de79.png?v=1754084315,g,,,
+reverie-no-7,Reverie No. 7,"<p>A scent that feels like a daydream. Reverie No. 7 is a soft blend of French lavender and sweet almond blossom, kissed by fresh bergamot and warmed by creamy white woods. Tranquil, uplifting, and effortlessly elegant.</p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Volume,10ml,,,,,,,,,100.0,,0,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_a2c0dbfa-8b49-46be-846a-0261b621ebe1.png?v=1754084238,1,"",false,Reverie No. 7 | Maison Veil,"Lavender, Almond Blossom, Bergamot, White Woods",,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_a2c0dbfa-8b49-46be-846a-0261b621ebe1.png?v=1754084238,g,,,active
+reverie-no-7,,,,,,,,,30ml,,,,,,,,,100.0,,0,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_a2c0dbfa-8b49-46be-846a-0261b621ebe1.png?v=1754084238,g,,,
+reverie-no-7,,,,,,,,,50ml,,,,,,,,,100.0,,0,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_a2c0dbfa-8b49-46be-846a-0261b621ebe1.png?v=1754084238,g,,,
+reverie-no-7,,,,,,,,,100ml,,,,,,,,,100.0,,0,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_a2c0dbfa-8b49-46be-846a-0261b621ebe1.png?v=1754084238,g,,,
+crimson-smoke,Crimson Smoke,"<p>A seductive dance of fire and shadow. Crimson Smoke opens with bold cherry liqueur, fading into an intoxicating mix of incense and rich tobacco leaf. Sandalwood smooths the edges, making this scent dangerously addictive.</p>",Maison Veil,Apparel & Accessories > Clothing > Clothing Tops,Perfume,"Cherry Liqueur, Incense, Sandalwood, Tobacco Leaf",true,Size,10ml,,,,,,,,,100.0,shopify,100,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_3a6ea678-1f8c-4e45-92f4-15f0b0fd9262.png?v=1754084162,1,"",false,Crimson Smoke | Maison Veil,"Cherry Liqueur, Incense, Tobacco Leaf, Sandalwood",,,,,,,,,,,,,,,,,,,,,g,,20.00,active
+crimson-smoke,,,,,,,,,30ml,,,,,,,,,100.0,shopify,99,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,35.00,
+crimson-smoke,,,,,,,,,50ml,,,,,,,,,100.0,shopify,99,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,50.00,
+crimson-smoke,,,,,,,,,100ml,,,,,,,,,100.0,shopify,100,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,95.00,
+luna-drift,Luna Drift,"<p>Ethereal and otherworldly, Luna Drift is like moonlight on water. The creamy tuberose melts into fresh coconut water and a touch of sea salt, while white amber adds a soft glow. A scent for dreamers.</p>",Maison Veil,Uncategorized,Perfume,"",true,Volume,10ml,,,,,,,,,100.0,,0,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_b3e28e6e-4028-402e-b89e-fd0aaedbfefd.png?v=1754084128,1,"",false,Luna Drift | Maison Veil,"Tuberose, Coconut Water, White Amber, Sea Salt",,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_b3e28e6e-4028-402e-b89e-fd0aaedbfefd.png?v=1754084128,g,,,active
+luna-drift,,,,,,,,,30ml,,,,,,,,,100.0,,-1,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_b3e28e6e-4028-402e-b89e-fd0aaedbfefd.png?v=1754084128,g,,,
+luna-drift,,,,,,,,,50ml,,,,,,,,,100.0,,0,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_b3e28e6e-4028-402e-b89e-fd0aaedbfefd.png?v=1754084128,g,,,
+luna-drift,,,,,,,,,100ml,,,,,,,,,100.0,,0,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_b3e28e6e-4028-402e-b89e-fd0aaedbfefd.png?v=1754084128,g,,,
+noir-vanille,Noir Vanille,"<p>Decadent, sophisticated, and a little dangerous. Noir Vanille is a sultry mix of rich Madagascar vanilla, bittersweet dark chocolate, and smooth aged rum, deepened with smoky vetiver. A treat for the senses.</p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Volume,20ml,,,,,,,,,100.0,,-1,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_125e7501-7b52-423d-99ca-8644071a5d8f.png?v=1754084054,1,"",false,Noir Vanille | Maison Veil,"Madagascar Vanilla, Dark Chocolate, Rum, Vetiver",,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_125e7501-7b52-423d-99ca-8644071a5d8f.png?v=1754084054,g,,,active
+noir-vanille,,,,,,,,,30ml,,,,,,,,,100.0,,-2,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_125e7501-7b52-423d-99ca-8644071a5d8f.png?v=1754084054,g,,,
+noir-vanille,,,,,,,,,50ml,,,,,,,,,100.0,,0,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_125e7501-7b52-423d-99ca-8644071a5d8f.png?v=1754084054,g,,,
+noir-vanille,,,,,,,,,100ml,,,,,,,,,100.0,,0,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_125e7501-7b52-423d-99ca-8644071a5d8f.png?v=1754084054,g,,,
+ember-ivy,Ember & Ivy,"A walk through a hidden forest at dusk. Ember &amp; Ivy captures the cool freshness of green ivy blended with the smoky warmth of burning wood. Bergamot adds a crisp brightness, while cashmere musk wraps it all in softness.",Maison Veil,Uncategorized,Perfume,"",true,Volume,10ml,,,,,,,,,100.0,,-1,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_54194a60-cb47-49b1-93d2-cbe1d9ffbb10.png?v=1754083742,1,"",false,Ember & Ivy | Maison Veil,"Smoked Wood, Ivy Leaves, Bergamot, Cashmere Musk",,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_54194a60-cb47-49b1-93d2-cbe1d9ffbb10.png?v=1754083742,g,,,active
+ember-ivy,,,,,,,,,30ml,,,,,,,,,100.0,,-1,deny,manual,30.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_54194a60-cb47-49b1-93d2-cbe1d9ffbb10.png?v=1754083742,g,,,
+ember-ivy,,,,,,,,,50ml,,,,,,,,,100.0,,0,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_54194a60-cb47-49b1-93d2-cbe1d9ffbb10.png?v=1754083742,g,,,
+ember-ivy,,,,,,,,,100ml,,,,,,,,,100.0,,0,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_54194a60-cb47-49b1-93d2-cbe1d9ffbb10.png?v=1754083742,g,,,
+celestial-mist,Celestial Mist,"<p>A breath of fresh air infused with dreamy elegance. Celestial Mist is a soft aquatic floral with a crisp green tea note that uplifts the senses, while white musk keeps it light, airy, and celestial.</p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Volume,10ml,,,,,,,,,100.0,,-1,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_7529e6be-1d88-4adc-ab6e-0efdc6405193.png?v=1754084642,1,"",false,Celestial Mist | Maison Veil,"Blue Lotus, Fresh Ozone, Green Tea, White Musk",,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_7529e6be-1d88-4adc-ab6e-0efdc6405193.png?v=1754084642,g,,,active
+celestial-mist,,,,,,,,,30ml,,,,,,,,,100.0,,-1,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_7529e6be-1d88-4adc-ab6e-0efdc6405193.png?v=1754084642,g,,,
+celestial-mist,,,,,,,,,50ml,,,,,,,,,100.0,,0,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_7529e6be-1d88-4adc-ab6e-0efdc6405193.png?v=1754084642,g,,,
+celestial-mist,,,,,,,,,100ml,,,,,,,,,100.0,,0,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_7529e6be-1d88-4adc-ab6e-0efdc6405193.png?v=1754084642,g,,,
+golden-solstice,Golden Solstice,"<p>A sun-kissed glow bottled in liquid gold. Golden Solstice is a luminous blend of sweet honey and neroli, softened by jasmine and wrapped in warm amber. Perfect for summer days and golden-hour rendezvous.</p>",Maison Veil,,Perfume,"",true,Volume,20ml,,,,,,,,,100.0,,-1,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_cd0dbfa3-99ff-4d80-a21d-0908b51a0563.png?v=1754083671,1,"",false,Golden Solstice | Maison Veil,"Honey, Neroli, Jasmine, Warm Amber",,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_cd0dbfa3-99ff-4d80-a21d-0908b51a0563.png?v=1754083671,g,,,active
+golden-solstice,,,,,,,,,30ml,,,,,,,,,100.0,,-1,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_cd0dbfa3-99ff-4d80-a21d-0908b51a0563.png?v=1754083671,g,,,
+golden-solstice,,,,,,,,,50ml,,,,,,,,,100.0,,0,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_cd0dbfa3-99ff-4d80-a21d-0908b51a0563.png?v=1754083671,g,,,
+golden-solstice,,,,,,,,,100ml,,,,,,,,,100.0,,0,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_cd0dbfa3-99ff-4d80-a21d-0908b51a0563.png?v=1754083671,g,,,
+obsidian-noir,Obsidian Noir,"<p>Power, seduction, and rebellion in a bottle. Obsidian Noir is dark and intoxicating, blending exotic black orchid with rich oud and supple leather. The final touch of tonka bean adds a smoky sweetness that lingers.</p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,10ml,$20.00,,30ml,$35.00,,50ml,$50.00,,,100.0,,0,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_066ab534-8ea3-455e-b8d2-96834e05ae56.png?v=1754083631,1,"",false,Obsidian Noir | Maison Veil,"Black Orchid, Oud, Leather, Tonka Bean",,,,,,,,,,,,,,,,1,,,,,g,,,active
+velvet-rosewood,Velvet Rosewood,"<p>Romantic and timeless, Velvet Rosewood is a fragrance for the elegant soul. The lush sweetness of damask rose is wrapped in creamy sandalwood and grounded by a touch of earthy patchouli. A scent that whispers luxury.</p>",Maison Veil,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,Perfume,"",true,Title,Default Title,,,,,,,,,100.0,,-1,deny,manual,105.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/image-1_280d415e-7520-454d-bcbe-4c71a80efd66.png?v=1754083472,1,"",false,Velvet Rosewood | Maison Veil,"Damask Rose, Sandalwood, Patchouli, Bergamot",,,,,,,,,,,,,,,,,,,,,g,,,active
+midnight-ember,Midnight Ember,"<p>A bold and mysterious scent that lingers like an unforgettable night. Midnight Ember envelops you in deep, smoky vanilla, warmed by hints of saffron and dark cedar. Perfect for those who thrive in moonlight and intrigue.</p>",Maison Veil,Apparel & Accessories > Clothing > Clothing Tops,Perfume,"",true,Size,10ml,,,,,,,,,100.0,shopify,98,deny,manual,20.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/Aurora_Bloom.png?v=1788482965,1,"",false,Midnight Ember | Maison Veil,"Black Amber, Smoked Vanilla, Saffron, Dark Cedar",,,,,,,,,,,,,,,,,,,,,g,,,active
+midnight-ember,,,,,,,,,30ml,,,,,,,,,100.0,shopify,99,deny,manual,35.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+midnight-ember,,,,,,,,,50ml,,,,,,,,,100.0,shopify,100,deny,manual,50.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+midnight-ember,,,,,,,,,100ml,,,,,,,,,100.0,shopify,100,deny,manual,95.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,g,,,
+maison-veil-veil-of-fire,Maison Veil - Muse Impériale,"<p><span>Radiant strawberry and sparkling citrus melt into velvety florals before settling into creamy vanilla musk, warm tonka, and soft woods.</span></p>",My Store,Health & Beauty > Personal Care > Cosmetics > Perfumes & Colognes > Eaux de Parfum,"","Bestseller, Bold, Floral Oud, Signature Scent, Spicy, Unisex",true,Size,10-ml-1,product.metafields.shopify.size,,,,,,,,5488.467677,shopify,98,deny,manual,35.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0871/0576/5650/files/DC9E173C-481E-4122-B7E3-FD93889BBC56.png?v=1772985791,1,"",false,,,,,,,,,,,,,,,,spicy; floral; bergamot-cardamom-heart-rose-smoked-vanilla-base-oud-wood-tonka-bean-amber,,10-ml-1; 15-ml-1; 30-ml; 50-ml; 100-ml,,,,,lb,,,active
+maison-veil-veil-of-fire,,,,,,,,,15-ml-1,,,,,,,,,5488.467677,shopify,50,deny,manual,45.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+maison-veil-veil-of-fire,,,,,,,,,30-ml,,,,,,,,,5488.467677,shopify,50,deny,manual,68.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+maison-veil-veil-of-fire,,,,,,,,,50-ml,,,,,,,,,5488.467677,shopify,50,deny,manual,104.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,
+maison-veil-veil-of-fire,,,,,,,,,100-ml,,,,,,,,,5488.467677,shopify,50,deny,manual,135.00,,true,true,,,,,"",,,,,,,,,,,,,,,,,,,,,,,,,,,lb,,,

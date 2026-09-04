@@ -17,8 +17,8 @@
           "settings": {
             "kicker": "Maison Veil · Fragrance House & Perfume Bar",
             "heading": "Wear the <em>unspoken.</em>",
-            "lead": "<p>Original luxury fragrances and body oils—premium ingredients, iconic inspiration, worn like a secret.</p>",
-            "accords": "Lychee, Vanilla Silk, Cherry Smoke",
+            "lead": "<p>Signature perfumes, pistachio and tropical body oils, shimmer veils, and discovery sets—composed to live on skin, not on a department-store wall.</p>",
+            "accords": "Pistachio Cream, Lychee, Cherry Smoke",
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
             "button_label_2": "Book the bar",
@@ -32,8 +32,8 @@
           "settings": {
             "kicker": "02 · Live blending",
             "heading": "Blend it, <em>live.</em>",
-            "lead": "<p>Sit at the perfume bar and watch a signature scent take shape—drop by drop—for weddings, parties, and private sittings.</p>",
-            "accords": "Floral, Gourmand, Woody",
+            "lead": "<p>Sit at the perfume bar and watch a signature take shape—drop by drop—from Pistache Nuage to Crimson Smoke, for weddings, parties, and private sittings.</p>",
+            "accords": "Gourmand, Solar Floral, Nocturnal Woody",
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
             "button_label_2": "See events",
@@ -57,13 +57,13 @@
         "item_1": {
           "type": "item",
           "settings": {
-            "text": "Original Signature Compositions"
+            "text": "Signature Perfumes & Extraïts"
           }
         },
         "item_2": {
           "type": "item",
           "settings": {
-            "text": "Premium Fragrance Oils"
+            "text": "Pistache Nuage · Isla Dorée Oils"
           }
         },
         "item_3": {
@@ -81,7 +81,7 @@
         "item_5": {
           "type": "item",
           "settings": {
-            "text": "Body Oils & Shimmer Veils"
+            "text": "Shimmer Oils & Discovery Sets"
           }
         },
         "item_6": {
@@ -109,22 +109,22 @@
         "filter_1": {
           "type": "filter",
           "settings": {
-            "label": "Nocturnal Amber",
-            "tag": "nocturnal"
+            "label": "Perfumes",
+            "tag": "perfume"
           }
         },
         "filter_2": {
           "type": "filter",
           "settings": {
-            "label": "Solar Floral",
-            "tag": "solar"
+            "label": "Body Oils",
+            "tag": "oil"
           }
         },
         "filter_3": {
           "type": "filter",
           "settings": {
-            "label": "Enigmatic Woody",
-            "tag": "enigmatic"
+            "label": "Discovery Sets",
+            "tag": "discovery|collection"
           }
         }
       },
@@ -136,9 +136,9 @@
       "settings": {
         "kicker": "01 · The collection",
         "title": "Signature <em>compositions.</em>",
-        "description": "<p>Original luxury fragrances and body oils inspired by iconic accords—florals, ambers, woods, and gourmands composed for everyday presence.</p>",
+        "description": "<p>Perfumes, body oils, and shimmer veils from the house—Pistache Nuage, Aurora Bloom, Isla Dorée, Crimson Smoke, and the FragCon bestsellers.</p>",
         "collection": "all",
-        "products_to_show": 6,
+        "products_to_show": 9,
         "columns_desktop": 3,
         "filter_all_label": "All Compositions",
         "color_scheme": "scheme-3"
@@ -156,7 +156,7 @@
             "headline": "Opening: The Radiant Overture",
             "subheadline": "Skin temperature activates volatile high-frequency botanicals",
             "time_label": "0 — 15 Minutes",
-            "ingredients": "Kashmiri Saffron|Pampore, India\nCalabrian Bergamot|Reggio Calabria\nPink Peppercorn|Madagascar"
+            "ingredients": "Lychee Sparkle|Aurora Bloom\nPistachio Cream|Pistache Nuage\nTropical Mango|Isla Dorée"
           }
         },
         "phase_2": {
@@ -168,7 +168,7 @@
             "headline": "Heart: The Velveteen Core",
             "subheadline": "Rare florals and sacred resins blossom as body temperature peaks",
             "time_label": "15 Minutes — 4 Hours",
-            "ingredients": "Taif Rose Absolute|Hijaz Mountains\nTuscan Orris Butter|Florence, Italy\nSomalian Frankincense|Puntland, Somalia"
+            "ingredients": "White Peony|Aurora Bloom\nOsmanthus & Rose|Rouge Tropique\nHibiscus Nuance|Kòla Azur"
           }
         },
         "phase_3": {
@@ -180,7 +180,7 @@
             "headline": "Base: The Lingering Sillage",
             "subheadline": "Dense ambers, noble woods, and second-skin suede lock into memory",
             "time_label": "4 — 24+ Hours",
-            "ingredients": "Golden Fossil Amber|Baltic Sea Coast\nMysore Sandalwood|Karnataka, India\nBlack Suede Accord|Maison Veil Atelier"
+            "ingredients": "Vanilla Caramel|Pistache Nuage\nCherry Incense|Crimson Smoke\nOud Woods|Eclipse Oud"
           }
         }
       },
@@ -192,7 +192,7 @@
       "settings": {
         "kicker": "02 · How a veil unfolds",
         "title": "The Evolution on <em>Skin.</em>",
-        "description": "<p>Every Maison Veil composition is a shifting symphony on skin. Drag the timeline to see how opening, heart, and base notes bloom through the day.</p>",
+        "description": "<p>Every Maison Veil perfume and body oil is a shifting symphony on skin. Drag the timeline to see how our house notes—pistachio, lychee, cherry, oud—bloom through the day.</p>",
         "light_mode": true,
         "color_scheme": "scheme-1"
       }
@@ -203,71 +203,78 @@
         "step_1": {
           "type": "step",
           "settings": {
-            "question": "What presence do you wish to project?",
-            "description": "Consider how you want your aura to be perceived upon entering a room.",
+            "question": "How should your scent enter the room?",
+            "description": "Choose the presence that matches how you want to be remembered.",
             "option_1_key": "noir",
-            "option_1_icon": "☾",
-            "option_1_title": "Nocturnal Enigma",
-            "option_1_sub": "Shadows, candlelight, quiet command and magnetic mystery.",
+            "option_1_icon": "silhouette",
+            "option_1_title": "After dark",
+            "option_1_sub": "Smoke, oud, cherry, and leather—quiet command that lingers.",
             "option_2_key": "or",
-            "option_2_icon": "☼",
-            "option_2_title": "Solar Splendour",
-            "option_2_sub": "Warm golden radiance, unmistakable opulence and high presence.",
+            "option_2_icon": "star",
+            "option_2_title": "In the light",
+            "option_2_sub": "Lychee, mango, peach, and sun-warmed florals with a golden trail.",
             "option_3_key": "ombre",
-            "option_3_icon": "✦",
-            "option_3_title": "Intimate Whisper",
-            "option_3_sub": "Powdery soft suede, velvet close-contact and understated luxury."
+            "option_3_icon": "heart",
+            "option_3_title": "Close to skin",
+            "option_3_sub": "Pistachio cream, vanilla, coconut, and musk—people lean in."
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
-            "question": "In which sanctuary do you feel most awakened?",
-            "description": "Choose the sensory space that stirs your imagination.",
+            "question": "Which notes do you reach for first?",
+            "description": "These are the accords we actually compose at the house.",
             "option_1_key": "noir",
-            "option_1_icon": "◇",
-            "option_1_title": "Private Vault",
-            "option_1_sub": "Dark cedar, vintage leather tomes, and burning resins.",
+            "option_1_icon": "fire",
+            "option_1_title": "Cherry, oud & incense",
+            "option_1_sub": "Crimson Smoke, Eclipse Oud, Oud Incendiare, Reckoning.",
             "option_2_key": "or",
-            "option_2_icon": "✧",
-            "option_2_title": "Dusk Terrace",
-            "option_2_sub": "Sun-warmed terracotta, blooming roses, and spiced evening air.",
+            "option_2_icon": "plant",
+            "option_2_title": "Lychee, tropical fruit & bloom",
+            "option_2_sub": "Aurora Bloom, Isla Dorée, Rouge Tropique, Kòla Azur.",
             "option_3_key": "ombre",
-            "option_3_icon": "○",
-            "option_3_title": "Mist Atelier",
-            "option_3_sub": "Cashmere throws, Florentine silk paper, and quiet rain."
+            "option_3_icon": "leaf",
+            "option_3_title": "Pistachio, vanilla & coconut",
+            "option_3_sub": "Pistache Nuage, Vanilla Coco Glow, Noir Vanille, Crème Brûlée."
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
-            "question": "Which tactile texture reflects your skin?",
-            "description": "Fragrance is tactile poetry felt directly through the epidermis.",
+            "question": "How do you want to wear it?",
+            "description": "The house bottles the same moods as perfume, oil, and shimmer.",
             "option_1_key": "noir",
-            "option_1_icon": "◈",
-            "option_1_title": "Smoked Velvet",
-            "option_1_sub": "Heavy obsidian fabric with deep resinous warmth.",
+            "option_1_icon": "perfume",
+            "option_1_title": "A night perfume",
+            "option_1_sub": "A spray that holds through dinner, leather, and late hours.",
             "option_2_key": "or",
-            "option_2_icon": "⚜",
-            "option_2_title": "Liquid Gold Silk",
-            "option_2_sub": "Fluid, shimmering, luminous and richly textured.",
+            "option_2_icon": "bottle",
+            "option_2_title": "A radiant day scent",
+            "option_2_sub": "A bright perfume or tropical body oil for sun and celebration.",
             "option_3_key": "ombre",
-            "option_3_icon": "❖",
-            "option_3_title": "Brushed Suede",
-            "option_3_sub": "Soft, powdery, delicately sensual against warm skin."
+            "option_3_icon": "leaf",
+            "option_3_title": "An oil or gourmand veil",
+            "option_3_sub": "Massage-on oils and creamy sprays that stay intimate."
           }
         },
         "result_noir": {
           "type": "result",
           "settings": {
             "key": "noir",
-            "title": "Crimson Smoke",
+            "title": "Your night veil",
             "score": "A nocturnal match",
-            "description": "You lean into shadow and heat. Crimson Smoke opens with cherry liqueur and settles into a dark, memorable trail—your night veil.",
-            "products": [],
+            "description": "You lean into shadow and heat. Cherry liqueur, oud woods, incense, and leather—these are the compositions that hold after dark.",
+            "products": [
+              "crimson-smoke",
+              "eclipse-oud",
+              "oud-incendiare-veil",
+              "obsidian-noir",
+              "midnight-ember",
+              "reckoning"
+            ],
             "collection": "",
             "products_to_show": 3,
-            "product": "",
+            "product": "crimson-smoke",
             "link": ""
           }
         },
@@ -275,13 +282,20 @@
           "type": "result",
           "settings": {
             "key": "or",
-            "title": "Aurora Bloom",
+            "title": "Your solar veil",
             "score": "A solar match",
-            "description": "You want light that still feels intimate. Aurora Bloom—lychee brightness over a soft, intoxicating heart—is the veil for golden rooms.",
-            "products": [],
+            "description": "You want light that still feels intimate. Lychee, tropical fruit, hibiscus, and golden amber—perfumes and oils for sunlit rooms.",
+            "products": [
+              "aurora-bloom-1",
+              "isla-doree",
+              "rouge-tropique-veil",
+              "kola-azur-eau-de-parfum-fragcon-bestseller",
+              "velvet-peach-flame",
+              "golden-solstice"
+            ],
             "collection": "",
             "products_to_show": 3,
-            "product": "",
+            "product": "aurora-bloom-1",
             "link": ""
           }
         },
@@ -289,13 +303,20 @@
           "type": "result",
           "settings": {
             "key": "ombre",
-            "title": "Celestial Mist",
-            "score": "A whisper match",
-            "description": "You prefer presence that stays close. Celestial Mist—aquatic floral, green tea air—is the quiet veil you wear like a secret.",
-            "products": [],
+            "title": "Your skin veil",
+            "score": "A gourmand match",
+            "description": "You prefer presence that stays close. Pistachio cream, vanilla coconut, rose crème, and soft musk—oils and sprays people lean into.",
+            "products": [
+              "pistache-nuage-1",
+              "pistache-nuage",
+              "pistachio-rose-creme-brulee",
+              "vanilla-coco-glow-shimmer-oil",
+              "coco-vanille-tux-body-oil",
+              "noir-vanille"
+            ],
             "collection": "",
             "products_to_show": 3,
-            "product": "",
+            "product": "pistache-nuage-1",
             "link": ""
           }
         }
@@ -314,8 +335,8 @@
       "settings": {
         "kicker": "03 · Scent consultation",
         "title": "Find Your <em>Veil.</em>",
-        "description": "<p>Answer three sensory reflections to find the composition that matches how you want to be remembered in a room.</p>",
-        "claim_label": "Claim Flacon",
+        "description": "<p>Answer three questions about mood, notes, and how you wear scent. We will match you to live Maison Veil perfumes and oils.</p>",
+        "claim_label": "Shop this match",
         "retake_label": "Retake Consultation",
         "color_scheme": "scheme-3"
       }
@@ -385,7 +406,7 @@
         "image": "shopify://shop_images/C788EB60-5548-4861-B813-979E7D59A200.png",
         "kicker": "05 · The manifesto",
         "title": "Luxury is felt, <em>never shouted.</em>",
-        "text": "<p>Maison Veil was founded on a singular conviction: fragrance should be a private invitation, not an assault. We compose original scents with premium oils so they fuse with your chemistry—and we blend them live at the perfume bar so the moment is yours.</p><p>From Aurora Bloom to Crimson Smoke, body oils to guest bottles, the house offers luxury you can wear, gift, and celebrate with—without the designer theater.</p>",
+        "text": "<p>Maison Veil was founded on a singular conviction: fragrance should be a private invitation, not an assault. We compose original scents with premium oils so they fuse with your chemistry—and we blend them live at the perfume bar so the moment is yours.</p><p>From Pistache Nuage and Isla Dorée body oils to Aurora Bloom, Crimson Smoke, Kòla Azur, discovery sets, and home scenting, the house offers luxury you can wear, gift, and celebrate with—without the designer theater.</p>",
         "color_scheme": "scheme-3"
       }
     },
@@ -505,7 +526,7 @@
       "settings": {
         "kicker": "07 · Private access",
         "title": "Enter the world <em>behind the veil.</em>",
-        "description": "<p>New compositions, perfume-bar dates, and early access to limited oils and gift sets.</p>",
+        "description": "<p>New perfumes and oils, perfume-bar dates, and early access to discovery sets, shimmer veils, and limited drops.</p>",
         "placeholder": "Your private email address",
         "button_label": "Request Access",
         "success_title": "Welcome behind the veil.",
