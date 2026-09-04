@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -27,7 +36,9 @@
           }
         }
       },
-      "block_order": ["slide_1"],
+      "block_order": [
+        "slide_1"
+      ],
       "settings": {
         "color_scheme": "scheme-3"
       }
@@ -68,7 +79,12 @@
           }
         }
       },
-      "block_order": ["pillar_1", "pillar_2", "pillar_3", "pillar_4"],
+      "block_order": [
+        "pillar_1",
+        "pillar_2",
+        "pillar_3",
+        "pillar_4"
+      ],
       "settings": {
         "image": "shopify://shop_images/C788EB60-5548-4861-B813-979E7D59A200.png",
         "kicker": "Our story",
@@ -111,7 +127,11 @@
           }
         }
       },
-      "block_order": ["card_1", "card_2", "card_3"],
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ],
       "settings": {
         "kicker": "The Maison Veil experience",
         "title": "More than a <em>scent.</em>",
@@ -124,18 +144,32 @@
       "blocks": {
         "filter_1": {
           "type": "filter",
-          "settings": { "label": "Nocturnal Amber", "tag": "nocturnal" }
+          "settings": {
+            "label": "Nocturnal Amber",
+            "tag": "nocturnal"
+          }
         },
         "filter_2": {
           "type": "filter",
-          "settings": { "label": "Solar Floral", "tag": "solar" }
+          "settings": {
+            "label": "Solar Floral",
+            "tag": "solar"
+          }
         },
         "filter_3": {
           "type": "filter",
-          "settings": { "label": "Enigmatic Woody", "tag": "enigmatic" }
+          "settings": {
+            "label": "Enigmatic Woody",
+            "tag": "enigmatic"
+          }
         }
       },
-      "block_order": ["filter_1", "filter_2", "filter_3"],
+      "block_order": [
+        "filter_1",
+        "filter_2",
+        "filter_3"
+      ],
+      "disabled": true,
       "settings": {
         "kicker": "Shop the house",
         "title": "Signature <em>compositions.</em>",
