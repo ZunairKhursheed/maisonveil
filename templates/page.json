@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "maison_hero": {
@@ -19,18 +28,26 @@
           }
         }
       },
-      "block_order": ["slide_1"],
+      "block_order": [
+        "slide_1"
+      ],
       "settings": {
         "color_scheme": "scheme-3"
       }
     },
     "main": {
       "type": "main-page",
+      "custom_css": [
+        "{position: relative;background: #0a0a0a;color:white;z-index: 2000;padding-bottom:80px;}"
+      ],
       "settings": {
         "padding_top": 36,
         "padding_bottom": 48
       }
     }
   },
-  "order": ["maison_hero", "main"]
+  "order": [
+    "maison_hero",
+    "main"
+  ]
 }
