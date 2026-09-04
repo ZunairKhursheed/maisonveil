@@ -188,6 +188,13 @@
   text-decoration: none;
 }
 
+.maison-flacon-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
 .maison-flacon-card__price {
   display: block;
   font-size: var(--mv-type-price);
@@ -228,6 +235,8 @@
   flex: 1;
   display: flex;
   min-width: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .maison-flacon-card__form form {
@@ -242,19 +251,6 @@
   min-height: 4.4rem;
   padding: 1.2rem 0.8rem;
   width: 100%;
-}
-
-.maison-flacon-card__btn-label {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-}
-
-.maison-flacon-card__btn-label .icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  flex-shrink: 0;
 }
 
 .maison-flacon-card__btn.mv-cta.loading > .loading__spinner {

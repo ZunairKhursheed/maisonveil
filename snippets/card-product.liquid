@@ -116,6 +116,8 @@
         <a
           href="{{ card_product.url }}"
           id="CardLink-{{ section_id }}-{{ card_product.id }}"
+          class="maison-flacon-card__link"
+          aria-label="{{ 'products.product.view_product_details' | t: product_name: card_product.title }}"
         >
           {{ card_product.title | escape }}
         </a>
@@ -131,11 +133,8 @@
         <div class="maison-flacon-card__family">{{ family_label | escape }}</div>
       {%- endif -%}
 
-      <div class="maison-flacon-card__actions">
-        <a class="mv-cta maison-flacon-card__btn" href="{{ card_product.url }}">
-          <span>{{ 'products.product.view_full_details' | t }}</span>
-        </a>
-        {%- if variant -%}
+      {%- if variant -%}
+        <div class="maison-flacon-card__actions">
           <product-form class="maison-flacon-card__form" data-hide-errors="true">
             {%- form 'product', card_product, id: form_id, class: 'maison-flacon-card__form', novalidate: 'novalidate' -%}
               <input type="hidden" name="id" value="{{ variant.id }}" class="product-variant-id">
@@ -147,10 +146,9 @@
                   disabled
                 {% endunless %}
               >
-                <span class="maison-flacon-card__btn-label">
+                <span>
                   {%- if variant.available -%}
-                    {%- render 'icon-cart-plus' -%}
-                    {{ 'templates.cart.cart' | t }}
+                    {{ 'products.product.add_to_cart' | t }}
                   {%- else -%}
                     {{ 'products.product.sold_out' | t }}
                   {%- endif -%}
@@ -159,8 +157,8 @@
               </button>
             {%- endform -%}
           </product-form>
-        {%- endif -%}
-      </div>
+        </div>
+      {%- endif -%}
     </div>
   </article>
 {%- else -%}
@@ -180,8 +178,7 @@
       <div class="maison-flacon-card__price">$245</div>
       <div class="maison-flacon-card__family">Maison Veil</div>
       <div class="maison-flacon-card__actions">
-        
-        <span class="mv-cta maison-flacon-card__btn"><span class="maison-flacon-card__btn-label">{%- render 'icon-cart-plus' -%}{{ 'templates.cart.cart' | t }}</span></span>
+        <span class="mv-cta maison-flacon-card__btn"><span>{{ 'products.product.add_to_cart' | t }}</span></span>
       </div>
     </div>
   </article>
