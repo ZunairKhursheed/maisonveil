@@ -201,8 +201,8 @@
         "kicker": "02 · How a veil unfolds",
         "title": "The Evolution on <em>Skin.</em>",
         "description": "<p>Every Maison Veil perfume and body oil is a shifting symphony on skin. Drag the timeline to see how our house notes—pistachio, lychee, cherry, oud—bloom through the day.</p>",
-        "light_mode": true,
-        "color_scheme": "scheme-1"
+        "light_mode": false,
+        "color_scheme": "scheme-4"
       }
     },
     "maison_consultation": {
