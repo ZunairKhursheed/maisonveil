@@ -54,6 +54,9 @@
       ],
       "settings": {
         "color_scheme": "scheme-899854cd-346f-4b19-aff9-8b2691ee80ae",
+        "columns_mobile": 2,
+        "columns_tablet": 2,
+        "columns_desktop": 4,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
