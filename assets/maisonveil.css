@@ -158,6 +158,157 @@ body {
   cursor: not-allowed;
 }
 
+.mv-cta.button--full-width,
+.product-form__submit.mv-cta,
+.newsletter-popup__submit.mv-cta {
+  display: flex;
+  width: 100%;
+  min-height: 5.2rem;
+  padding: 1.4rem 3rem;
+}
+
+.mv-cta.loading {
+  color: transparent !important;
+  pointer-events: none;
+}
+
+.mv-cta.loading > .loading__spinner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.mv-cta.loading > span {
+  visibility: hidden;
+}
+
+/* Dawn buttons — hero CTA: square, gold border, gradient sweep */
+.button:not(.button--tertiary):not(.slider-button):not(.quantity__button),
+.shopify-challenge__button,
+.customer button,
+.shopify-payment-button__button--unbranded {
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: var(--mv-gold-champagne) !important;
+  letter-spacing: var(--mv-type-cta-tracking);
+  text-transform: uppercase;
+  font-size: var(--mv-type-cta-size);
+  font-weight: var(--mv-type-cta-weight);
+  border: 1px solid rgba(232, 211, 159, 0.7);
+}
+
+.button:not(.button--tertiary):before,
+.shopify-challenge__button:before,
+.customer button:before,
+.shopify-payment-button__button--unbranded:before {
+  border-radius: 0 !important;
+  background: var(--mv-gold-gradient) !important;
+  z-index: -1;
+  transform: translate3d(-120%, 0, 0) skew(30deg);
+  left: -20px;
+  width: calc(100% + 40px);
+}
+
+.button:not(.button--tertiary):after,
+.shopify-challenge__button:after,
+.customer button:after,
+.shopify-payment-button__button--unbranded:after {
+  border-radius: 0 !important;
+  box-shadow:
+    0 0 0 calc(var(--buttons-border-width) + var(--border-offset, 0px))
+      rgba(232, 211, 159, var(--border-opacity, 0.7)),
+    0 0 0 var(--buttons-border-width) transparent !important;
+}
+
+.button:not(.button--tertiary):not([disabled]):hover,
+.button:not(.button--tertiary):not([disabled]):active,
+.shopify-challenge__button:not([disabled]):hover,
+.customer button:not([disabled]):hover,
+.shopify-payment-button__button--unbranded:not([disabled]):hover {
+  color: var(--mv-obsidian) !important;
+}
+
+.button:not(.button--tertiary):not([disabled]):hover:before,
+.shopify-challenge__button:not([disabled]):hover:before,
+.customer button:not([disabled]):hover:before,
+.shopify-payment-button__button--unbranded:not([disabled]):hover:before {
+  transform: translate3d(0, 0, 0) skew(30deg);
+}
+
+/* Variant pills / tags */
+.product-form__input--pill input[type='radio'] + label {
+  border-radius: 0;
+  border: 1px solid var(--mv-gold-border);
+  background: rgba(200, 163, 94, 0.09);
+  color: var(--mv-gold-champagne);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: var(--mv-type-kicker-size);
+}
+
+.product-form__input--pill input[type='radio'] + label:before {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.product-form__input--pill input[type='radio'] + label:hover {
+  border-color: var(--mv-gold-champagne);
+}
+
+.product-form__input--pill input[type='radio']:checked + label {
+  background: var(--mv-gold-gradient);
+  color: var(--mv-obsidian);
+  border-color: var(--mv-gold-burnished);
+}
+
+.product-form__input--pill input[type='radio']:disabled + label,
+.product-form__input--pill input[type='radio'].disabled + label {
+  border-color: var(--mv-gold-border-soft);
+  color: rgba(232, 211, 159, 0.4);
+}
+
+/* Quantity + shared inputs */
+.quantity {
+  border-radius: 0;
+}
+
+.quantity:before,
+.quantity:after {
+  border-radius: 0;
+}
+
+.quantity:after {
+  box-shadow: 0 0 0 var(--inputs-border-width) rgba(201, 169, 98, 0.45);
+}
+
+.quantity:hover:after {
+  box-shadow: 0 0 0 var(--inputs-border-width) var(--mv-gold);
+}
+
+.quantity__button {
+  color: var(--mv-gold-champagne);
+}
+
+.swatch {
+  border-color: var(--mv-gold-border);
+}
+
+.newsletter-popup__dialog {
+  border: 1px solid var(--mv-gold-border);
+  border-radius: 0;
+}
+
+.newsletter-popup__close {
+  color: var(--mv-gold-champagne);
+}
+
 /* Shared form fields — gold border + floating labels */
 .newsletter-popup__form .field:before,
 .newsletter-popup__form .field:after,
@@ -256,6 +407,46 @@ body {
 .maison-book__field select.field__input:focus,
 .maison-book__field select.field__input:valid {
   padding: 2.2rem 1.5rem 0.8rem 2rem;
+}
+
+.field:before,
+.field:after,
+.select:before,
+.select:after {
+  display: none;
+}
+
+.field__label,
+.select .form__label,
+.product-form__input .form__label {
+  color: var(--mv-gold);
+}
+
+.field__input,
+.select__select,
+textarea.field__input {
+  background: rgba(var(--color-background), 0.6);
+  border: 1px solid rgba(201, 169, 98, 0.45);
+  color: rgb(var(--color-foreground));
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.field__input:hover,
+.select__select:hover,
+textarea.field__input:hover {
+  border-color: rgba(201, 169, 98, 0.55);
+}
+
+.field__input:focus,
+.field__input:focus-visible,
+.select__select:focus,
+.select__select:focus-visible,
+textarea.field__input:focus,
+textarea.field__input:focus-visible {
+  border-color: var(--mv-gold);
+  box-shadow: 0 0 0 1px rgba(201, 169, 98, 0.35), 0 0 22px var(--mv-gold-glow);
+  outline: none;
 }
 
 .mv-hairline {
