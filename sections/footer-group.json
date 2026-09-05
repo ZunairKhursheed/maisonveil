@@ -14,15 +14,6 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "newsletter_signup_7gp6ee": {
-          "type": "newsletter_signup",
-          "settings": {
-            "heading": "Good Emails",
-            "description": "<p>Sign up to receive updates from maison veil, promotions, and early access to new products.</p>",
-            "placeholder": "email address",
-            "button_text": "signup"
-          }
-        },
         "help_section_eHi4P8": {
           "type": "help_section",
           "settings": {
@@ -56,7 +47,6 @@
         }
       },
       "block_order": [
-        "newsletter_signup_7gp6ee",
         "help_section_eHi4P8",
         "shop_section_ADjgbq",
         "explore_section_V7PziD",
