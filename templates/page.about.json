@@ -23,6 +23,7 @@
         "slide_1": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_6_2026_01_10_50_AM.png",
             "kicker": "The House · Fragrance & Perfume Bar",
             "heading": "A veil you <em>wear.</em>",
             "lead": "<p>Maison Veil is a luxury fragrance house and live perfume bar. We compose original scents with premium oils, blend them in front of you, and bottle presence for skin, celebration, and gift.</p>",
@@ -86,7 +87,7 @@
         "pillar_4"
       ],
       "settings": {
-        "image": "shopify://shop_images/C788EB60-5548-4861-B813-979E7D59A200.png",
+        "image": "shopify://shop_images/pistache_nauage_oil.png",
         "kicker": "Our story",
         "title": "Luxury is felt, <em>never shouted.</em>",
         "text": "<p>Creating a signature scent at Maison Veil is an immersive ritual—closer to a crafted pour at a bar than a counter spray. Every drop is blended in front of you, so you are not only choosing a perfume; you are composing a moment.</p><p>Our collection of original fragrances and body oils is designed for presence: elevated, wearable, and priced to be lived with. Visit the house, shop the veil, or invite the perfume bar to your next celebration.</p>",
