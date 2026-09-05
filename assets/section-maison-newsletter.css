@@ -57,10 +57,33 @@
 
 .maison-newsletter__form {
   display: flex;
-  border: 1px solid rgba(var(--color-foreground), 0.15);
+  border: 1px solid rgba(201, 169, 98, 0.45);
   background: rgba(var(--color-background), 0.85);
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.maison-newsletter__form:hover {
+  border-color: rgba(201, 169, 98, 0.55);
+  box-shadow: 0 0 0 1px rgba(201, 169, 98, 0.12), 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.maison-newsletter__form:focus-within {
+  border-color: var(--mv-gold);
+  box-shadow: 0 0 0 1px rgba(201, 169, 98, 0.35), 0 0 22px var(--mv-gold-glow);
+}
+
+.maison-newsletter__label {
+  display: block;
+  margin: 0 0 1rem;
+  color: var(--mv-gold);
+  font-size: var(--mv-type-kicker-size);
+  letter-spacing: var(--mv-type-kicker-tracking);
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .maison-newsletter__input {
@@ -76,7 +99,7 @@
 }
 
 .maison-newsletter__input::placeholder {
-  color: rgba(var(--color-foreground), 0.45);
+  color: rgba(201, 169, 98, 0.55);
 }
 
 .maison-newsletter__submit {

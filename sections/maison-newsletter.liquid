@@ -29,14 +29,17 @@
             {%- endif -%}
           </div>
         {%- else -%}
+          <label class="maison-newsletter__label" for="MaisonNewsletter-email-{{ section.id }}">
+            Email
+          </label>
           <div class="maison-newsletter__form">
             <input
               type="email"
               name="contact[email]"
+              id="MaisonNewsletter-email-{{ section.id }}"
               class="maison-newsletter__input"
               value="{{ form.email }}"
               placeholder="{{ section.settings.placeholder | escape }}"
-              aria-label="{{ section.settings.placeholder | escape }}"
               autocorrect="off"
               autocapitalize="off"
               autocomplete="email"
