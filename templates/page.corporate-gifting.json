@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,6 +23,7 @@
         "slide_1": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/03_maison_veil_mother_s_day_discovery_set.png",
             "kicker": "Corporate gifting · Brand scent",
             "heading": "Gifts that <em>linger.</em>",
             "lead": "<p>Client appreciation, employee recognition, holidays, launches, and VIP mailers—Maison Veil creates fragrance gifts that feel personal, luxurious, and on-brand.</p>",
@@ -27,7 +37,9 @@
           }
         }
       },
-      "block_order": ["slide_1"],
+      "block_order": [
+        "slide_1"
+      ],
       "settings": {
         "color_scheme": "scheme-3"
       }
@@ -66,7 +78,11 @@
           }
         }
       },
-      "block_order": ["card_1", "card_2", "card_3"],
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ],
       "settings": {
         "kicker": "The gifting atelier",
         "title": "Luxury. Thoughtfulness. <em>Delivered.</em>",
@@ -110,9 +126,14 @@
           }
         }
       },
-      "block_order": ["pillar_1", "pillar_2", "pillar_3", "pillar_4"],
+      "block_order": [
+        "pillar_1",
+        "pillar_2",
+        "pillar_3",
+        "pillar_4"
+      ],
       "settings": {
-        "image": "shopify://shop_images/9_906fa184-c8da-4e2d-8ca9-0bbd7d7c4913.webp",
+        "image": "shopify://shop_images/ChatGPT_Image_Sep_6_2026_01_34_14_AM.png",
         "kicker": "Why fragrance",
         "title": "Leave an impression they <em>wear.</em>",
         "text": "<p>Maison Veil corporate gifting is elegance with intention: original luxury scents, premium oils, and presentation that honors the relationship. Tell us the occasion—we’ll design the veil.</p>",
