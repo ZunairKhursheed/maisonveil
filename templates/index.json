@@ -15,6 +15,7 @@
         "slide_1": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_6_2026_01_34_14_AM.png",
             "kicker": "Maison Veil · Fragrance House & Perfume Bar",
             "heading": "Wear the <em>unspoken.</em>",
             "lead": "<p>Signature perfumes, pistachio and tropical body oils, shimmer veils, and discovery sets—composed to live on skin, not on a department-store wall.</p>",
@@ -30,6 +31,7 @@
         "slide_2": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/12_maison_veil_luxury_oil_duo.png",
             "kicker": "02 · Live blending",
             "heading": "Blend it, <em>live.</em>",
             "lead": "<p>Sit at the perfume bar and watch a signature take shape—drop by drop—from Pistache Nuage to Crimson Smoke, for weddings, parties, and private sittings.</p>",
