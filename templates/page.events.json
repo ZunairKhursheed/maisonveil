@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,6 +23,7 @@
         "slide_1": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/04_lavender_envelope_and_plum_gift_card.png",
             "kicker": "Perfume bar · Weddings & events",
             "heading": "Scent the <em>celebration.</em>",
             "lead": "<p>Invite Maison Veil’s luxury perfume bar to your wedding, shower, birthday, or brand gathering. Guests blend their own signature scents—an interactive ritual they will talk about long after the last toast.</p>",
@@ -23,11 +33,13 @@
             "button_label_2": "Corporate gifting",
             "button_link_2": "shopify://pages/corporate-gifting",
             "badge_title": "Live blending",
-            "badge_value": "Custom guest bottles"
+            "badge_value": "Custom guest invites"
           }
         }
       },
-      "block_order": ["slide_1"],
+      "block_order": [
+        "slide_1"
+      ],
       "settings": {
         "color_scheme": "scheme-3"
       }
@@ -66,7 +78,11 @@
           }
         }
       },
-      "block_order": ["card_1", "card_2", "card_3"],
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ],
       "settings": {
         "kicker": "Event services",
         "title": "Make it <em>memorable.</em>",
@@ -110,7 +126,12 @@
           }
         }
       },
-      "block_order": ["pillar_1", "pillar_2", "pillar_3", "pillar_4"],
+      "block_order": [
+        "pillar_1",
+        "pillar_2",
+        "pillar_3",
+        "pillar_4"
+      ],
       "settings": {
         "image": "shopify://shop_images/10_971761db-bbaf-4cfe-9860-9a05efdb617a.webp",
         "kicker": "How the bar works",
