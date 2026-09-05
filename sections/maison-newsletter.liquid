@@ -29,25 +29,27 @@
             {%- endif -%}
           </div>
         {%- else -%}
-          <label class="maison-newsletter__label" for="MaisonNewsletter-email-{{ section.id }}">
-            Email
-          </label>
           <div class="maison-newsletter__form">
-            <input
-              type="email"
-              name="contact[email]"
-              id="MaisonNewsletter-email-{{ section.id }}"
-              class="maison-newsletter__input"
-              value="{{ form.email }}"
-              placeholder="{{ section.settings.placeholder | escape }}"
-              autocorrect="off"
-              autocapitalize="off"
-              autocomplete="email"
-              required
-              {% if form.errors %}
-                aria-invalid="true"
-              {% endif %}
-            >
+            <div class="field maison-newsletter__field">
+              <input
+                type="email"
+                name="contact[email]"
+                id="MaisonNewsletter-email-{{ section.id }}"
+                class="field__input"
+                value="{{ form.email }}"
+                placeholder="{{ section.settings.placeholder | escape }}"
+                autocorrect="off"
+                autocapitalize="off"
+                autocomplete="email"
+                required
+                {% if form.errors %}
+                  aria-invalid="true"
+                {% endif %}
+              >
+              <label class="field__label" for="MaisonNewsletter-email-{{ section.id }}">
+                {{ section.settings.placeholder | escape }}
+              </label>
+            </div>
             <button type="submit" class="maison-newsletter__submit">
               {{ section.settings.button_label | escape }}
             </button>

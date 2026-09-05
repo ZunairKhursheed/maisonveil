@@ -158,6 +158,95 @@ body {
   cursor: not-allowed;
 }
 
+/* Shared form fields — gold border + floating labels */
+.newsletter-popup__form .field:before,
+.newsletter-popup__form .field:after,
+.maison-book__field .field:before,
+.maison-book__field .field:after,
+.maison-newsletter__field.field:before,
+.maison-newsletter__field.field:after {
+  display: none;
+}
+
+.newsletter-popup__form .field__label,
+.maison-book__field .field__label,
+.maison-book__field .form__label,
+.maison-newsletter__field .field__label {
+  color: var(--mv-gold);
+}
+
+.newsletter-popup__form .field__input,
+.maison-book__field .field__input,
+.maison-book__field select.field__input,
+.maison-book__field textarea.field__input,
+.maison-newsletter__field .field__input {
+  background: rgba(var(--color-background), 0.6);
+  border: 1px solid rgba(201, 169, 98, 0.45);
+  color: rgb(var(--color-foreground));
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    padding var(--duration-short) ease;
+}
+
+.newsletter-popup__form .field__input:hover,
+.maison-book__field .field__input:hover,
+.maison-book__field select.field__input:hover,
+.maison-book__field textarea.field__input:hover,
+.maison-newsletter__field .field__input:hover {
+  border-color: rgba(201, 169, 98, 0.55);
+  box-shadow: 0 0 0 1px rgba(201, 169, 98, 0.12);
+}
+
+.newsletter-popup__form .field__input:focus,
+.newsletter-popup__form .field__input:focus-visible,
+.newsletter-popup__form .field__input:active,
+.maison-book__field .field__input:focus,
+.maison-book__field .field__input:focus-visible,
+.maison-book__field .field__input:active,
+.maison-book__field select.field__input:focus,
+.maison-book__field select.field__input:focus-visible,
+.maison-book__field select.field__input:active,
+.maison-book__field textarea.field__input:focus,
+.maison-book__field textarea.field__input:focus-visible,
+.maison-book__field textarea.field__input:active,
+.maison-newsletter__field .field__input:focus,
+.maison-newsletter__field .field__input:focus-visible,
+.maison-newsletter__field .field__input:active {
+  border-color: var(--mv-gold);
+  box-shadow: 0 0 0 1px rgba(201, 169, 98, 0.35), 0 0 22px var(--mv-gold-glow);
+  background: rgba(var(--color-background), 0.85);
+  outline: none;
+}
+
+/* Floating label (matches Dawn newsletter popup behaviour) */
+.newsletter-popup__form .field__input:focus ~ .field__label,
+.newsletter-popup__form .field__input:not(:placeholder-shown) ~ .field__label,
+.newsletter-popup__form .field__input:-webkit-autofill ~ .field__label,
+.maison-book__field .field__input:focus ~ .field__label,
+.maison-book__field .field__input:not(:placeholder-shown) ~ .field__label,
+.maison-book__field .field__input:-webkit-autofill ~ .field__label,
+.maison-book__field select.field__input:focus ~ .field__label,
+.maison-book__field select.field__input:valid ~ .field__label,
+.maison-newsletter__field .field__input:focus ~ .field__label,
+.maison-newsletter__field .field__input:not(:placeholder-shown) ~ .field__label,
+.maison-newsletter__field .field__input:-webkit-autofill ~ .field__label {
+  font-size: 1rem;
+  top: calc(var(--inputs-border-width) + 0.5rem);
+  left: calc(var(--inputs-border-width) + 2rem);
+  letter-spacing: 0.04rem;
+  color: var(--mv-gold);
+}
+
+.maison-book__field select.field__input:focus,
+.maison-book__field select.field__input:valid {
+  padding: 2.2rem 1.5rem 0.8rem 2rem;
+}
+
 .mv-hairline {
   border: 0.1rem solid var(--mv-gold-border);
 }
