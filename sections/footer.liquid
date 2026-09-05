@@ -16,6 +16,12 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  #shopify-section-{{ section.id }} .footer__blocks-wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat({{ section.settings.columns_mobile }}, minmax(0, 1fr));
+  }
+
   @media screen and (min-width: 750px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
@@ -24,6 +30,17 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+    #shopify-section-{{ section.id }} .footer__blocks-wrapper {
+      gap: 3rem;
+      grid-template-columns: repeat({{ section.settings.columns_tablet }}, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    #shopify-section-{{ section.id }} .footer__blocks-wrapper {
+      grid-template-columns: repeat({{ section.settings.columns_desktop }}, minmax(0, 1fr));
     }
   }
 {%- endstyle -%}
@@ -47,19 +64,8 @@
     {%- unless only_empty_brand -%}
       <div class="footer__content-top page-width">
         {%- if section.blocks.size > 0 -%}
-          {%- liquid
-            if section.blocks.size >= 5
-              assign footer_grid_class = 'grid--5-col-desktop'
-            elsif section.blocks.size == 4
-              assign footer_grid_class = 'grid--4-col-desktop'
-            elsif section.blocks.size == 3
-              assign footer_grid_class = 'grid--3-col-tablet'
-            elsif section.blocks.size == 2
-              assign footer_grid_class = 'grid--2-col-tablet'
-            endif
-          -%}
           <div
-            class="footer__blocks-wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="footer__blocks-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
@@ -604,8 +610,37 @@
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
     },
-
-
+    {
+      "type": "header",
+      "content": "Columns"
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Columns on mobile",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Columns on tablet",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Columns on desktop",
+      "default": 5
+    },
     {
       "type": "header",
       "content": "t:sections.footer.settings.header__3.content",
