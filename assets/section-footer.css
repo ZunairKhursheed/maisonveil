@@ -114,6 +114,24 @@ main,
   width: 100%;
 }
 
+.footer__brand-logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer__brand-logo {
+  display: block;
+  width: auto;
+  max-width: 14rem;
+  height: auto;
+}
+
+.footer__brand-name {
+  margin: 0;
+  color: var(--mv-gold);
+}
+
 @media screen and (max-width: 749px) {
   .footer__content-bottom {
     flex-wrap: wrap;
@@ -211,6 +229,7 @@ main,
   margin-bottom: 0;
   margin-top: 0;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
+  color: var(--mv-gold);
 }
 
 @media screen and (min-width: 990px) {
@@ -616,60 +635,38 @@ main,
 .footer__newsletter-signup .newsletter-form__field-wrapper {
   display: flex;
   gap: 1rem;
-  align-items: flex-end;
+  align-items: stretch;
 }
 
 .footer__newsletter-signup .field {
   flex: 1;
   position: relative;
-}
-
-.footer__newsletter-signup .field__input {
-  border-bottom: 1px solid currentColor;
-  border-radius: 0;
-  padding: 1rem;
-  background: transparent;
-  font-size: 1.4rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.footer__newsletter-signup .field__input:focus {
-  outline: none;
-  border-width: 2px;
-}
-
-.footer__newsletter-signup .field__label {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  transition: all 0.2s ease;
-  pointer-events: none;
-  font-size: 1.4rem;
-  background: var(--color-background);
-  padding: 0 0.5rem;
-}
-
-.footer__newsletter-signup .field__input:focus + .field__label,
-.footer__newsletter-signup
-  .field__input:not(:placeholder-shown)
-  + .field__label {
-  top: -0.5rem;
-  font-size: 1.2rem;
-  opacity: 0.7;
+  min-width: 0;
 }
 
 .footer__newsletter-signup .newsletter-form__button {
-  background: transparent;
+  flex-shrink: 0;
+  align-self: stretch;
+  height: auto;
+  min-height: 5.3rem;
+  padding: 0 1.6rem;
+  border: 1px solid rgba(201, 169, 98, 0.45);
   border-radius: 0;
-  padding: 1rem 1.5rem;
-  font-size: 1.4rem;
-  text-transform: lowercase;
-  transition: all 0.2s ease;
+  background: transparent;
+  color: var(--mv-gold);
+  font-size: var(--mv-type-cta-size);
+  font-weight: var(--mv-type-cta-weight);
+  letter-spacing: var(--mv-type-cta-tracking);
+  text-transform: uppercase;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
   cursor: pointer;
 }
 
 .footer__newsletter-signup .newsletter-form__button:hover {
-  background: currentColor;
-  color: var(--color-background);
+  border-color: var(--mv-gold);
+  background: rgba(201, 169, 98, 0.12);
+  color: var(--mv-gold-champagne);
 }

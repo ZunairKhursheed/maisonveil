@@ -107,7 +107,9 @@
   margin-top: 0.4rem;
   accent-color: rgb(var(--color-button));
 }
-
+.maison-book__privacy p {
+  margin: 0px;
+}
 .maison-book__submit {
   display: flex;
   justify-content: center;

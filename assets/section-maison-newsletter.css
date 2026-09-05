@@ -58,7 +58,7 @@
 .maison-newsletter__form {
   display: flex;
   align-items: stretch;
-  gap: 1.2rem;
+  border: 1px solid rgba(201,169,98,.45);
 }
 
 .maison-newsletter__field {

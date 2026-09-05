@@ -164,14 +164,17 @@ body {
 .maison-book__field .field:before,
 .maison-book__field .field:after,
 .maison-newsletter__field.field:before,
-.maison-newsletter__field.field:after {
+.maison-newsletter__field.field:after,
+.footer__newsletter-signup .field:before,
+.footer__newsletter-signup .field:after {
   display: none;
 }
 
 .newsletter-popup__form .field__label,
 .maison-book__field .field__label,
 .maison-book__field .form__label,
-.maison-newsletter__field .field__label {
+.maison-newsletter__field .field__label,
+.footer__newsletter-signup .field__label {
   color: var(--mv-gold);
 }
 
@@ -179,7 +182,8 @@ body {
 .maison-book__field .field__input,
 .maison-book__field select.field__input,
 .maison-book__field textarea.field__input,
-.maison-newsletter__field .field__input {
+.maison-newsletter__field .field__input,
+.footer__newsletter-signup .field__input {
   background: rgba(var(--color-background), 0.6);
   border: 1px solid rgba(201, 169, 98, 0.45);
   color: rgb(var(--color-foreground));
@@ -197,7 +201,8 @@ body {
 .maison-book__field .field__input:hover,
 .maison-book__field select.field__input:hover,
 .maison-book__field textarea.field__input:hover,
-.maison-newsletter__field .field__input:hover {
+.maison-newsletter__field .field__input:hover,
+.footer__newsletter-signup .field__input:hover {
   border-color: rgba(201, 169, 98, 0.55);
   box-shadow: 0 0 0 1px rgba(201, 169, 98, 0.12);
 }
@@ -216,7 +221,10 @@ body {
 .maison-book__field textarea.field__input:active,
 .maison-newsletter__field .field__input:focus,
 .maison-newsletter__field .field__input:focus-visible,
-.maison-newsletter__field .field__input:active {
+.maison-newsletter__field .field__input:active,
+.footer__newsletter-signup .field__input:focus,
+.footer__newsletter-signup .field__input:focus-visible,
+.footer__newsletter-signup .field__input:active {
   border-color: var(--mv-gold);
   box-shadow: 0 0 0 1px rgba(201, 169, 98, 0.35), 0 0 22px var(--mv-gold-glow);
   background: rgba(var(--color-background), 0.85);
@@ -234,7 +242,10 @@ body {
 .maison-book__field select.field__input:valid ~ .field__label,
 .maison-newsletter__field .field__input:focus ~ .field__label,
 .maison-newsletter__field .field__input:not(:placeholder-shown) ~ .field__label,
-.maison-newsletter__field .field__input:-webkit-autofill ~ .field__label {
+.maison-newsletter__field .field__input:-webkit-autofill ~ .field__label,
+.footer__newsletter-signup .field__input:focus ~ .field__label,
+.footer__newsletter-signup .field__input:not(:placeholder-shown) ~ .field__label,
+.footer__newsletter-signup .field__input:-webkit-autofill ~ .field__label {
   font-size: 1rem;
   top: calc(var(--inputs-border-width) + 0.5rem);
   left: calc(var(--inputs-border-width) + 2rem);
