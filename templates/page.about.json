@@ -147,21 +147,21 @@
           "type": "filter",
           "settings": {
             "label": "Nocturnal Amber",
-            "tag": "nocturnal"
+            "collection": ""
           }
         },
         "filter_2": {
           "type": "filter",
           "settings": {
             "label": "Solar Floral",
-            "tag": "solar"
+            "collection": ""
           }
         },
         "filter_3": {
           "type": "filter",
           "settings": {
             "label": "Enigmatic Woody",
-            "tag": "enigmatic"
+            "collection": ""
           }
         }
       },

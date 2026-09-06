@@ -112,21 +112,21 @@
           "type": "filter",
           "settings": {
             "label": "Perfumes",
-            "tag": "perfume"
+            "collection": ""
           }
         },
         "filter_2": {
           "type": "filter",
           "settings": {
             "label": "Body Oils",
-            "tag": "body-oil"
+            "collection": ""
           }
         },
         "filter_4": {
           "type": "filter",
           "settings": {
             "label": "Discovery Sets",
-            "tag": "discovery"
+            "collection": ""
           }
         }
       },

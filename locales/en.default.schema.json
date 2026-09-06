@@ -2570,7 +2570,10 @@
         "kicker": { "label": "Kicker" },
         "title": { "label": "Heading" },
         "description": { "label": "Description" },
-        "collection": { "label": "Collection" },
+        "collection": {
+          "label": "Collection",
+          "info": "Products shown under the All tab."
+        },
         "products_to_show": { "label": "Products to show" },
         "columns_desktop": { "label": "Desktop columns" },
         "filter_all_label": { "label": "All filter label" }
@@ -2579,8 +2582,14 @@
         "filter": {
           "name": "Filter",
           "settings": {
-            "label": { "label": "Label" },
-            "tag": { "label": "Product tag", "info": "Must match a product tag exactly (case-insensitive)." }
+            "label": {
+              "label": "Label",
+              "info": "Optional. Defaults to the collection title."
+            },
+            "collection": {
+              "label": "Collection",
+              "info": "Products in this collection appear when the tab is selected."
+            }
           }
         }
       }
