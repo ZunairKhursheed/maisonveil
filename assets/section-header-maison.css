@@ -221,6 +221,21 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  .section-header .header__inline-menu > .list-menu--inline > li > header-menu > details > summary.header__menu-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+  }
+
+  .section-header .header__inline-menu > .list-menu--inline > li > header-menu > details > summary.header__menu-item .icon-caret {
+    position: static;
+    width: 0.55rem;
+    height: 0.55rem;
+    top: auto;
+    right: auto;
+    flex-shrink: 0;
+  }
 }
 
 .announcement-bar-section .utility-bar,
