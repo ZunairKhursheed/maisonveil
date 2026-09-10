@@ -112,28 +112,36 @@
           "type": "filter",
           "settings": {
             "label": "Perfumes",
-            "collection": ""
+            "collection": "perfumes"
           }
         },
         "filter_2": {
           "type": "filter",
           "settings": {
             "label": "Body Oils",
-            "collection": ""
+            "collection": "body-oil"
           }
         },
         "filter_4": {
           "type": "filter",
           "settings": {
             "label": "Discovery Sets",
-            "collection": ""
+            "collection": "corporate-gifts"
+          }
+        },
+        "filter_KKTajz": {
+          "type": "filter",
+          "settings": {
+            "label": "Devices",
+            "collection": "devices"
           }
         }
       },
       "block_order": [
         "filter_1",
         "filter_2",
-        "filter_4"
+        "filter_4",
+        "filter_KKTajz"
       ],
       "settings": {
         "kicker": "01 · The collection",
