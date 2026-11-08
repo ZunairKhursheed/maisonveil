@@ -27,3 +27,4 @@ temp_interactive_push.bat
 # Git worktrees
 .worktrees/
 .gitignore
+config.bat

@@ -61,10 +61,11 @@
         "heading_size": "h2",
         "text": "<p>New compositions, perfume-bar dates, and early access to limited oils.</p>",
         "button_label": "Subscribe",
+        "image": "shopify://shop_images/D2064D10-6AC1-4A9F-A70D-FF34C9EB550C_ab06b0ab-9b2f-4f24-9eeb-eb0804ff2b2b.png",
         "image_layout": "left",
         "image_overlay_opacity": 50,
         "hide_days": 3,
-        "color_scheme": "scheme-3"
+        "color_scheme": "scheme-5"
       }
     }
   },
